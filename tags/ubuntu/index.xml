@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ubuntu on fritzvd</title>
+    <link>http://blog.fritzvd.com/tags/ubuntu/</link>
+    <description>Recent content in Ubuntu on fritzvd</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Feb 2013 13:08:01 +0000</lastBuildDate>
+    <atom:link href="http://blog.fritzvd.com/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>vagrant</title>
+      <link>http://blog.fritzvd.com/2013/02/04/vagrant/</link>
+      <pubDate>Mon, 04 Feb 2013 13:08:01 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2013/02/04/vagrant/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://vagrantup.com&#34; title=&#34;vagrant&#34;&gt;Vagrant&lt;/a&gt; is a great tool if you like to develop and test on the same server. Or at least emulate that you have the same server and at the same time keep your own system fairly clean.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#8217;ve been using it for quite a while. After reinstalling my ubuntu machine to get rid of 12.10 and start 12.04 LTS a fresh I had to fix something in my install of vagrant. This is very trivial, but I always get annoyed if I can&amp;#8217;t find the solution in one DuckDuckGo/Google search. So I hope I save you a google-trip.&lt;/p&gt;
+
+&lt;p&gt;After downloading the .deb from &lt;a href=&#34;http://vagrantup.com&#34;&gt;http://vagrantup.com&lt;/a&gt; I installed using:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;syntax bash&#34;&gt;sudo dpkg -i ~/Downloads/vagrant_x86_64.deb&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Afterwards getting up and running using:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;syntax bash&#34;&gt;vagrant box add pengolin64 http://cloud-images.ubuntu.com/precise/current/precise-server-cloudimg-vagrant-amd64-disk1.box&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Did not deliver any results. For me the solution was in symlinking the vagrant binary.. (why is it not installed in /usr/bin?)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;syntax bash&#34;&gt;sudo ln -s /opt/vagrant/bin/vagrant /usr/bin/vagrant&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;There you go. Hope that helps.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

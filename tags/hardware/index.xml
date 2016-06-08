@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hardware on fritzvd</title>
+    <link>http://blog.fritzvd.com/tags/hardware/</link>
+    <description>Recent content in Hardware on fritzvd</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Sep 2014 09:14:33 +0000</lastBuildDate>
+    <atom:link href="http://blog.fritzvd.com/tags/hardware/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hardware Track nodeconf.eu</title>
+      <link>http://blog.fritzvd.com/2014/09/15/hardware-track-nodeconf-eu/</link>
+      <pubDate>Mon, 15 Sep 2014 09:14:33 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2014/09/15/hardware-track-nodeconf-eu/</guid>
+      <description>&lt;p&gt;The hardware track featured talks on hardware that were not just about hardware, but also served as a metaphor. The most poignant of these was Colin Vernon&amp;#8217;s on the cloudbit.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Colin Vernon &amp;#8211; Cloudbit&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;As an engineer we really like building stuff and figuring out difficult problems. And for us working with the tools we make is easy. But we should see our tools as a material. A material with which we can build stuff, which we can use like lego-blocks.&lt;/p&gt;
+
+&lt;p&gt;In that vain &lt;a href=&#34;http://littlebits.cc/&#34; title=&#34;littlebits&#34; target=&#34;_blank&#34;&gt;littlebits&lt;/a&gt; have created hardware modules that click into eachother and are interchangeable. With the newest bit: the cloudbit you can run and build a quick node app. With this you can control your &amp;#8216;bits&amp;#8217; or read out its data.&lt;/p&gt;
+
+&lt;p&gt;Software in that sense can be like hardware. Where in stead of creating applications (monolithic or not) that don&amp;#8217;t connect to each other, let&amp;#8217;s make small building blocks. Littlebits is lowering the barrier to entry for hardware. With the cloudbit they are not lowering the bar again for connectivity. With a ready made app that can read out sensors on your iPhone. So why not lower the barrier to entry to connecting software bits. In a way this is what &lt;a href=&#34;https://ifttt.com/&#34; title=&#34;ifttt&#34; target=&#34;_blank&#34;&gt;IFTTT.com (If This Then That)&lt;/a&gt; did.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;#8217;s stop solving the same problems over and over again, and let&amp;#8217;s start creating blocks that lock and in out of each other similar to the littlebits hardware.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Raquel Velez&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Nodebots are fairly simple and cheap to make, and are fun. Hardware can be hooked up and you can run node to get things working.&lt;/p&gt;
+
+&lt;p&gt;A few libraries that would be useful for this:&lt;/p&gt;
+
+&lt;p&gt;johnny-five.&lt;/p&gt;
+
+&lt;p&gt;Raquel demoed a little bot that could draw (either randomly or controlled by a small webinterface). Sadly it died a horrid death at demo time. Here&amp;#8217;s the video to prove it actually worked at one point:&lt;/p&gt;
+
+&lt;p&gt;Bots like this might seem insignificant, but Raquel ended saying that in the end the Mars Rovers are also basically bots which do similar stuff as the nodebot project makes possible.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Hardware workshop&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In the afternoon we played around with the littlebits sets and &lt;a href=&#34;https://tessel.io/&#34; title=&#34;tessel.io&#34; target=&#34;_blank&#34;&gt;Tessels&lt;/a&gt; (microcontroller that runs javascript). Which basically meant everyone went hay-wire on the &lt;a href=&#34;http://littlebits.cc/kits/synth-kit&#34; title=&#34;synth-kit&#34; target=&#34;_blank&#34;&gt;Korg set of littlebits&lt;/a&gt;:&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

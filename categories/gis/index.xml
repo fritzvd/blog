@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gis on fritzvd</title>
+    <link>http://blog.fritzvd.com/categories/gis/</link>
+    <description>Recent content in Gis on fritzvd</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Nov 2012 12:34:30 +0000</lastBuildDate>
+    <atom:link href="http://blog.fritzvd.com/categories/gis/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Making sure GDAL works with ECW libecw under linux</title>
+      <link>http://blog.fritzvd.com/2012/11/28/making-sure-gdal-works-with-ecw-libecw-under-linux/</link>
+      <pubDate>Wed, 28 Nov 2012 12:34:30 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2012/11/28/making-sure-gdal-works-with-ecw-libecw-under-linux/</guid>
+      <description>&lt;p&gt;This took me a while to unravel, so before I forget or before other people run into the same issues, let&amp;#8217;s make a note of this.&lt;/p&gt;
+
+&lt;p&gt;Assuming you are using a debian-like linux distribution (ubuntu, debian, linux mint, etc. anything using: &lt;code&gt;apt-get&lt;/code&gt; to install packages) there are a few things to note.&lt;/p&gt;
+
+&lt;p&gt;First of all make sure you have the latest packages for: mapserver, gdal, etc.&lt;/p&gt;
+
+&lt;p&gt;(&lt;a href=&#34;https://launchpad.net/~ubuntugis&#34; title=&#34;ubuntu-gis&#34;&gt;ubuntu-gis repository&lt;/a&gt; has newer versions than the standard repositories).&lt;/p&gt;
+
+&lt;p&gt;The ecw library version 3.3 was free to use with a few exceptions. Read write access is ensured, write access up to files of 500MB. The first requirement is to build this library. Go to: &lt;a href=&#34;http://meuk.technokrat.nl/libecwj2-3.3-2006-09-06.zip&#34;&gt;this place&lt;/a&gt; to download &lt;code&gt;libecwj2-3.3.20060906.zip&lt;/code&gt;. Untar and build the library.&lt;/p&gt;
+
+&lt;p&gt;In the terminal assuming you are using Downloads folder:&lt;/p&gt;
+
+&lt;p&gt;Last command should output two lines of formats: ECW and JP2ECW&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Kriging in R in Python</title>
+      <link>http://blog.fritzvd.com/2012/11/26/kriging-in-r-in-python/</link>
+      <pubDate>Mon, 26 Nov 2012 13:48:56 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2012/11/26/kriging-in-r-in-python/</guid>
+      <description>&lt;p&gt;This might be a repost of some sort. However I found that it was kind of hard to find anything about this specific topic. So here it goes.&lt;/p&gt;
+
+&lt;p&gt;Kriging is a geostatistical method to be able translate point data to a grid, to find out where you can predict stuff really well and where the variance is really high. As always GIGO (garbage in garbage out). But it is at least a large improvement from interpolation techniques such as Inversed Distance Weighting (IDW) which is often implemented in GIS software.&lt;/p&gt;
+
+&lt;p&gt;However for Kriging you need a bit more information. You need to input a variogram. This is however often estimated with &amp;#8216;expert&amp;#8217; knowledge and looking at graphs produced by the input data. In my mind this sounds like automatable. But I haven&amp;#8217;t got around to it.&lt;/p&gt;
+
+&lt;p&gt;The best implementations exist for R, but for those who don&amp;#8217;t like R for any reason (slow, not really productionable etc.) there is a Python implementation by Ambhas &lt;a href=&#34;http://www.ambhas.com/tools/html/krige_8py_source.html&#34; title=&#34;kriging in python&#34;&gt;right here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For those who don&amp;#8217;t care. You can use r in python with rpy2 (or rpy). This is a bit ugly. But it is at least a lot nicer (imho) to work with (data i/o) using gdal etc) in production. Also anything beyond Ordinary Kriging becomes complex. And I did not find anyone yet publishing their code for non-ordinary kriging (cokriging, colocated cokriging and other more complicated algorithms). If anyone comes around to writing it, please open source that shiznit.&lt;/p&gt;
+
+&lt;p&gt;Anyways. If you want to do colocated cokriging you have to have 2 forms of data for every point. The code will look like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;syntax python&#34;&gt;def cokriging_in_r(self, x, y, z):
+        &#39;&#39;&#39;
+        Cokriging (and ordinary kriging) is quite fast in R.
+        This would anyway be more pragmatic than rewriting/porting it to Python.
+        For the moment this will be the &#39;best&#39; way as R makes it very easy to
+        use kriging without fitting a variogram model, but using a standard 
+        variogram.
+        &#39;&#39;&#39;
+        import rpy2
+        import rpy2.robjects as robj
+        import time
+        time0 = time.time()
+        robj.r.library(&#39;gstat&#39;)
+        self.create_interpolation_grid()
+        xi, yi = robj.FloatVector(self.xi.tolist()), robj.FloatVector(self.yi.tolist())
+        dataset = self.dataloader.dataset.ReadAsArray().flatten()
+        mask = numpy.equal(dataset, -9999)
+        rxi = robj.FloatVector(dataset.tolist())
+        secondary = self.get_secondary_for_locations()
+        secondary = robj.FloatVector(secondary)
+        x,y,z = robj.FloatVector(x), robj.FloatVector(y), robj.FloatVector(z)
+        primary_frame = robj.DataFrame({&#39;x&#39;: x, &#39;y&#39;: y, &#39;z&#39;:z})
+        secondary_frame = robj.DataFrame({&#39;x&#39;: xi, &#39;y&#39;: yi, &#39;secondary&#39;: rxi})
+        target_frame = robj.DataFrame({&#39;x&#39;:xi, &#39;y&#39;:yi})
+        vgm_args = {&#39;model_type&#39;: &#39;Sph&#39;, &#39;range1&#39;: 20000, &#39;range2&#39;:1040000}
+        # following command gives a python output to r functions
+        vgm_args[&#39;nugget&#39;] = 0.035
+        vgm_args[&#39;sill1&#39;] = 0.473
+        vgm_args[&#39;sill2&#39;] = 8.994
+        secondary_variance = dataset[~mask].var()
+        primary_variance = robj.r.var(z)[0]
+        correlation_secondary_primary = numpy.abs(robj.r.cor(z, secondary))
+        variance_correction = numpy.sqrt(primary_variance * secondary_variance)
+        # The cross coefficient is used in the cross variogram (crossgram)
+        # 
+        cross_coef = (correlation_secondary_primary * variance_correction)[0]
+        # change it back to rpy strict
+
+        # The variogram is combined. This is a bit awkward in Rpy.
+        # So one way is change the args manually (see below)
+        # or load variables in R before hand.
+        variogram_secondary = robj.r.vgm(vgm_args[&#39;sill1&#39;] * secondary_variance, 
+            vgm_args[&#39;model_type&#39;], vgm_args[&#39;range1&#39;], vgm_args[&#39;nugget&#39;], 
+            robj.r(&#34;add.to=vgm(&#34;+ str(vgm_args[&#39;sill2&#39;] * secondary_variance)
+                + &#34;, &#39;Sph&#39;, 1040000, &#34; + str(vgm_args[&#39;nugget&#39;] * 
+                    secondary_variance)+&#34;)&#34;))
+        variogram_primary = robj.r.vgm(vgm_args[&#39;sill1&#39;] * primary_variance,
+            vgm_args[&#39;model_type&#39;], vgm_args[&#39;range1&#39;], vgm_args[&#39;nugget&#39;], 
+            robj.r(&#34;add.to=vgm(&#34;+ str(vgm_args[&#39;sill2&#39;] * primary_variance)
+                + &#34;, &#39;Sph&#39;, 1040000, &#34; + str(vgm_args[&#39;nugget&#39;] * 
+                    primary_variance)+&#34;)&#34;))
+        crossgram = robj.r.vgm(vgm_args[&#39;sill1&#39;] * cross_coef, 
+            vgm_args[&#39;model_type&#39;], vgm_args[&#39;range1&#39;], vgm_args[&#39;nugget&#39;], 
+            robj.r(&#34;add.to=vgm(&#34;+ str(vgm_args[&#39;sill2&#39;] * cross_coef)
+                + &#34;, &#39;Sph&#39;, 1040000, &#34; + str(vgm_args[&#39;nugget&#39;] * cross_coef) + &#34;)&#34;))
+
+        cck = robj.r(&#39;NULL&#39;)
+        cck = robj.r.gstat(cck, &#34;primary&#34;, robj.r(&#39;z ~ 1&#39;), robj.r(&#39;~ x + y&#39;), 
+            data=primary_frame, model=variogram_primary, nmax=40)
+        cck = robj.r.gstat(cck, &#34;secondary&#34;, robj.r(&#39;secondary~ 1&#39;), robj.r(&#39;~ x + y&#39;),
+            data=secondary_frame, model=variogram_secondary, 
+            merge=robj.r(&#34;c(&#39;primary&#39;,&#39;secondary&#39;)&#34;), nmax=1)
+        cck = robj.r.gstat(cck, robj.r(&#39;c(&#34;primary&#34;, &#34;secondary&#34;)&#39;), model=crossgram, nmax=40) 
+        result = robj.r.predict(cck, target_frame)
+        # crossval = robj.r(&#39;gstat.cv&#39;)(cck)
+        time1 = time.time()
+        deltatime = time1-time0
+        print(&#39;Kriging took &#39;+ str(deltatime) + &#39; seconds&#39;)
+        secondary_est = numpy.array(result[4])
+        secondary_est = secondary_est.reshape((self.ny, self.nx))
+        primary_est = numpy.array(result[2])
+        primary_est = primary_est.reshape((self.ny, self.nx))
+        return secondary_est, primary_est
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;create_interpolation_grid&lt;/code&gt; refers to a function which sets up an empty grid based on the extent of the grid and the size of the pixels:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;syntax python&#34;&gt;def create_interpolation_grid(self):
+        &#39;&#39;&#39;
+        Run this to get some basic stuff, like an empty grid to interpolated
+        the data to, the extent and size of the tifs.
+        &#39;&#39;&#39;
+        extent = dataset.extent
+        self.nx, self.ny = basegrid.size
+        xi = numpy.linspace(extent[0], extent[1], self.nx)
+        yi = numpy.linspace(extent[2], extent[3], self.ny)
+        xi, yi = numpy.meshgrid(xi, yi)
+        self.xi, self.yi = xi.flatten(), yi.flatten()
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Coloring Mapserver Floating Tiffs with Colorscales</title>
+      <link>http://blog.fritzvd.com/2011/10/14/coloring-mapserver-floating-tiffs-with-colorscales/</link>
+      <pubDate>Fri, 14 Oct 2011 07:25:27 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2011/10/14/coloring-mapserver-floating-tiffs-with-colorscales/</guid>
+      <description>&lt;p&gt;This has been a little mystery for me waiting to be uncovered. However I solved it. Depending if you are using a SLD (styled layer descriptor) or the embedded Style commands this is what your Mapfile could look like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;syntax apache&#34;&gt;MAP
+NAME &#34;Some Map&#34;
+DEBUG ON
+FONTSET &#34;/home/fritz/maps/fonts.txt&#34;
+
+WEB
+  IMAGEPATH &#34;/tmp/&#34;
+  IMAGEURL &#34;/tmp/&#34;
+  METADATA
+    &#34;wms_title&#34;     &#34;WMS Demo Server&#34;  ##required
+    &#34;wms_onlineresource&#34; &#34;http://localhost/cgi-bin/mapserv?map=map.map&#34;   ##required
+    &#34;wms_srs&#34;       &#34;EPSG:42304 EPSG:42101 EPSG:4269 EPSG:4326 EPSG:7030 EPSG:32736&#34;  ##recommended
+  END
+END
+
+PROJECTION
+  &#34;init=epsg:32736&#34;   ##required
+END
+
+#
+# Start of layer definitions
+#
+LAYER
+NAME &#39;test&#39;
+METADATA
+    &#34;wms_title&#34;   &#39;test&#39;
+END
+TYPE RASTER
+STATUS ON
+DATA  &#39;/home/fritz/maps/colorscale_test.tif&#39;
+PROJECTION
+  &#34;init=epsg:32736&#34;   ##required
+END
+CLASS
+  NAME &#34;test&#34;
+  STYLE
+    COLORRANGE 255 255 0 140 160 160
+    DATARANGE 0.02 0.6
+    RANGEITEM &#34;[pixel]&#34;
+  END
+END
+PROCESSING &#34;SCALE=0.2, 0.6&#34;
+END
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The Scale and Datarange command look very similar and I haven&amp;#8217;t figured out quite how to set it properly, or how to have three-color scale. However it&amp;#8217;s a start. And I haven&amp;#8217;t found it documented anywhere else, here you go.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Connecting the Dots</title>
+      <link>http://blog.fritzvd.com/2011/02/28/connecting-the-dots/</link>
+      <pubDate>Mon, 28 Feb 2011 08:30:48 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2011/02/28/connecting-the-dots/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Those who think they &amp;#8220;know&amp;#8221; everything from the beginning will never, in fact, come to know anything &amp;#8211; &lt;strong&gt;Thomas Merton&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Over the last few weeks (months) I haven&amp;#8217;t been posting too much. Sorry about that. For all the people who are interested in what I am doing a little update.&lt;/p&gt;
+
+&lt;p&gt;At the moment I am trying to write up the document to present the thesis to my supervisors. The research part is almost brought to an end with this step. Then the big question is, what are my findings?&lt;/p&gt;
+
+&lt;p&gt;I haven&amp;#8217;t quite distilled that to a complete concrete conclusion, but I can say this.&lt;/p&gt;
+
+&lt;p&gt;3D GIS is not an easy thing. Depending on the quality of the 3D visualization of course. But trying to get the coordinate systems of a Geographical System to work together with 3D software and their coordinate systems is not an easy feat.&lt;/p&gt;
+
+&lt;p&gt;An instance of Augmented Reality is only as good as the purposes it should serve and the requirements it should fit.&lt;/p&gt;
+
+&lt;p&gt;Lastly, LaTeX is an awesome markup tool for word processing. If someone is interested in the title page for a thesis at the WUR (Wageningen University and Research) just comment and I&amp;#8217;ll send you the .tex file.&lt;/p&gt;
+
+&lt;p&gt;Happy Monday!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Creating a little clipbox for your GIS projects in Python</title>
+      <link>http://blog.fritzvd.com/2011/01/11/creating-a-little-clipbox-for-your-projects-in-python/</link>
+      <pubDate>Tue, 11 Jan 2011 15:48:32 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2011/01/11/creating-a-little-clipbox-for-your-projects-in-python/</guid>
+      <description>&lt;p&gt;When working on a GIS project, this always bums me out. You need to have a certain area in which you want to cut all your source data. But in ArcGIS I never figure out how to do it properly, except for using Python scripts and arcgisscripting/arcpy. But I figured, this should also be do-able from the terminal, and take less time and energy from your little workbox.&lt;/p&gt;
+
+&lt;p&gt;But here&amp;#8217;s a Python script that uses open-source libraries and writes&lt;/p&gt;
+
+&lt;p&gt;Be sure to have  &lt;a href=&#34;http://fwtools.maptools.org/&#34;&gt;FW_Tools&lt;/a&gt; installed (win/linux) or when you&amp;#8217;re on a Mac head over to &lt;a href=&#34;www.kyngchaos.com/&#34;&gt;KyngChaos&lt;/a&gt;. This dude has some binary versions of GDAL and PROJ. On Ubuntu life is even more dreamy:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;sudo apt-get install proj4 python-gdal&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;and some other stuff I can&amp;#8217;t think of right now.&lt;/p&gt;
+
+&lt;p&gt;This is the version of the script that will run with FWTools in Windows. (all neatly stolen and copied from &lt;a href=&#34;http://www.gis.usu.edu/~chrisg/python/2009/&#34;&gt;Chris Garrard&lt;/a&gt;)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;syntax python&#34;&gt;import ogr, os, sys, osr
+os.chdir(&#39;C:/Directory&#39;)
+
+driver = ogr.GetDriverByName(&#39;ESRI Shapefile&#39;)
+
+fn = &#39;tmp.shp&#39;
+if os.path.exists(fn):
+    driver.DeleteDataSource(fn)
+ds = driver.CreateDataSource(fn)
+
+if ds is None:
+    print &#39;Could not create file&#39;
+    sys.exit(1)
+layer = ds.CreateLayer(&#39;layer_1&#39;, geom_type=ogr.wkbPolygon)
+
+fieldDefn = ogr.FieldDefn(&#39;name&#39;, ogr.OFTString)
+fieldDefn.SetWidth(30)
+layer.CreateField(fieldDefn)
+
+featureDefn = layer.GetLayerDefn()
+
+ring = ogr.Geometry(ogr.wkbLinearRing)
+ring.AddPoint(54280, 419385)
+ring.AddPoint(95285, 419385)
+ring.AddPoint(95285, 460390)
+ring.AddPoint(54280, 460390)
+
+poly = ogr.Geometry(ogr.wkbPolygon)
+poly.AddGeometry(ring)
+
+feature = ogr.Feature(featureDefn)
+feature.SetGeometry(poly)
+
+layer.CreateFeature(feature)
+
+ring.Destroy()
+poly.Destroy()
+feature.Destroy()
+
+ds.Destroy()
+
+inSpatialRef = osr.SpatialReference()
+inSpatialRef.ImportFromEPSG(4269)
+outSpatialRef = osr.SpatialReference()
+# changing from unprojected to &#39;RijksDriehoeksstelsel&#39; the Dutch National Grid
+outSpatialRef.ImportFromEPSG(28992)
+coordTrans = osr.CoordinateTransformation(inSpatialRef, outSpatialRef)
+
+inDS = driver.Open(&#39;tmp.shp&#39;, 0)
+if inDS is None:
+  print &#39;Could not open file&#39;
+  sys.exit(1)
+inLayer = inDS.GetLayer()
+
+# create a new data source and layer
+fn = &#39;clip.shp&#39;
+if os.path.exists(fn):
+  driver.DeleteDataSource(fn)
+outDS = driver.CreateDataSource(fn)
+if outDS is None:
+  print &#39;Could not create file&#39;
+  sys.exit(1)
+outLayer = outDS.CreateLayer(&#39;layer_2&#39;, geom_type=ogr.wkbPolygon)
+
+featureDefn = outLayer.GetLayerDefn()
+
+# loop through the input features
+inFeature = inLayer.GetNextFeature()
+while inFeature:
+
+  # get the input geometry
+  geom = inFeature.GetGeometryRef()
+
+  # reproject the geometry
+  geom.Transform(coordTrans)
+
+  # create a new feature
+  outFeature = ogr.Feature(featureDefn)
+
+  # set the geometry and attribute
+  outFeature.SetGeometry(geom)
+  outFeature.SetField(&#39;name&#39;, inFeature.GetField(&#39;name&#39;))
+
+  # add the feature to the shapefile
+  outLayer.CreateFeature(outFeature)
+
+  # destroy the features and get the next input feature
+  outFeature.Destroy
+  inFeature.Destroy
+  inFeature = inLayer.GetNextFeature()
+
+# close the shapefiles
+inDS.Destroy()
+outDS.Destroy()&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>From 2.5D to 3D</title>
+      <link>http://blog.fritzvd.com/2011/01/10/from-2-5d-to-3d/</link>
+      <pubDate>Mon, 10 Jan 2011 14:21:54 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2011/01/10/from-2-5d-to-3d/</guid>
+      <description>&lt;p&gt;My last few posts have focused on somewhat other things than my thesis. This does not mean that no progress has been made or that I&amp;#8217;ve done nothing. On the contrary; I&amp;#8217;ve done quite a bit. But it is rather less exciting.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#8217;ve been busy with data conversion and trying to get a working 3D representation that is meaningful. Which is hard and not so spectacular. Seriously. First of all getting to grips with the fact that the reason why ESRI is marketleader may be because they deliver a complete and good package. My stubborn, innovative-creative side however always pushes me to look beyond the big things, before trying them out. That does not always pay off. Also trying out hip and open-source packages in Windows is just plain brutal. It sucks the life out of me. Cygwin/MinGW is utter pain, and Python for Windows is hell. Give me OS X or  Debian-linux anyday (apt-get FTW).&lt;/p&gt;
+
+&lt;p&gt;So now I am trying to make a 3d representation of things with ArcGIS (ArcMap and ArcScene). But even then trying to deal with different formats remains a chore.&lt;/p&gt;
+
+&lt;p&gt;After this, and only after this I have to even more conversions to get it going in any Augmented Reality or 3D instance online or on a smartphone. The best to go for now is ArcScene -&amp;gt; export 3D (VRML) -&amp;gt; Open in Meshlab -&amp;gt; export to 3Ds or DAE. Which is a sucky workflow, but like, whatever.&lt;/p&gt;
+
+&lt;p&gt;So there&amp;#8217;s that.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Whoops I FLARted..</title>
+      <link>http://blog.fritzvd.com/2010/12/08/222/</link>
+      <pubDate>Wed, 08 Dec 2010 18:11:44 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2010/12/08/222/</guid>
+      <description>&lt;p&gt;Today I fooled around a bit with the &lt;a href=&#34;http://words.transmote.com/wp/flarmanager/&#34;&gt;FLARManager&lt;/a&gt; (tutorials graciously provided by transmote). I tried to get some Papervision 3D objects going using all these different tutorials I have been following over the last few weeks (e.g. &lt;a href=&#34;http://papervision2.com&#34;&gt;papervision2.com&lt;/a&gt; and &lt;a href=&#34;http://rawkes.com&#34;&gt;rawkes.com&lt;/a&gt;). But it has not been as easy as I had expected. But then again, things never are.&lt;/p&gt;
+
+&lt;p&gt;The difficulty is not so much in displaying 3D objects, because pv3d and flarmanager do all the thinking for you. But trying to get from a GIS file to the right formats and the right information to be displayed in the right way, is still a bit tricky. The model still has to correspond with the actual data that was used, but more often than not these models contain very dense data on a large scale. For now the model has been so big that I only saw a small fraction of it in my display the rest hovering quietly above it. Need to find a smarter way to doing this than:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;3dobject.scale = 0.001;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;But I&amp;#8217;ll get there I&amp;#8217;m sure.&lt;/p&gt;
+
+&lt;p&gt;For now I can render multiple cows on my desktop. And at least that is something right?&lt;/p&gt;
+
+&lt;div id=&#34;attachment_223&#34; style=&#34;width: 410px&#34; class=&#34;wp-caption alignright&#34;&gt;
+  &lt;a href=&#34;http://fritzvd.files.wordpress.com/2010/12/cows.png&#34;&gt;&lt;img class=&#34;size-full wp-image-223 &#34; title=&#34;cows&#34; src=&#34;http://fritzvd.files.wordpress.com/2010/12/cows.png&#34; alt=&#34;Desktop Cows&#34; width=&#34;400&#34; height=&#34;302&#34; /&gt;&lt;/a&gt;
+  
+  &lt;p class=&#34;wp-caption-text&#34;&gt;
+    Property of Papervision2.com I think
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;P.S. Why cows instead of GIS (the model is just small and loads quickly, good for testing purposes.)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Thoughts on LiDAR</title>
+      <link>http://blog.fritzvd.com/2010/12/02/thoughts-on-lidar/</link>
+      <pubDate>Thu, 02 Dec 2010 15:02:26 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2010/12/02/thoughts-on-lidar/</guid>
+      <description>&lt;p&gt;Yesterday I was fortunate enough to be able to visit the &lt;a href=&#34;http://www.lidarmap.org/ELMF/&#34;&gt;European LiDAR Mapping Forum (ELMF)&lt;/a&gt; in The Hague. For those who do not know what LiDAR is, it is a sensor that acquires high-quality (very dense) 3D data. If you would like to check out some of the data, what it looks like and play around with it a bit, &lt;a href=&#34;http://liblas.org/start.html&#34;&gt;here is a &lt;em&gt;&amp;#8220;get-started&amp;#8221;&lt;/em&gt;&lt;/a&gt;. It is further explained on &lt;a href=&#34;http://en.wikipedia.org/wiki/LIDAR&#34;&gt;Wikipedia&lt;/a&gt;, to which you should give some money for using it on a daily basis, if you haven&amp;#8217;t done so already. Back on-topic I believe it was quite a successful event, some 600 applicants joined in, which was above expectations I gathered from &lt;a href=&#34;http://uk.linkedin.com/in/alastairrmacdonald&#34;&gt;Alastair MacDonald&lt;/a&gt;&amp;#8216;s closing remarks.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Some interesting applications (to me)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://mandli.com&#34;&gt;Mandli&amp;#8217;s&lt;/a&gt; examples of Mobile Mapping and quick high-quality 3D model creation, with the help of Mobile Mappers. Mobile Mappers are another example of a cool technology. These cars with LiDAR sensors mounted on them can collect 3D data at highway-speed. Awesome.&lt;/p&gt;
+
+&lt;div id=&#34;attachment_273&#34; style=&#34;width: 310px&#34; class=&#34;wp-caption alignright&#34;&gt;
+  &lt;a href=&#34;http://blog.technokrat.nl/wp-content/uploads/2010/12/mobile-mapping-van-2.jpg&#34;&gt;&lt;img src=&#34;http://blog.technokrat.nl/wp-content/uploads/2010/12/mobile-mapping-van-2-300x225.jpg&#34; alt=&#34;source: http://www.mobile-mapping.be/Languages/nl-BE/Downloads/mobile%20mapping%20van%202.jpg&#34; title=&#34;Mobile Mapper&#34; width=&#34;300&#34; height=&#34;225&#34; class=&#34;size-medium wp-image-273&#34; srcset=&#34;http://blog.technokrat.nl/wp-content/uploads/2010/12/mobile-mapping-van-2-300x225.jpg 300w, http://blog.technokrat.nl/wp-content/uploads/2010/12/mobile-mapping-van-2-120x90.jpg 120w, http://blog.technokrat.nl/wp-content/uploads/2010/12/mobile-mapping-van-2.jpg 600w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;
+  
+  &lt;p class=&#34;wp-caption-text&#34;&gt;
+    Mobile Mapper
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.topconpositioning.com&#34;&gt;Topcon&lt;/a&gt; is collaborating with the company creating the Moto GP &lt;sup&gt;10&lt;/sup&gt;&amp;frasl;&lt;sub&gt;11&lt;/sub&gt; game. This game uses a model of the Silverstone track gathered and created in about 2 hours using a Mobile Mapper. The conference was premiering some of the stunning 3D imagery created for the game.&lt;/p&gt;
+
+&lt;p&gt;Railtracks around Dover. To monitor land slides and land changes at the cliffs of Dover they showcased quarterly surveys of the area using Terrestial Laser Scanners.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Beyond understanding&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Most of the rest of the talks were less practical of nature. This is not bad in any case. On the contrary I found these lectures very interesting. However for my studies and thesis it will probably not be of any importance. Although I now (claim to) understand why you should prefer Discrete Return over Full Waveform for most purposes.&lt;/p&gt;
+
+&lt;p&gt;Other things I just didn&amp;#8217;t understand were all over the place. But it was very educational and interesting nonetheless.&lt;/p&gt;
+
+&lt;p&gt;One more example before I leave you. The Dutch branch of &lt;a href=&#34;http://www.terraimaging.de/nl/&#34;&gt;TerraImaging&lt;/a&gt; also had a stand there. They deliver AHN2 images (the Actual Elevation of the Netherlands version 2) data. Awesome detail. With an accuracy of 5cm they deliver Elevation Maps of areas in the Netherlands. Just don&amp;#8217;t think that data comes without cost. There is a free online viewer though at &lt;a href=&#34;http://www.ahn.nl/viewer&#34;&gt;the AHN website&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div id=&#34;attachment_272&#34; style=&#34;width: 310px&#34; class=&#34;wp-caption aligncenter&#34;&gt;
+  &lt;a href=&#34;http://blog.technokrat.nl/wp-content/uploads/2010/12/lidar1.jpg&#34;&gt;&lt;img src=&#34;http://blog.technokrat.nl/wp-content/uploads/2010/12/lidar1-300x208.jpg&#34; alt=&#34;Lidar Processed DTM / source: http://www.saic.com/geospatial/images/lidar1.jpg&#34; title=&#34;lidar1&#34; width=&#34;300&#34; height=&#34;208&#34; class=&#34;size-medium wp-image-272&#34; srcset=&#34;http://blog.technokrat.nl/wp-content/uploads/2010/12/lidar1-300x208.jpg 300w, http://blog.technokrat.nl/wp-content/uploads/2010/12/lidar1.jpg 778w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;
+  
+  &lt;p class=&#34;wp-caption-text&#34;&gt;
+    LiDAR acquired dataset (post-processing)
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

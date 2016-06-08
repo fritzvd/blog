@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>3dgis on fritzvd</title>
+    <link>http://blog.fritzvd.com/tags/3dgis/</link>
+    <description>Recent content in 3dgis on fritzvd</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 28 Feb 2011 08:30:48 +0000</lastBuildDate>
+    <atom:link href="http://blog.fritzvd.com/tags/3dgis/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Connecting the Dots</title>
+      <link>http://blog.fritzvd.com/2011/02/28/connecting-the-dots/</link>
+      <pubDate>Mon, 28 Feb 2011 08:30:48 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2011/02/28/connecting-the-dots/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Those who think they &amp;#8220;know&amp;#8221; everything from the beginning will never, in fact, come to know anything &amp;#8211; &lt;strong&gt;Thomas Merton&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Over the last few weeks (months) I haven&amp;#8217;t been posting too much. Sorry about that. For all the people who are interested in what I am doing a little update.&lt;/p&gt;
+
+&lt;p&gt;At the moment I am trying to write up the document to present the thesis to my supervisors. The research part is almost brought to an end with this step. Then the big question is, what are my findings?&lt;/p&gt;
+
+&lt;p&gt;I haven&amp;#8217;t quite distilled that to a complete concrete conclusion, but I can say this.&lt;/p&gt;
+
+&lt;p&gt;3D GIS is not an easy thing. Depending on the quality of the 3D visualization of course. But trying to get the coordinate systems of a Geographical System to work together with 3D software and their coordinate systems is not an easy feat.&lt;/p&gt;
+
+&lt;p&gt;An instance of Augmented Reality is only as good as the purposes it should serve and the requirements it should fit.&lt;/p&gt;
+
+&lt;p&gt;Lastly, LaTeX is an awesome markup tool for word processing. If someone is interested in the title page for a thesis at the WUR (Wageningen University and Research) just comment and I&amp;#8217;ll send you the .tex file.&lt;/p&gt;
+
+&lt;p&gt;Happy Monday!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>From 2.5D to 3D</title>
+      <link>http://blog.fritzvd.com/2011/01/10/from-2-5d-to-3d/</link>
+      <pubDate>Mon, 10 Jan 2011 14:21:54 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2011/01/10/from-2-5d-to-3d/</guid>
+      <description>&lt;p&gt;My last few posts have focused on somewhat other things than my thesis. This does not mean that no progress has been made or that I&amp;#8217;ve done nothing. On the contrary; I&amp;#8217;ve done quite a bit. But it is rather less exciting.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#8217;ve been busy with data conversion and trying to get a working 3D representation that is meaningful. Which is hard and not so spectacular. Seriously. First of all getting to grips with the fact that the reason why ESRI is marketleader may be because they deliver a complete and good package. My stubborn, innovative-creative side however always pushes me to look beyond the big things, before trying them out. That does not always pay off. Also trying out hip and open-source packages in Windows is just plain brutal. It sucks the life out of me. Cygwin/MinGW is utter pain, and Python for Windows is hell. Give me OS X or  Debian-linux anyday (apt-get FTW).&lt;/p&gt;
+
+&lt;p&gt;So now I am trying to make a 3d representation of things with ArcGIS (ArcMap and ArcScene). But even then trying to deal with different formats remains a chore.&lt;/p&gt;
+
+&lt;p&gt;After this, and only after this I have to even more conversions to get it going in any Augmented Reality or 3D instance online or on a smartphone. The best to go for now is ArcScene -&amp;gt; export 3D (VRML) -&amp;gt; Open in Meshlab -&amp;gt; export to 3Ds or DAE. Which is a sucky workflow, but like, whatever.&lt;/p&gt;
+
+&lt;p&gt;So there&amp;#8217;s that.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Thoughts on LiDAR</title>
+      <link>http://blog.fritzvd.com/2010/12/02/thoughts-on-lidar/</link>
+      <pubDate>Thu, 02 Dec 2010 15:02:26 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2010/12/02/thoughts-on-lidar/</guid>
+      <description>&lt;p&gt;Yesterday I was fortunate enough to be able to visit the &lt;a href=&#34;http://www.lidarmap.org/ELMF/&#34;&gt;European LiDAR Mapping Forum (ELMF)&lt;/a&gt; in The Hague. For those who do not know what LiDAR is, it is a sensor that acquires high-quality (very dense) 3D data. If you would like to check out some of the data, what it looks like and play around with it a bit, &lt;a href=&#34;http://liblas.org/start.html&#34;&gt;here is a &lt;em&gt;&amp;#8220;get-started&amp;#8221;&lt;/em&gt;&lt;/a&gt;. It is further explained on &lt;a href=&#34;http://en.wikipedia.org/wiki/LIDAR&#34;&gt;Wikipedia&lt;/a&gt;, to which you should give some money for using it on a daily basis, if you haven&amp;#8217;t done so already. Back on-topic I believe it was quite a successful event, some 600 applicants joined in, which was above expectations I gathered from &lt;a href=&#34;http://uk.linkedin.com/in/alastairrmacdonald&#34;&gt;Alastair MacDonald&lt;/a&gt;&amp;#8216;s closing remarks.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Some interesting applications (to me)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://mandli.com&#34;&gt;Mandli&amp;#8217;s&lt;/a&gt; examples of Mobile Mapping and quick high-quality 3D model creation, with the help of Mobile Mappers. Mobile Mappers are another example of a cool technology. These cars with LiDAR sensors mounted on them can collect 3D data at highway-speed. Awesome.&lt;/p&gt;
+
+&lt;div id=&#34;attachment_273&#34; style=&#34;width: 310px&#34; class=&#34;wp-caption alignright&#34;&gt;
+  &lt;a href=&#34;http://blog.technokrat.nl/wp-content/uploads/2010/12/mobile-mapping-van-2.jpg&#34;&gt;&lt;img src=&#34;http://blog.technokrat.nl/wp-content/uploads/2010/12/mobile-mapping-van-2-300x225.jpg&#34; alt=&#34;source: http://www.mobile-mapping.be/Languages/nl-BE/Downloads/mobile%20mapping%20van%202.jpg&#34; title=&#34;Mobile Mapper&#34; width=&#34;300&#34; height=&#34;225&#34; class=&#34;size-medium wp-image-273&#34; srcset=&#34;http://blog.technokrat.nl/wp-content/uploads/2010/12/mobile-mapping-van-2-300x225.jpg 300w, http://blog.technokrat.nl/wp-content/uploads/2010/12/mobile-mapping-van-2-120x90.jpg 120w, http://blog.technokrat.nl/wp-content/uploads/2010/12/mobile-mapping-van-2.jpg 600w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;
+  
+  &lt;p class=&#34;wp-caption-text&#34;&gt;
+    Mobile Mapper
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.topconpositioning.com&#34;&gt;Topcon&lt;/a&gt; is collaborating with the company creating the Moto GP &lt;sup&gt;10&lt;/sup&gt;&amp;frasl;&lt;sub&gt;11&lt;/sub&gt; game. This game uses a model of the Silverstone track gathered and created in about 2 hours using a Mobile Mapper. The conference was premiering some of the stunning 3D imagery created for the game.&lt;/p&gt;
+
+&lt;p&gt;Railtracks around Dover. To monitor land slides and land changes at the cliffs of Dover they showcased quarterly surveys of the area using Terrestial Laser Scanners.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Beyond understanding&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Most of the rest of the talks were less practical of nature. This is not bad in any case. On the contrary I found these lectures very interesting. However for my studies and thesis it will probably not be of any importance. Although I now (claim to) understand why you should prefer Discrete Return over Full Waveform for most purposes.&lt;/p&gt;
+
+&lt;p&gt;Other things I just didn&amp;#8217;t understand were all over the place. But it was very educational and interesting nonetheless.&lt;/p&gt;
+
+&lt;p&gt;One more example before I leave you. The Dutch branch of &lt;a href=&#34;http://www.terraimaging.de/nl/&#34;&gt;TerraImaging&lt;/a&gt; also had a stand there. They deliver AHN2 images (the Actual Elevation of the Netherlands version 2) data. Awesome detail. With an accuracy of 5cm they deliver Elevation Maps of areas in the Netherlands. Just don&amp;#8217;t think that data comes without cost. There is a free online viewer though at &lt;a href=&#34;http://www.ahn.nl/viewer&#34;&gt;the AHN website&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div id=&#34;attachment_272&#34; style=&#34;width: 310px&#34; class=&#34;wp-caption aligncenter&#34;&gt;
+  &lt;a href=&#34;http://blog.technokrat.nl/wp-content/uploads/2010/12/lidar1.jpg&#34;&gt;&lt;img src=&#34;http://blog.technokrat.nl/wp-content/uploads/2010/12/lidar1-300x208.jpg&#34; alt=&#34;Lidar Processed DTM / source: http://www.saic.com/geospatial/images/lidar1.jpg&#34; title=&#34;lidar1&#34; width=&#34;300&#34; height=&#34;208&#34; class=&#34;size-medium wp-image-272&#34; srcset=&#34;http://blog.technokrat.nl/wp-content/uploads/2010/12/lidar1-300x208.jpg 300w, http://blog.technokrat.nl/wp-content/uploads/2010/12/lidar1.jpg 778w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;
+  
+  &lt;p class=&#34;wp-caption-text&#34;&gt;
+    LiDAR acquired dataset (post-processing)
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Processing images with GDAL and Mayavi2</title>
+      <link>http://blog.fritzvd.com/2010/11/22/processing-images-with-gdal-and-mayavi2/</link>
+      <pubDate>Mon, 22 Nov 2010 12:51:17 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2010/11/22/processing-images-with-gdal-and-mayavi2/</guid>
+      <description>&lt;p&gt;Ok, this took a while but the results are not bad. So I guess it&amp;#8217;s worth it.&lt;/p&gt;
+
+&lt;p&gt;First of all, a big thank you at [Ok, this took a while but the results are not bad. So I guess it&amp;#8217;s worth it.&lt;/p&gt;
+
+&lt;p&gt;First of all, a big thank you at](&lt;a href=&#34;http://www.gis.usu.edu/~chrisg/&#34;&gt;http://www.gis.usu.edu/~chrisg/&lt;/a&gt;) who is very possibly unaware of the fact that I have been using his classes on Python and Open Source GIS. They give a good introduction into using GDAL with NumPy.&lt;/p&gt;
+
+&lt;p&gt;So after struggling a few consecutive days (frustration peaked!), I managed to load a Digital Elevation Model into the Mayavi 3D visualization tool. It&amp;#8217;s still a bit rough and the peaks are a bit pointy, thus buildings look a bit weird, but still it&amp;#8217;s another little step.&lt;/p&gt;
+
+&lt;p&gt;I first tried a &lt;a href=&#34;http://en.wikibooks.org/wiki/Blender_3D:_Noob_to_Pro/Making_Landscapes_with_heightmaps&#34;&gt;Blender Tutorial&lt;/a&gt; that helped me out making this image:&lt;/p&gt;
+
+&lt;div id=&#34;attachment_199&#34; style=&#34;width: 456px&#34; class=&#34;wp-caption alignnone&#34;&gt;
+  &lt;a href=&#34;http://fritzvd.files.wordpress.com/2010/11/blenderdem.png&#34;&gt;&lt;img src=&#34;http://fritzvd.files.wordpress.com/2010/11/blenderdem.png&#34; alt=&#34;Blender and Digital Elevation Model&#34; title=&#34;blenderdem&#34; width=&#34;446&#34; height=&#34;269&#34; class=&#34;size-full wp-image-199&#34; /&gt;&lt;/a&gt;
+  
+  &lt;p class=&#34;wp-caption-text&#34;&gt;
+    Blender output
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Then after that I figured that is a bit much work for something that in my opinion can be done more efficiently. The steps are still a bit stupid, because I exported a PNG of the DEM visualized with grayscale and then imported that into gdal and displayed that. So it&amp;#8217;s still a bit dumb. And it isn&amp;#8217;t really representative of the data types that a DEM contain. But the DEM itself only gave very weird visualizations, possibly because of the detail of the file as well as large negative values for NoData values.&lt;/p&gt;
+
+&lt;p&gt;Anyway it is a start:&lt;/p&gt;
+
+&lt;div id=&#34;attachment_202&#34; style=&#34;width: 510px&#34; class=&#34;wp-caption alignnone&#34;&gt;
+  &lt;a href=&#34;http://fritzvd.files.wordpress.com/2010/11/mayavi-dem1.png&#34;&gt;&lt;img src=&#34;http://fritzvd.files.wordpress.com/2010/11/mayavi-dem1.png&#34; alt=&#34;Import with PNG and Mayavi2&#34; title=&#34;mayavi-dem&#34; width=&#34;500&#34; height=&#34;247&#34; class=&#34;size-full wp-image-202&#34; srcset=&#34;http://blog.technokrat.nl/wp-content/uploads/2010/11/mayavi-dem1-300x148.png 300w, http://blog.technokrat.nl/wp-content/uploads/2010/11/mayavi-dem1.png 1002w&#34; sizes=&#34;(max-width: 500px) 100vw, 500px&#34; /&gt;&lt;/a&gt;
+  
+  &lt;p class=&#34;wp-caption-text&#34;&gt;
+    Mayavi2 Output
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Developments so far</title>
+      <link>http://blog.fritzvd.com/2010/11/18/developments-so-far/</link>
+      <pubDate>Thu, 18 Nov 2010 15:53:56 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2010/11/18/developments-so-far/</guid>
+      <description>&lt;p&gt;Ok. 3 weeks down the road of my minor thesis and what do I have to show for? Well, a lot of paradigms and concepts for starters. Furthermore I have never been able to finish a document like research proposal so quickly and of such quality.&lt;/p&gt;
+
+&lt;p&gt;But enough of that. I have more or less abandoned the idea of a mobile application for now. Because having a mobile application like Junaio scores high on the cool list, it doesn&amp;#8217;t really in the sphere of performance and handling large data sets. The preference might go to having a standalone or online application that uses a webcam to model the information on screen.&lt;/p&gt;
+
+&lt;p&gt;Most interesting technologies so far:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The awesome &lt;a href=&#34;http://unity3d.com&#34;&gt;Unity 3D&lt;/a&gt; game engine. Apparently possible to combine with &lt;a href=&#34;http://technotecture.com/content/sstt-visualizer-augmented-reality-demo&#34;&gt;SSTT&lt;/a&gt; &amp;#8211; AR tool&lt;/li&gt;
+&lt;li&gt;The extensive Python libraries of &lt;a href=&#34;http://www.vtk.org/&#34;&gt;VTK&lt;/a&gt; and &lt;a href=&#34;http://code.enthought.com/projects/mayavi/&#34;&gt;Mayavi2&lt;/a&gt; (installing in Ubuntu costs only 10 min.) in combination with &lt;a href=&#34;http://www.gdal.org/&#34;&gt;GDAL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://sourceforge.net/projects/opengamaray/files/&#34;&gt;(Open)&lt;/a&gt;&lt;a href=&#34;http://www.gamaray.com/&#34;&gt;Gamaray&lt;/a&gt; &amp;#8211; An AR toolkit similar to UnifeyeSDK (Junaio) by Metaio. Possibility to add location and 3d objects. Very cool.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Another harsh realization is that I have grown too fond of Ubuntu Linux and only now have to deal with an issue that other programmers have been dealing with for ages. Building from source. My goodness. In Mac this feels too dangerous as a mismanaged system can have a lot of missing dependencies and building takes quite a while. In Windows this absolute hell. Searching around for pre-compiled binaries is the way to go, as are packages like Pythonxy. But still, this sucks.&lt;/p&gt;
+
+&lt;p&gt;What I have been able to do so far (except for spending days writing and compiling) is importing an Aster Satellite image into the Mayavi2 viewer. Which was remarkably painless and cool. The only thing is that I do not really understand yet what it is showing me. I guess the pixel values of one band have become the Z-axis. Still, cool as Sir Dangles.&lt;/p&gt;
+
+&lt;div id=&#34;attachment_192&#34; style=&#34;width: 410px&#34; class=&#34;wp-caption alignnone&#34;&gt;
+  &lt;a href=&#34;http://fritzvd.files.wordpress.com/2010/11/aster1.png&#34;&gt;&lt;img src=&#34;http://fritzvd.files.wordpress.com/2010/11/aster1.png&#34; alt=&#34;Aster Image&#34; title=&#34;aster1&#34; width=&#34;400&#34; height=&#34;290&#34; class=&#34;size-full wp-image-192&#34; srcset=&#34;http://blog.technokrat.nl/wp-content/uploads/2010/11/aster1-300x217.png 300w, http://blog.technokrat.nl/wp-content/uploads/2010/11/aster1.png 400w&#34; sizes=&#34;(max-width: 400px) 100vw, 400px&#34; /&gt;&lt;/a&gt;
+  
+  &lt;p class=&#34;wp-caption-text&#34;&gt;
+    View from the middle
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;attachment_193&#34; style=&#34;width: 410px&#34; class=&#34;wp-caption alignnone&#34;&gt;
+  &lt;a href=&#34;http://fritzvd.files.wordpress.com/2010/11/aster2.png&#34;&gt;&lt;img src=&#34;http://fritzvd.files.wordpress.com/2010/11/aster2.png&#34; alt=&#34;Aster Image&#34; title=&#34;aster2&#34; width=&#34;400&#34; height=&#34;290&#34; class=&#34;size-full wp-image-193&#34; srcset=&#34;http://blog.technokrat.nl/wp-content/uploads/2010/11/aster2-300x217.png 300w, http://blog.technokrat.nl/wp-content/uploads/2010/11/aster2.png 400w&#34; sizes=&#34;(max-width: 400px) 100vw, 400px&#34; /&gt;&lt;/a&gt;
+  
+  &lt;p class=&#34;wp-caption-text&#34;&gt;
+    View from above
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Also importing height maps in Unity3D should be not be too painfull, but this proved a bit harder than anticipated.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Different Directions</title>
+      <link>http://blog.fritzvd.com/2010/10/02/different-directions/</link>
+      <pubDate>Sat, 02 Oct 2010 17:24:42 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2010/10/02/different-directions/</guid>
+      <description>&lt;p&gt;It seems that my minor thesis will focus more on the user experience of augmented reality. The EIA&amp;#8217;s have raster outputs that can be converted to 3D spaces. These spaces can then be given Locations. The Raster is already georeferenced which would make this easier (I think).&lt;/p&gt;
+
+&lt;p&gt;The best method of viewing these things would seem Augmented Reality browsers such as Layar or Junaio. So I would have to brush up a bit on what is possible in which browser. Both are iPhone and Android compatible which is convenient.&lt;/p&gt;
+
+&lt;p&gt;In a later stadium it might be cool to add 3d models of ships going to the harbour. (wishful thinking).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Considerations on which Gaming Engine to use</title>
+      <link>http://blog.fritzvd.com/2010/09/29/considerations-on-which-gaming-engine-to-use/</link>
+      <pubDate>Wed, 29 Sep 2010 15:46:53 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2010/09/29/considerations-on-which-gaming-engine-to-use/</guid>
+      <description>&lt;p&gt;A quick update on my project of using a Gaming Engine to process GIS data. After some googling and reading other peoples blogs and workspaces it seems that some engines are more fit than others.&lt;/p&gt;
+
+&lt;p&gt;Tim Germanchis et al. (2005) has done a brief overview of different game engines for this particular usage. Amongst which are the Quake III, Unreal Runtime 2, CryEngine and others. The CryEngine apparently suited the writer the most. As it was easy to learn, stable and the most powerful.&lt;/p&gt;
+
+&lt;p&gt;However according to the [A quick update on my project of using a Gaming Engine to process GIS data. After some googling and reading other peoples blogs and workspaces it seems that some engines are more fit than others.&lt;/p&gt;
+
+&lt;p&gt;Tim Germanchis et al. (2005) has done a brief overview of different game engines for this particular usage. Amongst which are the Quake III, Unreal Runtime 2, CryEngine and others. The CryEngine apparently suited the writer the most. As it was easy to learn, stable and the most powerful.&lt;/p&gt;
+
+&lt;p&gt;However according to the](&lt;a href=&#34;http://gis-game.pbworks.com/&#34;&gt;http://gis-game.pbworks.com/&lt;/a&gt;) (coming up in almost all of my searches on Google) this Engine is not very favourable. By the way if anyone knows who these guys are, I would love to come into contact with them. But found it kind of difficult to contact them.&lt;/p&gt;
+
+&lt;p&gt;One major objection I personally have with CryTek is that it is a Windows only Software. As I will have to do most of my development behind a Windows I will probably would be in the temptation of cutting my lifeline short. But it does make it easier to user CryEngine as well.&lt;/p&gt;
+
+&lt;p&gt;I also saw that CryEngine 3 is coming out. Maybe my Prof would like to help me to get a Educational license to start working on that.&lt;/p&gt;
+
+&lt;p&gt;In relation to open-sourcing and stuff: ioquake3. The well-known quake3 engine has been released under the GPL license as ioquake3. So maybe that is worth giving a try. Although it is a bit older. But then again, science seems to lag in this field anyways.&lt;/p&gt;
+
+&lt;p&gt;One of my major concerns is the processing of GIS data in 3d. I hope that I can find a way with Python and bash maybe to automate the modeling of the 3d objects. Although that might be wishful thinking.&lt;/p&gt;
+
+&lt;p&gt;My other concern I will discuss tomorrow. As it is time for me to do some studying for my courses.&lt;/p&gt;
+
+&lt;p&gt;Edit: &lt;a href=&#34;http://uaraus.altervista.org/index.php?filename=en/content/categories/Blender/DEM_importer.html&#34;&gt;this looks interesting for DEM and Blender things&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Usability and 3D in Geovisualization</title>
+      <link>http://blog.fritzvd.com/2010/09/29/considerations-on-3d-visualization-for-gis/</link>
+      <pubDate>Wed, 29 Sep 2010 14:54:21 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2010/09/29/considerations-on-3d-visualization-for-gis/</guid>
+      <description>&lt;p&gt;For my minor thesis I am thinking of a project for processing Environmental Impact Assessment in a way that is more easily comprehensible. For this project I intend to use Augmented Reality. Hopefully some form of 3d visualization. And I am looking at the possibilities of using gaming engines.&lt;/p&gt;
+
+&lt;p&gt;First and foremost, this is a preliminary research. I am not in any way an expert. And only just learning about the amazing possibilities.&lt;/p&gt;
+
+&lt;p&gt;Over the last few days I have been looking at different scholarly and not so scholarly papers in search of some good information on the use of game engines in 3d visualizations of GIS. The search has been quite fruitful but not conclusive. Aren&amp;#8217;t these searches always.&lt;/p&gt;
+
+&lt;p&gt;Anyway. This is more or less a note to self. To remind myself what I&amp;#8217;ve found and where. But if you&amp;#8217;re interested please follow this blog to see the outcome of this project.&lt;/p&gt;
+
+&lt;p&gt;Visualization using Game Engines is something that has over the last decade caught the attention and imagination of more people than just me. Not surprisingly because the gaming industry is leading the field in wonderful visualizations and magnificent displays of Artificial Worlds and the interaction of the user with it.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1. Fritsch and Kada &amp;#8211; Visualization Using Game Engines&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Dieter Fritsch and Martind Kada of the Institute for Photogrammetry in Germany has written an introductory overview on different game engines and their applicability and capabilities for visualization in 3d. His conclusion clearly states the possibilities but also the complications. These mainly consist of data format. Common GIS data patterns are very different to most 3d data types. Polygons and points are usually a bit more complex more on this in number 3. A project called GISMO apparently is quite capable of rendering large data sets and are quite user friendly.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2. Herwig and Paar &amp;#8211; Game Engines: Tools for Landscape Visualization and Planning?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Interesting conclusions and research on the increased involvement of stakeholders and planners. Not necessarily a very technical paper. But good for reference.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3. Scianna and Ammoscato &amp;#8211; 3D GIS Data Model Using Open Source Software (2010)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;An interesting article on using the Python bindings of Blender to process GIS data. They start of by stating why they chose to use Blender for the research and not other open source 3d software. There is quite a difference in data types as already mentioned between usual 3d rendering and design software and GIS data types. Unlike GIS types points and lines do not form the primitives of 3d software.&lt;/p&gt;
+
+&lt;p&gt;Blender and the GIS RDBMS PostGIS are then linked through a Python script. And data is sent back and forth. Python scripts are available online: &lt;a href=&#34;www.dirap.unipa.it/python_scripts&#34;&gt;Link does not seem to work&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4. Slocum et al. &amp;#8211; Cognitive and Usability Issues in Geovisualization&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This is a more academic work on cognitions and user friendliness. Different methods of working with Geovisualization are proposed. Good for reference and Usability things.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;5. MacEachran (editor) &amp;#8211; Exploring Geovisualization&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Huge collection of articles on Geovisualization. From Usability and Cognition, to Data Handling and 3D interfaces. Chapter 28 was quite useful on Usability.&lt;/p&gt;
+
+&lt;p&gt;Of course much more literature has been leafed through, but these are some of the articles or books that I found worth mentioning in the introduction of my proposal. Next time some more literature overviews and then hopefully some conclusions.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Haxepunk on fritzvd</title>
+    <link>http://blog.fritzvd.com/tags/haxepunk/</link>
+    <description>Recent content in Haxepunk on fritzvd</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 04 Mar 2014 14:34:54 +0000</lastBuildDate>
+    <atom:link href="http://blog.fritzvd.com/tags/haxepunk/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Particle Emitter in HaxePunk</title>
+      <link>http://blog.fritzvd.com/2014/03/04/particle-emitter-in-haxepunk/</link>
+      <pubDate>Tue, 04 Mar 2014 14:34:54 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2014/03/04/particle-emitter-in-haxepunk/</guid>
+      <description>&lt;p&gt;For some this will be a trivial example. For me this took a bit longer than I suspected.&lt;/p&gt;
+
+&lt;p&gt;This small example will produce this:&lt;/p&gt;
+
+&lt;p&gt;If you&amp;#8217;re planning on making an awesome game you probably want a particle emitter. because.. well look at it.&lt;/p&gt;
+
+&lt;p&gt;What I did is I started a haxepunk project:&lt;/p&gt;
+
+&lt;p&gt;`For some this will be a trivial example. For me this took a bit longer than I suspected.&lt;/p&gt;
+
+&lt;p&gt;This small example will produce this:&lt;/p&gt;
+
+&lt;p&gt;If you&amp;#8217;re planning on making an awesome game you probably want a particle emitter. because.. well look at it.&lt;/p&gt;
+
+&lt;p&gt;What I did is I started a haxepunk project:&lt;/p&gt;
+
+&lt;p&gt;`&lt;/p&gt;
+
+&lt;p&gt;And added a file: &lt;a href=&#34;https://github.com/fritzvd/haxepunk-emitter-example/blob/master/src/Explosion.hx&#34; title=&#34;Explosion.hx&#34; target=&#34;_blank&#34;&gt;Explosion.hx&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The Emitter is also a type of Entity, and also needs a graphic. It looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;syntax actionscript&#34;&gt;import com.haxepunk.graphics.Emitter;
+import com.haxepunk.utils.Ease;
+import com.haxepunk.Entity;
+
+class Explosion extends Entity
+{
+    private var _emitter:Emitter;
+
+    public function new()
+    {
+        super(x, y);
+        _emitter = new Emitter(&#34;graphics/particle.png&#34;, 4, 4);
+        _emitter.newType(&#34;explode&#34;, [0]);
+        _emitter.setMotion(&#34;explode&#34;,       // name
+                    0,              // angle
+                    100,            // distance
+                    2,              // duration
+                    360,            // ? angle range
+                    -40,            // ? distance range
+                    1,              // ? Duration range
+                    Ease.quadOut    // ? Easing 
+                    );
+        _emitter.setAlpha(&#34;explode&#34;, 20, 0.1);
+        _emitter.setGravity(&#34;explode&#34;, 5, 1);
+        graphic = _emitter;
+        layer = -1;
+    }
+
+    public function explode(x:Float, y:Float)
+    {
+        for (i in 0...20)
+        {
+            _emitter.emit(&#34;explode&#34;, x, y);
+        }
+    }
+
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then you can add the Emitter to your current scene like in my &lt;a href=&#34;https://github.com/fritzvd/haxepunk-emitter-example/blob/master/src/MainScene.hx&#34; title=&#34;MainScene.hx&#34; target=&#34;_blank&#34;&gt;MainScene.hx&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;syntax actionscript&#34;&gt;import com.haxepunk.Scene;
+import Explosion;
+
+class MainScene extends Scene
+{
+    private var explosion:Explosion;
+
+    public override function begin()
+    {
+        explosion = new Explosion();
+        add(explosion);
+    }
+
+    public override function update()
+    {
+        super.update();
+        explosion.explode(230, 240);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now run&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;lime test neko&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;And you should see something similar to the emitter above.&lt;/p&gt;
+
+&lt;p&gt;You can checkout my &lt;a href=&#34;https://github.com/fritzvd/haxepunk-emitter-example&#34; title=&#34;haxepunk-emitter-example&#34; target=&#34;_blank&#34;&gt;repo&lt;/a&gt; and run it to play around with it.&lt;/p&gt;
+
+&lt;p&gt;I ran into this error below. It meant my sprite was too small. It took me a long time to realize that.&lt;/p&gt;
+
+&lt;p&gt;``For some this will be a trivial example. For me this took a bit longer than I suspected.&lt;/p&gt;
+
+&lt;p&gt;This small example will produce this:&lt;/p&gt;
+
+&lt;p&gt;If you&amp;#8217;re planning on making an awesome game you probably want a particle emitter. because.. well look at it.&lt;/p&gt;
+
+&lt;p&gt;What I did is I started a haxepunk project:&lt;/p&gt;
+
+&lt;p&gt;`For some this will be a trivial example. For me this took a bit longer than I suspected.&lt;/p&gt;
+
+&lt;p&gt;This small example will produce this:&lt;/p&gt;
+
+&lt;p&gt;If you&amp;#8217;re planning on making an awesome game you probably want a particle emitter. because.. well look at it.&lt;/p&gt;
+
+&lt;p&gt;What I did is I started a haxepunk project:&lt;/p&gt;
+
+&lt;p&gt;`&lt;/p&gt;
+
+&lt;p&gt;And added a file: &lt;a href=&#34;https://github.com/fritzvd/haxepunk-emitter-example/blob/master/src/Explosion.hx&#34; title=&#34;Explosion.hx&#34; target=&#34;_blank&#34;&gt;Explosion.hx&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The Emitter is also a type of Entity, and also needs a graphic. It looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;syntax actionscript&#34;&gt;import com.haxepunk.graphics.Emitter;
+import com.haxepunk.utils.Ease;
+import com.haxepunk.Entity;
+
+class Explosion extends Entity
+{
+    private var _emitter:Emitter;
+
+    public function new()
+    {
+        super(x, y);
+        _emitter = new Emitter(&#34;graphics/particle.png&#34;, 4, 4);
+        _emitter.newType(&#34;explode&#34;, [0]);
+        _emitter.setMotion(&#34;explode&#34;,       // name
+                    0,              // angle
+                    100,            // distance
+                    2,              // duration
+                    360,            // ? angle range
+                    -40,            // ? distance range
+                    1,              // ? Duration range
+                    Ease.quadOut    // ? Easing 
+                    );
+        _emitter.setAlpha(&#34;explode&#34;, 20, 0.1);
+        _emitter.setGravity(&#34;explode&#34;, 5, 1);
+        graphic = _emitter;
+        layer = -1;
+    }
+
+    public function explode(x:Float, y:Float)
+    {
+        for (i in 0...20)
+        {
+            _emitter.emit(&#34;explode&#34;, x, y);
+        }
+    }
+
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then you can add the Emitter to your current scene like in my &lt;a href=&#34;https://github.com/fritzvd/haxepunk-emitter-example/blob/master/src/MainScene.hx&#34; title=&#34;MainScene.hx&#34; target=&#34;_blank&#34;&gt;MainScene.hx&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;syntax actionscript&#34;&gt;import com.haxepunk.Scene;
+import Explosion;
+
+class MainScene extends Scene
+{
+    private var explosion:Explosion;
+
+    public override function begin()
+    {
+        explosion = new Explosion();
+        add(explosion);
+    }
+
+    public override function update()
+    {
+        super.update();
+        explosion.explode(230, 240);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now run&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;lime test neko&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;And you should see something similar to the emitter above.&lt;/p&gt;
+
+&lt;p&gt;You can checkout my &lt;a href=&#34;https://github.com/fritzvd/haxepunk-emitter-example&#34; title=&#34;haxepunk-emitter-example&#34; target=&#34;_blank&#34;&gt;repo&lt;/a&gt; and run it to play around with it.&lt;/p&gt;
+
+&lt;p&gt;I ran into this error below. It meant my sprite was too small. It took me a long time to realize that.&lt;/p&gt;
+
+&lt;p&gt;``&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Starting Game Development with HaxePunk instead of MonoGame/XNA</title>
+      <link>http://blog.fritzvd.com/2014/01/06/starting-game-development-with-haxepunk-instead-of-monogamexna/</link>
+      <pubDate>Mon, 06 Jan 2014 20:25:23 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2014/01/06/starting-game-development-with-haxepunk-instead-of-monogamexna/</guid>
+      <description>
+
+&lt;p&gt;So I started venturing off in a direction in which I have no experience what so ever. Only on the consumer-side of things ;-). Game development. Of course I had no idea what I was doing. Still don&amp;#8217;t.&lt;/p&gt;
+
+&lt;p&gt;To start with I had no idea where to start. Lately I have been looking into Unity 3D and Unreal engine, but then I realized I suck at drawing and have no idea how to start with 3d. So then I was searching around for 2d engines and started out with Cocos2D-x and some other C++ based engines (can&amp;#8217;t remember which), but that was kind of a hassle to get started and my builds would not run on my phone. Also I did not really get there style of documentation.&lt;/p&gt;
+
+&lt;h3 id=&#34;monogame:bbecd484d96d2baba19ac01746a2dcc1&#34;&gt;MonoGame&lt;/h3&gt;
+
+&lt;p&gt;After looking through tutorials and stuff, I settled on the XNA framework, or at least the open source version &amp;#8211;&amp;gt; &lt;a title=&#34;monogame&#34; href=&#34;http://monogame.net/&#34; target=&#34;_blank&#34;&gt;MonoGame&lt;/a&gt;. It is pretty awesome, some of the most legendary indie games: &lt;a title=&#34;Supergiant games&#34; href=&#34;http://supergiantgames.com/index.php/media/&#34; target=&#34;_blank&#34;&gt;Bastion&lt;/a&gt;, &lt;a title=&#34;Fez&#34; href=&#34;http://fezgame.com/&#34; target=&#34;_blank&#34;&gt;FEZ&lt;/a&gt; and &lt;a title=&#34;smb&#34; href=&#34;http://supermeatboy.com/&#34; target=&#34;_blank&#34;&gt;Super Meat Boy&lt;/a&gt; are created with the closed source variant. Which for me was reason enough to find out more. Moreover the Bastion team (supergiant games) used MonoGame to port it to the iPad/iPhone.&lt;/p&gt;
+
+&lt;p&gt;So starting out with some tutorials I was making quite some headway in a short amount of time. C# is a very approachable language and MonoDevelop a lightweight IDE. Especially after trying out the badly indented (illegible) examples I found of all these different C++ libraries.&lt;/p&gt;
+
+&lt;p&gt;After having a first version that featured some smooth running sprites I thought it interesting to test the performance in an iPad simulator. The built worked well on Linux and on the Mac Desktop, but building it for iOS gave me some problems. BECAUSE YOU CAN&amp;#8217;T. Not for free anyways. Xamarin charges you $299,- a year for you to be able to build for Android and iOS.&lt;/p&gt;
+
+&lt;h3 id=&#34;haxe-and-openfl:bbecd484d96d2baba19ac01746a2dcc1&#34;&gt;Haxe and OpenFL&lt;/h3&gt;
+
+&lt;p&gt;I was pretty disheartened, because I remembered all the hassle and strange examples I found with the plethora of frameworks I tried out before and did not really want to go back to that. On some website I found an article on &lt;a href=&#34;http://openfl.org/&#34; title=&#34;openfl&#34; target=&#34;_blank&#34;&gt;OpenFL&lt;/a&gt; an open source flash framework that compiles to *. HTML5, windows, mac, linux, android, ios, blackberry, tizen. You name it. Also used to make this little gem: &lt;a href=&#34;http://rymdkapsel.com/&#34; title=&#34;rymdkapsel&#34; target=&#34;_blank&#34;&gt;rymdkapsel&lt;/a&gt; A port of FlashPunk in Haxe &lt;a href=&#34;http://haxepunk.com/&#34; title=&#34;HaxePunk&#34; target=&#34;_blank&#34;&gt;HaxePunk&lt;/a&gt; had some proper tutorials, it is maintained and was ported chiefly by&lt;a href=&#34;http://matttuttle.com/&#34; title=&#34;Matt Tuttle&#34; target=&#34;_blank&#34;&gt;Matt Tuttle&lt;/a&gt;. (thanks for that).&lt;/p&gt;
+
+&lt;p&gt;The setup of OpenFL and haxepunk is very easy and straightforward and I am easily building to all the promissed targets. I can test my ios builds in the simulator on my Mac and send *.swf links to friends and invite alpa-testers for my Android APK&amp;#8217;s. It is awesome.&lt;/p&gt;
+
+&lt;p&gt;For those to lazy to open the links and find out how easy it really is do this:&lt;/p&gt;
+
+&lt;p&gt;`So I started venturing off in a direction in which I have no experience what so ever. Only on the consumer-side of things ;-). Game development. Of course I had no idea what I was doing. Still don&amp;#8217;t.&lt;/p&gt;
+
+&lt;p&gt;To start with I had no idea where to start. Lately I have been looking into Unity 3D and Unreal engine, but then I realized I suck at drawing and have no idea how to start with 3d. So then I was searching around for 2d engines and started out with Cocos2D-x and some other C++ based engines (can&amp;#8217;t remember which), but that was kind of a hassle to get started and my builds would not run on my phone. Also I did not really get there style of documentation.&lt;/p&gt;
+
+&lt;h3 id=&#34;monogame-1:bbecd484d96d2baba19ac01746a2dcc1&#34;&gt;MonoGame&lt;/h3&gt;
+
+&lt;p&gt;After looking through tutorials and stuff, I settled on the XNA framework, or at least the open source version &amp;#8211;&amp;gt; &lt;a title=&#34;monogame&#34; href=&#34;http://monogame.net/&#34; target=&#34;_blank&#34;&gt;MonoGame&lt;/a&gt;. It is pretty awesome, some of the most legendary indie games: &lt;a title=&#34;Supergiant games&#34; href=&#34;http://supergiantgames.com/index.php/media/&#34; target=&#34;_blank&#34;&gt;Bastion&lt;/a&gt;, &lt;a title=&#34;Fez&#34; href=&#34;http://fezgame.com/&#34; target=&#34;_blank&#34;&gt;FEZ&lt;/a&gt; and &lt;a title=&#34;smb&#34; href=&#34;http://supermeatboy.com/&#34; target=&#34;_blank&#34;&gt;Super Meat Boy&lt;/a&gt; are created with the closed source variant. Which for me was reason enough to find out more. Moreover the Bastion team (supergiant games) used MonoGame to port it to the iPad/iPhone.&lt;/p&gt;
+
+&lt;p&gt;So starting out with some tutorials I was making quite some headway in a short amount of time. C# is a very approachable language and MonoDevelop a lightweight IDE. Especially after trying out the badly indented (illegible) examples I found of all these different C++ libraries.&lt;/p&gt;
+
+&lt;p&gt;After having a first version that featured some smooth running sprites I thought it interesting to test the performance in an iPad simulator. The built worked well on Linux and on the Mac Desktop, but building it for iOS gave me some problems. BECAUSE YOU CAN&amp;#8217;T. Not for free anyways. Xamarin charges you $299,- a year for you to be able to build for Android and iOS.&lt;/p&gt;
+
+&lt;h3 id=&#34;haxe-and-openfl-1:bbecd484d96d2baba19ac01746a2dcc1&#34;&gt;Haxe and OpenFL&lt;/h3&gt;
+
+&lt;p&gt;I was pretty disheartened, because I remembered all the hassle and strange examples I found with the plethora of frameworks I tried out before and did not really want to go back to that. On some website I found an article on &lt;a href=&#34;http://openfl.org/&#34; title=&#34;openfl&#34; target=&#34;_blank&#34;&gt;OpenFL&lt;/a&gt; an open source flash framework that compiles to *. HTML5, windows, mac, linux, android, ios, blackberry, tizen. You name it. Also used to make this little gem: &lt;a href=&#34;http://rymdkapsel.com/&#34; title=&#34;rymdkapsel&#34; target=&#34;_blank&#34;&gt;rymdkapsel&lt;/a&gt; A port of FlashPunk in Haxe &lt;a href=&#34;http://haxepunk.com/&#34; title=&#34;HaxePunk&#34; target=&#34;_blank&#34;&gt;HaxePunk&lt;/a&gt; had some proper tutorials, it is maintained and was ported chiefly by&lt;a href=&#34;http://matttuttle.com/&#34; title=&#34;Matt Tuttle&#34; target=&#34;_blank&#34;&gt;Matt Tuttle&lt;/a&gt;. (thanks for that).&lt;/p&gt;
+
+&lt;p&gt;The setup of OpenFL and haxepunk is very easy and straightforward and I am easily building to all the promissed targets. I can test my ios builds in the simulator on my Mac and send *.swf links to friends and invite alpa-testers for my Android APK&amp;#8217;s. It is awesome.&lt;/p&gt;
+
+&lt;p&gt;For those to lazy to open the links and find out how easy it really is do this:&lt;/p&gt;
+
+&lt;p&gt;`&lt;/p&gt;
+
+&lt;p&gt;Now you can start being aweswome and build your crazy ideas for android.&lt;/p&gt;
+
+&lt;p&gt;(Next time I&amp;#8217;ll give some code excerpts and a flash file to test out).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;UPDATE:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;#8217;ve written a follow up on &lt;a href=&#34;http://blog.technokrat.nl/?p=522&#34; title=&#34;Particle Emitters&#34; target=&#34;_blank&#34;&gt;particle emitters in haxepunk&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

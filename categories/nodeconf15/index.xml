@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nodeconf15 on fritzvd</title>
+    <link>http://blog.fritzvd.com/categories/nodeconf15/</link>
+    <description>Recent content in Nodeconf15 on fritzvd</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Aug 2015 07:05:28 +0000</lastBuildDate>
+    <atom:link href="http://blog.fritzvd.com/categories/nodeconf15/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Nodeconf Adventure</title>
+      <link>http://blog.fritzvd.com/2015/08/03/nodeconf-adventure/</link>
+      <pubDate>Mon, 03 Aug 2015 07:05:28 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2015/08/03/nodeconf-adventure/</guid>
+      <description>&lt;p&gt;After looking at the program of Nodeconf 2014, I took the liberty to convince my boss that I should go there. Because of the structure and quality of the workshops. Little did I know that the conf part was going to be canceled, and the adventure had no prior scheduling. Except for what people handed in beforehand as topics they would want to speak about, or hear about. The conference &amp;#8220;started&amp;#8221; with the &lt;a href=&#34;http://oaklandjs.com/&#34; target=&#34;_blank&#34;&gt;OaklandJS meetup&lt;/a&gt;. A laid-back gathering of programmers that meet in a local pub. Where people either work on projects, discuss * or just come to hang out.&lt;/p&gt;
+
+&lt;p&gt;The adventure part of the conference started out with some time to get to know one another, find your room and have dinner. And when I say conference, I mean un-conference, because that&amp;#8217;s what it was, and what &lt;a href=&#34;http://mikealrogers.com/&#34; target=&#34;_blank&#34;&gt;Mikeal Rogers&lt;/a&gt;, the organiser, insisted it should be called. In fact on the official opening Mikeal made the announcement (I paraphrase):&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;There will be no talks, because&amp;#8230; talks are boring.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;We were to gather in one of the rooms in the morning at 9.00 where we would discuss topics and make a schedule for the day. This is how every day started out.&lt;/p&gt;
+
+&lt;p&gt;However before we started with the program of the conference we started out with the only scheduled talk. It was: Behind the scenes of &lt;a href=&#34;http://realtimefood.net/&#34; target=&#34;_blank&#34;&gt;#realtimefood&lt;/a&gt; by &lt;a href=&#34;https://twitter.com/hueniverse&#34; target=&#34;_blank&#34;&gt;Eran Hammer&lt;/a&gt; (the maintainer and creator of &lt;a href=&#34;http://hapijs.com/&#34; target=&#34;_blank&#34;&gt;hapi.js&lt;/a&gt;). I had no idea what to expect, to be frank, I didn&amp;#8217;t even know who Eran Hammer was. Eran wanted to point out how inspiring Nodeconf can be. The idea for the #realtimefood talk started at Nodeconf 2013. But we were clearly in for a stunning behind the scenes of an even more stupefying talk at the supposedly the last ever &lt;a href=&#34;http://realtimeconf.com/&#34; target=&#34;_blank&#34;&gt;RealtimeConf&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.flickr.com/photos/andyet-photos/10369704456&#34; title=&#34;2013RealTimeConf-582 by &amp;amp;yet Photos, on Flickr&#34;&gt;&lt;img src=&#34;https://c1.staticflickr.com/3/2889/10369704456_8c8a48a7b9.jpg&#34; width=&#34;333&#34; height=&#34;500&#34; alt=&#34;2013RealTimeConf-582&#34; /&gt;&lt;/a&gt;&lt;a href=&#34;https://www.flickr.com/photos/andyet-photos/10369687204&#34; title=&#34;2013RealTimeConf-581 by &amp;amp;yet Photos, on Flickr&#34;&gt;&lt;img src=&#34;https://c1.staticflickr.com/3/2878/10369687204_462f94839b.jpg&#34; width=&#34;333&#34; height=&#34;500&#34; alt=&#34;2013RealTimeConf-581&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Photos by &lt;a href=&#34;http://www.beccablevins.com/&#34; target=&#34;_blank&#34;&gt;Becca Blevins&lt;/a&gt; taken from &lt;a href=&#34;https://www.flickr.com/photos/andyet-photos/with/10369704456/&#34; target=&#34;_blank&#34;&gt;&amp;amp;yet&amp;rsquo;s photostream on flickr&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Eran started out by saying he spent 4 months and $7000.- USD to realize the talk. The talk was basically a mesmerizing performance art that included a 3 course dinner, in the middle of a conference that was about how we can change the world in the age of real time systems. This is just a short summation of the stuff he got to pull off, by just asking questions and hoping people would help out (in no particular order):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A garden complete with wooden boarding and all kinds of vegetables growing&lt;/li&gt;
+&lt;li&gt;Transportation to the conference of this garden&lt;/li&gt;
+&lt;li&gt;A breaking bad kind of experience with &amp;#8220;blue sky&amp;#8221; candy&lt;/li&gt;
+&lt;li&gt;Have a large amount of people in the room perform a ritual before eating a piece of candy&lt;/li&gt;
+&lt;li&gt;Have a 2 Michelin star restaurant (Mugaritz, Rentería, Spain) send over their recipe and a whole art piece free of charge&lt;/li&gt;
+&lt;li&gt;Have a 3 Michelin star restaurant (Eleven Madison Park, New York, USA) lend out their plates and send them over free of charge&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Eran didn&amp;#8217;t say a lot about what the talk itself was about, so you should probably just watch the talk itself:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://vimeo.com/77799055&#34;&gt;#realtimefood&amp;mdash;Eran Hammer&lt;/a&gt; from &lt;a href=&#34;https://vimeo.com/andyet&#34;&gt;&amp;amp;yet&lt;/a&gt; on &lt;a href=&#34;https://vimeo.com&#34;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For the rest of the Nodeconf Adventure I made some summaries. On this blog you&amp;#8217;ll find the summaries for the following topics:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.technokrat.nl/2015/06/22/isomorphic-javascript-and-modular-ui-nodeconf-2015/&#34;&gt;Isomorphic Javascript and Modular UI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.technokrat.nl/2015/06/23/containers-docker-lxc-nodeconf-2015/&#34;&gt;Containers (Docker, LXC)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.technokrat.nl/2015/07/01/es6-es7-ecmascript-2015-harmony-what-nodeconf-2015/&#34; target=&#34;_blank&#34;&gt;ES6 EcmaScript 2015.. what now?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.technokrat.nl/2015/07/01/building-communities-nodeconf-2015/&#34;&gt;Building community&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.technokrat.nl/2015/07/01/writing-documentation-nodeconf-2015/&#34;&gt;Writing documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.flickr.com/photos/matthewbergman/18840475252/in/album-72157654202715069/&#34; target=&#34;_blank&#34;&gt;Cover photo by Matthew Bergman&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Writing Documentation @ nodeconf 2015</title>
+      <link>http://blog.fritzvd.com/2015/07/01/writing-documentation-nodeconf-2015/</link>
+      <pubDate>Wed, 01 Jul 2015 08:19:19 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2015/07/01/writing-documentation-nodeconf-2015/</guid>
+      <description>&lt;p&gt;This topic of course ties in with &lt;a href=&#34;http://blog.technokrat.nl/2015/07/01/building-communities-nodeconf-2015/&#34;&gt;the Building Communities session&lt;/a&gt;. Because building community happens with code that is being used. And if you want people to be able to join easily, one of their first entry points will probably be the README, which has for some projects become the only or the main documentation.&lt;/p&gt;
+
+&lt;p&gt;At the moment the documentation of some projects is exemplary (think: anything &lt;a href=&#34;https://twitter.com/substack&#34; target=&#34;_blank&#34;&gt;@substack&lt;/a&gt; makes). Whereas the documentation of node itself is kind of a mess. The API documentation is varying in quality in different topics, there is no proper way to navigate within the page and structure is &amp;#8220;organic&amp;#8221;.&lt;/p&gt;
+
+&lt;p&gt;The goals of documentation we concluded in the session should always be, to be:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Exhaustive&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Simple&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Helpful&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Connected/Linked (linking to back and forth to other pieces or other blogs).&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This can be achieved by creating proper articles, for beginners but also for advanced topics. Or at link out to expert articles on other blogs. This should be a seperate set from the API documentation. The API documentation should be structured and be complete. In stead of missing some pieces here and there. An example I really like is the &lt;a href=&#34;https://docs.djangoproject.com/en/1.8/&#34; target=&#34;_blank&#34;&gt;Django documentation&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.flickr.com/photos/matthewbergman/18876975441/in/album-72157654202715069/&#34; target=&#34;_blank&#34;&gt;Cover photo by Matthew Bergman&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Building Communities @ nodeconf 2015</title>
+      <link>http://blog.fritzvd.com/2015/07/01/building-communities-nodeconf-2015/</link>
+      <pubDate>Wed, 01 Jul 2015 07:45:51 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2015/07/01/building-communities-nodeconf-2015/</guid>
+      <description>&lt;p&gt;A lot of the talks were not just about code or &amp;#8220;hardcore&amp;#8221; technical stuff, but also about social things like: building community, writing documentation, creating a safe environment. Which in the software meetups and talks scene has been growing as a topic. To dismay of some, and celebration of others.&lt;/p&gt;
+
+&lt;p&gt;This session started out as a discussion about the node project, &amp;#8220;the Fork&amp;#8221;: io.js and what it says about the community and the culture of node. This meant 3 core contributors telling about where they see the project failed, and what it did right, but also how to progress in the future.&lt;/p&gt;
+
+&lt;p&gt;First of all the io.js/node.js community would like to do better. They would like to be the role model for other projects. Adding stuff like a Code of Conduct instead of just code to a project. Some projects are still outshining in core values like: diversity, inclusivity and lowering the barrier to entry. And some projects are just outright mean. As an example the Johnny-Five (robotics) project was mentioned as a community which is really thriving and is able to maintain those key values, as&lt;/p&gt;
+
+&lt;p&gt;opposed to &amp;#8220;that other robotics&amp;#8221;-project in node.&lt;/p&gt;
+
+&lt;p&gt;A reason for this was giving by one of their maintainers: &amp;#8220;Focus on the right stuff early on&amp;#8221;. And to be frank that is true of any kind of standard you want to have in a project. Do you want a clean code base? Focus on that early on? Do you want a lot of test coverage? Don&amp;#8217;t add it as an afterthought. Do you want anyone from any color, creed and orientation to feel welcome? Don&amp;#8217;t &amp;#8220;add&amp;#8221; that when your code is ready to ship.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ES6 &#43; ES7, EcmaScript 2015 -- Harmony .. WHAT? @ nodeconf 2015</title>
+      <link>http://blog.fritzvd.com/2015/07/01/es6-es7-ecmascript-2015-harmony-what-nodeconf-2015/</link>
+      <pubDate>Wed, 01 Jul 2015 07:35:35 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2015/07/01/es6-es7-ecmascript-2015-harmony-what-nodeconf-2015/</guid>
+      <description>
+
+&lt;h3 id=&#34;javascript-gets-a-new-version-what-now:3c3a1f5ebe0864f8b13a5155819bec5d&#34;&gt;JavaScript gets a new version, what now&lt;/h3&gt;
+
+&lt;p&gt;Languages are never done. They evolve over time and are supplemented with new words every month, new phrases every year and acquires (minor) grammar changes every decade. This true for speaking languages as well as for programming languages.&lt;/p&gt;
+
+&lt;p&gt;The past year there has been a lot of talk about EcmaScript 6 (a.k.a. ES Harmony, or lately ES2015, which is the silliest name of all). A set of features that is coming, or has already landed for JavaScript. ES6 is nothing more than a specification of features according to &lt;a href=&#34;https://twitter.com/mikeal&#34; target=&#34;_blank&#34;&gt;Mikeal Rogers&lt;/a&gt;. A specification of features that have been designed, but are not certain to land in the coming years. Some of them are just syntactic sugar (classes,9 , that don&amp;#8217;t add anything new. Some are hurting performance and some are just plain great.&lt;/p&gt;
+
+&lt;p&gt;In the node community there has been some commotion surrounding ES6 because most of the features were suddenly being implemented in a fork of node called &amp;#8220;io.js&amp;#8221;. The temporary fork and squabble that is/has been (depending on when you read this) &lt;a href=&#34;iojs.org&#34;&gt;&amp;#8220;io.js&lt;/a&gt;&amp;#8221; was mainly to move node forward and out of a corporate governance model to a more open model. But you should just &lt;a href=&#34;http://blog.izs.me/post/104685388058/io-js&#34; target=&#34;_blank&#34;&gt;read&lt;/a&gt; &lt;a href=&#34;http://www.wired.com/2014/12/io-js/&#34; target=&#34;_blank&#34;&gt;some&lt;/a&gt; &lt;a href=&#34;http://readwrite.com/2015/02/27/node-js-io-js-reconciliation-near&#34; target=&#34;_blank&#34;&gt;article&lt;/a&gt; &lt;a href=&#34;http://venturebeat.com/2015/05/13/node-project-spinoff-io-js-is-moving-to-the-node-js-foundation-with-a-merge-in-progress/&#34; target=&#34;_blank&#34;&gt;explaining&lt;/a&gt; &lt;a href=&#34;http://www.infoworld.com/article/2855057/application-development/why-iojs-decided-to-fork-nodejs.html&#34; target=&#34;_blank&#34;&gt;that&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you want to play around with these features, you either have to wait for some of the features to be implemented (in browsers and node.js alike), or you need a transpiler or polyfill framework, for backwards compatibility or even to run it because no one supports it yet&amp;#8230; Most people are using &lt;a href=&#34;https://babeljs.io/docs/learn-es2015/&#34; target=&#34;_blank&#34;&gt;Babel&lt;/a&gt; which has a very decent set of docs and examples and transpiles your code back to ES5.&lt;/p&gt;
+
+&lt;p&gt;The thing that excites me most is the native promise implementation and the generators.&lt;/p&gt;
+
+&lt;p&gt;Then some people were really enthusiastic about an ES7 proposal for asynchronous functions: &lt;code&gt;async&lt;/code&gt;. If a function is async, you just &amp;#8220;tell&amp;#8221; the VM by doing this (example taken from the &lt;a href=&#34;https://github.com/lukehoban/ecmascript-asyncawait&#34; target=&#34;_blank&#34;&gt;async proposal&lt;/a&gt;):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;syntax javascript&#34;&gt;async function getData() {
+  var items = await fetchAsync(&#39;http://example.com/users&#39;);
+  return await* items.map(async(item) =&amp;gt; {
+    return {
+      title: item.title,
+      img: (await fetchAsync(item.userDataUrl)).img
+    }
+  });
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Take note of the &lt;code&gt;async&lt;/code&gt; and the &lt;code&gt;await&lt;/code&gt; keywords.&lt;/p&gt;
+
+&lt;p&gt;One of the &lt;a href=&#34;https://github.com/DJCordhose/ecmascript-2015-iojs&#34; target=&#34;_blank&#34;&gt;workshops&lt;/a&gt; at nodeconf was also about ES2015. It gives an overview of most features and you can play with the examples.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.flickr.com/photos/matthewbergman/18686339600/in/album-72157654202715069/&#34; target=&#34;_blank&#34;&gt;Cover photo by Matthew Bergman&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Containers (Docker, LXC) @ nodeconf 2015</title>
+      <link>http://blog.fritzvd.com/2015/06/23/containers-docker-lxc-nodeconf-2015/</link>
+      <pubDate>Tue, 23 Jun 2015 18:45:44 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2015/06/23/containers-docker-lxc-nodeconf-2015/</guid>
+      <description>
+
+&lt;h3 id=&#34;containers-like-the-ones-you-put-sundries-in:c8d86957e871d24595032033427258dc&#34;&gt;Containers, like the ones you put sundries in?&lt;/h3&gt;
+
+&lt;p&gt;Linux Containers (LXC) have been a hot new topic over the last 2 years. The easiest way to understand a container is to compare it with a Virtual Machine (VM). You can run a VM on your machine and it will pretend to be a computer inside a computer. It will emulate hardware so it can run an Operating System (OS) within your computer. When you start a VM you have to choose how much of your memory and CPU it can take up, and once you start the machine that piece of memory and CPU are designated to the VM (the guest) and lost to your computer (the host).&lt;/p&gt;
+
+&lt;p&gt;When you start a LXC however, you can start a box without it having to emulate machinery, it will create a &amp;#8220;contained&amp;#8221; environment, sharing the stuff that is common (the Linux kernel), and fork out a platform to run your processes and OS (any Linux variant) on. Running that container then, doesn&amp;#8217;t take that much extra memory, because it doesn&amp;#8217;t need to run an entire machine, with hardware and OS. But just the part that is different from the host. This also means bootups of a new container are close to instantaneous.&lt;/p&gt;
+
+&lt;h3 id=&#34;docker:c8d86957e871d24595032033427258dc&#34;&gt;Docker&lt;/h3&gt;
+
+&lt;p&gt;One of the products that was born as a result of this kernel API is: Docker. Docker makes it possible to create a container that you can provision and deploy your app on, and commit those changes to the box. It&amp;#8217;s like git for machines. All the changes to your box can be committed. Once you think your container is ready for deployment you can take the whole image and deploy that on a server. Instead of deploying your code, you now deploy your container.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://blog.technokrat.nl/wp-content/uploads/2015/06/62260701.jpg&#34;&gt;&lt;img src=&#34;http://blog.technokrat.nl/wp-content/uploads/2015/06/62260701-300x200.jpg&#34; alt=&#34;yo dawg&#34; width=&#34;300&#34; height=&#34;200&#34; class=&#34;alignnone size-medium wp-image-641&#34; srcset=&#34;http://blog.technokrat.nl/wp-content/uploads/2015/06/62260701-300x200.jpg 300w, http://blog.technokrat.nl/wp-content/uploads/2015/06/62260701.jpg 500w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;why-would-you-do-that:c8d86957e871d24595032033427258dc&#34;&gt;Why would you do that?&lt;/h3&gt;
+
+&lt;p&gt;Instead of killing a process or restarting a server, you just swap out a container. Deployment can become instant. You test the container on your local box, integration server, staging and production, it will be a matter of switching to an image, instead of deploying the code on there. If it doesn&amp;#8217;t work, you can just go back a commit. Easy as pie.&lt;/p&gt;
+
+&lt;h3 id=&#34;using-vagrant:c8d86957e871d24595032033427258dc&#34;&gt;Using Vagrant?&lt;/h3&gt;
+
+&lt;p&gt;If you&amp;#8217;re using Vagrant you can actually try this already instead of using your VM&amp;#8217;s (read: slow VM&amp;#8217;s). Check this vagrant plugin out: &lt;a href=&#34;https://github.com/fgrehm/vagrant-lxc&#34; target=&#34;_blank&#34;&gt;vagrant lxc&lt;/a&gt;. You can just try it out here. Play around, install all kinds of conflicting versions of software, destroy the box, and enjoy how you didn&amp;#8217;t completely bork your dev environment.&lt;/p&gt;
+
+&lt;p&gt;The people from &lt;a href=&#34;http://modulus.io&#34; target=&#34;_blank&#34;&gt;Modulus&lt;/a&gt; were in the session too, telling how happy they&amp;#8217;ve been with Docker. They were really excited about &lt;a href=&#34;https://github.com/docker/swarm/&#34; target=&#34;_blank&#34;&gt;Docker Swarm&lt;/a&gt;. A proxy API with which you can use the same Docker API you&amp;#8217;re used to, but have it talk to multiple instances in one API call.&lt;/p&gt;
+
+&lt;h3 id=&#34;best-practices-for-docker-containers:c8d86957e871d24595032033427258dc&#34;&gt;Best practices for Docker containers&lt;/h3&gt;
+
+&lt;p&gt;First of all, most people agreed they&amp;#8217;re is not really a &amp;#8220;wrong&amp;#8221; way to do a Dockerfile. When your Docker container becomes more complex it will become bigger though. Just like a git repository, the more commits, the bigger the git tree will become. Because it tracks the changes. A common practice is to compile and build a docker container and copy the compiled version to an empty docker image, to keep it small.&lt;/p&gt;
+
+&lt;p&gt;Other people suggested running a startup script inside the Docker image, instead of having the Dockerfile do all the provisioning.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.flickr.com/photos/matthewbergman/18845642595/in/album-72157654202715069/&#34; target=&#34;_blank&#34;&gt;Cover photo by Matthew Bergman&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Universal (Isomorphic) JavaScript and Modular UI @ nodeconf 2015</title>
+      <link>http://blog.fritzvd.com/2015/06/22/isomorphic-javascript-and-modular-ui-nodeconf-2015/</link>
+      <pubDate>Mon, 22 Jun 2015 14:20:37 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2015/06/22/isomorphic-javascript-and-modular-ui-nodeconf-2015/</guid>
+      <description>&lt;p&gt;N.B. This one of the first sessions held at nodeconf, everybody was still somewhat rusty.&lt;/p&gt;
+
+&lt;p&gt;Isomorphic JavaScript is the practice of using the same JavaScript code on the server and in the browser. In the session we talked about how to best implement this, and what to avoid. The naming is ridiculous, so let&amp;#8217;s just use &lt;a href=&#34;https://medium.com/@mjackson/universal-javascript-4761051b7ae9&#34; target=&#34;_blank&#34;&gt;Universal JavaScript&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;One of the first recommendations were to do static analysis. This goes through your code and finds dead dependencies or function that are never called. By using this you can eliminate redundancy in this way. Some modules that work great for this are &lt;a href=&#34;https://twitter.com/substack&#34; target=&#34;_blank&#34;&gt;@substack&amp;#8217;s&lt;/a&gt; &lt;a href=&#34;https://www.npmjs.com/package/detective&#34; target=&#34;_blank&#34;&gt;detective&lt;/a&gt; or the module tree analysis by &lt;a href=&#34;https://twitter.com/hughsk&#34; target=&#34;_blank&#34;&gt;@hughsk&lt;/a&gt; called &lt;a href=&#34;http://hughsk.io/disc/&#34; target=&#34;_blank&#34;&gt;disk&lt;/a&gt; (looks good too!).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;UPDATE:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Substack actually did a talk on Abstract Syntax Tree&amp;#8217;s (which can be used to do static analysis) at &lt;a href=&#34;https://jquerysf.com&#34; target=&#34;_blank&#34;&gt;jQuerySF&lt;/a&gt;, which goes a bit more into detail on what you can do with AST&amp;#8217;s and how Static Analysis works behind the scenes.&lt;/p&gt;
+
+&lt;p&gt;React got a lot of attention too. A small template rendering engine that let&amp;#8217;s you render the page on the server, and with the same set of libraries render the changes on the front-end. So the page is fully loaded when you first land on the page, in stead of the startup time that&amp;#8217;s required for full-fledged MVC(-likes) such as: AngularJS, Ember and Backbone. React&amp;#8217;s server side rendering here is the one thing that really stands out, together with the speed and the small size of the library. Most people really seem to be fond of this approach (after dealing with the ugliness which is JSX).&lt;/p&gt;
+
+&lt;p&gt;According to substack, we shouldn&amp;#8217;t use big shims, we shouldn&amp;#8217;t use frameworks. Because it will break stuff, or come back to haunt you. Especially if you&amp;#8217;re trying to run Universal JS. We should create small modules that uses CommonJS&amp;#8217; &lt;code&gt;module.exports&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;This kind of moved on to the discussion of Modular UI which was another topic. The gist of this session was to make modules that expose css and assets through inline css or conditional building. A well known implementation doing UI in this way is the &lt;a href=&#34;https://www.polymer-project.org/1.0/docs/devguide/feature-overview.html&#34; target=&#34;_blank&#34;&gt;Polymer Project&lt;/a&gt;. Every component is a module that doesn&amp;#8217;t have to be a part of the rest of the project. To include a small piece, you just: &lt;code&gt;npm install --save my-special-module&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;See &lt;a href=&#34;https://twitter.com/davidguttman&#34; target=&#34;_blank&#34;&gt;David Guttman&amp;#8217;s&lt;/a&gt; &lt;a href=&#34;https://github.com/davidguttman/cssify&#34; target=&#34;_blank&#34;&gt;cssify&lt;/a&gt; for a way to include the required css files with browserify.&lt;/p&gt;
+
+&lt;p&gt;The rest of my notes say:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Distribution.&lt;/li&gt;
+&lt;li&gt;UMD.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So if anyone feels like filling me on on what this meant, that would be grand. &lt;img src=&#34;http://blog.technokrat.nl/wp-includes/images/smilies/simple-smile.png&#34; alt=&#34;:)&#34; class=&#34;wp-smiley&#34; style=&#34;height: 1em; max-height: 1em;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.flickr.com/photos/matthewbergman/18687844349/in/album-72157654202715069/&#34; target=&#34;_blank&#34;&gt;Cover photo by Matthew Bergman&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

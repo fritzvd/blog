@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#"><!--<![endif]-->
+
+    <head>
+                <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="author" content="">
+        <meta name="keywords" content="awesome, definitely">
+	
+        <meta property="og:site_name" content="fritzvd">
+        <meta property="og:title" content="fritzvd">
+        <meta property="og:url" content="http://blog.fritzvd.com/categories/gis/">
+        <meta property="og:description" content="">
+    
+        <meta property="og:type" content="website" />
+    
+        <meta name="generator" content="Hugo 0.15" />
+        <title>Gis &middot; fritzvd </title>
+        <link rel="canonical" href="http://blog.fritzvd.com/" />
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="http://blog.fritzvd.com/categories/gis/index.xml">
+        <link rel="stylesheet" type='text/css' href="http://blog.fritzvd.com/css/main.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Montserrat:700' rel='stylesheet' type='text/css'>
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    </head>
+<body>
+<!--[if lt IE 7]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chrome/‎">install Google Chrome</a> to experience this site.</p><![endif]-->
+
+    <header id="site-header">
+        <div class="container">
+            <a href="http://blog.fritzvd.com/" alt="fritzvd"><h1 class="blog-title heading">fritzvd</h1></a>
+            <p class="blog-description"></p>
+        </div>
+    </header>
+
+<main class="content" role="main">
+	<div class="container">
+	
+		<article class="li post">
+    <header class="post-header">
+        <h3 class="post-title"><a href="http://blog.fritzvd.com/2012/11/28/making-sure-gdal-works-with-ecw-libecw-under-linux/">Making sure GDAL works with ECW libecw under linux</a></h3>
+        <p class="post-time"><time datetime="2012-11-28T12:34:30Z">November 28, 2012</time></p>
+    </header>
+    
+    <section class="post-excerpt">
+        <p>This took me a while to unravel, so before I forget or before other people run into the same issues, let&#8217;s make a note of this. Assuming you are using a debian-like linux distribution (ubuntu, debian, linux mint, etc. anything using: apt-get to install packages) there are a few things to note. First of all make sure you have the latest packages for: mapserver, gdal, etc. (ubuntu-gis repository has newer versions than the standard repositories).</p>
+    </section>
+
+    <footer class="post-footer">
+        <span>
+            
+            
+            	&nbsp;&nbsp;<i class="fa fa-tag"></i>
+            	gdal ecw libecw, libecwj gdal-ecw-build gdal-ecw
+            
+        </span>
+    </footer>
+</article>
+	
+		<article class="li post">
+    <header class="post-header">
+        <h3 class="post-title"><a href="http://blog.fritzvd.com/2012/11/26/kriging-in-r-in-python/">Kriging in R in Python</a></h3>
+        <p class="post-time"><time datetime="2012-11-26T13:48:56Z">November 26, 2012</time></p>
+    </header>
+    
+    <section class="post-excerpt">
+        <p>This might be a repost of some sort. However I found that it was kind of hard to find anything about this specific topic. So here it goes. Kriging is a geostatistical method to be able translate point data to a grid, to find out where you can predict stuff really well and where the variance is really high. As always GIGO (garbage in garbage out). But it is at least a large improvement from interpolation techniques such as Inversed Distance Weighting (IDW) which is often implemented in GIS software.</p>
+    </section>
+
+    <footer class="post-footer">
+        <span>
+            
+            
+            	&nbsp;&nbsp;<i class="fa fa-tag"></i>
+            	rpy2 rpy r python kriging gstat
+            
+        </span>
+    </footer>
+</article>
+	
+		<article class="li post">
+    <header class="post-header">
+        <h3 class="post-title"><a href="http://blog.fritzvd.com/2011/10/14/coloring-mapserver-floating-tiffs-with-colorscales/">Coloring Mapserver Floating Tiffs with Colorscales</a></h3>
+        <p class="post-time"><time datetime="2011-10-14T07:25:27Z">October 14, 2011</time></p>
+    </header>
+    
+    <section class="post-excerpt">
+        <p>This has been a little mystery for me waiting to be uncovered. However I solved it. Depending if you are using a SLD (styled layer descriptor) or the embedded Style commands this is what your Mapfile could look like: MAP NAME "Some Map" DEBUG ON FONTSET "/home/fritz/maps/fonts.txt" WEB IMAGEPATH "/tmp/" IMAGEURL "/tmp/" METADATA "wms_title" "WMS Demo Server" ##required "wms_onlineresource" "http://localhost/cgi-bin/mapserv?map=map.map" ##required "wms_srs" "EPSG:42304 EPSG:42101 EPSG:4269 EPSG:4326 EPSG:7030 EPSG:32736" ##recommended END END PROJECTION "init=epsg:32736" ##required END # # Start of layer definitions # LAYER NAME 'test' METADATA "wms_title" 'test' END TYPE RASTER STATUS ON DATA '/home/fritz/maps/colorscale_test.tif' PROJECTION "init=epsg:32736" ##required END CLASS NAME "test" STYLE COLORRANGE 255 255 0 140 160 160 DATARANGE 0.02 0.6 RANGEITEM "[pixel]" END END PROCESSING "SCALE=0.2, 0.6" END The Scale and Datarange command look very similar and I haven&#8217;t figured out quite how to set it properly, or how to have three-color scale.</p>
+    </section>
+
+    <footer class="post-footer">
+        <span>
+            
+            
+            	&nbsp;&nbsp;<i class="fa fa-tag"></i>
+            	gis, map, mapserver, open source, sld, style, webmapping
+            
+        </span>
+    </footer>
+</article>
+	
+		<article class="li post">
+    <header class="post-header">
+        <h3 class="post-title"><a href="http://blog.fritzvd.com/2011/02/28/connecting-the-dots/">Connecting the Dots</a></h3>
+        <p class="post-time"><time datetime="2011-02-28T08:30:48Z">February 28, 2011</time></p>
+    </header>
+    
+    <section class="post-excerpt">
+        <p>Those who think they &#8220;know&#8221; everything from the beginning will never, in fact, come to know anything &#8211; Thomas Merton Over the last few weeks (months) I haven&#8217;t been posting too much. Sorry about that. For all the people who are interested in what I am doing a little update. At the moment I am trying to write up the document to present the thesis to my supervisors. The research part is almost brought to an end with this step.</p>
+    </section>
+
+    <footer class="post-footer">
+        <span>
+            
+            
+            	&nbsp;&nbsp;<i class="fa fa-tag"></i>
+            	3dgis, gis, latex, minorthesis, tex
+            
+        </span>
+    </footer>
+</article>
+	
+		<article class="li post">
+    <header class="post-header">
+        <h3 class="post-title"><a href="http://blog.fritzvd.com/2011/01/11/creating-a-little-clipbox-for-your-projects-in-python/">Creating a little clipbox for your GIS projects in Python</a></h3>
+        <p class="post-time"><time datetime="2011-01-11T15:48:32Z">January 11, 2011</time></p>
+    </header>
+    
+    <section class="post-excerpt">
+        <p>When working on a GIS project, this always bums me out. You need to have a certain area in which you want to cut all your source data. But in ArcGIS I never figure out how to do it properly, except for using Python scripts and arcgisscripting/arcpy. But I figured, this should also be do-able from the terminal, and take less time and energy from your little workbox. But here&#8217;s a Python script that uses open-source libraries and writes Be sure to have FW_Tools installed (win/linux) or when you&#8217;re on a Mac head over to KyngChaos.</p>
+    </section>
+
+    <footer class="post-footer">
+        <span>
+            
+            
+            	&nbsp;&nbsp;<i class="fa fa-tag"></i>
+            	clip, gdal, gis, ogr, python
+            
+        </span>
+    </footer>
+</article>
+	
+		<article class="li post">
+    <header class="post-header">
+        <h3 class="post-title"><a href="http://blog.fritzvd.com/2011/01/10/from-2-5d-to-3d/">From 2.5D to 3D</a></h3>
+        <p class="post-time"><time datetime="2011-01-10T14:21:54Z">January 10, 2011</time></p>
+    </header>
+    
+    <section class="post-excerpt">
+        <p>My last few posts have focused on somewhat other things than my thesis. This does not mean that no progress has been made or that I&#8217;ve done nothing. On the contrary; I&#8217;ve done quite a bit. But it is rather less exciting. I&#8217;ve been busy with data conversion and trying to get a working 3D representation that is meaningful. Which is hard and not so spectacular. Seriously. First of all getting to grips with the fact that the reason why ESRI is marketleader may be because they deliver a complete and good package.</p>
+    </section>
+
+    <footer class="post-footer">
+        <span>
+            
+            
+            	&nbsp;&nbsp;<i class="fa fa-tag"></i>
+            	3dgis, data conversion, gis, minorthesis
+            
+        </span>
+    </footer>
+</article>
+	
+		<article class="li post">
+    <header class="post-header">
+        <h3 class="post-title"><a href="http://blog.fritzvd.com/2010/12/08/222/">Whoops I FLARted..</a></h3>
+        <p class="post-time"><time datetime="2010-12-08T18:11:44Z">December 8, 2010</time></p>
+    </header>
+    
+    <section class="post-excerpt">
+        <p>Today I fooled around a bit with the FLARManager (tutorials graciously provided by transmote). I tried to get some Papervision 3D objects going using all these different tutorials I have been following over the last few weeks (e.g. papervision2.com and rawkes.com). But it has not been as easy as I had expected. But then again, things never are. The difficulty is not so much in displaying 3D objects, because pv3d and flarmanager do all the thinking for you.</p>
+    </section>
+
+    <footer class="post-footer">
+        <span>
+            
+            
+            	&nbsp;&nbsp;<i class="fa fa-tag"></i>
+            	augmented reality, featured
+            
+        </span>
+    </footer>
+</article>
+	
+		<article class="li post">
+    <header class="post-header">
+        <h3 class="post-title"><a href="http://blog.fritzvd.com/2010/12/02/thoughts-on-lidar/">Thoughts on LiDAR</a></h3>
+        <p class="post-time"><time datetime="2010-12-02T15:02:26Z">December 2, 2010</time></p>
+    </header>
+    
+    <section class="post-excerpt">
+        <p>Yesterday I was fortunate enough to be able to visit the European LiDAR Mapping Forum (ELMF) in The Hague. For those who do not know what LiDAR is, it is a sensor that acquires high-quality (very dense) 3D data. If you would like to check out some of the data, what it looks like and play around with it a bit, here is a &#8220;get-started&#8221;. It is further explained on Wikipedia, to which you should give some money for using it on a daily basis, if you haven&#8217;t done so already.</p>
+    </section>
+
+    <footer class="post-footer">
+        <span>
+            
+            
+            	&nbsp;&nbsp;<i class="fa fa-tag"></i>
+            	3dgis, data, density, lidar, lidarelevationmap, mobile mapper, mobilemapping
+            
+        </span>
+    </footer>
+</article>
+	
+	
+	</div>
+</main>
+    <footer id="site-footer">
+        <div class="container">
+            <a href="http://blog.fritzvd.com/index.xml" title="Get the RSS feed"><span class="tooltip"><i class="fa fa-rss"></i></span></a>
+            <section>&copy; <a href="http://blog.fritzvd.com/"></a> 2015 | All rights reserved</section>
+            <section>Theme by <a href="http://www.jrdnbwmn.com">Jordan Bowman</a>. Generated with <a href="http://gohugo.io/">Hugo</a>.</section>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="http://blog.fritzvd.com/js/fittext.js"></script>
+    <script type="text/javascript">
+      $(".heading").fitText();
+    </script>
+
+</body>
+</html>

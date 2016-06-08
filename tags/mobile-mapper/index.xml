@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mobile Mapper on fritzvd</title>
+    <link>http://blog.fritzvd.com/tags/mobile-mapper/</link>
+    <description>Recent content in Mobile Mapper on fritzvd</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Dec 2010 15:02:26 +0000</lastBuildDate>
+    <atom:link href="http://blog.fritzvd.com/tags/mobile-mapper/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Thoughts on LiDAR</title>
+      <link>http://blog.fritzvd.com/2010/12/02/thoughts-on-lidar/</link>
+      <pubDate>Thu, 02 Dec 2010 15:02:26 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2010/12/02/thoughts-on-lidar/</guid>
+      <description>&lt;p&gt;Yesterday I was fortunate enough to be able to visit the &lt;a href=&#34;http://www.lidarmap.org/ELMF/&#34;&gt;European LiDAR Mapping Forum (ELMF)&lt;/a&gt; in The Hague. For those who do not know what LiDAR is, it is a sensor that acquires high-quality (very dense) 3D data. If you would like to check out some of the data, what it looks like and play around with it a bit, &lt;a href=&#34;http://liblas.org/start.html&#34;&gt;here is a &lt;em&gt;&amp;#8220;get-started&amp;#8221;&lt;/em&gt;&lt;/a&gt;. It is further explained on &lt;a href=&#34;http://en.wikipedia.org/wiki/LIDAR&#34;&gt;Wikipedia&lt;/a&gt;, to which you should give some money for using it on a daily basis, if you haven&amp;#8217;t done so already. Back on-topic I believe it was quite a successful event, some 600 applicants joined in, which was above expectations I gathered from &lt;a href=&#34;http://uk.linkedin.com/in/alastairrmacdonald&#34;&gt;Alastair MacDonald&lt;/a&gt;&amp;#8216;s closing remarks.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Some interesting applications (to me)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://mandli.com&#34;&gt;Mandli&amp;#8217;s&lt;/a&gt; examples of Mobile Mapping and quick high-quality 3D model creation, with the help of Mobile Mappers. Mobile Mappers are another example of a cool technology. These cars with LiDAR sensors mounted on them can collect 3D data at highway-speed. Awesome.&lt;/p&gt;
+
+&lt;div id=&#34;attachment_273&#34; style=&#34;width: 310px&#34; class=&#34;wp-caption alignright&#34;&gt;
+  &lt;a href=&#34;http://blog.technokrat.nl/wp-content/uploads/2010/12/mobile-mapping-van-2.jpg&#34;&gt;&lt;img src=&#34;http://blog.technokrat.nl/wp-content/uploads/2010/12/mobile-mapping-van-2-300x225.jpg&#34; alt=&#34;source: http://www.mobile-mapping.be/Languages/nl-BE/Downloads/mobile%20mapping%20van%202.jpg&#34; title=&#34;Mobile Mapper&#34; width=&#34;300&#34; height=&#34;225&#34; class=&#34;size-medium wp-image-273&#34; srcset=&#34;http://blog.technokrat.nl/wp-content/uploads/2010/12/mobile-mapping-van-2-300x225.jpg 300w, http://blog.technokrat.nl/wp-content/uploads/2010/12/mobile-mapping-van-2-120x90.jpg 120w, http://blog.technokrat.nl/wp-content/uploads/2010/12/mobile-mapping-van-2.jpg 600w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;
+  
+  &lt;p class=&#34;wp-caption-text&#34;&gt;
+    Mobile Mapper
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.topconpositioning.com&#34;&gt;Topcon&lt;/a&gt; is collaborating with the company creating the Moto GP &lt;sup&gt;10&lt;/sup&gt;&amp;frasl;&lt;sub&gt;11&lt;/sub&gt; game. This game uses a model of the Silverstone track gathered and created in about 2 hours using a Mobile Mapper. The conference was premiering some of the stunning 3D imagery created for the game.&lt;/p&gt;
+
+&lt;p&gt;Railtracks around Dover. To monitor land slides and land changes at the cliffs of Dover they showcased quarterly surveys of the area using Terrestial Laser Scanners.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Beyond understanding&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Most of the rest of the talks were less practical of nature. This is not bad in any case. On the contrary I found these lectures very interesting. However for my studies and thesis it will probably not be of any importance. Although I now (claim to) understand why you should prefer Discrete Return over Full Waveform for most purposes.&lt;/p&gt;
+
+&lt;p&gt;Other things I just didn&amp;#8217;t understand were all over the place. But it was very educational and interesting nonetheless.&lt;/p&gt;
+
+&lt;p&gt;One more example before I leave you. The Dutch branch of &lt;a href=&#34;http://www.terraimaging.de/nl/&#34;&gt;TerraImaging&lt;/a&gt; also had a stand there. They deliver AHN2 images (the Actual Elevation of the Netherlands version 2) data. Awesome detail. With an accuracy of 5cm they deliver Elevation Maps of areas in the Netherlands. Just don&amp;#8217;t think that data comes without cost. There is a free online viewer though at &lt;a href=&#34;http://www.ahn.nl/viewer&#34;&gt;the AHN website&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div id=&#34;attachment_272&#34; style=&#34;width: 310px&#34; class=&#34;wp-caption aligncenter&#34;&gt;
+  &lt;a href=&#34;http://blog.technokrat.nl/wp-content/uploads/2010/12/lidar1.jpg&#34;&gt;&lt;img src=&#34;http://blog.technokrat.nl/wp-content/uploads/2010/12/lidar1-300x208.jpg&#34; alt=&#34;Lidar Processed DTM / source: http://www.saic.com/geospatial/images/lidar1.jpg&#34; title=&#34;lidar1&#34; width=&#34;300&#34; height=&#34;208&#34; class=&#34;size-medium wp-image-272&#34; srcset=&#34;http://blog.technokrat.nl/wp-content/uploads/2010/12/lidar1-300x208.jpg 300w, http://blog.technokrat.nl/wp-content/uploads/2010/12/lidar1.jpg 778w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;
+  
+  &lt;p class=&#34;wp-caption-text&#34;&gt;
+    LiDAR acquired dataset (post-processing)
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
