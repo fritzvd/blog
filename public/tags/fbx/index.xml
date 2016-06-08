@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fbx on fritzvd</title>
+    <link>http://blog.fritzvd.com/tags/fbx/</link>
+    <description>Recent content in Fbx on fritzvd</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 May 2015 15:35:39 +0000</lastBuildDate>
+    <atom:link href="http://blog.fritzvd.com/tags/fbx/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>FBX and 3d models in Monogame &amp;#8211; on Linux</title>
+      <link>http://blog.fritzvd.com/2015/05/19/fbx-and-3d-models-in-monogame-on-linux/</link>
+      <pubDate>Tue, 19 May 2015 15:35:39 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2015/05/19/fbx-and-3d-models-in-monogame-on-linux/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;TL;DR the monogame community is pretty great&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Lately my manic ambitious mode has turned on again for me. So I have about 100s of ideas again, which sadly of course will all come to nothing. But while I&amp;#8217;m at it, I thought I&amp;#8217;d make the best of it to do some tutorials here and there and learn some stuff I know nothing about.&lt;/p&gt;
+
+&lt;p&gt;Starting with Monogame on Linux is kind of a hassle to start with, but if you push through it works. At the time of writing this I got Monogame 3.4 to work: &lt;a href=&#34;http://www.monogame.net/downloads/&#34; target=&#34;_blank&#34;&gt;Monogame Downloads Page&lt;/a&gt;. If you&amp;#8217;re not very comfortable with&lt;/p&gt;
+
+&lt;p&gt;The real problem was that a tutorial I tried to follow had an old style FBX file that the Monogame Content Pipeline was not willing to load. Everyone told me to use &lt;a href=&#34;http://www.blender.org/download/&#34; target=&#34;_blank&#34;&gt;Blender&lt;/a&gt; to convert it. But.. Blender wasn&amp;#8217;t loading my file, because it was ASCII based. So I had to find a converter. I found the Autodesk one for Linux somewhere in the attic of the internet. I&amp;#8217;ll host it &lt;a href=&#34;http://meuk.technokrat.nl/fbx_converter&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; so I know for sure it won&amp;#8217;t go missing. So install that thing, and convert it (if necessary import and export in Blender too, just to make sure). Your Content Pipeline will thank you.&lt;/p&gt;
+
+&lt;p&gt;P.S. you can find some great free models here: &lt;a href=&#34;http://tf3dm.com/&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;http://tf3dm.com/&#34;&gt;http://tf3dm.com/&lt;/a&gt;&lt;/a&gt;. &lt;a href=&#34;http://tf3dm.com/3d-model/puo-67895.html&#34; target=&#34;_blank&#34;&gt;The featured image is a model made by 3dgenerator: &lt;a href=&#34;http://tf3dm.com/3d-model/puo-67895.html&#34;&gt;http://tf3dm.com/3d-model/puo-67895.html&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

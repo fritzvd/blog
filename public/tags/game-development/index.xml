@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Game Development on fritzvd</title>
+    <link>http://blog.fritzvd.com/tags/game-development/</link>
+    <description>Recent content in Game Development on fritzvd</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 04 Mar 2014 14:34:54 +0000</lastBuildDate>
+    <atom:link href="http://blog.fritzvd.com/tags/game-development/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Particle Emitter in HaxePunk</title>
+      <link>http://blog.fritzvd.com/2014/03/04/particle-emitter-in-haxepunk/</link>
+      <pubDate>Tue, 04 Mar 2014 14:34:54 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2014/03/04/particle-emitter-in-haxepunk/</guid>
+      <description>&lt;p&gt;For some this will be a trivial example. For me this took a bit longer than I suspected.&lt;/p&gt;
+
+&lt;p&gt;This small example will produce this:&lt;/p&gt;
+
+&lt;p&gt;If you&amp;#8217;re planning on making an awesome game you probably want a particle emitter. because.. well look at it.&lt;/p&gt;
+
+&lt;p&gt;What I did is I started a haxepunk project:&lt;/p&gt;
+
+&lt;p&gt;`For some this will be a trivial example. For me this took a bit longer than I suspected.&lt;/p&gt;
+
+&lt;p&gt;This small example will produce this:&lt;/p&gt;
+
+&lt;p&gt;If you&amp;#8217;re planning on making an awesome game you probably want a particle emitter. because.. well look at it.&lt;/p&gt;
+
+&lt;p&gt;What I did is I started a haxepunk project:&lt;/p&gt;
+
+&lt;p&gt;`&lt;/p&gt;
+
+&lt;p&gt;And added a file: &lt;a href=&#34;https://github.com/fritzvd/haxepunk-emitter-example/blob/master/src/Explosion.hx&#34; title=&#34;Explosion.hx&#34; target=&#34;_blank&#34;&gt;Explosion.hx&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The Emitter is also a type of Entity, and also needs a graphic. It looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;syntax actionscript&#34;&gt;import com.haxepunk.graphics.Emitter;
+import com.haxepunk.utils.Ease;
+import com.haxepunk.Entity;
+
+class Explosion extends Entity
+{
+    private var _emitter:Emitter;
+
+    public function new()
+    {
+        super(x, y);
+        _emitter = new Emitter(&#34;graphics/particle.png&#34;, 4, 4);
+        _emitter.newType(&#34;explode&#34;, [0]);
+        _emitter.setMotion(&#34;explode&#34;,       // name
+                    0,              // angle
+                    100,            // distance
+                    2,              // duration
+                    360,            // ? angle range
+                    -40,            // ? distance range
+                    1,              // ? Duration range
+                    Ease.quadOut    // ? Easing 
+                    );
+        _emitter.setAlpha(&#34;explode&#34;, 20, 0.1);
+        _emitter.setGravity(&#34;explode&#34;, 5, 1);
+        graphic = _emitter;
+        layer = -1;
+    }
+
+    public function explode(x:Float, y:Float)
+    {
+        for (i in 0...20)
+        {
+            _emitter.emit(&#34;explode&#34;, x, y);
+        }
+    }
+
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then you can add the Emitter to your current scene like in my &lt;a href=&#34;https://github.com/fritzvd/haxepunk-emitter-example/blob/master/src/MainScene.hx&#34; title=&#34;MainScene.hx&#34; target=&#34;_blank&#34;&gt;MainScene.hx&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;syntax actionscript&#34;&gt;import com.haxepunk.Scene;
+import Explosion;
+
+class MainScene extends Scene
+{
+    private var explosion:Explosion;
+
+    public override function begin()
+    {
+        explosion = new Explosion();
+        add(explosion);
+    }
+
+    public override function update()
+    {
+        super.update();
+        explosion.explode(230, 240);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now run&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;lime test neko&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;And you should see something similar to the emitter above.&lt;/p&gt;
+
+&lt;p&gt;You can checkout my &lt;a href=&#34;https://github.com/fritzvd/haxepunk-emitter-example&#34; title=&#34;haxepunk-emitter-example&#34; target=&#34;_blank&#34;&gt;repo&lt;/a&gt; and run it to play around with it.&lt;/p&gt;
+
+&lt;p&gt;I ran into this error below. It meant my sprite was too small. It took me a long time to realize that.&lt;/p&gt;
+
+&lt;p&gt;``For some this will be a trivial example. For me this took a bit longer than I suspected.&lt;/p&gt;
+
+&lt;p&gt;This small example will produce this:&lt;/p&gt;
+
+&lt;p&gt;If you&amp;#8217;re planning on making an awesome game you probably want a particle emitter. because.. well look at it.&lt;/p&gt;
+
+&lt;p&gt;What I did is I started a haxepunk project:&lt;/p&gt;
+
+&lt;p&gt;`For some this will be a trivial example. For me this took a bit longer than I suspected.&lt;/p&gt;
+
+&lt;p&gt;This small example will produce this:&lt;/p&gt;
+
+&lt;p&gt;If you&amp;#8217;re planning on making an awesome game you probably want a particle emitter. because.. well look at it.&lt;/p&gt;
+
+&lt;p&gt;What I did is I started a haxepunk project:&lt;/p&gt;
+
+&lt;p&gt;`&lt;/p&gt;
+
+&lt;p&gt;And added a file: &lt;a href=&#34;https://github.com/fritzvd/haxepunk-emitter-example/blob/master/src/Explosion.hx&#34; title=&#34;Explosion.hx&#34; target=&#34;_blank&#34;&gt;Explosion.hx&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The Emitter is also a type of Entity, and also needs a graphic. It looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;syntax actionscript&#34;&gt;import com.haxepunk.graphics.Emitter;
+import com.haxepunk.utils.Ease;
+import com.haxepunk.Entity;
+
+class Explosion extends Entity
+{
+    private var _emitter:Emitter;
+
+    public function new()
+    {
+        super(x, y);
+        _emitter = new Emitter(&#34;graphics/particle.png&#34;, 4, 4);
+        _emitter.newType(&#34;explode&#34;, [0]);
+        _emitter.setMotion(&#34;explode&#34;,       // name
+                    0,              // angle
+                    100,            // distance
+                    2,              // duration
+                    360,            // ? angle range
+                    -40,            // ? distance range
+                    1,              // ? Duration range
+                    Ease.quadOut    // ? Easing 
+                    );
+        _emitter.setAlpha(&#34;explode&#34;, 20, 0.1);
+        _emitter.setGravity(&#34;explode&#34;, 5, 1);
+        graphic = _emitter;
+        layer = -1;
+    }
+
+    public function explode(x:Float, y:Float)
+    {
+        for (i in 0...20)
+        {
+            _emitter.emit(&#34;explode&#34;, x, y);
+        }
+    }
+
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then you can add the Emitter to your current scene like in my &lt;a href=&#34;https://github.com/fritzvd/haxepunk-emitter-example/blob/master/src/MainScene.hx&#34; title=&#34;MainScene.hx&#34; target=&#34;_blank&#34;&gt;MainScene.hx&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;syntax actionscript&#34;&gt;import com.haxepunk.Scene;
+import Explosion;
+
+class MainScene extends Scene
+{
+    private var explosion:Explosion;
+
+    public override function begin()
+    {
+        explosion = new Explosion();
+        add(explosion);
+    }
+
+    public override function update()
+    {
+        super.update();
+        explosion.explode(230, 240);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now run&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;lime test neko&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;And you should see something similar to the emitter above.&lt;/p&gt;
+
+&lt;p&gt;You can checkout my &lt;a href=&#34;https://github.com/fritzvd/haxepunk-emitter-example&#34; title=&#34;haxepunk-emitter-example&#34; target=&#34;_blank&#34;&gt;repo&lt;/a&gt; and run it to play around with it.&lt;/p&gt;
+
+&lt;p&gt;I ran into this error below. It meant my sprite was too small. It took me a long time to realize that.&lt;/p&gt;
+
+&lt;p&gt;``&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

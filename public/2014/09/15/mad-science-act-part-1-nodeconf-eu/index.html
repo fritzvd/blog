@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#"><!--<![endif]-->
+
+    <head>
+                <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="author" content="">
+        <meta name="keywords" content="awesome, definitely">
+	
+        <meta property="og:site_name" content="fritzvd">
+        <meta property="og:title" content="fritzvd">
+        <meta property="og:url" content="http://blog.fritzvd.com/2014/09/15/mad-science-act-part-1-nodeconf-eu/">
+        <meta property="og:description" content="">
+    
+        <meta property="og:type" content="article" />
+        <meta property="og:article:author" content="" />
+        <meta property="og:article:published_time" content="2014-09-15T11:53:39Z" />
+    
+        <meta name="generator" content="Hugo 0.15" />
+        <title>Mad Science Act &amp;#8211; part 1@ nodeconf.eu &middot; fritzvd </title>
+        <link rel="canonical" href="http://blog.fritzvd.com/" />
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="">
+        <link rel="stylesheet" type='text/css' href="http://blog.fritzvd.com/css/main.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Montserrat:700' rel='stylesheet' type='text/css'>
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    </head>
+<body>
+<!--[if lt IE 7]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chrome/‎">install Google Chrome</a> to experience this site.</p><![endif]-->
+
+    <header id="site-header">
+        <div class="container">
+            <a href="http://blog.fritzvd.com/" alt="fritzvd"><h1 class="blog-title heading">fritzvd</h1></a>
+            <p class="blog-description"></p>
+        </div>
+    </header>
+
+<main class="content" role="main">
+	<div class="container">
+		<article class="post">
+    
+<header class="post-header">
+      <h3 class="p-post-title">Mad Science Act &amp;#8211; part 1@ nodeconf.eu</h3>
+</header>
+
+<style>
+  header#site-header {
+    background-image: url(%25!s%28%3cnil%3e%29);
+    margin-bottom: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+    box-shadow: grey 10px 0px 5px 0px inset;
+    image-rendering: -moz-crisp-edges;          
+    image-rendering:   -o-crisp-edges;          
+    image-rendering: -webkit-optimize-contrast; 
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;   
+  }
+</style>
+
+
+    <section class="post-content">
+        <p>The Mad Science Act, was something completely different. It featured many topics and some of the most creative and prolific npmjs.org authors. It was a bit mad, so I&#8217;ll try to make it as coherent as I understood it. I have split up the post in 2 parts. It would be too much put into one.</p>
+
+<p><strong>Professor <a title="substack" href="https://twitter.com/substack" target="_blank">Substack</a> &#8211; Mad Science intro.</strong></p>
+
+<p>When you start out creating (npm) modules you realize there is a great shortage of modules. And you need to create much more. A lot of tools are already readily available and they one thing and try to do it right. The tools are small concise and are encapsulated, they seperate concern and are in that sense: &#8216;orthogonal&#8217;.</p>
+
+<div style="width: 1450px" class="wp-caption alignnone">
+  <a href="https://github.com/substack/nodeconf.eu-2014"><img class="" src="https://raw.githubusercontent.com/substack/nodeconf.eu-2014/master/images/060_orthogonal.png" alt="" width="1440" height="1080" /></a>
+  
+  <p class="wp-caption-text">
+    orthogonal &#8211; substack
+  </p>
+</div>
+
+<p>Still with all the tools that are readily available, they don&#8217;t cover all use cases. Besides focusing on test coverage, we should take into account solving more and more use cases. So go dumpster diving for stuff that can output other stuff by multiplexing data streams. For example with <a title="dataplex" href="https://github.com/substack/dataplex" target="_blank">dataplex</a>. It helps you to capture and organize multiple streams over a single stream. Conveying it over e.g. tcp or web socket connections.</p>
+
+<p><em>this is where it all went fuzzy</em></p>
+
+<p>Then Substack did some live code demo&#8217;s, to create a quick webserver, continuous integration server etc. with some readily available tools and piping the data to dataplex. There is a pretty good example on the <a title="dataplex" href="https://github.com/substack/dataplex" target="_blank">&#8216;dataplex&#8217; github page</a></p>
+
+<p><strong><a title="feross" href="https://twitter.com/feross" target="_blank">Feross</a> &#8211; webtorrent</strong></p>
+
+<p>This talk portrayed a powerful implementation of webrtc. Using WebRTC as an alternative skype, <a title="hello chrome it's firefox calling" href="https://hacks.mozilla.org/2013/02/hello-chrome-its-firefox-calling/" target="_blank">is something we&#8217;ve seen before</a>. And it&#8217;s great, but there is also the <a title="datachannels on html5rocks" href="http://www.html5rocks.com/en/tutorials/webrtc/datachannels/" target="_blank">DataChannel</a>. An api that delivers a peer-to-peer data connection <a title="webrtc infrastructure" href="http://www.html5rocks.com/en/tutorials/webrtc/infrastructure/" target="_blank">&#8216;without a server&#8217;</a>.</p>
+
+<p>A peer-to-peer data connection of course sounds but a step away from things like the beautiful BitTorrent protocol. In comes <a title="webtorrent" href="https://github.com/feross/webtorrent" target="_blank">webtorrent</a>. A tool created to use the bittorrent protocol for decompartmentalizing files with a verification hash, and start sharing these small parts of a file, so once a person has that small bit, it can already share that part. Only the catch is that it can do this over the web. The webtorrent client runs in any webRTC (datachannel) compatible browser. For now that means Firefox and Chrome.</p>
+
+<p>An example of this can be found on <a title="instant.io" href="http://instant.io/" target="_blank">instant.io</a> (send me a message if you want to try it ☺ <a title="@fritzvd" href="https://twitter.com/fritzvd" target="_blank">twitter</a>).</p>
+
+<p>Because bittorrent works over TCP/UDP webtorrent and bittorrent can&#8217;t connect (yet) directly. But they need hybrid clients in between. So Feross is working on a command line webtorrent client, that functions as a &#8216;hybrid&#8217; client.</p>
+
+<p>The awesomerestest was a live demo of a <a title="webrtc-whiteboard" href="https://github.com/feross/webrtc-whiteboard" target="_blank">webrtc-whiteboard</a> which can also be <a title="whiteboard" href="http://instant.io:8080/" target="_blank">tested live</a>. It&#8217;s still very PoC-y though. But it was great to see it working these small bits and pieces that make up webtorrent and seeing it being used by people in the audience as well, for sharing cat video&#8217;s and images:</p>
+
+<blockquote class="twitter-tweet" lang="en">
+  <p>
+    <a href="https://twitter.com/feross">@feross</a> doing webrtc mad science <a href="https://twitter.com/hashtag/nodeconfeu?src=hash">#nodeconfeu</a> <a href="http://t.co/Kxf1BL4qd9">pic.twitter.com/Kxf1BL4qd9</a>
+  </p>
+  
+  <p>
+    — Magnus (@ralphtheninja) <a href="https://twitter.com/ralphtheninja/status/509649443097169920">September 10, 2014</a>
+  </p>
+</blockquote>
+
+<p>Go over and help Feross. His project is now <a title="OPEN Open Source" href="http://blog.technokrat.nl/2014/09/15/open-open-source/" target="_blank">&#8220;open open source&#8221;.</a></p>
+
+    </section>
+
+    <hr>
+
+    <footer class="post-footer">
+        <section class="f-1">
+            
+            <section class="author">
+                <p>Words by fritzvd</p>
+            </section>
+            
+
+            <p class="f-post-time"><time datetime="2014-09-15T11:53:39Z">September 15, 2014</time></p>
+        </section>
+
+        <section class="f-2">
+            <section class="share">
+                <span>Share:
+                <a class="icon-twitter" href="http://twitter.com/share?text=Mad%20Science%20Act%20%26%238211%3b%20part%201%40%20nodeconf.eu&url=http%3a%2f%2fblog.fritzvd.com%2f2014%2f09%2f15%2fmad-science-act-part-1-nodeconf-eu%2f"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fblog.fritzvd.com%2f2014%2f09%2f15%2fmad-science-act-part-1-nodeconf-eu%2f"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http%3a%2f%2fblog.fritzvd.com%2f2014%2f09%2f15%2fmad-science-act-part-1-nodeconf-eu%2f"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+                </span>
+            </section>
+
+            
+            	<span class="f-post-tags"><i class="fa fa-tag"></i>
+            	javascript, mad science, node, nodeconf, nodeconfeu
+            	</span>
+            
+        </section>
+                
+    </footer>
+</article>
+
+<style>
+  img {
+    float: left;
+    margin: 1em;
+  }
+</style>
+
+	</div>
+</main>
+    <footer id="site-footer">
+        <div class="container">
+            <a href="http://blog.fritzvd.com/index.xml" title="Get the RSS feed"><span class="tooltip"><i class="fa fa-rss"></i></span></a>
+            <section>&copy; <a href="http://blog.fritzvd.com/"></a> 2015 | All rights reserved</section>
+            <section>Theme by <a href="http://www.jrdnbwmn.com">Jordan Bowman</a>. Generated with <a href="http://gohugo.io/">Hugo</a>.</section>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="http://blog.fritzvd.com/js/fittext.js"></script>
+    <script type="text/javascript">
+      $(".heading").fitText();
+    </script>
+
+
+</body>
+</html>

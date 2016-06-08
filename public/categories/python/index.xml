@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on fritzvd</title>
+    <link>http://blog.fritzvd.com/categories/python/</link>
+    <description>Recent content in Python on fritzvd</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 26 Nov 2012 13:48:56 +0000</lastBuildDate>
+    <atom:link href="http://blog.fritzvd.com/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Kriging in R in Python</title>
+      <link>http://blog.fritzvd.com/2012/11/26/kriging-in-r-in-python/</link>
+      <pubDate>Mon, 26 Nov 2012 13:48:56 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2012/11/26/kriging-in-r-in-python/</guid>
+      <description>&lt;p&gt;This might be a repost of some sort. However I found that it was kind of hard to find anything about this specific topic. So here it goes.&lt;/p&gt;
+
+&lt;p&gt;Kriging is a geostatistical method to be able translate point data to a grid, to find out where you can predict stuff really well and where the variance is really high. As always GIGO (garbage in garbage out). But it is at least a large improvement from interpolation techniques such as Inversed Distance Weighting (IDW) which is often implemented in GIS software.&lt;/p&gt;
+
+&lt;p&gt;However for Kriging you need a bit more information. You need to input a variogram. This is however often estimated with &amp;#8216;expert&amp;#8217; knowledge and looking at graphs produced by the input data. In my mind this sounds like automatable. But I haven&amp;#8217;t got around to it.&lt;/p&gt;
+
+&lt;p&gt;The best implementations exist for R, but for those who don&amp;#8217;t like R for any reason (slow, not really productionable etc.) there is a Python implementation by Ambhas &lt;a href=&#34;http://www.ambhas.com/tools/html/krige_8py_source.html&#34; title=&#34;kriging in python&#34;&gt;right here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For those who don&amp;#8217;t care. You can use r in python with rpy2 (or rpy). This is a bit ugly. But it is at least a lot nicer (imho) to work with (data i/o) using gdal etc) in production. Also anything beyond Ordinary Kriging becomes complex. And I did not find anyone yet publishing their code for non-ordinary kriging (cokriging, colocated cokriging and other more complicated algorithms). If anyone comes around to writing it, please open source that shiznit.&lt;/p&gt;
+
+&lt;p&gt;Anyways. If you want to do colocated cokriging you have to have 2 forms of data for every point. The code will look like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;syntax python&#34;&gt;def cokriging_in_r(self, x, y, z):
+        &#39;&#39;&#39;
+        Cokriging (and ordinary kriging) is quite fast in R.
+        This would anyway be more pragmatic than rewriting/porting it to Python.
+        For the moment this will be the &#39;best&#39; way as R makes it very easy to
+        use kriging without fitting a variogram model, but using a standard 
+        variogram.
+        &#39;&#39;&#39;
+        import rpy2
+        import rpy2.robjects as robj
+        import time
+        time0 = time.time()
+        robj.r.library(&#39;gstat&#39;)
+        self.create_interpolation_grid()
+        xi, yi = robj.FloatVector(self.xi.tolist()), robj.FloatVector(self.yi.tolist())
+        dataset = self.dataloader.dataset.ReadAsArray().flatten()
+        mask = numpy.equal(dataset, -9999)
+        rxi = robj.FloatVector(dataset.tolist())
+        secondary = self.get_secondary_for_locations()
+        secondary = robj.FloatVector(secondary)
+        x,y,z = robj.FloatVector(x), robj.FloatVector(y), robj.FloatVector(z)
+        primary_frame = robj.DataFrame({&#39;x&#39;: x, &#39;y&#39;: y, &#39;z&#39;:z})
+        secondary_frame = robj.DataFrame({&#39;x&#39;: xi, &#39;y&#39;: yi, &#39;secondary&#39;: rxi})
+        target_frame = robj.DataFrame({&#39;x&#39;:xi, &#39;y&#39;:yi})
+        vgm_args = {&#39;model_type&#39;: &#39;Sph&#39;, &#39;range1&#39;: 20000, &#39;range2&#39;:1040000}
+        # following command gives a python output to r functions
+        vgm_args[&#39;nugget&#39;] = 0.035
+        vgm_args[&#39;sill1&#39;] = 0.473
+        vgm_args[&#39;sill2&#39;] = 8.994
+        secondary_variance = dataset[~mask].var()
+        primary_variance = robj.r.var(z)[0]
+        correlation_secondary_primary = numpy.abs(robj.r.cor(z, secondary))
+        variance_correction = numpy.sqrt(primary_variance * secondary_variance)
+        # The cross coefficient is used in the cross variogram (crossgram)
+        # 
+        cross_coef = (correlation_secondary_primary * variance_correction)[0]
+        # change it back to rpy strict
+
+        # The variogram is combined. This is a bit awkward in Rpy.
+        # So one way is change the args manually (see below)
+        # or load variables in R before hand.
+        variogram_secondary = robj.r.vgm(vgm_args[&#39;sill1&#39;] * secondary_variance, 
+            vgm_args[&#39;model_type&#39;], vgm_args[&#39;range1&#39;], vgm_args[&#39;nugget&#39;], 
+            robj.r(&#34;add.to=vgm(&#34;+ str(vgm_args[&#39;sill2&#39;] * secondary_variance)
+                + &#34;, &#39;Sph&#39;, 1040000, &#34; + str(vgm_args[&#39;nugget&#39;] * 
+                    secondary_variance)+&#34;)&#34;))
+        variogram_primary = robj.r.vgm(vgm_args[&#39;sill1&#39;] * primary_variance,
+            vgm_args[&#39;model_type&#39;], vgm_args[&#39;range1&#39;], vgm_args[&#39;nugget&#39;], 
+            robj.r(&#34;add.to=vgm(&#34;+ str(vgm_args[&#39;sill2&#39;] * primary_variance)
+                + &#34;, &#39;Sph&#39;, 1040000, &#34; + str(vgm_args[&#39;nugget&#39;] * 
+                    primary_variance)+&#34;)&#34;))
+        crossgram = robj.r.vgm(vgm_args[&#39;sill1&#39;] * cross_coef, 
+            vgm_args[&#39;model_type&#39;], vgm_args[&#39;range1&#39;], vgm_args[&#39;nugget&#39;], 
+            robj.r(&#34;add.to=vgm(&#34;+ str(vgm_args[&#39;sill2&#39;] * cross_coef)
+                + &#34;, &#39;Sph&#39;, 1040000, &#34; + str(vgm_args[&#39;nugget&#39;] * cross_coef) + &#34;)&#34;))
+
+        cck = robj.r(&#39;NULL&#39;)
+        cck = robj.r.gstat(cck, &#34;primary&#34;, robj.r(&#39;z ~ 1&#39;), robj.r(&#39;~ x + y&#39;), 
+            data=primary_frame, model=variogram_primary, nmax=40)
+        cck = robj.r.gstat(cck, &#34;secondary&#34;, robj.r(&#39;secondary~ 1&#39;), robj.r(&#39;~ x + y&#39;),
+            data=secondary_frame, model=variogram_secondary, 
+            merge=robj.r(&#34;c(&#39;primary&#39;,&#39;secondary&#39;)&#34;), nmax=1)
+        cck = robj.r.gstat(cck, robj.r(&#39;c(&#34;primary&#34;, &#34;secondary&#34;)&#39;), model=crossgram, nmax=40) 
+        result = robj.r.predict(cck, target_frame)
+        # crossval = robj.r(&#39;gstat.cv&#39;)(cck)
+        time1 = time.time()
+        deltatime = time1-time0
+        print(&#39;Kriging took &#39;+ str(deltatime) + &#39; seconds&#39;)
+        secondary_est = numpy.array(result[4])
+        secondary_est = secondary_est.reshape((self.ny, self.nx))
+        primary_est = numpy.array(result[2])
+        primary_est = primary_est.reshape((self.ny, self.nx))
+        return secondary_est, primary_est
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;create_interpolation_grid&lt;/code&gt; refers to a function which sets up an empty grid based on the extent of the grid and the size of the pixels:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;syntax python&#34;&gt;def create_interpolation_grid(self):
+        &#39;&#39;&#39;
+        Run this to get some basic stuff, like an empty grid to interpolated
+        the data to, the extent and size of the tifs.
+        &#39;&#39;&#39;
+        extent = dataset.extent
+        self.nx, self.ny = basegrid.size
+        xi = numpy.linspace(extent[0], extent[1], self.nx)
+        yi = numpy.linspace(extent[2], extent[3], self.ny)
+        xi, yi = numpy.meshgrid(xi, yi)
+        self.xi, self.yi = xi.flatten(), yi.flatten()
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

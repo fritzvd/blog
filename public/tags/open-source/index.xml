@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Open Source on fritzvd</title>
+    <link>http://blog.fritzvd.com/tags/open-source/</link>
+    <description>Recent content in Open Source on fritzvd</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Sep 2014 11:37:34 +0000</lastBuildDate>
+    <atom:link href="http://blog.fritzvd.com/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>OPEN Open Source</title>
+      <link>http://blog.fritzvd.com/2014/09/15/open-open-source/</link>
+      <pubDate>Mon, 15 Sep 2014 11:37:34 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2014/09/15/open-open-source/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;What?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Individuals making significant and valuable contributions are given commit-access to the project to contribute as they see fit. This project is more like an open wiki than a standard guarded open source project.&lt;/p&gt;
+
+&lt;p&gt;Rules&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;There are a few basic ground-rules for contributors:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;No &amp;#8211;force pushes or modifying the Git history in any way.&lt;/p&gt;
+
+&lt;p&gt;Non-master branches ought to be used for ongoing work.&lt;/p&gt;
+
+&lt;p&gt;External API changes and significant modifications ought to be subject to an internal pull-request to solicit feedback from other contributors.&lt;/p&gt;
+
+&lt;p&gt;Internal pull-requests to solicit feedback are encouraged for any other non-trivial contribution but left to the discretion of the contributor.&lt;/p&gt;
+
+&lt;p&gt;Contributors should attempt to adhere to the prevailing code-style.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Releases&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Declaring formal releases remains the prerogative of the project maintainer.&lt;/p&gt;
+
+&lt;p&gt;Changes to this arrangement&lt;/p&gt;
+
+&lt;p&gt;This is an experiment and feedback is welcome! This document may also be subject to pull requests or changes by contributors where you believe you have something valuable to add or change.&lt;/p&gt;
+
+&lt;p&gt;Thanks to Rod Vagg and the LevelUP project for coming up with the idea of &amp;#8220;OPEN Open Source&amp;#8221;!&lt;/p&gt;
+
+&lt;p&gt;(taken from &lt;a href=&#34;https://github.com/rvagg/node-levelup/blob/master/CONTRIBUTING.md&#34; title=&#34;webtorrent contributing&#34; target=&#34;_blank&#34;&gt;node-levelup&lt;/a&gt;&amp;#8216;s contributing page)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Communities and Licenses: Permissive licenses vs copyleft (BSD/MIT/Apache 2.0 vs GPL)</title>
+      <link>http://blog.fritzvd.com/2014/02/03/communities-and-licenses-permissive-licenses-vs-copyleft-bsdmitapache-2-0-vs-gpl/</link>
+      <pubDate>Mon, 03 Feb 2014 13:07:51 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2014/02/03/communities-and-licenses-permissive-licenses-vs-copyleft-bsdmitapache-2-0-vs-gpl/</guid>
+      <description>&lt;p&gt;Over the weekend I was at &lt;a href=&#34;http://fosdem.org&#34; title=&#34;FOSDEM&#34; target=&#34;_blank&#34;&gt;FOSDEM&lt;/a&gt;, an open source developer conference in Brussels. We had a blast. I sat in on a talk at the Legal &amp;#038; Policy Issues room about community building by Eileen Evans. The talk was the one she gave at OSCON 2013 (attached below). The short version of the talk was that the license an open source project uses plays a role in the community it will create, perhaps such a strong role as governance or the technology itself, but a role nonetheless. It was assumed that because copyleft licenses (like GPLv*) build a stronger community because they oblige the contributors to publish their code as open source as well. Over the last few years a move can be observed towards more and more projects with permissive licenses (like BSD/MIT/Apache 2.0). However this did not mean that their communities were less strong, on the contrary, a big project like OpenStack, actually has lots of community contributions, despite or thanks to its permissive license (Apache 2.0).&lt;/p&gt;
+
+&lt;p&gt;For my own projects I prefer the freeer more permissive licenses, my favourite being the &lt;a href=&#34;http://www.wtfpl.net/txt/copying/&#34; title=&#34;Do what the fuck you want to public license&#34; target=&#34;_blank&#34;&gt;WTFPL&lt;/a&gt;, just because it sounds cool, but is basically the same as BSD. For starters I think Developers tend towards these freeer alternatives because we don&amp;#8217;t care. Or we do care about not having to deal with these things and therefore choose a &lt;a href=&#34;http://b.vimeocdn.com/ts/209/994/20999461_640.jpg&#34; title=&#34;hassle-free&#34; target=&#34;_blank&#34;&gt;hassle-free&lt;/a&gt; license. With any licensing debate you get tangled up in details that most developers really don&amp;#8217;t want to deal with. The freedom these licenses give are very important. Even and maybe especially the freedom to change the license if you want. Whereas a GPLv3 license can be very constricting, because all contributions MUST be open source.&lt;/p&gt;
+
+&lt;p&gt;In the car on the way back from Brussels, we were discussing this and again got stuck. First off, because we don&amp;#8217;t know the caveats, loopholes and details by heart. Second of all because it can get quite complicated. Especially with GPL projects. If you&amp;#8217;d like to write an extension or plugin it&amp;#8217;s kind of hard to decide if that falls under the license, or it is exempt from it, because it is not part of the core.&lt;/p&gt;
+
+&lt;p&gt;In my opinion to build a community, you&amp;#8217;d want them to be free to do what they want, without the legal headaches. So for now I&amp;#8217;ll just stick to permissive license.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Coloring Mapserver Floating Tiffs with Colorscales</title>
+      <link>http://blog.fritzvd.com/2011/10/14/coloring-mapserver-floating-tiffs-with-colorscales/</link>
+      <pubDate>Fri, 14 Oct 2011 07:25:27 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2011/10/14/coloring-mapserver-floating-tiffs-with-colorscales/</guid>
+      <description>&lt;p&gt;This has been a little mystery for me waiting to be uncovered. However I solved it. Depending if you are using a SLD (styled layer descriptor) or the embedded Style commands this is what your Mapfile could look like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;syntax apache&#34;&gt;MAP
+NAME &#34;Some Map&#34;
+DEBUG ON
+FONTSET &#34;/home/fritz/maps/fonts.txt&#34;
+
+WEB
+  IMAGEPATH &#34;/tmp/&#34;
+  IMAGEURL &#34;/tmp/&#34;
+  METADATA
+    &#34;wms_title&#34;     &#34;WMS Demo Server&#34;  ##required
+    &#34;wms_onlineresource&#34; &#34;http://localhost/cgi-bin/mapserv?map=map.map&#34;   ##required
+    &#34;wms_srs&#34;       &#34;EPSG:42304 EPSG:42101 EPSG:4269 EPSG:4326 EPSG:7030 EPSG:32736&#34;  ##recommended
+  END
+END
+
+PROJECTION
+  &#34;init=epsg:32736&#34;   ##required
+END
+
+#
+# Start of layer definitions
+#
+LAYER
+NAME &#39;test&#39;
+METADATA
+    &#34;wms_title&#34;   &#39;test&#39;
+END
+TYPE RASTER
+STATUS ON
+DATA  &#39;/home/fritz/maps/colorscale_test.tif&#39;
+PROJECTION
+  &#34;init=epsg:32736&#34;   ##required
+END
+CLASS
+  NAME &#34;test&#34;
+  STYLE
+    COLORRANGE 255 255 0 140 160 160
+    DATARANGE 0.02 0.6
+    RANGEITEM &#34;[pixel]&#34;
+  END
+END
+PROCESSING &#34;SCALE=0.2, 0.6&#34;
+END
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The Scale and Datarange command look very similar and I haven&amp;#8217;t figured out quite how to set it properly, or how to have three-color scale. However it&amp;#8217;s a start. And I haven&amp;#8217;t found it documented anywhere else, here you go.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

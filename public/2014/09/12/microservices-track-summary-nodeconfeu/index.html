@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#"><!--<![endif]-->
+
+    <head>
+                <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="author" content="">
+        <meta name="keywords" content="awesome, definitely">
+	
+        <meta property="og:site_name" content="fritzvd">
+        <meta property="og:title" content="fritzvd">
+        <meta property="og:url" content="http://blog.fritzvd.com/2014/09/12/microservices-track-summary-nodeconfeu/">
+        <meta property="og:description" content="">
+    
+        <meta property="og:type" content="article" />
+        <meta property="og:article:author" content="" />
+        <meta property="og:article:published_time" content="2014-09-12T11:17:59Z" />
+    
+        <meta name="generator" content="Hugo 0.15" />
+        <title>Microservices Track summary #nodeconfeu &middot; fritzvd </title>
+        <link rel="canonical" href="http://blog.fritzvd.com/" />
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="">
+        <link rel="stylesheet" type='text/css' href="http://blog.fritzvd.com/css/main.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Montserrat:700' rel='stylesheet' type='text/css'>
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    </head>
+<body>
+<!--[if lt IE 7]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chrome/‎">install Google Chrome</a> to experience this site.</p><![endif]-->
+
+    <header id="site-header">
+        <div class="container">
+            <a href="http://blog.fritzvd.com/" alt="fritzvd"><h1 class="blog-title heading">fritzvd</h1></a>
+            <p class="blog-description"></p>
+        </div>
+    </header>
+
+<main class="content" role="main">
+	<div class="container">
+		<article class="post">
+    
+<header class="post-header">
+      <h3 class="p-post-title">Microservices Track summary #nodeconfeu</h3>
+</header>
+
+<style>
+  header#site-header {
+    background-image: url(%25!s%28%3cnil%3e%29);
+    margin-bottom: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+    box-shadow: grey 10px 0px 5px 0px inset;
+    image-rendering: -moz-crisp-edges;          
+    image-rendering:   -o-crisp-edges;          
+    image-rendering: -webkit-optimize-contrast; 
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;   
+  }
+</style>
+
+
+    <section class="post-content">
+        <p>The microservices track came down to most speakers saying things more or less in similar vain, each talk having its own emphasis. <a href="https://twitter.com/rjrodger" title="rjrodger" target="_blank">Richard Rodger</a> opened up and basically laid the groundwork for the microservices bit together with the <a href="https://twitter.com/fgeorge52" title="fgeorge52" target="_blank">Fred George</a> talk.</p>
+
+<p>After hearing the talks I&#8217;d define microservices as small blocks that can run independently and do one thing, along the Unix philosophy. Making building blocks in stead of one big application that does everything. Now instead of including this one small thing in the rest of your app, you run this as a single thing which returns results based on messaging.</p>
+
+<p>Your services will be fairly stupid as in that they will not know about the other services. So in order to communicate with each other you have the services talk to a message bus.</p>
+
+<p>What this enables is having:</p>
+
+<ul>
+<li>a naturally scalable application</li>
+<li>naturally scalable teams (as you don&#8217;t need to know about the whole system)</li>
+<li>polyglot applications without it becoming a problem</li>
+</ul>
+
+<p>The nice thing about developing an application as a combination of microservices is it enables seperate small deployments. Versions of software can be bumped seperately and released seperately without the whole server having to suffer.</p>
+
+<p>Now the implementation and how different microservices work together differs amongst the various speakers.</p>
+
+<p>And of course different problems arise you now have lots of apps and servers to maintain, and you have to present this whole bunch of services as one application which feels like a wholistic thing to the user. According to <a href="https://twitter.com/dglozic" title="dglozic" target="_blank">Dejan Glozic</a> this could be solved with what he called: local clustering. <a href="https://twitter.com/clifcunn" title="clifcunn" target="_blank">Clifton Cunningham</a> put forward a few solutions for this: client side assembly, front end server, server side includes or edge side include. Or of course: build it yourself → <a href="https://www.npmjs.org/package/compoxure" title="compoxure" target="_blank">Compoxure</a>.</p>
+
+<p>In this scenario every service hosts and returns it&#8217;s own rendered html (or json if you request that format). If a service dies, the cache will run the last known good html or the html renders a default.</p>
+
+<p>For the static files part it&#8217;s similar. Every service knows which static files it needs and rakes them together with a tool called: <a href="https://www.npmjs.org/package/bosco" title="bosco" target="_blank">Bosco</a>.</p>
+
+<p>The company Richard Rodger co-founded nearForm built a solution for the local clustering problem in their microservices framework <a href="https://www.npmjs.org/package/seneca" title="seneca" target="_blank">Seneca</a>, their objective is best explained in the project website.</p>
+
+<p>Programming anarchist Fred George threw his own version in the mix, where he said all services receive all messages all the time. You can then categorize the message in his metaphor of Rapids, Rivers and Ponds. The rapids are the streams with all the messages. The rivers the themed events and the ponds things like state/history.</p>
+
+<p>A service should be so seperate, you should even have all the microservices have their own persistence layer. If a service has 2 jobs, make 2 services out of it.</p>
+
+<p>Microservices FTW.</p>
+
+    </section>
+
+    <hr>
+
+    <footer class="post-footer">
+        <section class="f-1">
+            
+            <section class="author">
+                <p>Words by fritzvd</p>
+            </section>
+            
+
+            <p class="f-post-time"><time datetime="2014-09-12T11:17:59Z">September 12, 2014</time></p>
+        </section>
+
+        <section class="f-2">
+            <section class="share">
+                <span>Share:
+                <a class="icon-twitter" href="http://twitter.com/share?text=Microservices%20Track%20summary%20%23nodeconfeu&url=http%3a%2f%2fblog.fritzvd.com%2f2014%2f09%2f12%2fmicroservices-track-summary-nodeconfeu%2f"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fblog.fritzvd.com%2f2014%2f09%2f12%2fmicroservices-track-summary-nodeconfeu%2f"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http%3a%2f%2fblog.fritzvd.com%2f2014%2f09%2f12%2fmicroservices-track-summary-nodeconfeu%2f"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+                </span>
+            </section>
+
+            
+            	<span class="f-post-tags"><i class="fa fa-tag"></i>
+            	javascript, microservices, node, nodeconf, nodeconfeu
+            	</span>
+            
+        </section>
+                
+    </footer>
+</article>
+
+<style>
+  img {
+    float: left;
+    margin: 1em;
+  }
+</style>
+
+	</div>
+</main>
+    <footer id="site-footer">
+        <div class="container">
+            <a href="http://blog.fritzvd.com/index.xml" title="Get the RSS feed"><span class="tooltip"><i class="fa fa-rss"></i></span></a>
+            <section>&copy; <a href="http://blog.fritzvd.com/"></a> 2015 | All rights reserved</section>
+            <section>Theme by <a href="http://www.jrdnbwmn.com">Jordan Bowman</a>. Generated with <a href="http://gohugo.io/">Hugo</a>.</section>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="http://blog.fritzvd.com/js/fittext.js"></script>
+    <script type="text/javascript">
+      $(".heading").fitText();
+    </script>
+
+
+</body>
+</html>

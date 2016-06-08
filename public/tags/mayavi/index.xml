@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mayavi on fritzvd</title>
+    <link>http://blog.fritzvd.com/tags/mayavi/</link>
+    <description>Recent content in Mayavi on fritzvd</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 22 Nov 2010 12:51:17 +0000</lastBuildDate>
+    <atom:link href="http://blog.fritzvd.com/tags/mayavi/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Processing images with GDAL and Mayavi2</title>
+      <link>http://blog.fritzvd.com/2010/11/22/processing-images-with-gdal-and-mayavi2/</link>
+      <pubDate>Mon, 22 Nov 2010 12:51:17 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2010/11/22/processing-images-with-gdal-and-mayavi2/</guid>
+      <description>&lt;p&gt;Ok, this took a while but the results are not bad. So I guess it&amp;#8217;s worth it.&lt;/p&gt;
+
+&lt;p&gt;First of all, a big thank you at [Ok, this took a while but the results are not bad. So I guess it&amp;#8217;s worth it.&lt;/p&gt;
+
+&lt;p&gt;First of all, a big thank you at](&lt;a href=&#34;http://www.gis.usu.edu/~chrisg/&#34;&gt;http://www.gis.usu.edu/~chrisg/&lt;/a&gt;) who is very possibly unaware of the fact that I have been using his classes on Python and Open Source GIS. They give a good introduction into using GDAL with NumPy.&lt;/p&gt;
+
+&lt;p&gt;So after struggling a few consecutive days (frustration peaked!), I managed to load a Digital Elevation Model into the Mayavi 3D visualization tool. It&amp;#8217;s still a bit rough and the peaks are a bit pointy, thus buildings look a bit weird, but still it&amp;#8217;s another little step.&lt;/p&gt;
+
+&lt;p&gt;I first tried a &lt;a href=&#34;http://en.wikibooks.org/wiki/Blender_3D:_Noob_to_Pro/Making_Landscapes_with_heightmaps&#34;&gt;Blender Tutorial&lt;/a&gt; that helped me out making this image:&lt;/p&gt;
+
+&lt;div id=&#34;attachment_199&#34; style=&#34;width: 456px&#34; class=&#34;wp-caption alignnone&#34;&gt;
+  &lt;a href=&#34;http://fritzvd.files.wordpress.com/2010/11/blenderdem.png&#34;&gt;&lt;img src=&#34;http://fritzvd.files.wordpress.com/2010/11/blenderdem.png&#34; alt=&#34;Blender and Digital Elevation Model&#34; title=&#34;blenderdem&#34; width=&#34;446&#34; height=&#34;269&#34; class=&#34;size-full wp-image-199&#34; /&gt;&lt;/a&gt;
+  
+  &lt;p class=&#34;wp-caption-text&#34;&gt;
+    Blender output
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Then after that I figured that is a bit much work for something that in my opinion can be done more efficiently. The steps are still a bit stupid, because I exported a PNG of the DEM visualized with grayscale and then imported that into gdal and displayed that. So it&amp;#8217;s still a bit dumb. And it isn&amp;#8217;t really representative of the data types that a DEM contain. But the DEM itself only gave very weird visualizations, possibly because of the detail of the file as well as large negative values for NoData values.&lt;/p&gt;
+
+&lt;p&gt;Anyway it is a start:&lt;/p&gt;
+
+&lt;div id=&#34;attachment_202&#34; style=&#34;width: 510px&#34; class=&#34;wp-caption alignnone&#34;&gt;
+  &lt;a href=&#34;http://fritzvd.files.wordpress.com/2010/11/mayavi-dem1.png&#34;&gt;&lt;img src=&#34;http://fritzvd.files.wordpress.com/2010/11/mayavi-dem1.png&#34; alt=&#34;Import with PNG and Mayavi2&#34; title=&#34;mayavi-dem&#34; width=&#34;500&#34; height=&#34;247&#34; class=&#34;size-full wp-image-202&#34; srcset=&#34;http://blog.technokrat.nl/wp-content/uploads/2010/11/mayavi-dem1-300x148.png 300w, http://blog.technokrat.nl/wp-content/uploads/2010/11/mayavi-dem1.png 1002w&#34; sizes=&#34;(max-width: 500px) 100vw, 500px&#34; /&gt;&lt;/a&gt;
+  
+  &lt;p class=&#34;wp-caption-text&#34;&gt;
+    Mayavi2 Output
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

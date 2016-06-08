@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mad Science on fritzvd</title>
+    <link>http://blog.fritzvd.com/tags/mad-science/</link>
+    <description>Recent content in Mad Science on fritzvd</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Sep 2014 11:53:39 +0000</lastBuildDate>
+    <atom:link href="http://blog.fritzvd.com/tags/mad-science/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Mad Science Act &amp;#8211; part 1@ nodeconf.eu</title>
+      <link>http://blog.fritzvd.com/2014/09/15/mad-science-act-part-1-nodeconf-eu/</link>
+      <pubDate>Mon, 15 Sep 2014 11:53:39 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2014/09/15/mad-science-act-part-1-nodeconf-eu/</guid>
+      <description>&lt;p&gt;The Mad Science Act, was something completely different. It featured many topics and some of the most creative and prolific npmjs.org authors. It was a bit mad, so I&amp;#8217;ll try to make it as coherent as I understood it. I have split up the post in 2 parts. It would be too much put into one.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Professor &lt;a title=&#34;substack&#34; href=&#34;https://twitter.com/substack&#34; target=&#34;_blank&#34;&gt;Substack&lt;/a&gt; &amp;#8211; Mad Science intro.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;When you start out creating (npm) modules you realize there is a great shortage of modules. And you need to create much more. A lot of tools are already readily available and they one thing and try to do it right. The tools are small concise and are encapsulated, they seperate concern and are in that sense: &amp;#8216;orthogonal&amp;#8217;.&lt;/p&gt;
+
+&lt;div style=&#34;width: 1450px&#34; class=&#34;wp-caption alignnone&#34;&gt;
+  &lt;a href=&#34;https://github.com/substack/nodeconf.eu-2014&#34;&gt;&lt;img class=&#34;&#34; src=&#34;https://raw.githubusercontent.com/substack/nodeconf.eu-2014/master/images/060_orthogonal.png&#34; alt=&#34;&#34; width=&#34;1440&#34; height=&#34;1080&#34; /&gt;&lt;/a&gt;
+  
+  &lt;p class=&#34;wp-caption-text&#34;&gt;
+    orthogonal &amp;#8211; substack
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Still with all the tools that are readily available, they don&amp;#8217;t cover all use cases. Besides focusing on test coverage, we should take into account solving more and more use cases. So go dumpster diving for stuff that can output other stuff by multiplexing data streams. For example with &lt;a title=&#34;dataplex&#34; href=&#34;https://github.com/substack/dataplex&#34; target=&#34;_blank&#34;&gt;dataplex&lt;/a&gt;. It helps you to capture and organize multiple streams over a single stream. Conveying it over e.g. tcp or web socket connections.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;this is where it all went fuzzy&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Then Substack did some live code demo&amp;#8217;s, to create a quick webserver, continuous integration server etc. with some readily available tools and piping the data to dataplex. There is a pretty good example on the &lt;a title=&#34;dataplex&#34; href=&#34;https://github.com/substack/dataplex&#34; target=&#34;_blank&#34;&gt;&amp;#8216;dataplex&amp;#8217; github page&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a title=&#34;feross&#34; href=&#34;https://twitter.com/feross&#34; target=&#34;_blank&#34;&gt;Feross&lt;/a&gt; &amp;#8211; webtorrent&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This talk portrayed a powerful implementation of webrtc. Using WebRTC as an alternative skype, &lt;a title=&#34;hello chrome it&#39;s firefox calling&#34; href=&#34;https://hacks.mozilla.org/2013/02/hello-chrome-its-firefox-calling/&#34; target=&#34;_blank&#34;&gt;is something we&amp;#8217;ve seen before&lt;/a&gt;. And it&amp;#8217;s great, but there is also the &lt;a title=&#34;datachannels on html5rocks&#34; href=&#34;http://www.html5rocks.com/en/tutorials/webrtc/datachannels/&#34; target=&#34;_blank&#34;&gt;DataChannel&lt;/a&gt;. An api that delivers a peer-to-peer data connection &lt;a title=&#34;webrtc infrastructure&#34; href=&#34;http://www.html5rocks.com/en/tutorials/webrtc/infrastructure/&#34; target=&#34;_blank&#34;&gt;&amp;#8216;without a server&amp;#8217;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;A peer-to-peer data connection of course sounds but a step away from things like the beautiful BitTorrent protocol. In comes &lt;a title=&#34;webtorrent&#34; href=&#34;https://github.com/feross/webtorrent&#34; target=&#34;_blank&#34;&gt;webtorrent&lt;/a&gt;. A tool created to use the bittorrent protocol for decompartmentalizing files with a verification hash, and start sharing these small parts of a file, so once a person has that small bit, it can already share that part. Only the catch is that it can do this over the web. The webtorrent client runs in any webRTC (datachannel) compatible browser. For now that means Firefox and Chrome.&lt;/p&gt;
+
+&lt;p&gt;An example of this can be found on &lt;a title=&#34;instant.io&#34; href=&#34;http://instant.io/&#34; target=&#34;_blank&#34;&gt;instant.io&lt;/a&gt; (send me a message if you want to try it ☺ &lt;a title=&#34;@fritzvd&#34; href=&#34;https://twitter.com/fritzvd&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Because bittorrent works over TCP/UDP webtorrent and bittorrent can&amp;#8217;t connect (yet) directly. But they need hybrid clients in between. So Feross is working on a command line webtorrent client, that functions as a &amp;#8216;hybrid&amp;#8217; client.&lt;/p&gt;
+
+&lt;p&gt;The awesomerestest was a live demo of a &lt;a title=&#34;webrtc-whiteboard&#34; href=&#34;https://github.com/feross/webrtc-whiteboard&#34; target=&#34;_blank&#34;&gt;webrtc-whiteboard&lt;/a&gt; which can also be &lt;a title=&#34;whiteboard&#34; href=&#34;http://instant.io:8080/&#34; target=&#34;_blank&#34;&gt;tested live&lt;/a&gt;. It&amp;#8217;s still very PoC-y though. But it was great to see it working these small bits and pieces that make up webtorrent and seeing it being used by people in the audience as well, for sharing cat video&amp;#8217;s and images:&lt;/p&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;
+  &lt;p&gt;
+    &lt;a href=&#34;https://twitter.com/feross&#34;&gt;@feross&lt;/a&gt; doing webrtc mad science &lt;a href=&#34;https://twitter.com/hashtag/nodeconfeu?src=hash&#34;&gt;#nodeconfeu&lt;/a&gt; &lt;a href=&#34;http://t.co/Kxf1BL4qd9&#34;&gt;pic.twitter.com/Kxf1BL4qd9&lt;/a&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    — Magnus (@ralphtheninja) &lt;a href=&#34;https://twitter.com/ralphtheninja/status/509649443097169920&#34;&gt;September 10, 2014&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Go over and help Feross. His project is now &lt;a title=&#34;OPEN Open Source&#34; href=&#34;http://blog.technokrat.nl/2014/09/15/open-open-source/&#34; target=&#34;_blank&#34;&gt;&amp;#8220;open open source&amp;#8221;.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

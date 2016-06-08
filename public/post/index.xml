@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on fritzvd</title>
+    <link>http://blog.fritzvd.com/post/</link>
+    <description>Recent content in Posts on fritzvd</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Oct 2015 06:49:23 +0000</lastBuildDate>
+    <atom:link href="http://blog.fritzvd.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Writing Tests for NativeScript apps</title>
+      <link>http://blog.fritzvd.com/2015/10/13/writing-tests-for-nativescript-apps/</link>
+      <pubDate>Tue, 13 Oct 2015 06:49:23 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2015/10/13/writing-tests-for-nativescript-apps/</guid>
+      <description>&lt;p&gt;This has been bugging me for a while. While working on my business logic and REST API connection in my NativeScript project, I couldn&amp;#8217;t write tests because requiring the tns-core-modules broke the test.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.nativescript.org/&#34; target=&#34;_blank&#34;&gt;NativeScript&lt;/a&gt; is a library with tooling to create iOS and Android apps in JavaScript. And it works smoothly. However at the moment the docs aren&amp;#8217;t always complete. Anyways, building and deploying an app on a mobile device (or emulator) takes somewhere in the range of a minute or so on a fast machine.&lt;/p&gt;
+
+&lt;p&gt;That doesn&amp;#8217;t really work if you&amp;#8217;re not sure if your logic makes sense.&lt;/p&gt;
+
+&lt;p&gt;In comes &lt;code&gt;&amp;lt;a href=&amp;quot;http://npmjs.com/package/proxyquire&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;proxyquire&amp;lt;/a&amp;gt;&lt;/code&gt;. Install proxyquire:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;syntax bash&#34;&gt;npm install --save-dev proxyquire
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then make sure you stub the package you want to be stubbed, with @noCallThru.&lt;/p&gt;
+
+&lt;p&gt;Example:&lt;/p&gt;
+
+&lt;p&gt;So now you can setup mocha for example to work with the app.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;syntax bash&#34;&gt;npm install --save-dev mocha
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Edit your package.json so your npm scripts reads:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;syntax javascript&#34;&gt;&#34;scripts&#34;: {
+    &#34;test&#34;: &#34;mocha tests/*&#34;,
+    &#34;start&#34;: &#34;node index.js&#34;
+  },
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And go ahead and run &lt;code&gt;npm test&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;Cover image courtesy of Willie Hardin: &lt;a href=&#34;https://www.flickr.com/photos/14934865@N07/3134743730/&#34;&gt;https://www.flickr.com/photos/14934865@N07/3134743730/&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nodeconf Adventure</title>
+      <link>http://blog.fritzvd.com/2015/08/03/nodeconf-adventure/</link>
+      <pubDate>Mon, 03 Aug 2015 07:05:28 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2015/08/03/nodeconf-adventure/</guid>
+      <description>&lt;p&gt;After looking at the program of Nodeconf 2014, I took the liberty to convince my boss that I should go there. Because of the structure and quality of the workshops. Little did I know that the conf part was going to be canceled, and the adventure had no prior scheduling. Except for what people handed in beforehand as topics they would want to speak about, or hear about. The conference &amp;#8220;started&amp;#8221; with the &lt;a href=&#34;http://oaklandjs.com/&#34; target=&#34;_blank&#34;&gt;OaklandJS meetup&lt;/a&gt;. A laid-back gathering of programmers that meet in a local pub. Where people either work on projects, discuss * or just come to hang out.&lt;/p&gt;
+
+&lt;p&gt;The adventure part of the conference started out with some time to get to know one another, find your room and have dinner. And when I say conference, I mean un-conference, because that&amp;#8217;s what it was, and what &lt;a href=&#34;http://mikealrogers.com/&#34; target=&#34;_blank&#34;&gt;Mikeal Rogers&lt;/a&gt;, the organiser, insisted it should be called. In fact on the official opening Mikeal made the announcement (I paraphrase):&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;There will be no talks, because&amp;#8230; talks are boring.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;We were to gather in one of the rooms in the morning at 9.00 where we would discuss topics and make a schedule for the day. This is how every day started out.&lt;/p&gt;
+
+&lt;p&gt;However before we started with the program of the conference we started out with the only scheduled talk. It was: Behind the scenes of &lt;a href=&#34;http://realtimefood.net/&#34; target=&#34;_blank&#34;&gt;#realtimefood&lt;/a&gt; by &lt;a href=&#34;https://twitter.com/hueniverse&#34; target=&#34;_blank&#34;&gt;Eran Hammer&lt;/a&gt; (the maintainer and creator of &lt;a href=&#34;http://hapijs.com/&#34; target=&#34;_blank&#34;&gt;hapi.js&lt;/a&gt;). I had no idea what to expect, to be frank, I didn&amp;#8217;t even know who Eran Hammer was. Eran wanted to point out how inspiring Nodeconf can be. The idea for the #realtimefood talk started at Nodeconf 2013. But we were clearly in for a stunning behind the scenes of an even more stupefying talk at the supposedly the last ever &lt;a href=&#34;http://realtimeconf.com/&#34; target=&#34;_blank&#34;&gt;RealtimeConf&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.flickr.com/photos/andyet-photos/10369704456&#34; title=&#34;2013RealTimeConf-582 by &amp;amp;yet Photos, on Flickr&#34;&gt;&lt;img src=&#34;https://c1.staticflickr.com/3/2889/10369704456_8c8a48a7b9.jpg&#34; width=&#34;333&#34; height=&#34;500&#34; alt=&#34;2013RealTimeConf-582&#34; /&gt;&lt;/a&gt;&lt;a href=&#34;https://www.flickr.com/photos/andyet-photos/10369687204&#34; title=&#34;2013RealTimeConf-581 by &amp;amp;yet Photos, on Flickr&#34;&gt;&lt;img src=&#34;https://c1.staticflickr.com/3/2878/10369687204_462f94839b.jpg&#34; width=&#34;333&#34; height=&#34;500&#34; alt=&#34;2013RealTimeConf-581&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Photos by &lt;a href=&#34;http://www.beccablevins.com/&#34; target=&#34;_blank&#34;&gt;Becca Blevins&lt;/a&gt; taken from &lt;a href=&#34;https://www.flickr.com/photos/andyet-photos/with/10369704456/&#34; target=&#34;_blank&#34;&gt;&amp;amp;yet&amp;rsquo;s photostream on flickr&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Eran started out by saying he spent 4 months and $7000.- USD to realize the talk. The talk was basically a mesmerizing performance art that included a 3 course dinner, in the middle of a conference that was about how we can change the world in the age of real time systems. This is just a short summation of the stuff he got to pull off, by just asking questions and hoping people would help out (in no particular order):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A garden complete with wooden boarding and all kinds of vegetables growing&lt;/li&gt;
+&lt;li&gt;Transportation to the conference of this garden&lt;/li&gt;
+&lt;li&gt;A breaking bad kind of experience with &amp;#8220;blue sky&amp;#8221; candy&lt;/li&gt;
+&lt;li&gt;Have a large amount of people in the room perform a ritual before eating a piece of candy&lt;/li&gt;
+&lt;li&gt;Have a 2 Michelin star restaurant (Mugaritz, Rentería, Spain) send over their recipe and a whole art piece free of charge&lt;/li&gt;
+&lt;li&gt;Have a 3 Michelin star restaurant (Eleven Madison Park, New York, USA) lend out their plates and send them over free of charge&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Eran didn&amp;#8217;t say a lot about what the talk itself was about, so you should probably just watch the talk itself:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://vimeo.com/77799055&#34;&gt;#realtimefood&amp;mdash;Eran Hammer&lt;/a&gt; from &lt;a href=&#34;https://vimeo.com/andyet&#34;&gt;&amp;amp;yet&lt;/a&gt; on &lt;a href=&#34;https://vimeo.com&#34;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For the rest of the Nodeconf Adventure I made some summaries. On this blog you&amp;#8217;ll find the summaries for the following topics:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.technokrat.nl/2015/06/22/isomorphic-javascript-and-modular-ui-nodeconf-2015/&#34;&gt;Isomorphic Javascript and Modular UI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.technokrat.nl/2015/06/23/containers-docker-lxc-nodeconf-2015/&#34;&gt;Containers (Docker, LXC)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.technokrat.nl/2015/07/01/es6-es7-ecmascript-2015-harmony-what-nodeconf-2015/&#34; target=&#34;_blank&#34;&gt;ES6 EcmaScript 2015.. what now?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.technokrat.nl/2015/07/01/building-communities-nodeconf-2015/&#34;&gt;Building community&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.technokrat.nl/2015/07/01/writing-documentation-nodeconf-2015/&#34;&gt;Writing documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.flickr.com/photos/matthewbergman/18840475252/in/album-72157654202715069/&#34; target=&#34;_blank&#34;&gt;Cover photo by Matthew Bergman&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Writing Documentation @ nodeconf 2015</title>
+      <link>http://blog.fritzvd.com/2015/07/01/writing-documentation-nodeconf-2015/</link>
+      <pubDate>Wed, 01 Jul 2015 08:19:19 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2015/07/01/writing-documentation-nodeconf-2015/</guid>
+      <description>&lt;p&gt;This topic of course ties in with &lt;a href=&#34;http://blog.technokrat.nl/2015/07/01/building-communities-nodeconf-2015/&#34;&gt;the Building Communities session&lt;/a&gt;. Because building community happens with code that is being used. And if you want people to be able to join easily, one of their first entry points will probably be the README, which has for some projects become the only or the main documentation.&lt;/p&gt;
+
+&lt;p&gt;At the moment the documentation of some projects is exemplary (think: anything &lt;a href=&#34;https://twitter.com/substack&#34; target=&#34;_blank&#34;&gt;@substack&lt;/a&gt; makes). Whereas the documentation of node itself is kind of a mess. The API documentation is varying in quality in different topics, there is no proper way to navigate within the page and structure is &amp;#8220;organic&amp;#8221;.&lt;/p&gt;
+
+&lt;p&gt;The goals of documentation we concluded in the session should always be, to be:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Exhaustive&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Simple&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Helpful&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Connected/Linked (linking to back and forth to other pieces or other blogs).&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This can be achieved by creating proper articles, for beginners but also for advanced topics. Or at link out to expert articles on other blogs. This should be a seperate set from the API documentation. The API documentation should be structured and be complete. In stead of missing some pieces here and there. An example I really like is the &lt;a href=&#34;https://docs.djangoproject.com/en/1.8/&#34; target=&#34;_blank&#34;&gt;Django documentation&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.flickr.com/photos/matthewbergman/18876975441/in/album-72157654202715069/&#34; target=&#34;_blank&#34;&gt;Cover photo by Matthew Bergman&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Building Communities @ nodeconf 2015</title>
+      <link>http://blog.fritzvd.com/2015/07/01/building-communities-nodeconf-2015/</link>
+      <pubDate>Wed, 01 Jul 2015 07:45:51 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2015/07/01/building-communities-nodeconf-2015/</guid>
+      <description>&lt;p&gt;A lot of the talks were not just about code or &amp;#8220;hardcore&amp;#8221; technical stuff, but also about social things like: building community, writing documentation, creating a safe environment. Which in the software meetups and talks scene has been growing as a topic. To dismay of some, and celebration of others.&lt;/p&gt;
+
+&lt;p&gt;This session started out as a discussion about the node project, &amp;#8220;the Fork&amp;#8221;: io.js and what it says about the community and the culture of node. This meant 3 core contributors telling about where they see the project failed, and what it did right, but also how to progress in the future.&lt;/p&gt;
+
+&lt;p&gt;First of all the io.js/node.js community would like to do better. They would like to be the role model for other projects. Adding stuff like a Code of Conduct instead of just code to a project. Some projects are still outshining in core values like: diversity, inclusivity and lowering the barrier to entry. And some projects are just outright mean. As an example the Johnny-Five (robotics) project was mentioned as a community which is really thriving and is able to maintain those key values, as&lt;/p&gt;
+
+&lt;p&gt;opposed to &amp;#8220;that other robotics&amp;#8221;-project in node.&lt;/p&gt;
+
+&lt;p&gt;A reason for this was giving by one of their maintainers: &amp;#8220;Focus on the right stuff early on&amp;#8221;. And to be frank that is true of any kind of standard you want to have in a project. Do you want a clean code base? Focus on that early on? Do you want a lot of test coverage? Don&amp;#8217;t add it as an afterthought. Do you want anyone from any color, creed and orientation to feel welcome? Don&amp;#8217;t &amp;#8220;add&amp;#8221; that when your code is ready to ship.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ES6 &#43; ES7, EcmaScript 2015 -- Harmony .. WHAT? @ nodeconf 2015</title>
+      <link>http://blog.fritzvd.com/2015/07/01/es6-es7-ecmascript-2015-harmony-what-nodeconf-2015/</link>
+      <pubDate>Wed, 01 Jul 2015 07:35:35 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2015/07/01/es6-es7-ecmascript-2015-harmony-what-nodeconf-2015/</guid>
+      <description>
+
+&lt;h3 id=&#34;javascript-gets-a-new-version-what-now:3c3a1f5ebe0864f8b13a5155819bec5d&#34;&gt;JavaScript gets a new version, what now&lt;/h3&gt;
+
+&lt;p&gt;Languages are never done. They evolve over time and are supplemented with new words every month, new phrases every year and acquires (minor) grammar changes every decade. This true for speaking languages as well as for programming languages.&lt;/p&gt;
+
+&lt;p&gt;The past year there has been a lot of talk about EcmaScript 6 (a.k.a. ES Harmony, or lately ES2015, which is the silliest name of all). A set of features that is coming, or has already landed for JavaScript. ES6 is nothing more than a specification of features according to &lt;a href=&#34;https://twitter.com/mikeal&#34; target=&#34;_blank&#34;&gt;Mikeal Rogers&lt;/a&gt;. A specification of features that have been designed, but are not certain to land in the coming years. Some of them are just syntactic sugar (classes,9 , that don&amp;#8217;t add anything new. Some are hurting performance and some are just plain great.&lt;/p&gt;
+
+&lt;p&gt;In the node community there has been some commotion surrounding ES6 because most of the features were suddenly being implemented in a fork of node called &amp;#8220;io.js&amp;#8221;. The temporary fork and squabble that is/has been (depending on when you read this) &lt;a href=&#34;iojs.org&#34;&gt;&amp;#8220;io.js&lt;/a&gt;&amp;#8221; was mainly to move node forward and out of a corporate governance model to a more open model. But you should just &lt;a href=&#34;http://blog.izs.me/post/104685388058/io-js&#34; target=&#34;_blank&#34;&gt;read&lt;/a&gt; &lt;a href=&#34;http://www.wired.com/2014/12/io-js/&#34; target=&#34;_blank&#34;&gt;some&lt;/a&gt; &lt;a href=&#34;http://readwrite.com/2015/02/27/node-js-io-js-reconciliation-near&#34; target=&#34;_blank&#34;&gt;article&lt;/a&gt; &lt;a href=&#34;http://venturebeat.com/2015/05/13/node-project-spinoff-io-js-is-moving-to-the-node-js-foundation-with-a-merge-in-progress/&#34; target=&#34;_blank&#34;&gt;explaining&lt;/a&gt; &lt;a href=&#34;http://www.infoworld.com/article/2855057/application-development/why-iojs-decided-to-fork-nodejs.html&#34; target=&#34;_blank&#34;&gt;that&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you want to play around with these features, you either have to wait for some of the features to be implemented (in browsers and node.js alike), or you need a transpiler or polyfill framework, for backwards compatibility or even to run it because no one supports it yet&amp;#8230; Most people are using &lt;a href=&#34;https://babeljs.io/docs/learn-es2015/&#34; target=&#34;_blank&#34;&gt;Babel&lt;/a&gt; which has a very decent set of docs and examples and transpiles your code back to ES5.&lt;/p&gt;
+
+&lt;p&gt;The thing that excites me most is the native promise implementation and the generators.&lt;/p&gt;
+
+&lt;p&gt;Then some people were really enthusiastic about an ES7 proposal for asynchronous functions: &lt;code&gt;async&lt;/code&gt;. If a function is async, you just &amp;#8220;tell&amp;#8221; the VM by doing this (example taken from the &lt;a href=&#34;https://github.com/lukehoban/ecmascript-asyncawait&#34; target=&#34;_blank&#34;&gt;async proposal&lt;/a&gt;):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;syntax javascript&#34;&gt;async function getData() {
+  var items = await fetchAsync(&#39;http://example.com/users&#39;);
+  return await* items.map(async(item) =&amp;gt; {
+    return {
+      title: item.title,
+      img: (await fetchAsync(item.userDataUrl)).img
+    }
+  });
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Take note of the &lt;code&gt;async&lt;/code&gt; and the &lt;code&gt;await&lt;/code&gt; keywords.&lt;/p&gt;
+
+&lt;p&gt;One of the &lt;a href=&#34;https://github.com/DJCordhose/ecmascript-2015-iojs&#34; target=&#34;_blank&#34;&gt;workshops&lt;/a&gt; at nodeconf was also about ES2015. It gives an overview of most features and you can play with the examples.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.flickr.com/photos/matthewbergman/18686339600/in/album-72157654202715069/&#34; target=&#34;_blank&#34;&gt;Cover photo by Matthew Bergman&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Containers (Docker, LXC) @ nodeconf 2015</title>
+      <link>http://blog.fritzvd.com/2015/06/23/containers-docker-lxc-nodeconf-2015/</link>
+      <pubDate>Tue, 23 Jun 2015 18:45:44 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2015/06/23/containers-docker-lxc-nodeconf-2015/</guid>
+      <description>
+
+&lt;h3 id=&#34;containers-like-the-ones-you-put-sundries-in:c8d86957e871d24595032033427258dc&#34;&gt;Containers, like the ones you put sundries in?&lt;/h3&gt;
+
+&lt;p&gt;Linux Containers (LXC) have been a hot new topic over the last 2 years. The easiest way to understand a container is to compare it with a Virtual Machine (VM). You can run a VM on your machine and it will pretend to be a computer inside a computer. It will emulate hardware so it can run an Operating System (OS) within your computer. When you start a VM you have to choose how much of your memory and CPU it can take up, and once you start the machine that piece of memory and CPU are designated to the VM (the guest) and lost to your computer (the host).&lt;/p&gt;
+
+&lt;p&gt;When you start a LXC however, you can start a box without it having to emulate machinery, it will create a &amp;#8220;contained&amp;#8221; environment, sharing the stuff that is common (the Linux kernel), and fork out a platform to run your processes and OS (any Linux variant) on. Running that container then, doesn&amp;#8217;t take that much extra memory, because it doesn&amp;#8217;t need to run an entire machine, with hardware and OS. But just the part that is different from the host. This also means bootups of a new container are close to instantaneous.&lt;/p&gt;
+
+&lt;h3 id=&#34;docker:c8d86957e871d24595032033427258dc&#34;&gt;Docker&lt;/h3&gt;
+
+&lt;p&gt;One of the products that was born as a result of this kernel API is: Docker. Docker makes it possible to create a container that you can provision and deploy your app on, and commit those changes to the box. It&amp;#8217;s like git for machines. All the changes to your box can be committed. Once you think your container is ready for deployment you can take the whole image and deploy that on a server. Instead of deploying your code, you now deploy your container.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://blog.technokrat.nl/wp-content/uploads/2015/06/62260701.jpg&#34;&gt;&lt;img src=&#34;http://blog.technokrat.nl/wp-content/uploads/2015/06/62260701-300x200.jpg&#34; alt=&#34;yo dawg&#34; width=&#34;300&#34; height=&#34;200&#34; class=&#34;alignnone size-medium wp-image-641&#34; srcset=&#34;http://blog.technokrat.nl/wp-content/uploads/2015/06/62260701-300x200.jpg 300w, http://blog.technokrat.nl/wp-content/uploads/2015/06/62260701.jpg 500w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;why-would-you-do-that:c8d86957e871d24595032033427258dc&#34;&gt;Why would you do that?&lt;/h3&gt;
+
+&lt;p&gt;Instead of killing a process or restarting a server, you just swap out a container. Deployment can become instant. You test the container on your local box, integration server, staging and production, it will be a matter of switching to an image, instead of deploying the code on there. If it doesn&amp;#8217;t work, you can just go back a commit. Easy as pie.&lt;/p&gt;
+
+&lt;h3 id=&#34;using-vagrant:c8d86957e871d24595032033427258dc&#34;&gt;Using Vagrant?&lt;/h3&gt;
+
+&lt;p&gt;If you&amp;#8217;re using Vagrant you can actually try this already instead of using your VM&amp;#8217;s (read: slow VM&amp;#8217;s). Check this vagrant plugin out: &lt;a href=&#34;https://github.com/fgrehm/vagrant-lxc&#34; target=&#34;_blank&#34;&gt;vagrant lxc&lt;/a&gt;. You can just try it out here. Play around, install all kinds of conflicting versions of software, destroy the box, and enjoy how you didn&amp;#8217;t completely bork your dev environment.&lt;/p&gt;
+
+&lt;p&gt;The people from &lt;a href=&#34;http://modulus.io&#34; target=&#34;_blank&#34;&gt;Modulus&lt;/a&gt; were in the session too, telling how happy they&amp;#8217;ve been with Docker. They were really excited about &lt;a href=&#34;https://github.com/docker/swarm/&#34; target=&#34;_blank&#34;&gt;Docker Swarm&lt;/a&gt;. A proxy API with which you can use the same Docker API you&amp;#8217;re used to, but have it talk to multiple instances in one API call.&lt;/p&gt;
+
+&lt;h3 id=&#34;best-practices-for-docker-containers:c8d86957e871d24595032033427258dc&#34;&gt;Best practices for Docker containers&lt;/h3&gt;
+
+&lt;p&gt;First of all, most people agreed they&amp;#8217;re is not really a &amp;#8220;wrong&amp;#8221; way to do a Dockerfile. When your Docker container becomes more complex it will become bigger though. Just like a git repository, the more commits, the bigger the git tree will become. Because it tracks the changes. A common practice is to compile and build a docker container and copy the compiled version to an empty docker image, to keep it small.&lt;/p&gt;
+
+&lt;p&gt;Other people suggested running a startup script inside the Docker image, instead of having the Dockerfile do all the provisioning.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.flickr.com/photos/matthewbergman/18845642595/in/album-72157654202715069/&#34; target=&#34;_blank&#34;&gt;Cover photo by Matthew Bergman&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Universal (Isomorphic) JavaScript and Modular UI @ nodeconf 2015</title>
+      <link>http://blog.fritzvd.com/2015/06/22/isomorphic-javascript-and-modular-ui-nodeconf-2015/</link>
+      <pubDate>Mon, 22 Jun 2015 14:20:37 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2015/06/22/isomorphic-javascript-and-modular-ui-nodeconf-2015/</guid>
+      <description>&lt;p&gt;N.B. This one of the first sessions held at nodeconf, everybody was still somewhat rusty.&lt;/p&gt;
+
+&lt;p&gt;Isomorphic JavaScript is the practice of using the same JavaScript code on the server and in the browser. In the session we talked about how to best implement this, and what to avoid. The naming is ridiculous, so let&amp;#8217;s just use &lt;a href=&#34;https://medium.com/@mjackson/universal-javascript-4761051b7ae9&#34; target=&#34;_blank&#34;&gt;Universal JavaScript&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;One of the first recommendations were to do static analysis. This goes through your code and finds dead dependencies or function that are never called. By using this you can eliminate redundancy in this way. Some modules that work great for this are &lt;a href=&#34;https://twitter.com/substack&#34; target=&#34;_blank&#34;&gt;@substack&amp;#8217;s&lt;/a&gt; &lt;a href=&#34;https://www.npmjs.com/package/detective&#34; target=&#34;_blank&#34;&gt;detective&lt;/a&gt; or the module tree analysis by &lt;a href=&#34;https://twitter.com/hughsk&#34; target=&#34;_blank&#34;&gt;@hughsk&lt;/a&gt; called &lt;a href=&#34;http://hughsk.io/disc/&#34; target=&#34;_blank&#34;&gt;disk&lt;/a&gt; (looks good too!).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;UPDATE:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Substack actually did a talk on Abstract Syntax Tree&amp;#8217;s (which can be used to do static analysis) at &lt;a href=&#34;https://jquerysf.com&#34; target=&#34;_blank&#34;&gt;jQuerySF&lt;/a&gt;, which goes a bit more into detail on what you can do with AST&amp;#8217;s and how Static Analysis works behind the scenes.&lt;/p&gt;
+
+&lt;p&gt;React got a lot of attention too. A small template rendering engine that let&amp;#8217;s you render the page on the server, and with the same set of libraries render the changes on the front-end. So the page is fully loaded when you first land on the page, in stead of the startup time that&amp;#8217;s required for full-fledged MVC(-likes) such as: AngularJS, Ember and Backbone. React&amp;#8217;s server side rendering here is the one thing that really stands out, together with the speed and the small size of the library. Most people really seem to be fond of this approach (after dealing with the ugliness which is JSX).&lt;/p&gt;
+
+&lt;p&gt;According to substack, we shouldn&amp;#8217;t use big shims, we shouldn&amp;#8217;t use frameworks. Because it will break stuff, or come back to haunt you. Especially if you&amp;#8217;re trying to run Universal JS. We should create small modules that uses CommonJS&amp;#8217; &lt;code&gt;module.exports&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;This kind of moved on to the discussion of Modular UI which was another topic. The gist of this session was to make modules that expose css and assets through inline css or conditional building. A well known implementation doing UI in this way is the &lt;a href=&#34;https://www.polymer-project.org/1.0/docs/devguide/feature-overview.html&#34; target=&#34;_blank&#34;&gt;Polymer Project&lt;/a&gt;. Every component is a module that doesn&amp;#8217;t have to be a part of the rest of the project. To include a small piece, you just: &lt;code&gt;npm install --save my-special-module&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;See &lt;a href=&#34;https://twitter.com/davidguttman&#34; target=&#34;_blank&#34;&gt;David Guttman&amp;#8217;s&lt;/a&gt; &lt;a href=&#34;https://github.com/davidguttman/cssify&#34; target=&#34;_blank&#34;&gt;cssify&lt;/a&gt; for a way to include the required css files with browserify.&lt;/p&gt;
+
+&lt;p&gt;The rest of my notes say:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Distribution.&lt;/li&gt;
+&lt;li&gt;UMD.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So if anyone feels like filling me on on what this meant, that would be grand. &lt;img src=&#34;http://blog.technokrat.nl/wp-includes/images/smilies/simple-smile.png&#34; alt=&#34;:)&#34; class=&#34;wp-smiley&#34; style=&#34;height: 1em; max-height: 1em;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.flickr.com/photos/matthewbergman/18687844349/in/album-72157654202715069/&#34; target=&#34;_blank&#34;&gt;Cover photo by Matthew Bergman&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>FBX and 3d models in Monogame &amp;#8211; on Linux</title>
+      <link>http://blog.fritzvd.com/2015/05/19/fbx-and-3d-models-in-monogame-on-linux/</link>
+      <pubDate>Tue, 19 May 2015 15:35:39 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2015/05/19/fbx-and-3d-models-in-monogame-on-linux/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;TL;DR the monogame community is pretty great&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Lately my manic ambitious mode has turned on again for me. So I have about 100s of ideas again, which sadly of course will all come to nothing. But while I&amp;#8217;m at it, I thought I&amp;#8217;d make the best of it to do some tutorials here and there and learn some stuff I know nothing about.&lt;/p&gt;
+
+&lt;p&gt;Starting with Monogame on Linux is kind of a hassle to start with, but if you push through it works. At the time of writing this I got Monogame 3.4 to work: &lt;a href=&#34;http://www.monogame.net/downloads/&#34; target=&#34;_blank&#34;&gt;Monogame Downloads Page&lt;/a&gt;. If you&amp;#8217;re not very comfortable with&lt;/p&gt;
+
+&lt;p&gt;The real problem was that a tutorial I tried to follow had an old style FBX file that the Monogame Content Pipeline was not willing to load. Everyone told me to use &lt;a href=&#34;http://www.blender.org/download/&#34; target=&#34;_blank&#34;&gt;Blender&lt;/a&gt; to convert it. But.. Blender wasn&amp;#8217;t loading my file, because it was ASCII based. So I had to find a converter. I found the Autodesk one for Linux somewhere in the attic of the internet. I&amp;#8217;ll host it &lt;a href=&#34;http://meuk.technokrat.nl/fbx_converter&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; so I know for sure it won&amp;#8217;t go missing. So install that thing, and convert it (if necessary import and export in Blender too, just to make sure). Your Content Pipeline will thank you.&lt;/p&gt;
+
+&lt;p&gt;P.S. you can find some great free models here: &lt;a href=&#34;http://tf3dm.com/&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;http://tf3dm.com/&#34;&gt;http://tf3dm.com/&lt;/a&gt;&lt;/a&gt;. &lt;a href=&#34;http://tf3dm.com/3d-model/puo-67895.html&#34; target=&#34;_blank&#34;&gt;The featured image is a model made by 3dgenerator: &lt;a href=&#34;http://tf3dm.com/3d-model/puo-67895.html&#34;&gt;http://tf3dm.com/3d-model/puo-67895.html&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mad Science Act &amp;#8211; part 1@ nodeconf.eu</title>
+      <link>http://blog.fritzvd.com/2014/09/15/mad-science-act-part-1-nodeconf-eu/</link>
+      <pubDate>Mon, 15 Sep 2014 11:53:39 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2014/09/15/mad-science-act-part-1-nodeconf-eu/</guid>
+      <description>&lt;p&gt;The Mad Science Act, was something completely different. It featured many topics and some of the most creative and prolific npmjs.org authors. It was a bit mad, so I&amp;#8217;ll try to make it as coherent as I understood it. I have split up the post in 2 parts. It would be too much put into one.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Professor &lt;a title=&#34;substack&#34; href=&#34;https://twitter.com/substack&#34; target=&#34;_blank&#34;&gt;Substack&lt;/a&gt; &amp;#8211; Mad Science intro.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;When you start out creating (npm) modules you realize there is a great shortage of modules. And you need to create much more. A lot of tools are already readily available and they one thing and try to do it right. The tools are small concise and are encapsulated, they seperate concern and are in that sense: &amp;#8216;orthogonal&amp;#8217;.&lt;/p&gt;
+
+&lt;div style=&#34;width: 1450px&#34; class=&#34;wp-caption alignnone&#34;&gt;
+  &lt;a href=&#34;https://github.com/substack/nodeconf.eu-2014&#34;&gt;&lt;img class=&#34;&#34; src=&#34;https://raw.githubusercontent.com/substack/nodeconf.eu-2014/master/images/060_orthogonal.png&#34; alt=&#34;&#34; width=&#34;1440&#34; height=&#34;1080&#34; /&gt;&lt;/a&gt;
+  
+  &lt;p class=&#34;wp-caption-text&#34;&gt;
+    orthogonal &amp;#8211; substack
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Still with all the tools that are readily available, they don&amp;#8217;t cover all use cases. Besides focusing on test coverage, we should take into account solving more and more use cases. So go dumpster diving for stuff that can output other stuff by multiplexing data streams. For example with &lt;a title=&#34;dataplex&#34; href=&#34;https://github.com/substack/dataplex&#34; target=&#34;_blank&#34;&gt;dataplex&lt;/a&gt;. It helps you to capture and organize multiple streams over a single stream. Conveying it over e.g. tcp or web socket connections.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;this is where it all went fuzzy&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Then Substack did some live code demo&amp;#8217;s, to create a quick webserver, continuous integration server etc. with some readily available tools and piping the data to dataplex. There is a pretty good example on the &lt;a title=&#34;dataplex&#34; href=&#34;https://github.com/substack/dataplex&#34; target=&#34;_blank&#34;&gt;&amp;#8216;dataplex&amp;#8217; github page&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a title=&#34;feross&#34; href=&#34;https://twitter.com/feross&#34; target=&#34;_blank&#34;&gt;Feross&lt;/a&gt; &amp;#8211; webtorrent&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This talk portrayed a powerful implementation of webrtc. Using WebRTC as an alternative skype, &lt;a title=&#34;hello chrome it&#39;s firefox calling&#34; href=&#34;https://hacks.mozilla.org/2013/02/hello-chrome-its-firefox-calling/&#34; target=&#34;_blank&#34;&gt;is something we&amp;#8217;ve seen before&lt;/a&gt;. And it&amp;#8217;s great, but there is also the &lt;a title=&#34;datachannels on html5rocks&#34; href=&#34;http://www.html5rocks.com/en/tutorials/webrtc/datachannels/&#34; target=&#34;_blank&#34;&gt;DataChannel&lt;/a&gt;. An api that delivers a peer-to-peer data connection &lt;a title=&#34;webrtc infrastructure&#34; href=&#34;http://www.html5rocks.com/en/tutorials/webrtc/infrastructure/&#34; target=&#34;_blank&#34;&gt;&amp;#8216;without a server&amp;#8217;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;A peer-to-peer data connection of course sounds but a step away from things like the beautiful BitTorrent protocol. In comes &lt;a title=&#34;webtorrent&#34; href=&#34;https://github.com/feross/webtorrent&#34; target=&#34;_blank&#34;&gt;webtorrent&lt;/a&gt;. A tool created to use the bittorrent protocol for decompartmentalizing files with a verification hash, and start sharing these small parts of a file, so once a person has that small bit, it can already share that part. Only the catch is that it can do this over the web. The webtorrent client runs in any webRTC (datachannel) compatible browser. For now that means Firefox and Chrome.&lt;/p&gt;
+
+&lt;p&gt;An example of this can be found on &lt;a title=&#34;instant.io&#34; href=&#34;http://instant.io/&#34; target=&#34;_blank&#34;&gt;instant.io&lt;/a&gt; (send me a message if you want to try it ☺ &lt;a title=&#34;@fritzvd&#34; href=&#34;https://twitter.com/fritzvd&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Because bittorrent works over TCP/UDP webtorrent and bittorrent can&amp;#8217;t connect (yet) directly. But they need hybrid clients in between. So Feross is working on a command line webtorrent client, that functions as a &amp;#8216;hybrid&amp;#8217; client.&lt;/p&gt;
+
+&lt;p&gt;The awesomerestest was a live demo of a &lt;a title=&#34;webrtc-whiteboard&#34; href=&#34;https://github.com/feross/webrtc-whiteboard&#34; target=&#34;_blank&#34;&gt;webrtc-whiteboard&lt;/a&gt; which can also be &lt;a title=&#34;whiteboard&#34; href=&#34;http://instant.io:8080/&#34; target=&#34;_blank&#34;&gt;tested live&lt;/a&gt;. It&amp;#8217;s still very PoC-y though. But it was great to see it working these small bits and pieces that make up webtorrent and seeing it being used by people in the audience as well, for sharing cat video&amp;#8217;s and images:&lt;/p&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;
+  &lt;p&gt;
+    &lt;a href=&#34;https://twitter.com/feross&#34;&gt;@feross&lt;/a&gt; doing webrtc mad science &lt;a href=&#34;https://twitter.com/hashtag/nodeconfeu?src=hash&#34;&gt;#nodeconfeu&lt;/a&gt; &lt;a href=&#34;http://t.co/Kxf1BL4qd9&#34;&gt;pic.twitter.com/Kxf1BL4qd9&lt;/a&gt;
+  &lt;/p&gt;
+  
+  &lt;p&gt;
+    — Magnus (@ralphtheninja) &lt;a href=&#34;https://twitter.com/ralphtheninja/status/509649443097169920&#34;&gt;September 10, 2014&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Go over and help Feross. His project is now &lt;a title=&#34;OPEN Open Source&#34; href=&#34;http://blog.technokrat.nl/2014/09/15/open-open-source/&#34; target=&#34;_blank&#34;&gt;&amp;#8220;open open source&amp;#8221;.&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>OPEN Open Source</title>
+      <link>http://blog.fritzvd.com/2014/09/15/open-open-source/</link>
+      <pubDate>Mon, 15 Sep 2014 11:37:34 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2014/09/15/open-open-source/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;What?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Individuals making significant and valuable contributions are given commit-access to the project to contribute as they see fit. This project is more like an open wiki than a standard guarded open source project.&lt;/p&gt;
+
+&lt;p&gt;Rules&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;There are a few basic ground-rules for contributors:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;No &amp;#8211;force pushes or modifying the Git history in any way.&lt;/p&gt;
+
+&lt;p&gt;Non-master branches ought to be used for ongoing work.&lt;/p&gt;
+
+&lt;p&gt;External API changes and significant modifications ought to be subject to an internal pull-request to solicit feedback from other contributors.&lt;/p&gt;
+
+&lt;p&gt;Internal pull-requests to solicit feedback are encouraged for any other non-trivial contribution but left to the discretion of the contributor.&lt;/p&gt;
+
+&lt;p&gt;Contributors should attempt to adhere to the prevailing code-style.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Releases&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Declaring formal releases remains the prerogative of the project maintainer.&lt;/p&gt;
+
+&lt;p&gt;Changes to this arrangement&lt;/p&gt;
+
+&lt;p&gt;This is an experiment and feedback is welcome! This document may also be subject to pull requests or changes by contributors where you believe you have something valuable to add or change.&lt;/p&gt;
+
+&lt;p&gt;Thanks to Rod Vagg and the LevelUP project for coming up with the idea of &amp;#8220;OPEN Open Source&amp;#8221;!&lt;/p&gt;
+
+&lt;p&gt;(taken from &lt;a href=&#34;https://github.com/rvagg/node-levelup/blob/master/CONTRIBUTING.md&#34; title=&#34;webtorrent contributing&#34; target=&#34;_blank&#34;&gt;node-levelup&lt;/a&gt;&amp;#8216;s contributing page)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hardware Track nodeconf.eu</title>
+      <link>http://blog.fritzvd.com/2014/09/15/hardware-track-nodeconf-eu/</link>
+      <pubDate>Mon, 15 Sep 2014 09:14:33 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2014/09/15/hardware-track-nodeconf-eu/</guid>
+      <description>&lt;p&gt;The hardware track featured talks on hardware that were not just about hardware, but also served as a metaphor. The most poignant of these was Colin Vernon&amp;#8217;s on the cloudbit.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Colin Vernon &amp;#8211; Cloudbit&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;As an engineer we really like building stuff and figuring out difficult problems. And for us working with the tools we make is easy. But we should see our tools as a material. A material with which we can build stuff, which we can use like lego-blocks.&lt;/p&gt;
+
+&lt;p&gt;In that vain &lt;a href=&#34;http://littlebits.cc/&#34; title=&#34;littlebits&#34; target=&#34;_blank&#34;&gt;littlebits&lt;/a&gt; have created hardware modules that click into eachother and are interchangeable. With the newest bit: the cloudbit you can run and build a quick node app. With this you can control your &amp;#8216;bits&amp;#8217; or read out its data.&lt;/p&gt;
+
+&lt;p&gt;Software in that sense can be like hardware. Where in stead of creating applications (monolithic or not) that don&amp;#8217;t connect to each other, let&amp;#8217;s make small building blocks. Littlebits is lowering the barrier to entry for hardware. With the cloudbit they are not lowering the bar again for connectivity. With a ready made app that can read out sensors on your iPhone. So why not lower the barrier to entry to connecting software bits. In a way this is what &lt;a href=&#34;https://ifttt.com/&#34; title=&#34;ifttt&#34; target=&#34;_blank&#34;&gt;IFTTT.com (If This Then That)&lt;/a&gt; did.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;#8217;s stop solving the same problems over and over again, and let&amp;#8217;s start creating blocks that lock and in out of each other similar to the littlebits hardware.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Raquel Velez&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Nodebots are fairly simple and cheap to make, and are fun. Hardware can be hooked up and you can run node to get things working.&lt;/p&gt;
+
+&lt;p&gt;A few libraries that would be useful for this:&lt;/p&gt;
+
+&lt;p&gt;johnny-five.&lt;/p&gt;
+
+&lt;p&gt;Raquel demoed a little bot that could draw (either randomly or controlled by a small webinterface). Sadly it died a horrid death at demo time. Here&amp;#8217;s the video to prove it actually worked at one point:&lt;/p&gt;
+
+&lt;p&gt;Bots like this might seem insignificant, but Raquel ended saying that in the end the Mars Rovers are also basically bots which do similar stuff as the nodebot project makes possible.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Hardware workshop&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In the afternoon we played around with the littlebits sets and &lt;a href=&#34;https://tessel.io/&#34; title=&#34;tessel.io&#34; target=&#34;_blank&#34;&gt;Tessels&lt;/a&gt; (microcontroller that runs javascript). Which basically meant everyone went hay-wire on the &lt;a href=&#34;http://littlebits.cc/kits/synth-kit&#34; title=&#34;synth-kit&#34; target=&#34;_blank&#34;&gt;Korg set of littlebits&lt;/a&gt;:&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Front end track at nodeconf.eu</title>
+      <link>http://blog.fritzvd.com/2014/09/13/front-end-track-at-nodeconf-eu/</link>
+      <pubDate>Sat, 13 Sep 2014 11:11:52 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2014/09/13/front-end-track-at-nodeconf-eu/</guid>
+      <description>&lt;p&gt;The frontend track featured some very different talks , ranging from performance to a/b testing. In that sense it was a bit different from the &lt;a href=&#34;http://blog.technokrat.nl/2014/09/12/microservices-track-summary-nodeconfeu/&#34; title=&#34;Microservices Track summary #nodeconfeu&#34; target=&#34;_blank&#34;&gt;microservices track&lt;/a&gt;, because it was less of a &amp;#8216;one story&amp;#8217; thing.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Scaling A/B testing at Netflix &amp;#8211; &lt;a href=&#34;https://twitter.com/stinkydofu&#34; title=&#34;@stinkydofu&#34; target=&#34;_blank&#34;&gt;Alex Liu&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Netflix takes a/b testing to the next level, where they break up the UI in little pieces and run a/b tests on all of them at once. One user can be in several a/b tests at one point in time. They do hundreds of these tests a year, which means they have to deliver 2.5 million unique packages a week (!!!!!!!). This in itself is astounding.&lt;/p&gt;
+
+&lt;p&gt;The problem with these packages is conditional packages. So for example search is updated and needs some old dependencies and some old dependencies (see slide below).&lt;/p&gt;
+
+&lt;p&gt;To build this to scale you don&amp;#8217;t want to have someone picking the correct packages by hand. For that they wrote a node module that looks at the docstring of a function/file. Which can have a ruleset explaining when it should or should not be included. In the build process the packages are selected that should be part of it and which should not. With every request to the node server that runs the assets, the registry is consulted, the rules are applied and packaged and cached and served from a CDN for the next person in the same a/b test group.&lt;/p&gt;
+
+&lt;p&gt;Fail fast, move faster (to improve that is, your goal should not be to fail).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Fullstack through microservices &amp;#8211; &lt;a href=&#34;https://twitter.com/matteocollina&#34; title=&#34;@matteocollina&#34; target=&#34;_blank&#34;&gt;Matteo Collina&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Matteo talked about using data channels and RPC&amp;#8217;s (remote procedure calls) from the back end to the frontend. Using data streams in stead of request/response patterns. In stead of returning a delimited block of data you can return a channel. This makes it possible to receive and unpack or send and connect binary data directly to or from the frontend. Anything that is serializable to JSON, Node.js binary streams or even other channels can all be sent through this mechanism.&lt;/p&gt;
+
+&lt;p&gt;So to have a framework of these types of microservices they created Graft.&lt;/p&gt;
+
+&lt;p&gt;_Update: oh and he used this really cool cheap sensor to do his talk: &lt;a href=&#34;https://estore.ti.com/CC2541DK-SENSOR-CC2541-SensorTag-Development-Kit-P3192.aspx&#34; title=&#34;SensorTag&#34; target=&#34;_blank&#34;&gt;SensorTag&lt;/a&gt;_&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Building high quality services at Uber &amp;#8211; &lt;a href=&#34;https://twitter.com/raynos&#34; title=&#34;@raynos&#34; target=&#34;_blank&#34;&gt;Jake Verbaten&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Raynos started with a funny story where his first day was to build a proxy service. Oh and it will be deployed to about 50 machines. Oh and they can&amp;#8217;t go down ever.&lt;/p&gt;
+
+&lt;p&gt;Of course when you make something, you have to go over it again to &amp;#8220;productionize&amp;#8221; it. In order to do this, he showed some tools they use at Uber to get this going.&lt;/p&gt;
+
+&lt;p&gt;The one that stood out the most was &lt;em&gt;potter&lt;/em&gt; (which they&amp;#8217;re still &amp;#8220;open-sourcifying&amp;#8221;). It basically sets up a skeleton (or scaffolds) for your project, starts a github repo, and registers it at your CI server (i.e. travis, jenkins, wha-evah), starts logging to sentry and graphite.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Demystifying v8 and javascript performance &amp;#8211; &lt;a href=&#34;https://twitter.com/thlorenz&#34; title=&#34;@thlorenz&#34; target=&#34;_blank&#34;&gt;Thorsten Lorentz&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The engine which is used for node.js is the same one as is used for Chrome/Chromium project: V8. Therefore similar problems that arise with node will also occur in the browser. Which means that performancewise you can apply the same principles.&lt;/p&gt;
+
+&lt;p&gt;This is the talk that had me looking up lots of things in the end, so it at least was great food for thought.&lt;/p&gt;
+
+&lt;p&gt;One of the easiest performance gains you can easily apply is to be clear about your intentions to the browser/v8 engine. Meaning you don&amp;#8217;t start by declaring an empty list if you are then going to fill it up with a number of different types. Usually you should stay away from different types in one array altogether, but performance will severely drop if you are not being upfront to the interpreter.&lt;/p&gt;
+
+&lt;p&gt;Example:&lt;/p&gt;
+
+&lt;p&gt;He also went into great detail about how you don&amp;#8217;t want to keep on changing an Object structure after construction, because at one point v8 will give up and fall-back to the unoptimizable slow HashTable structure. But rather than I try to reproduce this look at this blog post: &lt;a href=&#34;http://jayconrod.com/posts/52/a-tour-of-v8-object-representation&#34; title=&#34;a-tour-of-v8-object-representation&#34; target=&#34;_blank&#34;&gt;A tour of v8 object representation&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://thlorenz.github.io/talks/demystifying-v8/talk.pdf&#34; title=&#34;slides&#34; target=&#34;_blank&#34;&gt;and the slides themselves&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Final thoughts&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/davidmarkclem&#34; title=&#34;@davidmarkclem&#34; target=&#34;_blank&#34;&gt;David Clements&lt;/a&gt; did a workshop on working with streams and data from front end to the backend (and vice versa) which covered lots of ground similar to what Matteo squeezed into 20 min. Check it out here: &lt;a href=&#34;https://www.dropbox.com/sh/9ra61cq9qgpxyx0/AACXumrkWesFs7jrhI4uUEula/slides.pdf?dl=0&#34; title=&#34;back to the frontend&#34; target=&#34;_blank&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Microservices Track summary #nodeconfeu</title>
+      <link>http://blog.fritzvd.com/2014/09/12/microservices-track-summary-nodeconfeu/</link>
+      <pubDate>Fri, 12 Sep 2014 11:17:59 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2014/09/12/microservices-track-summary-nodeconfeu/</guid>
+      <description>&lt;p&gt;The microservices track came down to most speakers saying things more or less in similar vain, each talk having its own emphasis. &lt;a href=&#34;https://twitter.com/rjrodger&#34; title=&#34;rjrodger&#34; target=&#34;_blank&#34;&gt;Richard Rodger&lt;/a&gt; opened up and basically laid the groundwork for the microservices bit together with the &lt;a href=&#34;https://twitter.com/fgeorge52&#34; title=&#34;fgeorge52&#34; target=&#34;_blank&#34;&gt;Fred George&lt;/a&gt; talk.&lt;/p&gt;
+
+&lt;p&gt;After hearing the talks I&amp;#8217;d define microservices as small blocks that can run independently and do one thing, along the Unix philosophy. Making building blocks in stead of one big application that does everything. Now instead of including this one small thing in the rest of your app, you run this as a single thing which returns results based on messaging.&lt;/p&gt;
+
+&lt;p&gt;Your services will be fairly stupid as in that they will not know about the other services. So in order to communicate with each other you have the services talk to a message bus.&lt;/p&gt;
+
+&lt;p&gt;What this enables is having:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;a naturally scalable application&lt;/li&gt;
+&lt;li&gt;naturally scalable teams (as you don&amp;#8217;t need to know about the whole system)&lt;/li&gt;
+&lt;li&gt;polyglot applications without it becoming a problem&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The nice thing about developing an application as a combination of microservices is it enables seperate small deployments. Versions of software can be bumped seperately and released seperately without the whole server having to suffer.&lt;/p&gt;
+
+&lt;p&gt;Now the implementation and how different microservices work together differs amongst the various speakers.&lt;/p&gt;
+
+&lt;p&gt;And of course different problems arise you now have lots of apps and servers to maintain, and you have to present this whole bunch of services as one application which feels like a wholistic thing to the user. According to &lt;a href=&#34;https://twitter.com/dglozic&#34; title=&#34;dglozic&#34; target=&#34;_blank&#34;&gt;Dejan Glozic&lt;/a&gt; this could be solved with what he called: local clustering. &lt;a href=&#34;https://twitter.com/clifcunn&#34; title=&#34;clifcunn&#34; target=&#34;_blank&#34;&gt;Clifton Cunningham&lt;/a&gt; put forward a few solutions for this: client side assembly, front end server, server side includes or edge side include. Or of course: build it yourself → &lt;a href=&#34;https://www.npmjs.org/package/compoxure&#34; title=&#34;compoxure&#34; target=&#34;_blank&#34;&gt;Compoxure&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In this scenario every service hosts and returns it&amp;#8217;s own rendered html (or json if you request that format). If a service dies, the cache will run the last known good html or the html renders a default.&lt;/p&gt;
+
+&lt;p&gt;For the static files part it&amp;#8217;s similar. Every service knows which static files it needs and rakes them together with a tool called: &lt;a href=&#34;https://www.npmjs.org/package/bosco&#34; title=&#34;bosco&#34; target=&#34;_blank&#34;&gt;Bosco&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The company Richard Rodger co-founded nearForm built a solution for the local clustering problem in their microservices framework &lt;a href=&#34;https://www.npmjs.org/package/seneca&#34; title=&#34;seneca&#34; target=&#34;_blank&#34;&gt;Seneca&lt;/a&gt;, their objective is best explained in the project website.&lt;/p&gt;
+
+&lt;p&gt;Programming anarchist Fred George threw his own version in the mix, where he said all services receive all messages all the time. You can then categorize the message in his metaphor of Rapids, Rivers and Ponds. The rapids are the streams with all the messages. The rivers the themed events and the ponds things like state/history.&lt;/p&gt;
+
+&lt;p&gt;A service should be so seperate, you should even have all the microservices have their own persistence layer. If a service has 2 jobs, make 2 services out of it.&lt;/p&gt;
+
+&lt;p&gt;Microservices FTW.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Procedural Death Jam, 7 Day Rogue Like, Cyberpunk Game jamathon.</title>
+      <link>http://blog.fritzvd.com/2014/03/08/procedural-death-jam-7-day-rogue-like-cyberpunk-game-jamathon/</link>
+      <pubDate>Sat, 08 Mar 2014 15:09:25 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2014/03/08/procedural-death-jam-7-day-rogue-like-cyberpunk-game-jamathon/</guid>
+      <description>&lt;p&gt;Ok. It&amp;#8217;s official as of 16.04 (CET) I have entered in all of the above mentioned GameJams. This is where I will track my development.&lt;/p&gt;
+
+&lt;p&gt;The project can be found at: &lt;a href=&#34;https://github.com/fritzvd/abime&#34; title=&#34;abime&#34;&gt;https://github.com/fritzvd/abime&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It. Is. On!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Note to self: Neko target in Haxe does not handle placement of BitmapData well. Been spending an hour to get it to work. Other target was instant.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong Update 2: &lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This was a very bad week to be working on something like this. Next time I&amp;#8217;ll clear my schedule. This was doomed to fail from the beginning. Lessons learned include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;got familiar with Löve2D&lt;/li&gt;
+&lt;li&gt;got more familiar with HaxePunk&lt;/li&gt;
+&lt;li&gt;learned about ray casting&lt;/li&gt;
+&lt;li&gt;made some math mistakes&lt;/li&gt;
+&lt;li&gt;learned to free my schedule&lt;/li&gt;
+&lt;li&gt;deal with failure&lt;/li&gt;
+&lt;li&gt;great communities that make awesome games&lt;/li&gt;
+&lt;li&gt;lower the bar&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Particle Emitter in HaxePunk</title>
+      <link>http://blog.fritzvd.com/2014/03/04/particle-emitter-in-haxepunk/</link>
+      <pubDate>Tue, 04 Mar 2014 14:34:54 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2014/03/04/particle-emitter-in-haxepunk/</guid>
+      <description>&lt;p&gt;For some this will be a trivial example. For me this took a bit longer than I suspected.&lt;/p&gt;
+
+&lt;p&gt;This small example will produce this:&lt;/p&gt;
+
+&lt;p&gt;If you&amp;#8217;re planning on making an awesome game you probably want a particle emitter. because.. well look at it.&lt;/p&gt;
+
+&lt;p&gt;What I did is I started a haxepunk project:&lt;/p&gt;
+
+&lt;p&gt;`For some this will be a trivial example. For me this took a bit longer than I suspected.&lt;/p&gt;
+
+&lt;p&gt;This small example will produce this:&lt;/p&gt;
+
+&lt;p&gt;If you&amp;#8217;re planning on making an awesome game you probably want a particle emitter. because.. well look at it.&lt;/p&gt;
+
+&lt;p&gt;What I did is I started a haxepunk project:&lt;/p&gt;
+
+&lt;p&gt;`&lt;/p&gt;
+
+&lt;p&gt;And added a file: &lt;a href=&#34;https://github.com/fritzvd/haxepunk-emitter-example/blob/master/src/Explosion.hx&#34; title=&#34;Explosion.hx&#34; target=&#34;_blank&#34;&gt;Explosion.hx&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The Emitter is also a type of Entity, and also needs a graphic. It looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;syntax actionscript&#34;&gt;import com.haxepunk.graphics.Emitter;
+import com.haxepunk.utils.Ease;
+import com.haxepunk.Entity;
+
+class Explosion extends Entity
+{
+    private var _emitter:Emitter;
+
+    public function new()
+    {
+        super(x, y);
+        _emitter = new Emitter(&#34;graphics/particle.png&#34;, 4, 4);
+        _emitter.newType(&#34;explode&#34;, [0]);
+        _emitter.setMotion(&#34;explode&#34;,       // name
+                    0,              // angle
+                    100,            // distance
+                    2,              // duration
+                    360,            // ? angle range
+                    -40,            // ? distance range
+                    1,              // ? Duration range
+                    Ease.quadOut    // ? Easing 
+                    );
+        _emitter.setAlpha(&#34;explode&#34;, 20, 0.1);
+        _emitter.setGravity(&#34;explode&#34;, 5, 1);
+        graphic = _emitter;
+        layer = -1;
+    }
+
+    public function explode(x:Float, y:Float)
+    {
+        for (i in 0...20)
+        {
+            _emitter.emit(&#34;explode&#34;, x, y);
+        }
+    }
+
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then you can add the Emitter to your current scene like in my &lt;a href=&#34;https://github.com/fritzvd/haxepunk-emitter-example/blob/master/src/MainScene.hx&#34; title=&#34;MainScene.hx&#34; target=&#34;_blank&#34;&gt;MainScene.hx&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;syntax actionscript&#34;&gt;import com.haxepunk.Scene;
+import Explosion;
+
+class MainScene extends Scene
+{
+    private var explosion:Explosion;
+
+    public override function begin()
+    {
+        explosion = new Explosion();
+        add(explosion);
+    }
+
+    public override function update()
+    {
+        super.update();
+        explosion.explode(230, 240);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now run&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;lime test neko&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;And you should see something similar to the emitter above.&lt;/p&gt;
+
+&lt;p&gt;You can checkout my &lt;a href=&#34;https://github.com/fritzvd/haxepunk-emitter-example&#34; title=&#34;haxepunk-emitter-example&#34; target=&#34;_blank&#34;&gt;repo&lt;/a&gt; and run it to play around with it.&lt;/p&gt;
+
+&lt;p&gt;I ran into this error below. It meant my sprite was too small. It took me a long time to realize that.&lt;/p&gt;
+
+&lt;p&gt;``For some this will be a trivial example. For me this took a bit longer than I suspected.&lt;/p&gt;
+
+&lt;p&gt;This small example will produce this:&lt;/p&gt;
+
+&lt;p&gt;If you&amp;#8217;re planning on making an awesome game you probably want a particle emitter. because.. well look at it.&lt;/p&gt;
+
+&lt;p&gt;What I did is I started a haxepunk project:&lt;/p&gt;
+
+&lt;p&gt;`For some this will be a trivial example. For me this took a bit longer than I suspected.&lt;/p&gt;
+
+&lt;p&gt;This small example will produce this:&lt;/p&gt;
+
+&lt;p&gt;If you&amp;#8217;re planning on making an awesome game you probably want a particle emitter. because.. well look at it.&lt;/p&gt;
+
+&lt;p&gt;What I did is I started a haxepunk project:&lt;/p&gt;
+
+&lt;p&gt;`&lt;/p&gt;
+
+&lt;p&gt;And added a file: &lt;a href=&#34;https://github.com/fritzvd/haxepunk-emitter-example/blob/master/src/Explosion.hx&#34; title=&#34;Explosion.hx&#34; target=&#34;_blank&#34;&gt;Explosion.hx&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The Emitter is also a type of Entity, and also needs a graphic. It looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;syntax actionscript&#34;&gt;import com.haxepunk.graphics.Emitter;
+import com.haxepunk.utils.Ease;
+import com.haxepunk.Entity;
+
+class Explosion extends Entity
+{
+    private var _emitter:Emitter;
+
+    public function new()
+    {
+        super(x, y);
+        _emitter = new Emitter(&#34;graphics/particle.png&#34;, 4, 4);
+        _emitter.newType(&#34;explode&#34;, [0]);
+        _emitter.setMotion(&#34;explode&#34;,       // name
+                    0,              // angle
+                    100,            // distance
+                    2,              // duration
+                    360,            // ? angle range
+                    -40,            // ? distance range
+                    1,              // ? Duration range
+                    Ease.quadOut    // ? Easing 
+                    );
+        _emitter.setAlpha(&#34;explode&#34;, 20, 0.1);
+        _emitter.setGravity(&#34;explode&#34;, 5, 1);
+        graphic = _emitter;
+        layer = -1;
+    }
+
+    public function explode(x:Float, y:Float)
+    {
+        for (i in 0...20)
+        {
+            _emitter.emit(&#34;explode&#34;, x, y);
+        }
+    }
+
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then you can add the Emitter to your current scene like in my &lt;a href=&#34;https://github.com/fritzvd/haxepunk-emitter-example/blob/master/src/MainScene.hx&#34; title=&#34;MainScene.hx&#34; target=&#34;_blank&#34;&gt;MainScene.hx&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;syntax actionscript&#34;&gt;import com.haxepunk.Scene;
+import Explosion;
+
+class MainScene extends Scene
+{
+    private var explosion:Explosion;
+
+    public override function begin()
+    {
+        explosion = new Explosion();
+        add(explosion);
+    }
+
+    public override function update()
+    {
+        super.update();
+        explosion.explode(230, 240);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now run&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;lime test neko&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;And you should see something similar to the emitter above.&lt;/p&gt;
+
+&lt;p&gt;You can checkout my &lt;a href=&#34;https://github.com/fritzvd/haxepunk-emitter-example&#34; title=&#34;haxepunk-emitter-example&#34; target=&#34;_blank&#34;&gt;repo&lt;/a&gt; and run it to play around with it.&lt;/p&gt;
+
+&lt;p&gt;I ran into this error below. It meant my sprite was too small. It took me a long time to realize that.&lt;/p&gt;
+
+&lt;p&gt;``&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gpl on fritzvd</title>
+    <link>http://blog.fritzvd.com/tags/gpl/</link>
+    <description>Recent content in Gpl on fritzvd</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Feb 2014 13:07:51 +0000</lastBuildDate>
+    <atom:link href="http://blog.fritzvd.com/tags/gpl/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Communities and Licenses: Permissive licenses vs copyleft (BSD/MIT/Apache 2.0 vs GPL)</title>
+      <link>http://blog.fritzvd.com/2014/02/03/communities-and-licenses-permissive-licenses-vs-copyleft-bsdmitapache-2-0-vs-gpl/</link>
+      <pubDate>Mon, 03 Feb 2014 13:07:51 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2014/02/03/communities-and-licenses-permissive-licenses-vs-copyleft-bsdmitapache-2-0-vs-gpl/</guid>
+      <description>&lt;p&gt;Over the weekend I was at &lt;a href=&#34;http://fosdem.org&#34; title=&#34;FOSDEM&#34; target=&#34;_blank&#34;&gt;FOSDEM&lt;/a&gt;, an open source developer conference in Brussels. We had a blast. I sat in on a talk at the Legal &amp;#038; Policy Issues room about community building by Eileen Evans. The talk was the one she gave at OSCON 2013 (attached below). The short version of the talk was that the license an open source project uses plays a role in the community it will create, perhaps such a strong role as governance or the technology itself, but a role nonetheless. It was assumed that because copyleft licenses (like GPLv*) build a stronger community because they oblige the contributors to publish their code as open source as well. Over the last few years a move can be observed towards more and more projects with permissive licenses (like BSD/MIT/Apache 2.0). However this did not mean that their communities were less strong, on the contrary, a big project like OpenStack, actually has lots of community contributions, despite or thanks to its permissive license (Apache 2.0).&lt;/p&gt;
+
+&lt;p&gt;For my own projects I prefer the freeer more permissive licenses, my favourite being the &lt;a href=&#34;http://www.wtfpl.net/txt/copying/&#34; title=&#34;Do what the fuck you want to public license&#34; target=&#34;_blank&#34;&gt;WTFPL&lt;/a&gt;, just because it sounds cool, but is basically the same as BSD. For starters I think Developers tend towards these freeer alternatives because we don&amp;#8217;t care. Or we do care about not having to deal with these things and therefore choose a &lt;a href=&#34;http://b.vimeocdn.com/ts/209/994/20999461_640.jpg&#34; title=&#34;hassle-free&#34; target=&#34;_blank&#34;&gt;hassle-free&lt;/a&gt; license. With any licensing debate you get tangled up in details that most developers really don&amp;#8217;t want to deal with. The freedom these licenses give are very important. Even and maybe especially the freedom to change the license if you want. Whereas a GPLv3 license can be very constricting, because all contributions MUST be open source.&lt;/p&gt;
+
+&lt;p&gt;In the car on the way back from Brussels, we were discussing this and again got stuck. First off, because we don&amp;#8217;t know the caveats, loopholes and details by heart. Second of all because it can get quite complicated. Especially with GPL projects. If you&amp;#8217;d like to write an extension or plugin it&amp;#8217;s kind of hard to decide if that falls under the license, or it is exempt from it, because it is not part of the core.&lt;/p&gt;
+
+&lt;p&gt;In my opinion to build a community, you&amp;#8217;d want them to be free to do what they want, without the legal headaches. So for now I&amp;#8217;ll just stick to permissive license.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

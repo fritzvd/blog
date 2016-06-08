@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Uncategorized on fritzvd</title>
+    <link>http://blog.fritzvd.com/categories/uncategorized/</link>
+    <description>Recent content in Uncategorized on fritzvd</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Oct 2015 06:49:23 +0000</lastBuildDate>
+    <atom:link href="http://blog.fritzvd.com/categories/uncategorized/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Writing Tests for NativeScript apps</title>
+      <link>http://blog.fritzvd.com/2015/10/13/writing-tests-for-nativescript-apps/</link>
+      <pubDate>Tue, 13 Oct 2015 06:49:23 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2015/10/13/writing-tests-for-nativescript-apps/</guid>
+      <description>&lt;p&gt;This has been bugging me for a while. While working on my business logic and REST API connection in my NativeScript project, I couldn&amp;#8217;t write tests because requiring the tns-core-modules broke the test.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.nativescript.org/&#34; target=&#34;_blank&#34;&gt;NativeScript&lt;/a&gt; is a library with tooling to create iOS and Android apps in JavaScript. And it works smoothly. However at the moment the docs aren&amp;#8217;t always complete. Anyways, building and deploying an app on a mobile device (or emulator) takes somewhere in the range of a minute or so on a fast machine.&lt;/p&gt;
+
+&lt;p&gt;That doesn&amp;#8217;t really work if you&amp;#8217;re not sure if your logic makes sense.&lt;/p&gt;
+
+&lt;p&gt;In comes &lt;code&gt;&amp;lt;a href=&amp;quot;http://npmjs.com/package/proxyquire&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;proxyquire&amp;lt;/a&amp;gt;&lt;/code&gt;. Install proxyquire:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;syntax bash&#34;&gt;npm install --save-dev proxyquire
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then make sure you stub the package you want to be stubbed, with @noCallThru.&lt;/p&gt;
+
+&lt;p&gt;Example:&lt;/p&gt;
+
+&lt;p&gt;So now you can setup mocha for example to work with the app.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;syntax bash&#34;&gt;npm install --save-dev mocha
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Edit your package.json so your npm scripts reads:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;syntax javascript&#34;&gt;&#34;scripts&#34;: {
+    &#34;test&#34;: &#34;mocha tests/*&#34;,
+    &#34;start&#34;: &#34;node index.js&#34;
+  },
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And go ahead and run &lt;code&gt;npm test&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;Cover image courtesy of Willie Hardin: &lt;a href=&#34;https://www.flickr.com/photos/14934865@N07/3134743730/&#34;&gt;https://www.flickr.com/photos/14934865@N07/3134743730/&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Writing Documentation @ nodeconf 2015</title>
+      <link>http://blog.fritzvd.com/2015/07/01/writing-documentation-nodeconf-2015/</link>
+      <pubDate>Wed, 01 Jul 2015 08:19:19 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2015/07/01/writing-documentation-nodeconf-2015/</guid>
+      <description>&lt;p&gt;This topic of course ties in with &lt;a href=&#34;http://blog.technokrat.nl/2015/07/01/building-communities-nodeconf-2015/&#34;&gt;the Building Communities session&lt;/a&gt;. Because building community happens with code that is being used. And if you want people to be able to join easily, one of their first entry points will probably be the README, which has for some projects become the only or the main documentation.&lt;/p&gt;
+
+&lt;p&gt;At the moment the documentation of some projects is exemplary (think: anything &lt;a href=&#34;https://twitter.com/substack&#34; target=&#34;_blank&#34;&gt;@substack&lt;/a&gt; makes). Whereas the documentation of node itself is kind of a mess. The API documentation is varying in quality in different topics, there is no proper way to navigate within the page and structure is &amp;#8220;organic&amp;#8221;.&lt;/p&gt;
+
+&lt;p&gt;The goals of documentation we concluded in the session should always be, to be:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Exhaustive&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Simple&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Helpful&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Connected/Linked (linking to back and forth to other pieces or other blogs).&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This can be achieved by creating proper articles, for beginners but also for advanced topics. Or at link out to expert articles on other blogs. This should be a seperate set from the API documentation. The API documentation should be structured and be complete. In stead of missing some pieces here and there. An example I really like is the &lt;a href=&#34;https://docs.djangoproject.com/en/1.8/&#34; target=&#34;_blank&#34;&gt;Django documentation&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.flickr.com/photos/matthewbergman/18876975441/in/album-72157654202715069/&#34; target=&#34;_blank&#34;&gt;Cover photo by Matthew Bergman&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Snow</title>
+      <link>http://blog.fritzvd.com/2012/02/04/snow/</link>
+      <pubDate>Sat, 04 Feb 2012 10:19:36 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2012/02/04/snow/</guid>
+      <description>&lt;p&gt;&lt;img title=&#34;IMG_20120204_104349.jpg&#34; class=&#34;alignnone&#34; alt=&#34;image&#34; src=&#34;http://blog.technokrat.nl/wp-content/uploads/2012/02/wpid-IMG_20120204_104349.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img title=&#34;IMG_20120204_104307.jpg&#34; class=&#34;alignnone&#34; alt=&#34;image&#34; src=&#34;http://blog.technokrat.nl/wp-content/uploads/2012/02/wpid-IMG_20120204_104307.jpg&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img title=&#34;IMG_20120203_161504.jpg&#34; class=&#34;alignnone&#34; alt=&#34;image&#34; src=&#34;http://blog.technokrat.nl/wp-content/uploads/2012/02/wpid-IMG_20120203_161504.jpg&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My 2010</title>
+      <link>http://blog.fritzvd.com/2011/01/01/my-2010/</link>
+      <pubDate>Sat, 01 Jan 2011 14:45:41 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2011/01/01/my-2010/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://blog.technokrat.nl/wp-content/uploads/2011/01/mmx.png&#34;&gt;&lt;img class=&#34;alignnone size-medium wp-image-346&#34; title=&#34;mmx&#34; src=&#34;http://blog.technokrat.nl/wp-content/uploads/2011/01/mmx-300x225.png&#34; alt=&#34;&#34; width=&#34;300&#34; height=&#34;225&#34; srcset=&#34;http://blog.technokrat.nl/wp-content/uploads/2011/01/mmx-300x225.png 300w, http://blog.technokrat.nl/wp-content/uploads/2011/01/mmx.png 640w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;All in all not a bad year, I would say. Just a quick overview of some highlights and the soundtrack of the last year.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The Good&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://twitter.com/#!/fritzvd/status/8977926708011008&#34;&gt;Engaged to Nelleke&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bachelor of Science&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://technokrat.nl&#34;&gt;Started a business&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://royalhaskoning.com&#34;&gt;Royal Haskoning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://flickr.com/photos/fritzistheman/4756544626&#34;&gt;Rock Climbing!&lt;/a&gt; / Spain Trip&lt;/li&gt;
+&lt;li&gt;the Harry Potter Septology&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://spotify.com&#34;&gt;Spotify!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.waterinsight.nl/&#34;&gt;Water Insight&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Android&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://flickr.com/photos/fritzistheman/4897325218&#34;&gt;Vienna&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Pablo Picasso&amp;#8217;s violin&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://twitpic.com/3ekph8&#34;&gt;Mac Mini&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Beatles Discography&lt;/li&gt;
+&lt;li&gt;Reading, reading reading.&lt;/li&gt;
+&lt;li&gt;Met awesome people.&lt;/li&gt;
+&lt;li&gt;Etc.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;The Soundtrack&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://open.spotify.com/album/0Fh4yRvaNNHWo3tbswjKIE&#34;&gt;Jakob Dylan &amp;#8211; Women + Country&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://open.spotify.com/album/0vGbg0W1vcpAefS9yrJ6ZO&#34;&gt;Everything Everything &amp;#8211; Man Alive&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://open.spotify.com/album/3oXq08ApYyyRvoEeWe2V4F&#34;&gt;Mumford &amp;amp; Sons – Sigh No More&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://open.spotify.com/album/0zeAijecFGZOS4OaRdPVz5&#34;&gt;Vampire Weekend &amp;#8211; Contra&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://open.spotify.com/album/4Q8HE0iUakw2CDgf8l3VGR&#34;&gt;Cyndi Lauper &amp;#8211; Memphis Blues&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://open.spotify.com/album/3HA1Ru1gEAgaxTywkJmBOL&#34;&gt;MGMT &amp;#8211; Congratulations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://open.spotify.com/album/7uDlfwN1xFTRvTffXYPHM9&#34;&gt;Ray LaMontagne And The Pariah Dogs – God Willin&amp;#8217; &amp;amp; The Creek Don&amp;#8217;t Rise&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://open.spotify.com/album/6BhS0iZh607Op7sWvSXT4o&#34;&gt;The Black Keys – Brothers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;spotify:album:3GQy3QdRfl7RZUix1rhLtB&#34;&gt;Kings of Leon &amp;#8211; Come Around Sundown&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://open.spotify.com/album/0NRHp7o5O6pNI6JIFgMqM5&#34;&gt;Brown Feather Sparrow &amp;#8211; How to Throw a Christmas Party&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>In Search of God</title>
+      <link>http://blog.fritzvd.com/2010/12/24/in-search-of-god/</link>
+      <pubDate>Fri, 24 Dec 2010 14:08:37 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2010/12/24/in-search-of-god/</guid>
+      <description>&lt;p&gt;Tuning &amp;#105;&amp;#110;&amp;#116;&amp;#111; &amp;#97; TV program sporting The Face &amp;#8211; Kings &amp;#111;&amp;#102; Leon &amp;#108;&amp;#97;&amp;#115;&amp;#116; week &amp;#103;&amp;#111;&amp;#116; &amp;#109;&amp;#101; thinking. The program &amp;#105;&amp;#115; called In Search &amp;#111;&amp;#102; God &amp;#97;&amp;#110;&amp;#100; features 3 Dutch Celeb&amp;#8217;s &amp;#119;&amp;#104;&amp;#105;&amp;#99;&amp;#104; &amp;#97;&amp;#114;&amp;#101; facilitated &amp;#119;&amp;#105;&amp;#116;&amp;#104; &amp;#97; &amp;#110;&amp;#117;&amp;#109;&amp;#98;&amp;#101;&amp;#114; &amp;#111;&amp;#102; conversations &amp;#97;&amp;#110;&amp;#100; travels &amp;#116;&amp;#104;&amp;#97;&amp;#116; &amp;#115;&amp;#104;&amp;#111;&amp;#117;&amp;#108;&amp;#100; help &amp;#116;&amp;#104;&amp;#101;&amp;#109; &amp;#102;&amp;#105;&amp;#110;&amp;#100; God. Or &amp;#97;&amp;#116; least give &amp;#97; nudge &amp;#105;&amp;#110; &amp;#116;&amp;#104;&amp;#97;&amp;#116; general direction &amp;#111;&amp;#114; other.&lt;/p&gt;
+
+&lt;p&gt;I &amp;#102;&amp;#111;&amp;#117;&amp;#110;&amp;#100; &amp;#116;&amp;#104;&amp;#101; program &amp;#116;&amp;#111; &amp;#98;&amp;#101; &amp;#109;&amp;#111;&amp;#115;&amp;#116; intriguing &amp;#97;&amp;#110;&amp;#100; turns &amp;#111;&amp;#117;&amp;#116; &amp;#116;&amp;#111; &amp;#112;&amp;#114;&amp;#111;&amp;#98;&amp;#97;&amp;#98;&amp;#108;&amp;#121; &amp;#98;&amp;#101; &amp;#109;&amp;#121; favorite show &amp;#111;&amp;#102; &amp;#116;&amp;#104;&amp;#101; year (next &amp;#116;&amp;#111; &amp;#116;&amp;#104;&amp;#101; Big C, &amp;#119;&amp;#104;&amp;#105;&amp;#99;&amp;#104; &amp;#105;&amp;#115; &amp;#97;&amp;#108;&amp;#115;&amp;#111; deserves &amp;#97; great mention here). So let &amp;#109;&amp;#101; tell &amp;#121;&amp;#111;&amp;#117; why I &amp;#102;&amp;#111;&amp;#117;&amp;#110;&amp;#100; &amp;#105;&amp;#116; &amp;#116;&amp;#111; &amp;#98;&amp;#101; &amp;#103;&amp;#111;&amp;#111;&amp;#100; &amp;#97;&amp;#110;&amp;#100; why I&amp;#8217;ve come &amp;#116;&amp;#111; &amp;#108;&amp;#105;&amp;#107;&amp;#101; &amp;#98;&amp;#117;&amp;#116; &amp;#97;&amp;#108;&amp;#115;&amp;#111; &amp;#119;&amp;#104;&amp;#97;&amp;#116; &amp;#105;&amp;#116; forced &amp;#109;&amp;#101; &amp;#116;&amp;#111; &amp;#116;&amp;#104;&amp;#105;&amp;#110;&amp;#107; about.&lt;/p&gt;
+
+&lt;p&gt;First of, &amp;#116;&amp;#104;&amp;#101; show &amp;#119;&amp;#97;&amp;#115; brutally honest. Naked television &amp;#116;&amp;#104;&amp;#97;&amp;#116; &amp;#105;&amp;#115; okay &amp;#119;&amp;#105;&amp;#116;&amp;#104; emotional silence &amp;#98;&amp;#117;&amp;#116; &amp;#97;&amp;#108;&amp;#115;&amp;#111; knows &amp;#116;&amp;#104;&amp;#101; art &amp;#111;&amp;#102; listening &amp;#105;&amp;#110; stead &amp;#111;&amp;#102; bombarding people &amp;#119;&amp;#105;&amp;#116;&amp;#104; questions (e.g. De Wereld Draait Door &amp;#97; dutch talk show). Second &amp;#105;&amp;#116; featured interesting people amongst &amp;#119;&amp;#104;&amp;#105;&amp;#99;&amp;#104; &amp;#97;&amp;#114;&amp;#101; &amp;#116;&amp;#104;&amp;#101; extravagant Gordon, &amp;#116;&amp;#104;&amp;#101; sincere &amp;#97;&amp;#110;&amp;#100; stoic Judo World Champion Dennis v.d. Geest &amp;#97;&amp;#110;&amp;#100; &amp;#116;&amp;#104;&amp;#101; lovely, intelligent Lizelotte van Dijk. These people &amp;#104;&amp;#97;&amp;#118;&amp;#101; &amp;#105;&amp;#116; made, &amp;#116;&amp;#104;&amp;#101;&amp;#121; &amp;#100;&amp;#111; &amp;#110;&amp;#111;&amp;#116; necessarily &amp;#110;&amp;#101;&amp;#101;&amp;#100; &amp;#116;&amp;#104;&amp;#101; extra airtime, &amp;#116;&amp;#104;&amp;#101;&amp;#121; &amp;#97;&amp;#114;&amp;#101; &amp;#106;&amp;#117;&amp;#115;&amp;#116; &amp;#105;&amp;#110; search &amp;#111;&amp;#102; &amp;#115;&amp;#111;&amp;#109;&amp;#101;&amp;#116;&amp;#104;&amp;#105;&amp;#110;&amp;#103; &amp;#109;&amp;#111;&amp;#114;&amp;#101; &amp;#105;&amp;#110; life.&lt;/p&gt;
+
+&lt;p&gt;The show lets &amp;#116;&amp;#104;&amp;#101;&amp;#115;&amp;#101; celebrities talk &amp;#116;&amp;#111; &amp;#111;&amp;#116;&amp;#104;&amp;#101;&amp;#114; interesting people (e.g. Paul Young author &amp;#111;&amp;#102; &amp;#8216;the Shack&amp;#8217;) &amp;#97;&amp;#110;&amp;#100; &amp;#97;&amp;#108;&amp;#115;&amp;#111; slightly less interesting people, &amp;#98;&amp;#117;&amp;#116; that&amp;#8217;s &amp;#110;&amp;#111;&amp;#116; &amp;#116;&amp;#104;&amp;#101; point. What I &amp;#115;&amp;#97;&amp;#119; &amp;#105;&amp;#110; &amp;#116;&amp;#104;&amp;#101; faces &amp;#111;&amp;#102; &amp;#116;&amp;#104;&amp;#101;&amp;#115;&amp;#101; &amp;#8216;Seekers&amp;#8217; &amp;#119;&amp;#97;&amp;#115; &amp;#116;&amp;#104;&amp;#101; willingness &amp;#116;&amp;#111; listen, &amp;#98;&amp;#117;&amp;#116; &amp;#97;&amp;#108;&amp;#115;&amp;#111; &amp;#116;&amp;#104;&amp;#101; eagerness &amp;#116;&amp;#111; &amp;#103;&amp;#101;&amp;#116; &amp;#116;&amp;#111; &amp;#116;&amp;#104;&amp;#101; &amp;#112;&amp;#111;&amp;#105;&amp;#110;&amp;#116; &amp;#97;&amp;#110;&amp;#100; &amp;#116;&amp;#104;&amp;#101; core. The people &amp;#116;&amp;#104;&amp;#97;&amp;#116; &amp;#116;&amp;#104;&amp;#101;&amp;#121; &amp;#99;&amp;#97;&amp;#109;&amp;#101; &amp;#105;&amp;#110; contact &amp;#119;&amp;#105;&amp;#116;&amp;#104; often &amp;#100;&amp;#105;&amp;#100; &amp;#110;&amp;#111;&amp;#116; listen &amp;#97;&amp;#110;&amp;#100; &amp;#106;&amp;#117;&amp;#115;&amp;#116; bombarded &amp;#116;&amp;#104;&amp;#101; people &amp;#119;&amp;#105;&amp;#116;&amp;#104; &amp;#116;&amp;#104;&amp;#101; &amp;#116;&amp;#104;&amp;#105;&amp;#110;&amp;#103;&amp;#115; &amp;#116;&amp;#104;&amp;#101;&amp;#121; believe in. Whenever &amp;#116;&amp;#104;&amp;#101;&amp;#114;&amp;#101; &amp;#119;&amp;#97;&amp;#115; &amp;#116;&amp;#104;&amp;#101; slightest hint &amp;#111;&amp;#102; &amp;#116;&amp;#104;&amp;#105;&amp;#115; happening &amp;#121;&amp;#111;&amp;#117; &amp;#115;&amp;#97;&amp;#119; &amp;#116;&amp;#104;&amp;#101; wall &amp;#119;&amp;#101;&amp;#114;&amp;#101; drawn &amp;#117;&amp;#112; &amp;#97;&amp;#110;&amp;#100; &amp;#116;&amp;#104;&amp;#101; &amp;#8216;Seeker&amp;#8217; &amp;#100;&amp;#105;&amp;#100; &amp;#110;&amp;#111;&amp;#116; listen.&lt;/p&gt;
+
+&lt;p&gt;Makes &amp;#109;&amp;#101; wonder why &amp;#119;&amp;#101; always feel &amp;#119;&amp;#101; &amp;#97;&amp;#114;&amp;#101; &amp;#114;&amp;#105;&amp;#103;&amp;#104;&amp;#116; &amp;#97;&amp;#110;&amp;#100; why &amp;#119;&amp;#101; feel &amp;#119;&amp;#101; &amp;#104;&amp;#97;&amp;#118;&amp;#101; &amp;#116;&amp;#111; bother people &amp;#119;&amp;#105;&amp;#116;&amp;#104; &amp;#111;&amp;#117;&amp;#114; opinions. Food &amp;#102;&amp;#111;&amp;#114; thought anyways.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Why I still refuse to cook electric and why we should finish natural resources</title>
+      <link>http://blog.fritzvd.com/2010/09/10/why-i-still-refuse-to-cook-electric-and-why-we-should-finish-natural-resources/</link>
+      <pubDate>Fri, 10 Sep 2010 12:14:43 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2010/09/10/why-i-still-refuse-to-cook-electric-and-why-we-should-finish-natural-resources/</guid>
+      <description>&lt;p&gt;Today I had quite an epiphany while I was working the oven (a gas oven that is). I love gas. It is by far the best way to cook. Electric cooking has always seemed a bit gay to me. And I know usually gays are quite advanced and up to speed with fads and ins and outs. But I thoroughly believe that they are wrong on this account.&lt;/p&gt;
+
+&lt;p&gt;Electric cooking always requires you to think ahead whilst you are cooking. In stead of turning down the flame when something is boiling over, you need to take the pot of the stove &amp;#8211; for those that have no experience with electric cooking it takes a while to heat as well as cool down. That is just way too much effort.&lt;/p&gt;
+
+&lt;p&gt;As I was contemplating my newly found wisdom I figured that it is applicable to more situations than just cooking. Driving. Driving with electric sucks! No one can hear you so you keep bumping into children and you can&amp;#8217;t even feel or hear that you are rev-ing. Which is very inconvenient in street racing.&lt;/p&gt;
+
+&lt;p&gt;Moreover I think we owe it to the next generation to use gas and petrol. I mean we the responsible ones are fine with using such explosive and dramatic equipment, but take a look at the teens nowadays (see graph for visual aid). They are just not ready for such harmful machinery.&lt;/p&gt;
+
+&lt;p&gt;So I am all for finishing the natural resources. It is our moral obligation to our next generation of rascals.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://fritzvd.files.wordpress.com/2010/09/graph.png&#34;&gt;&lt;img class=&#34;alignnone size-medium wp-image-134&#34; title=&#34;graph&#34; src=&#34;http://fritzvd.files.wordpress.com/2010/09/graph.png?w=300&#34; alt=&#34;&#34; width=&#34;300&#34; height=&#34;190&#34; srcset=&#34;http://blog.technokrat.nl/wp-content/uploads/2010/09/graph-300x190.png 300w, http://blog.technokrat.nl/wp-content/uploads/2010/09/graph.png 500w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Death or freedom of it&amp;#039;s sting</title>
+      <link>http://blog.fritzvd.com/2010/02/23/death-or-freedom-of-its-sting/</link>
+      <pubDate>Tue, 23 Feb 2010 23:04:36 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2010/02/23/death-or-freedom-of-its-sting/</guid>
+      <description>&lt;p&gt;Today, after a long time of keyboard-silence, I return with a cheerful blog post on death. Why? Well, yesterday my grandfather passed away, which reminds us of our last foe. He was a (war)hero, at least to me he was.&lt;/p&gt;
+
+&lt;p&gt;Strangely enough I stumbled upon Johnny Cash album: VI &amp;#8211; Ain&amp;#8217;t No Grave only an hour after hearing the sad news. This is a beautiful recording of someone who wasn&amp;#8217;t afraid of death. I like that. And in that I spirit I would like to remember Oupa Jan.&lt;/p&gt;
+
+&lt;p&gt;So I do not want to dwell on the sadness of the matter. My grandfather was a cheerful chap with a good bundle of laughter readily available to burst out when (in)appropriate, as was his arsenal of jokes or songs that would always feature someone naked or other toiletries. He would tease my other grandparents, who would sometimes visit them, by putting acorns in the guest room bed. Or he would tell us stories. Stories of how he met our grandmother. Or why our skin changes when we&amp;#8217;ve been out in the sun. Most of it was nonsense, but it was wonderfully prosaic.&lt;/p&gt;
+
+&lt;p&gt;Also he met my grandmother in a heroic way, so he told us. Because of his mighty good grades in Mathematics he could accompany his father, a theological scholar, on a hunting trip with the Dutch Royal Family to the Great Britain. They would hunt Lions (I know what you&amp;#8217;re thinking, Britain, Lions? Just google British Lions). To keep it short, there he saw the most beautiful girl of all time.&lt;/p&gt;
+
+&lt;p&gt;In light of this I make a toast. A toast to my grandfather, the hero. In the words of Cash: Until we meet again.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;In Memoriam&lt;/strong&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;em&gt;J.C.W. Kroeze &amp;#8211; The Hero&lt;/em&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>overcoming the incomprehensible</title>
+      <link>http://blog.fritzvd.com/2009/12/24/overcoming-the-incomprehensible/</link>
+      <pubDate>Thu, 24 Dec 2009 12:03:18 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2009/12/24/overcoming-the-incomprehensible/</guid>
+      <description>&lt;p&gt;Some things lie outside our command, some things outside our understanding. Or better yet, only some things lie in our command and understanding. Our eyes are limited, and our mind even more so. We see things that are not there, do not see things that might be there, speculate about how events take place in the (Super)Natural world. And all the while we think a real big deal of ourselves, whilst forgetting that we are very tiny.&lt;/p&gt;
+
+&lt;p&gt;We are so small (on a universe scale, we would be impossible to make out as a globe, even more so as individuals), that it would be ridiculous if we would be able to understand all, and if we would have control over everything in our day-to-day lives.&lt;/p&gt;
+
+&lt;p&gt;It is hard to think of a universe when we live in a world. Better yet, we live in a house, inside a city, inside a country, inside a continent, on a globe. So we tend to think of the distances between work and home as far. Sometimes, though, a small glimpse of the vastness is given. A glimpse of the unending, the infinite, the eternal.&lt;/p&gt;
+
+&lt;p&gt;However scary these glimpses might be, they also comfort me. They tell me I do not need to know or will ever know everything. Neither will I ever be able to have good reasoning for everything happening in my life. It makes me quiet and grateful. Grateful for the small victories and little joys we can experience in our little speck of time in the timeline of world history.&lt;/p&gt;
+
+&lt;p&gt;Further reading: &lt;a href=&#34;http://shorttermmemoryloss.com/menace/&#34;&gt;http://shorttermmemoryloss.com/menace/&lt;/a&gt; &amp;#8211; A new theory of awesome.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>general frustrations on nobel-prize winning presidents</title>
+      <link>http://blog.fritzvd.com/2009/10/21/general-frustrations-on-nobel-prize-winning-presidents/</link>
+      <pubDate>Wed, 21 Oct 2009 11:14:14 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2009/10/21/general-frustrations-on-nobel-prize-winning-presidents/</guid>
+      <description>&lt;p&gt;There is something which has been lingering in my mind for a while now. It has been brooding one US president ago, and has been set to full throttle frustration when a nobel prize was awarded a week-and-some ago.&lt;/p&gt;
+
+&lt;p&gt;US presidents have always, in the good-spirited leadership they posses, urged other &amp;#8216;fragile states&amp;#8217; that nuclear power is something that comes with great responsibility, just like spidey-senses. And of course fragile states cannot handle that kind of responsibility. I will admit, they might have a point. As someone opposed to nuclear weapons in general, I would commend there efforts to disarm and dismantle &amp;#8216;the bomb&amp;#8217;.&lt;/p&gt;
+
+&lt;p&gt;However there is something blatantly obtuse and offending in their condescending way of obtaining that goal. It is a hypocrisy that slips the mind of the genious in charge.&lt;/p&gt;
+
+&lt;p&gt;In our young nuclear history there is only one country that comes to mind that actually used a nuclear bomb in battle. The same nation that still has a tremendous amount of nuclear weapons. Enough to blow up the world a few times.&lt;/p&gt;
+
+&lt;p&gt;My frustration is not so much the fact that a nobel prize has been awarded, as much as the fact that Iran is clearly being taken by the hand as a child. They are taking the scissors it is running with. Whilst the US can still blow up the world a few times, despite the efforts to dial down the nuclear arsenal.&lt;/p&gt;
+
+&lt;p&gt;If a child should be taught how to write, the best way is to teach it by following your example. Hence, if the US really wants to persist in patronizing nations like Iran and North Korea, the best way is to set an example and pat KimJong-il and Mahmoud Ahmadinejad on the head whilst saying: &amp;#8220;can you do that too?&amp;#8221;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Google 4th to appear on Google</title>
+      <link>http://blog.fritzvd.com/2009/10/08/google-4th-to-appear-on-google/</link>
+      <pubDate>Thu, 08 Oct 2009 14:05:13 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2009/10/08/google-4th-to-appear-on-google/</guid>
+      <description>&lt;p&gt;When writing a thesis, it is imperative that you lose focus every now and then. So after reading some blogs, during the lunch-break, I decided to extend my lunch break. Little did I know I was destined to find out something extraordinary.&lt;/p&gt;
+
+&lt;p&gt;When you try to find a search engine in Google, Google is the 5th result, (4th webpage) you&amp;#8217;ll find.&lt;/p&gt;
+
+&lt;p&gt;This of course is groundbreaking research in the field of Desertification and Development Sociology. In light of my BSc thesis I thought it crucial to publish this marvelous evidence, that will blow you away.&lt;/p&gt;
+
+&lt;div id=&#34;attachment_102&#34; style=&#34;width: 310px&#34; class=&#34;wp-caption alignnone&#34;&gt;
+  &lt;a href=&#34;http://fritzvd.wordpress.com/2009/10/08/google-4th-to-appear-on-google/search/&#34; rel=&#34;attachment wp-att-102&#34;&gt;&lt;img src=&#34;http://fritzvd.files.wordpress.com/2009/10/search.png?w=300&#34; alt=&#34;wtf&#34; title=&#34;search&#34; width=&#34;300&#34; height=&#34;262&#34; class=&#34;size-medium wp-image-102&#34; /&gt;&lt;/a&gt;
+  
+  &lt;p class=&#34;wp-caption-text&#34;&gt;
+    wtf
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>unity in diversity</title>
+      <link>http://blog.fritzvd.com/2009/09/30/unity-in-diversity/</link>
+      <pubDate>Wed, 30 Sep 2009 17:34:50 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2009/09/30/unity-in-diversity/</guid>
+      <description>&lt;p&gt;Tonight I will be leaving South Africa to fly to the Netherlands. It has been good, but it is also time to go back. But before I go and before I close this blog down (or start posting non-interesting thoughts on how to design your own vegetable garden), I want to leave you with an impression of the country of my forefathers. The beautiful, complex and diverse South Africa whom I have grown to love.&lt;/p&gt;
+
+&lt;p&gt;South Africa has a motto that says: Unity in Diversity. And the country does show an enormous amount of diversity. A variety of flora, fauna, climate, landscape and people form the palette from which a unity needs and can be painted. However the painting is far from finished. The divide between people groups still hangs around like the clouds around Table Mountain. Where my generation seems to break away from the old thinking, a tension lingers in the older generations. Some things clearly outline that there remains a footprint of the old apartheid years.&lt;/p&gt;
+
+&lt;p&gt;If you apply at the University of Johannesburg www.uofj.ac.za you are required to fill in what people group you belong to, it is a government requirement to do this (so it is not just the uofj). When people talk about someone oftentimes they specify what &amp;#8216;race&amp;#8217; that person is, if not, do not be surprised if someone asks.&lt;/p&gt;
+
+&lt;p&gt;How easy it might be to look at differences and how dangerous it might be to believe the stereotypes, it is just as easy to strike up a conversation and find that people are people, everywhere. Something you know in theory, but you need reminding of after hanging out in South Africa for a while, hearing horror story after horror story.&lt;/p&gt;
+
+&lt;p&gt;South Africa has come a long way, but it seems to me that the long walk to freedom is far from having reached its end.&lt;/p&gt;
+
+&lt;p&gt;P.S. A shocking but striking critique can be found in the movie District 9, which I highly recommend watching.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cape Town, flu and other frailties</title>
+      <link>http://blog.fritzvd.com/2009/09/12/cape-town-flu-and-other-frailties/</link>
+      <pubDate>Sat, 12 Sep 2009 16:46:36 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2009/09/12/cape-town-flu-and-other-frailties/</guid>
+      <description>&lt;p&gt;Cape Town is freaking awesome. I realize this every time I wake up again. Last time I was here was in 2006 during DTS in Muizenberg. To be back here is nice. To hang out with Simon, Marieke and Noah is lovely.&lt;/p&gt;
+
+&lt;p&gt;Over the last few days I have (with the help of anti-biotics) conquered flu, challenged Poseidon and battled the fierceness of the wrath of Simon and his axe. I have survived all, and still remain strong.&lt;/p&gt;
+
+&lt;p&gt;Swimming in the ocean here, is like dipping your self in a bath of salty ice water with lots of current. Oh, how I love swimming in the sea. The last few times I went to the ocean, I could not curb my enthusiasm, but ripped of my clothes and jumped head first in to the sea.&lt;/p&gt;
+
+&lt;p&gt;But there is of course a flipside to being in Cape Town. The contrast between the poorest and the richest is vast, and oftentimes just 500 meters apart. In a place of such a richness in beauty, surfing and mountain flora there is also a painful poverty. Adjacent to the souvenir shops a large township rises forth from the ground. It is a miracle that rich people can live here without a care. I blame it on a growing of calluses on the heart.&lt;/p&gt;
+
+&lt;p&gt;This week I will continue doing what I am doing. Chilling, hanging out and going into Ocean View (township) with Simon.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>jumping borders</title>
+      <link>http://blog.fritzvd.com/2009/09/02/jumping-borders/</link>
+      <pubDate>Wed, 02 Sep 2009 09:41:56 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2009/09/02/jumping-borders/</guid>
+      <description>&lt;p&gt;Yesterday I arrived safely at Cape Town Int. Airport. &lt;a href=&#34;http://www.simonandmarieke.com&#34;&gt;Simon, Marieke and Noah&lt;/a&gt; came to pick me up. A bit surreal to see them, but very good nonetheless. Surreal because I have seen so many places in quite a short amount of time over the last few days.&lt;/p&gt;
+
+&lt;p&gt;Last time I posted something on my blog, I did so from the town of Victoria Falls in the North-West of Zimbabwe. After posting we went to see the world famous Falls.&lt;/p&gt;
+
+&lt;p&gt;And they are astounding. What an awesome, tremendous display of power and majesty that is. Roaring like a lion does a herd of wild waters rush down the steep ridges. Rush down and come back up again, come back up again in victorious mist that shatters sunlight into a million pieces. A rainbow so bright that it does not seem to be real. A sight so violent that it seems unlikely to bring life wherever the water flows.&lt;/p&gt;
+
+&lt;p&gt;After Vic Falls, we hitchhiked back to Bulawayo, this time a free ride in a nice Land Cruiser. In Bulawayo we spent another 2 days before I travelled back to Johannesburg. That was quite a crazy experience. Although I chose a well trusted company: Greyhound, the bus driver took more passengers than allowed.&lt;/p&gt;
+
+&lt;p&gt;The other special thing, the border post. You have never seen queues like you have seen them at the Zimbabwean-South African border post. We stood in a queue literally reaching up to at least 150 m. (I shot a little film clip that I will upload somewhere in the near future). Furthermore we spent 4 hours crossing the border before we could continue driving to Johannesburg.&lt;/p&gt;
+
+&lt;p&gt;As for now, I am in Cape Town. Enjoying and loving the time I have with &lt;a href=&#34;http://www.simonandmarieke.com&#34;&gt;Simon Marieke and Noah&lt;/a&gt;. Over the next three weeks I will just be hanging out with friends and wha-evs. For new phone number see contact page.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Going</title>
+      <link>http://blog.fritzvd.com/2009/04/19/going/</link>
+      <pubDate>Sun, 19 Apr 2009 23:33:03 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2009/04/19/going/</guid>
+      <description>&lt;p&gt;I am actually going. And not long from now. This blog will keep you updated on my happy adventures in Southern Africa over the coming months.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

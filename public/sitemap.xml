@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://blog.fritzvd.com/</loc>
+    <lastmod>2015-10-13T06:49:23+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2015/10/13/writing-tests-for-nativescript-apps/</loc>
+    <lastmod>2015-10-13T06:49:23+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2015/08/03/nodeconf-adventure/</loc>
+    <lastmod>2015-08-03T07:05:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2015/07/01/writing-documentation-nodeconf-2015/</loc>
+    <lastmod>2015-07-01T08:19:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2015/07/01/building-communities-nodeconf-2015/</loc>
+    <lastmod>2015-07-01T07:45:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2015/07/01/es6-es7-ecmascript-2015-harmony-what-nodeconf-2015/</loc>
+    <lastmod>2015-07-01T07:35:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2015/06/23/containers-docker-lxc-nodeconf-2015/</loc>
+    <lastmod>2015-06-23T18:45:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2015/06/22/isomorphic-javascript-and-modular-ui-nodeconf-2015/</loc>
+    <lastmod>2015-06-22T14:20:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2015/05/19/fbx-and-3d-models-in-monogame-on-linux/</loc>
+    <lastmod>2015-05-19T15:35:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2014/09/15/mad-science-act-part-1-nodeconf-eu/</loc>
+    <lastmod>2014-09-15T11:53:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2014/09/15/open-open-source/</loc>
+    <lastmod>2014-09-15T11:37:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2014/09/15/hardware-track-nodeconf-eu/</loc>
+    <lastmod>2014-09-15T09:14:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2014/09/13/front-end-track-at-nodeconf-eu/</loc>
+    <lastmod>2014-09-13T11:11:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2014/09/12/microservices-track-summary-nodeconfeu/</loc>
+    <lastmod>2014-09-12T11:17:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2014/03/08/procedural-death-jam-7-day-rogue-like-cyberpunk-game-jamathon/</loc>
+    <lastmod>2014-03-08T15:09:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2014/03/04/particle-emitter-in-haxepunk/</loc>
+    <lastmod>2014-03-04T14:34:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2014/03/02/nyko-playpad-pro-as-xbox-360-controller/</loc>
+    <lastmod>2014-03-02T19:15:06+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2014/02/03/communities-and-licenses-permissive-licenses-vs-copyleft-bsdmitapache-2-0-vs-gpl/</loc>
+    <lastmod>2014-02-03T13:07:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2014/01/06/starting-game-development-with-haxepunk-instead-of-monogamexna/</loc>
+    <lastmod>2014-01-06T20:25:23+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2014/01/05/good-golly-i-almost-bricked-my-phone/</loc>
+    <lastmod>2014-01-05T20:37:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2013/11/18/uiux-course-highlights-storytelling/</loc>
+    <lastmod>2013-11-18T09:25:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2013/06/18/angular-js-favorites-directives-jquery-ui-slider/</loc>
+    <lastmod>2013-06-18T11:48:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2013/06/17/starting-angular-js-favourite-features-or-favorites-if-your-from-the-u-s/</loc>
+    <lastmod>2013-06-17T17:22:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2013/02/04/vagrant/</loc>
+    <lastmod>2013-02-04T13:08:01+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2012/11/28/making-sure-gdal-works-with-ecw-libecw-under-linux/</loc>
+    <lastmod>2012-11-28T12:34:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2012/11/26/kriging-in-r-in-python/</loc>
+    <lastmod>2012-11-26T13:48:56+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2012/02/04/snow/</loc>
+    <lastmod>2012-02-04T10:19:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2011/10/14/coloring-mapserver-floating-tiffs-with-colorscales/</loc>
+    <lastmod>2011-10-14T07:25:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2011/02/28/connecting-the-dots/</loc>
+    <lastmod>2011-02-28T08:30:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2011/01/17/stille-combatant/</loc>
+    <lastmod>2011-01-17T11:30:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2011/01/11/creating-a-little-clipbox-for-your-projects-in-python/</loc>
+    <lastmod>2011-01-11T15:48:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2011/01/10/from-2-5d-to-3d/</loc>
+    <lastmod>2011-01-10T14:21:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2011/01/04/skywalker/</loc>
+    <lastmod>2011-01-04T09:24:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2011/01/03/de-meerval/</loc>
+    <lastmod>2011-01-03T09:49:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2011/01/01/my-2010/</loc>
+    <lastmod>2011-01-01T14:45:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2010/12/24/in-search-of-god/</loc>
+    <lastmod>2010-12-24T14:08:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2010/12/17/interaction-interfacing-iteration/</loc>
+    <lastmod>2010-12-17T15:31:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2010/12/17/popular-demand/</loc>
+    <lastmod>2010-12-17T10:19:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2010/12/08/222/</loc>
+    <lastmod>2010-12-08T18:11:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2010/12/02/thoughts-on-lidar/</loc>
+    <lastmod>2010-12-02T15:02:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2010/11/30/rendered-useless/</loc>
+    <lastmod>2010-11-30T17:40:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2010/11/22/processing-images-with-gdal-and-mayavi2/</loc>
+    <lastmod>2010-11-22T12:51:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2010/11/18/developments-so-far/</loc>
+    <lastmod>2010-11-18T15:53:56+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2010/10/02/different-directions/</loc>
+    <lastmod>2010-10-02T17:24:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2010/09/30/augmented-reality/</loc>
+    <lastmod>2010-09-30T10:48:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2010/09/29/considerations-on-which-gaming-engine-to-use/</loc>
+    <lastmod>2010-09-29T15:46:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2010/09/29/considerations-on-3d-visualization-for-gis/</loc>
+    <lastmod>2010-09-29T14:54:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2010/09/10/why-i-still-refuse-to-cook-electric-and-why-we-should-finish-natural-resources/</loc>
+    <lastmod>2010-09-10T12:14:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2010/02/23/death-or-freedom-of-its-sting/</loc>
+    <lastmod>2010-02-23T23:04:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2009/12/24/overcoming-the-incomprehensible/</loc>
+    <lastmod>2009-12-24T12:03:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2009/10/21/general-frustrations-on-nobel-prize-winning-presidents/</loc>
+    <lastmod>2009-10-21T11:14:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2009/10/08/google-4th-to-appear-on-google/</loc>
+    <lastmod>2009-10-08T14:05:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2009/09/30/unity-in-diversity/</loc>
+    <lastmod>2009-09-30T17:34:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2009/09/12/cape-town-flu-and-other-frailties/</loc>
+    <lastmod>2009-09-12T16:46:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2009/09/02/jumping-borders/</loc>
+    <lastmod>2009-09-02T09:41:56+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2009/08/27/vic-falls/</loc>
+    <lastmod>2009-08-27T10:46:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2009/08/21/go-siame/</loc>
+    <lastmod>2009-08-21T16:48:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2009/08/12/times-of-refreshing/</loc>
+    <lastmod>2009-08-12T20:41:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2009/07/29/ga-gona-metsi/</loc>
+    <lastmod>2009-07-29T16:24:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2009/07/27/almost-done/</loc>
+    <lastmod>2009-07-27T11:56:29+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2009/07/15/okavango-le-dikwena-dithlare-and-more/</loc>
+    <lastmod>2009-07-15T08:38:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2009/07/04/mopipi/</loc>
+    <lastmod>2009-07-04T11:12:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2009/06/26/lekgoa-lekgoa/</loc>
+    <lastmod>2009-06-26T19:32:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2009/06/13/botlhale/</loc>
+    <lastmod>2009-06-13T10:56:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2009/06/03/ga-pula/</loc>
+    <lastmod>2009-06-03T11:27:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2009/05/27/motoro/</loc>
+    <lastmod>2009-05-27T19:22:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2009/05/07/domela/</loc>
+    <lastmod>2009-05-07T22:00:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.fritzvd.com/2009/04/19/going/</loc>
+    <lastmod>2009-04-19T23:33:03+00:00</lastmod>
+  </url>
+  
+</urlset>

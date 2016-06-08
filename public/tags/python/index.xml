@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on fritzvd</title>
+    <link>http://blog.fritzvd.com/tags/python/</link>
+    <description>Recent content in Python on fritzvd</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Jan 2011 15:48:32 +0000</lastBuildDate>
+    <atom:link href="http://blog.fritzvd.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Creating a little clipbox for your GIS projects in Python</title>
+      <link>http://blog.fritzvd.com/2011/01/11/creating-a-little-clipbox-for-your-projects-in-python/</link>
+      <pubDate>Tue, 11 Jan 2011 15:48:32 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2011/01/11/creating-a-little-clipbox-for-your-projects-in-python/</guid>
+      <description>&lt;p&gt;When working on a GIS project, this always bums me out. You need to have a certain area in which you want to cut all your source data. But in ArcGIS I never figure out how to do it properly, except for using Python scripts and arcgisscripting/arcpy. But I figured, this should also be do-able from the terminal, and take less time and energy from your little workbox.&lt;/p&gt;
+
+&lt;p&gt;But here&amp;#8217;s a Python script that uses open-source libraries and writes&lt;/p&gt;
+
+&lt;p&gt;Be sure to have  &lt;a href=&#34;http://fwtools.maptools.org/&#34;&gt;FW_Tools&lt;/a&gt; installed (win/linux) or when you&amp;#8217;re on a Mac head over to &lt;a href=&#34;www.kyngchaos.com/&#34;&gt;KyngChaos&lt;/a&gt;. This dude has some binary versions of GDAL and PROJ. On Ubuntu life is even more dreamy:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;sudo apt-get install proj4 python-gdal&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;and some other stuff I can&amp;#8217;t think of right now.&lt;/p&gt;
+
+&lt;p&gt;This is the version of the script that will run with FWTools in Windows. (all neatly stolen and copied from &lt;a href=&#34;http://www.gis.usu.edu/~chrisg/python/2009/&#34;&gt;Chris Garrard&lt;/a&gt;)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;syntax python&#34;&gt;import ogr, os, sys, osr
+os.chdir(&#39;C:/Directory&#39;)
+
+driver = ogr.GetDriverByName(&#39;ESRI Shapefile&#39;)
+
+fn = &#39;tmp.shp&#39;
+if os.path.exists(fn):
+    driver.DeleteDataSource(fn)
+ds = driver.CreateDataSource(fn)
+
+if ds is None:
+    print &#39;Could not create file&#39;
+    sys.exit(1)
+layer = ds.CreateLayer(&#39;layer_1&#39;, geom_type=ogr.wkbPolygon)
+
+fieldDefn = ogr.FieldDefn(&#39;name&#39;, ogr.OFTString)
+fieldDefn.SetWidth(30)
+layer.CreateField(fieldDefn)
+
+featureDefn = layer.GetLayerDefn()
+
+ring = ogr.Geometry(ogr.wkbLinearRing)
+ring.AddPoint(54280, 419385)
+ring.AddPoint(95285, 419385)
+ring.AddPoint(95285, 460390)
+ring.AddPoint(54280, 460390)
+
+poly = ogr.Geometry(ogr.wkbPolygon)
+poly.AddGeometry(ring)
+
+feature = ogr.Feature(featureDefn)
+feature.SetGeometry(poly)
+
+layer.CreateFeature(feature)
+
+ring.Destroy()
+poly.Destroy()
+feature.Destroy()
+
+ds.Destroy()
+
+inSpatialRef = osr.SpatialReference()
+inSpatialRef.ImportFromEPSG(4269)
+outSpatialRef = osr.SpatialReference()
+# changing from unprojected to &#39;RijksDriehoeksstelsel&#39; the Dutch National Grid
+outSpatialRef.ImportFromEPSG(28992)
+coordTrans = osr.CoordinateTransformation(inSpatialRef, outSpatialRef)
+
+inDS = driver.Open(&#39;tmp.shp&#39;, 0)
+if inDS is None:
+  print &#39;Could not open file&#39;
+  sys.exit(1)
+inLayer = inDS.GetLayer()
+
+# create a new data source and layer
+fn = &#39;clip.shp&#39;
+if os.path.exists(fn):
+  driver.DeleteDataSource(fn)
+outDS = driver.CreateDataSource(fn)
+if outDS is None:
+  print &#39;Could not create file&#39;
+  sys.exit(1)
+outLayer = outDS.CreateLayer(&#39;layer_2&#39;, geom_type=ogr.wkbPolygon)
+
+featureDefn = outLayer.GetLayerDefn()
+
+# loop through the input features
+inFeature = inLayer.GetNextFeature()
+while inFeature:
+
+  # get the input geometry
+  geom = inFeature.GetGeometryRef()
+
+  # reproject the geometry
+  geom.Transform(coordTrans)
+
+  # create a new feature
+  outFeature = ogr.Feature(featureDefn)
+
+  # set the geometry and attribute
+  outFeature.SetGeometry(geom)
+  outFeature.SetField(&#39;name&#39;, inFeature.GetField(&#39;name&#39;))
+
+  # add the feature to the shapefile
+  outLayer.CreateFeature(outFeature)
+
+  # destroy the features and get the next input feature
+  outFeature.Destroy
+  inFeature.Destroy
+  inFeature = inLayer.GetNextFeature()
+
+# close the shapefiles
+inDS.Destroy()
+outDS.Destroy()&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Processing images with GDAL and Mayavi2</title>
+      <link>http://blog.fritzvd.com/2010/11/22/processing-images-with-gdal-and-mayavi2/</link>
+      <pubDate>Mon, 22 Nov 2010 12:51:17 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2010/11/22/processing-images-with-gdal-and-mayavi2/</guid>
+      <description>&lt;p&gt;Ok, this took a while but the results are not bad. So I guess it&amp;#8217;s worth it.&lt;/p&gt;
+
+&lt;p&gt;First of all, a big thank you at [Ok, this took a while but the results are not bad. So I guess it&amp;#8217;s worth it.&lt;/p&gt;
+
+&lt;p&gt;First of all, a big thank you at](&lt;a href=&#34;http://www.gis.usu.edu/~chrisg/&#34;&gt;http://www.gis.usu.edu/~chrisg/&lt;/a&gt;) who is very possibly unaware of the fact that I have been using his classes on Python and Open Source GIS. They give a good introduction into using GDAL with NumPy.&lt;/p&gt;
+
+&lt;p&gt;So after struggling a few consecutive days (frustration peaked!), I managed to load a Digital Elevation Model into the Mayavi 3D visualization tool. It&amp;#8217;s still a bit rough and the peaks are a bit pointy, thus buildings look a bit weird, but still it&amp;#8217;s another little step.&lt;/p&gt;
+
+&lt;p&gt;I first tried a &lt;a href=&#34;http://en.wikibooks.org/wiki/Blender_3D:_Noob_to_Pro/Making_Landscapes_with_heightmaps&#34;&gt;Blender Tutorial&lt;/a&gt; that helped me out making this image:&lt;/p&gt;
+
+&lt;div id=&#34;attachment_199&#34; style=&#34;width: 456px&#34; class=&#34;wp-caption alignnone&#34;&gt;
+  &lt;a href=&#34;http://fritzvd.files.wordpress.com/2010/11/blenderdem.png&#34;&gt;&lt;img src=&#34;http://fritzvd.files.wordpress.com/2010/11/blenderdem.png&#34; alt=&#34;Blender and Digital Elevation Model&#34; title=&#34;blenderdem&#34; width=&#34;446&#34; height=&#34;269&#34; class=&#34;size-full wp-image-199&#34; /&gt;&lt;/a&gt;
+  
+  &lt;p class=&#34;wp-caption-text&#34;&gt;
+    Blender output
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Then after that I figured that is a bit much work for something that in my opinion can be done more efficiently. The steps are still a bit stupid, because I exported a PNG of the DEM visualized with grayscale and then imported that into gdal and displayed that. So it&amp;#8217;s still a bit dumb. And it isn&amp;#8217;t really representative of the data types that a DEM contain. But the DEM itself only gave very weird visualizations, possibly because of the detail of the file as well as large negative values for NoData values.&lt;/p&gt;
+
+&lt;p&gt;Anyway it is a start:&lt;/p&gt;
+
+&lt;div id=&#34;attachment_202&#34; style=&#34;width: 510px&#34; class=&#34;wp-caption alignnone&#34;&gt;
+  &lt;a href=&#34;http://fritzvd.files.wordpress.com/2010/11/mayavi-dem1.png&#34;&gt;&lt;img src=&#34;http://fritzvd.files.wordpress.com/2010/11/mayavi-dem1.png&#34; alt=&#34;Import with PNG and Mayavi2&#34; title=&#34;mayavi-dem&#34; width=&#34;500&#34; height=&#34;247&#34; class=&#34;size-full wp-image-202&#34; srcset=&#34;http://blog.technokrat.nl/wp-content/uploads/2010/11/mayavi-dem1-300x148.png 300w, http://blog.technokrat.nl/wp-content/uploads/2010/11/mayavi-dem1.png 1002w&#34; sizes=&#34;(max-width: 500px) 100vw, 500px&#34; /&gt;&lt;/a&gt;
+  
+  &lt;p class=&#34;wp-caption-text&#34;&gt;
+    Mayavi2 Output
+  &lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Developments so far</title>
+      <link>http://blog.fritzvd.com/2010/11/18/developments-so-far/</link>
+      <pubDate>Thu, 18 Nov 2010 15:53:56 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2010/11/18/developments-so-far/</guid>
+      <description>&lt;p&gt;Ok. 3 weeks down the road of my minor thesis and what do I have to show for? Well, a lot of paradigms and concepts for starters. Furthermore I have never been able to finish a document like research proposal so quickly and of such quality.&lt;/p&gt;
+
+&lt;p&gt;But enough of that. I have more or less abandoned the idea of a mobile application for now. Because having a mobile application like Junaio scores high on the cool list, it doesn&amp;#8217;t really in the sphere of performance and handling large data sets. The preference might go to having a standalone or online application that uses a webcam to model the information on screen.&lt;/p&gt;
+
+&lt;p&gt;Most interesting technologies so far:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The awesome &lt;a href=&#34;http://unity3d.com&#34;&gt;Unity 3D&lt;/a&gt; game engine. Apparently possible to combine with &lt;a href=&#34;http://technotecture.com/content/sstt-visualizer-augmented-reality-demo&#34;&gt;SSTT&lt;/a&gt; &amp;#8211; AR tool&lt;/li&gt;
+&lt;li&gt;The extensive Python libraries of &lt;a href=&#34;http://www.vtk.org/&#34;&gt;VTK&lt;/a&gt; and &lt;a href=&#34;http://code.enthought.com/projects/mayavi/&#34;&gt;Mayavi2&lt;/a&gt; (installing in Ubuntu costs only 10 min.) in combination with &lt;a href=&#34;http://www.gdal.org/&#34;&gt;GDAL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://sourceforge.net/projects/opengamaray/files/&#34;&gt;(Open)&lt;/a&gt;&lt;a href=&#34;http://www.gamaray.com/&#34;&gt;Gamaray&lt;/a&gt; &amp;#8211; An AR toolkit similar to UnifeyeSDK (Junaio) by Metaio. Possibility to add location and 3d objects. Very cool.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Another harsh realization is that I have grown too fond of Ubuntu Linux and only now have to deal with an issue that other programmers have been dealing with for ages. Building from source. My goodness. In Mac this feels too dangerous as a mismanaged system can have a lot of missing dependencies and building takes quite a while. In Windows this absolute hell. Searching around for pre-compiled binaries is the way to go, as are packages like Pythonxy. But still, this sucks.&lt;/p&gt;
+
+&lt;p&gt;What I have been able to do so far (except for spending days writing and compiling) is importing an Aster Satellite image into the Mayavi2 viewer. Which was remarkably painless and cool. The only thing is that I do not really understand yet what it is showing me. I guess the pixel values of one band have become the Z-axis. Still, cool as Sir Dangles.&lt;/p&gt;
+
+&lt;div id=&#34;attachment_192&#34; style=&#34;width: 410px&#34; class=&#34;wp-caption alignnone&#34;&gt;
+  &lt;a href=&#34;http://fritzvd.files.wordpress.com/2010/11/aster1.png&#34;&gt;&lt;img src=&#34;http://fritzvd.files.wordpress.com/2010/11/aster1.png&#34; alt=&#34;Aster Image&#34; title=&#34;aster1&#34; width=&#34;400&#34; height=&#34;290&#34; class=&#34;size-full wp-image-192&#34; srcset=&#34;http://blog.technokrat.nl/wp-content/uploads/2010/11/aster1-300x217.png 300w, http://blog.technokrat.nl/wp-content/uploads/2010/11/aster1.png 400w&#34; sizes=&#34;(max-width: 400px) 100vw, 400px&#34; /&gt;&lt;/a&gt;
+  
+  &lt;p class=&#34;wp-caption-text&#34;&gt;
+    View from the middle
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div id=&#34;attachment_193&#34; style=&#34;width: 410px&#34; class=&#34;wp-caption alignnone&#34;&gt;
+  &lt;a href=&#34;http://fritzvd.files.wordpress.com/2010/11/aster2.png&#34;&gt;&lt;img src=&#34;http://fritzvd.files.wordpress.com/2010/11/aster2.png&#34; alt=&#34;Aster Image&#34; title=&#34;aster2&#34; width=&#34;400&#34; height=&#34;290&#34; class=&#34;size-full wp-image-193&#34; srcset=&#34;http://blog.technokrat.nl/wp-content/uploads/2010/11/aster2-300x217.png 300w, http://blog.technokrat.nl/wp-content/uploads/2010/11/aster2.png 400w&#34; sizes=&#34;(max-width: 400px) 100vw, 400px&#34; /&gt;&lt;/a&gt;
+  
+  &lt;p class=&#34;wp-caption-text&#34;&gt;
+    View from above
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Also importing height maps in Unity3D should be not be too painfull, but this proved a bit harder than anticipated.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

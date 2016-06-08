@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Featured on fritzvd</title>
+    <link>http://blog.fritzvd.com/tags/featured/</link>
+    <description>Recent content in Featured on fritzvd</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Jan 2011 09:49:22 +0000</lastBuildDate>
+    <atom:link href="http://blog.fritzvd.com/tags/featured/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>De Meerval</title>
+      <link>http://blog.fritzvd.com/2011/01/03/de-meerval/</link>
+      <pubDate>Mon, 03 Jan 2011 09:49:22 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2011/01/03/de-meerval/</guid>
+      <description>&lt;p&gt;Het pad glinsterend met bevroren genot,&lt;/p&gt;
+
+&lt;p&gt;Bekijkt de banden,&lt;/p&gt;
+
+&lt;p&gt;Waarmee ik vederlicht haar rug betreed&lt;/p&gt;
+
+&lt;p&gt;Werpt mij van mijn rijdend ijzer&lt;/p&gt;
+
+&lt;p&gt;Laat mij voelen hoe de koude stenen&lt;/p&gt;
+
+&lt;p&gt;Mijn arm losjes het uiterst van de kom laat zien&lt;/p&gt;
+
+&lt;p&gt;Hoop op morgen, dat ik niet&lt;/p&gt;
+
+&lt;p&gt;Meerval.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Whoops I FLARted..</title>
+      <link>http://blog.fritzvd.com/2010/12/08/222/</link>
+      <pubDate>Wed, 08 Dec 2010 18:11:44 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2010/12/08/222/</guid>
+      <description>&lt;p&gt;Today I fooled around a bit with the &lt;a href=&#34;http://words.transmote.com/wp/flarmanager/&#34;&gt;FLARManager&lt;/a&gt; (tutorials graciously provided by transmote). I tried to get some Papervision 3D objects going using all these different tutorials I have been following over the last few weeks (e.g. &lt;a href=&#34;http://papervision2.com&#34;&gt;papervision2.com&lt;/a&gt; and &lt;a href=&#34;http://rawkes.com&#34;&gt;rawkes.com&lt;/a&gt;). But it has not been as easy as I had expected. But then again, things never are.&lt;/p&gt;
+
+&lt;p&gt;The difficulty is not so much in displaying 3D objects, because pv3d and flarmanager do all the thinking for you. But trying to get from a GIS file to the right formats and the right information to be displayed in the right way, is still a bit tricky. The model still has to correspond with the actual data that was used, but more often than not these models contain very dense data on a large scale. For now the model has been so big that I only saw a small fraction of it in my display the rest hovering quietly above it. Need to find a smarter way to doing this than:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;3dobject.scale = 0.001;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;But I&amp;#8217;ll get there I&amp;#8217;m sure.&lt;/p&gt;
+
+&lt;p&gt;For now I can render multiple cows on my desktop. And at least that is something right?&lt;/p&gt;
+
+&lt;div id=&#34;attachment_223&#34; style=&#34;width: 410px&#34; class=&#34;wp-caption alignright&#34;&gt;
+  &lt;a href=&#34;http://fritzvd.files.wordpress.com/2010/12/cows.png&#34;&gt;&lt;img class=&#34;size-full wp-image-223 &#34; title=&#34;cows&#34; src=&#34;http://fritzvd.files.wordpress.com/2010/12/cows.png&#34; alt=&#34;Desktop Cows&#34; width=&#34;400&#34; height=&#34;302&#34; /&gt;&lt;/a&gt;
+  
+  &lt;p class=&#34;wp-caption-text&#34;&gt;
+    Property of Papervision2.com I think
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;P.S. Why cows instead of GIS (the model is just small and loads quickly, good for testing purposes.)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

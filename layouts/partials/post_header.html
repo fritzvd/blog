@@ -1,0 +1,20 @@
+
+<header class="post-header">
+      <h3 class="p-post-title">{{ .Title }}</h3>
+</header>
+
+<style>
+  header#site-header {
+    background-image: url({{ printf "%s" $.Params.cover }});
+    margin-bottom: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+    box-shadow: grey 10px 0px 5px 0px inset;
+    image-rendering: -moz-crisp-edges;         /* Firefox */
+    image-rendering:   -o-crisp-edges;         /* Opera */
+    image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+  }
+</style>

@@ -1,0 +1,6 @@
+baseurl: http://blog.fritzvd.com/
+disablePathToLower: true
+languageCode: en-us
+title: fritzvd
+permalinks:
+  post: /:year/:month/:day/:title/
