@@ -6,8 +6,247 @@
     <description>Recent content on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Oct 2015 06:49:23 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jun 2016 10:35:05 +0200</lastBuildDate>
     <atom:link href="http://blog.fritzvd.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Getting started with NES programming</title>
+      <link>http://blog.fritzvd.com/2016/06/13/Getting-started-with-NES-programming/</link>
+      <pubDate>Mon, 13 Jun 2016 10:35:05 +0200</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2016/06/13/Getting-started-with-NES-programming/</guid>
+      <description>
+
+&lt;pre&gt;&lt;code&gt;Too Long; Didn&#39;t Read (TL;DR)
+
+The Nintendo Entertainment System (NES) is really old, so to make games for it you need to unlearn your Object-Oriented ways and do some swapping around of values. It&#39;s not impossible to learn and there are a ton of resources and tools to make it easier.
+
+Go to download sections to download compilers and graphics tools to get going on the NES.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;introduction:5bc1d6cfac1d241720d6d0007dba5fb8&#34;&gt;Introduction&lt;/h4&gt;
+
+&lt;p&gt;The past half year my mind has been wandering. And this time wandering into a
+very weird path. Developing homebrew games. Which I always thought of as a dumb
+hobby, but I really enjoy it. I&amp;rsquo;ve been getting to know both the Nintendo
+Entertainment System (NES) and the Sega Master System (SMS), both 8-bit
+consoles. This post will focus on the NES.&lt;/p&gt;
+
+&lt;p&gt;There are a lot of resources on getting started with programming on the NES. But
+I found it to be kind of challenging to get started with the programming
+environment. There&amp;rsquo;s not a whole lot that people explain about that part of
+getting started.&lt;/p&gt;
+
+&lt;p&gt;To start out with NES programming you need to have 4 things:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;a compiler&lt;/li&gt;
+&lt;li&gt;and a way to work on graphics&lt;/li&gt;
+&lt;li&gt;a way to make sounds&lt;/li&gt;
+&lt;li&gt;an emulator to test your game&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;technical-info:5bc1d6cfac1d241720d6d0007dba5fb8&#34;&gt;Technical info&lt;/h4&gt;
+
+&lt;p&gt;I won&amp;rsquo;t give you a complete rundown of the NES. Because other people have done
+this already. (see &lt;a href=&#34;#resources:5bc1d6cfac1d241720d6d0007dba5fb8&#34;&gt;Resources&lt;/a&gt;)
+The NES will read the software you will write from a cartridge. The cartridge
+has a Character (CHR) and a Program Rom (PRG). The CHR rom is where the graphics
+are stored. And the PRG where the assembled code lives.&lt;/p&gt;
+
+&lt;p&gt;The CHR consists of 8x8 tiles and allow you to store up to 256 tiles per CHR
+bank (the minimal /default setup is with 2 banks).&lt;/p&gt;
+
+&lt;p&gt;The NES runs with a modified MOS 6502 processor (which
+were also found in Commodore 64, Apple ][ and Atari 2600 and 800) and a
+Pixel Processing Unit (PPU).&lt;/p&gt;
+
+&lt;h4 id=&#34;compilers:5bc1d6cfac1d241720d6d0007dba5fb8&#34;&gt;Compilers&lt;/h4&gt;
+
+&lt;p&gt;NES games are written in Assembly language, 6502 Assembly. Which is
+actually not the worst assembly language to learn, it&amp;rsquo;s sort of readable and
+&lt;a href=&#34;https://raw.githubusercontent.com/camsaul/nesasm/master/beagle_bros_6502_reference.png&#34;&gt;doesn&amp;rsquo;t have a lot of commands&lt;/a&gt;
+. If you&amp;rsquo;ve done Commodore 64 assembly you can actually reuse&lt;/p&gt;
+
+&lt;p&gt;The most popular way to get started is to get started with the NESASM compiler.
+Which makes total sense because it&amp;rsquo;s really easy to setup, and there are a ton
+of resources for it. For example &lt;a href=&#34;http://nintendoage.com/pub/faq/NA/index.html?load=nerdy_nights_out.html&#34;&gt;the excellent Nerdy Nights tutorial&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Another way to go is to program in a more high level language, like C or
+JavaScript. I like that because I&amp;rsquo;m not really fast in ASM (yet), so it allows
+me to focus more on the logic of the program instead of focusing on remembering
+ASM.&lt;/p&gt;
+
+&lt;p&gt;For learning programming in C for the NES, it&amp;rsquo;s still &lt;em&gt;convenient&lt;/em&gt; to
+understand what&amp;rsquo;s going on.
+I highly recommend looking at &lt;a href=&#34;https://shiru.untergrund.net/articles/programming_nes_games_in_c.htm&#34;&gt;Shiru&amp;rsquo;s examples&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;At the moment I&amp;rsquo;m trying to get something going in JavaScript based on
+&lt;a href=&#34;https://github.com/emkay/nesly&#34;&gt;emkay&amp;rsquo;s nesly&lt;/a&gt;. To make it easier for people
+to get started with NES programming. The output of &lt;code&gt;nesly&lt;/code&gt; can be compiled with
+the &lt;code&gt;nesasm&lt;/code&gt; compiler.&lt;/p&gt;
+
+&lt;p&gt;What &lt;code&gt;cc65&lt;/code&gt; does for C and &lt;code&gt;nesly&lt;/code&gt; for JavaScript is first compile it
+to ASM and then the assembler compiles it to a NES PRG and CHR bank (or ROM).&lt;/p&gt;
+
+&lt;h5 id=&#34;downloads:5bc1d6cfac1d241720d6d0007dba5fb8&#34;&gt;Downloads&lt;/h5&gt;
+
+&lt;p&gt;NESASM:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.nespowerpak.com/nesasm/NESASM3.zip&#34;&gt;windows&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.fritzvd.com/files/nesasm&#34;&gt;ubuntu 16.04 64-bit binary build&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/camsaul/nesasm&#34;&gt;source (compatible with linux and mac osx )&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/gutomaia/nesasm_py&#34;&gt;nesasm_py&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;CC65:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cc65.github.io/cc65/&#34;&gt;main page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://sourceforge.net/projects/cc65/files/cc65-snapshot-win32.zip&#34;&gt;windows binary&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://spiro.trikaliotis.net/debian&#34;&gt;Spiro&amp;rsquo;s debian repository&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Nesly:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/emkay/nesly&#34;&gt;github repository&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;doing-graphics:5bc1d6cfac1d241720d6d0007dba5fb8&#34;&gt;Doing Graphics&lt;/h4&gt;
+
+&lt;p&gt;For the graphics again a lot can be said. But it&amp;rsquo;s way more useful to read the
+great articles &lt;a href=&#34;#graphics:5bc1d6cfac1d241720d6d0007dba5fb8&#34;&gt;below&lt;/a&gt;. Basically all your moving
+parts will be made up out of 8x8 images that can only use 3 colors at a time.&lt;/p&gt;
+
+&lt;p&gt;The thing to keep in mind is that you&amp;rsquo;re working with spritesheets and a very
+limited palette.
+What I found most useful is to just edit these in Gimp. Gimp can show a grid,
+which defaults to a grid of 10x10, but you can also set it to 8x8 pixels.&lt;/p&gt;
+
+&lt;p&gt;Damian Yerrick, made this wonderful tool in Python to convert an indexed PNG or
+BMP to a CHR tileset. Perhaps one day I&amp;rsquo;ll find the courage to
+rewrite that in JavaScript too.&lt;/p&gt;
+
+&lt;p&gt;The tool can be found in his &lt;a href=&#34;https://pineight.com/nes/#template&#34;&gt;NES development template&lt;/a&gt;. But I also stored in my repo just to be
+sure I don&amp;rsquo;t lose it 😉. It comes with an indexed png, so it&amp;rsquo;s easier to start
+editing.&lt;/p&gt;
+
+&lt;p&gt;You can also use YY-CHR (windows only, also works with WINE) to edit the sprite
+banks immediately and save as a CHR.&lt;/p&gt;
+
+&lt;p&gt;Backgrounds are a bit special in NES development because they use the same
+sprite sheets but setting the colors is a bit harder. The most convenient way
+to do this is to use Shiru&amp;rsquo;s NES Screen Tool. Which exports to binary format,
+but it also output a C header file, if you&amp;rsquo;re into that.
+If you&amp;rsquo;ve used more than one palette in the background don&amp;rsquo;t forget to export
+the attribute table too (that is where that information is being stored).&lt;/p&gt;
+
+&lt;p&gt;Downloads:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;gimp.org/&#34;&gt;Gimp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/fritzvd/emesh/blob/0e3cf835373a292f06a08f56c7cec63ffad37f25/tools/pilbmp2nes.py&#34;&gt;Damian Yerrick&amp;rsquo;s tool&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.romhacking.net/utilities/119/&#34;&gt;YY-CHR&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://shiru.untergrund.net/files/nesst.zip&#34;&gt;NES Screen Tool&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;sound:5bc1d6cfac1d241720d6d0007dba5fb8&#34;&gt;Sound&lt;/h4&gt;
+
+&lt;p&gt;For sound (almost) everybody agrees that Famitracker is the tool to use.
+However, Famitracker is windows only (NOOO!! But sure it works with WINE).
+But you can also use Deflemask. Or the excellent Android app 8Tones&lt;/p&gt;
+
+&lt;p&gt;Including it in your project is usually done by exporting to NSF files or just
+plain ASM.&lt;/p&gt;
+
+&lt;p&gt;Downloads:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.deflemask.com/&#34;&gt;deflemask&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.famitracker.com/&#34;&gt;Famitracker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://play.google.com/store/apps/details?id=com.guova.eighttones&amp;amp;hl=en&#34;&gt;8Tones&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;emulators:5bc1d6cfac1d241720d6d0007dba5fb8&#34;&gt;Emulators&lt;/h4&gt;
+
+&lt;p&gt;There are a number of great emulators. I don&amp;rsquo;t think I have to tell you a whole
+bunch about emulators. They&amp;rsquo;re just that: emulators. Just use a bunch of them to
+make sure your ROM is working properly.&lt;/p&gt;
+
+&lt;p&gt;A small mention for FCEUX, the windows version (even under wine in linux) has
+great debugging tools even though it isn&amp;rsquo;t the most accurate in emulating the
+ROM. You look at the nametables and the mirroring (nametables define the
+  background and the mirroring helps with scrolling games).&lt;/p&gt;
+
+&lt;p&gt;Downloads:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://fceux.com&#34;&gt;FCEUX&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;0ldsk00l.ca/nestopia/&#34;&gt;nestopia&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;resources:5bc1d6cfac1d241720d6d0007dba5fb8&#34;&gt;Resources&lt;/h4&gt;
+
+&lt;h6 id=&#34;general-info:5bc1d6cfac1d241720d6d0007dba5fb8&#34;&gt;General info&lt;/h6&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://wiki.nesdev.com/w/index.php/NES_reference_guide&#34;&gt;NESDEV wiki reference page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://wiki.nesdev.com/w/index.php/PPU_registers&#34;&gt;PPU registers- nesdev wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://forums.nesdev.com&#34;&gt;nesdev forums&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.kickstarter.com/projects/1101008925/lizard/posts/1582636&#34;&gt;Sprite Rendering&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&#34;graphics:5bc1d6cfac1d241720d6d0007dba5fb8&#34;&gt;Graphics&lt;/h6&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://noelberry.ca/#nes&#34;&gt;Restrictions / General info - Noel Berry&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jarrodparkes.com/2014/01/20/nes-attribute-tables/&#34;&gt;Attribute tables - Jarrod Parkes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.dustmop.io/blog/2015/04/28/nes-graphics-part-1/&#34;&gt;Graphics Part 1- dustmop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.dustmop.io/blog/2015/06/08/nes-graphics-part-2/&#34;&gt;Graphics Part 2- dustmop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.dustmop.io/blog/2015/12/18/nes-graphics-part-3/&#34;&gt;Graphics Part 1- dustmop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gas13.ru/v3/tutorials/sywtbapa_almighty_grass_tile.php&#34;&gt;Pixel Artistry - gas13&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&#34;programming-in-6502-assembly:5bc1d6cfac1d241720d6d0007dba5fb8&#34;&gt;Programming in 6502 Assembly&lt;/h6&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://nintendoage.com/pub/faq/NA/index.html?load=nerdy_nights_out.html&#34;&gt;Complete Tutorial ASM - Nerdy Nights&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://nintendoage.com/forum/messageview.cfm?catid=22&amp;amp;threadid=33378&#34;&gt;Game Engine programming ASM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://raw.githubusercontent.com/camsaul/nesasm/master/beagle_bros_6502_reference.png&#34;&gt;Beagle Bros. ASM cheatsheet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&#34;programming-in-c:5bc1d6cfac1d241720d6d0007dba5fb8&#34;&gt;Programming in C&lt;/h6&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://shiru.untergrund.net/articles/programming_nes_games_in_c.htm&#34;&gt;Shiru&amp;rsquo;s examples for C&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://nesdoug.com/&#34;&gt;Complete Set of Tutorials - Doug Fraker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://timcheeseman.com/nesdev/&#34;&gt;Learn to make NES games - Tim Cheeseman&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&#34;getting-setup-on-debian-like-linux-e-g-ubuntu:5bc1d6cfac1d241720d6d0007dba5fb8&#34;&gt;Getting setup on Debian-like Linux (e.g. ubuntu)&lt;/h6&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# nesasm
+wget http://blog.fritzvd.com/files/nesasm
+sudo mv nesasm /usr/local/bin/nesasm
+
+# cc65
+echo &amp;quot;Add sources&amp;quot;
+sudo echo &amp;quot;deb     http://debian.trikaliotis.net/ stable contrib&amp;quot; &amp;gt;&amp;gt; /etc/apt/sources.list
+sudo echo &amp;quot;deb-src http://debian.trikaliotis.net/ stable contrib&amp;quot; &amp;gt;&amp;gt; /etc/apt/sources.list
+
+echo &amp;quot;Sign gpg key so you can download packages from this source&amp;quot;
+gpg -a --export 2AF47E44 | sudo apt-key add -
+sudo gpg --recv-key 2AF47E44
+
+echo &amp;quot;Update and install packages&amp;quot;
+sudo apt-get update
+sudo apt-get install cc65 cc65-nes
+sudo apt-get install nestopia fceux
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>Writing Tests for NativeScript apps</title>
@@ -534,210 +773,6 @@
 &lt;li&gt;great communities that make awesome games&lt;/li&gt;
 &lt;li&gt;lower the bar&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Particle Emitter in HaxePunk</title>
-      <link>http://blog.fritzvd.com/2014/03/04/particle-emitter-in-haxepunk/</link>
-      <pubDate>Tue, 04 Mar 2014 14:34:54 +0000</pubDate>
-      
-      <guid>http://blog.fritzvd.com/2014/03/04/particle-emitter-in-haxepunk/</guid>
-      <description>&lt;p&gt;For some this will be a trivial example. For me this took a bit longer than I suspected.&lt;/p&gt;
-
-&lt;p&gt;This small example will produce this:&lt;/p&gt;
-
-&lt;p&gt;If you&amp;#8217;re planning on making an awesome game you probably want a particle emitter. because.. well look at it.&lt;/p&gt;
-
-&lt;p&gt;What I did is I started a haxepunk project:&lt;/p&gt;
-
-&lt;p&gt;`For some this will be a trivial example. For me this took a bit longer than I suspected.&lt;/p&gt;
-
-&lt;p&gt;This small example will produce this:&lt;/p&gt;
-
-&lt;p&gt;If you&amp;#8217;re planning on making an awesome game you probably want a particle emitter. because.. well look at it.&lt;/p&gt;
-
-&lt;p&gt;What I did is I started a haxepunk project:&lt;/p&gt;
-
-&lt;p&gt;`&lt;/p&gt;
-
-&lt;p&gt;And added a file: &lt;a href=&#34;https://github.com/fritzvd/haxepunk-emitter-example/blob/master/src/Explosion.hx&#34; title=&#34;Explosion.hx&#34; target=&#34;_blank&#34;&gt;Explosion.hx&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The Emitter is also a type of Entity, and also needs a graphic. It looks like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;syntax actionscript&#34;&gt;import com.haxepunk.graphics.Emitter;
-import com.haxepunk.utils.Ease;
-import com.haxepunk.Entity;
-
-class Explosion extends Entity
-{
-    private var _emitter:Emitter;
-
-    public function new()
-    {
-        super(x, y);
-        _emitter = new Emitter(&#34;graphics/particle.png&#34;, 4, 4);
-        _emitter.newType(&#34;explode&#34;, [0]);
-        _emitter.setMotion(&#34;explode&#34;,       // name
-                    0,              // angle
-                    100,            // distance
-                    2,              // duration
-                    360,            // ? angle range
-                    -40,            // ? distance range
-                    1,              // ? Duration range
-                    Ease.quadOut    // ? Easing 
-                    );
-        _emitter.setAlpha(&#34;explode&#34;, 20, 0.1);
-        _emitter.setGravity(&#34;explode&#34;, 5, 1);
-        graphic = _emitter;
-        layer = -1;
-    }
-
-    public function explode(x:Float, y:Float)
-    {
-        for (i in 0...20)
-        {
-            _emitter.emit(&#34;explode&#34;, x, y);
-        }
-    }
-
-
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then you can add the Emitter to your current scene like in my &lt;a href=&#34;https://github.com/fritzvd/haxepunk-emitter-example/blob/master/src/MainScene.hx&#34; title=&#34;MainScene.hx&#34; target=&#34;_blank&#34;&gt;MainScene.hx&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;It looks like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;syntax actionscript&#34;&gt;import com.haxepunk.Scene;
-import Explosion;
-
-class MainScene extends Scene
-{
-    private var explosion:Explosion;
-
-    public override function begin()
-    {
-        explosion = new Explosion();
-        add(explosion);
-    }
-
-    public override function update()
-    {
-        super.update();
-        explosion.explode(230, 240);
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now run&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;lime test neko&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;And you should see something similar to the emitter above.&lt;/p&gt;
-
-&lt;p&gt;You can checkout my &lt;a href=&#34;https://github.com/fritzvd/haxepunk-emitter-example&#34; title=&#34;haxepunk-emitter-example&#34; target=&#34;_blank&#34;&gt;repo&lt;/a&gt; and run it to play around with it.&lt;/p&gt;
-
-&lt;p&gt;I ran into this error below. It meant my sprite was too small. It took me a long time to realize that.&lt;/p&gt;
-
-&lt;p&gt;``For some this will be a trivial example. For me this took a bit longer than I suspected.&lt;/p&gt;
-
-&lt;p&gt;This small example will produce this:&lt;/p&gt;
-
-&lt;p&gt;If you&amp;#8217;re planning on making an awesome game you probably want a particle emitter. because.. well look at it.&lt;/p&gt;
-
-&lt;p&gt;What I did is I started a haxepunk project:&lt;/p&gt;
-
-&lt;p&gt;`For some this will be a trivial example. For me this took a bit longer than I suspected.&lt;/p&gt;
-
-&lt;p&gt;This small example will produce this:&lt;/p&gt;
-
-&lt;p&gt;If you&amp;#8217;re planning on making an awesome game you probably want a particle emitter. because.. well look at it.&lt;/p&gt;
-
-&lt;p&gt;What I did is I started a haxepunk project:&lt;/p&gt;
-
-&lt;p&gt;`&lt;/p&gt;
-
-&lt;p&gt;And added a file: &lt;a href=&#34;https://github.com/fritzvd/haxepunk-emitter-example/blob/master/src/Explosion.hx&#34; title=&#34;Explosion.hx&#34; target=&#34;_blank&#34;&gt;Explosion.hx&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The Emitter is also a type of Entity, and also needs a graphic. It looks like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;syntax actionscript&#34;&gt;import com.haxepunk.graphics.Emitter;
-import com.haxepunk.utils.Ease;
-import com.haxepunk.Entity;
-
-class Explosion extends Entity
-{
-    private var _emitter:Emitter;
-
-    public function new()
-    {
-        super(x, y);
-        _emitter = new Emitter(&#34;graphics/particle.png&#34;, 4, 4);
-        _emitter.newType(&#34;explode&#34;, [0]);
-        _emitter.setMotion(&#34;explode&#34;,       // name
-                    0,              // angle
-                    100,            // distance
-                    2,              // duration
-                    360,            // ? angle range
-                    -40,            // ? distance range
-                    1,              // ? Duration range
-                    Ease.quadOut    // ? Easing 
-                    );
-        _emitter.setAlpha(&#34;explode&#34;, 20, 0.1);
-        _emitter.setGravity(&#34;explode&#34;, 5, 1);
-        graphic = _emitter;
-        layer = -1;
-    }
-
-    public function explode(x:Float, y:Float)
-    {
-        for (i in 0...20)
-        {
-            _emitter.emit(&#34;explode&#34;, x, y);
-        }
-    }
-
-
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then you can add the Emitter to your current scene like in my &lt;a href=&#34;https://github.com/fritzvd/haxepunk-emitter-example/blob/master/src/MainScene.hx&#34; title=&#34;MainScene.hx&#34; target=&#34;_blank&#34;&gt;MainScene.hx&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;It looks like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;syntax actionscript&#34;&gt;import com.haxepunk.Scene;
-import Explosion;
-
-class MainScene extends Scene
-{
-    private var explosion:Explosion;
-
-    public override function begin()
-    {
-        explosion = new Explosion();
-        add(explosion);
-    }
-
-    public override function update()
-    {
-        super.update();
-        explosion.explode(230, 240);
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now run&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;lime test neko&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;And you should see something similar to the emitter above.&lt;/p&gt;
-
-&lt;p&gt;You can checkout my &lt;a href=&#34;https://github.com/fritzvd/haxepunk-emitter-example&#34; title=&#34;haxepunk-emitter-example&#34; target=&#34;_blank&#34;&gt;repo&lt;/a&gt; and run it to play around with it.&lt;/p&gt;
-
-&lt;p&gt;I ran into this error below. It meant my sprite was too small. It took me a long time to realize that.&lt;/p&gt;
-
-&lt;p&gt;``&lt;/p&gt;
 </description>
     </item>
     

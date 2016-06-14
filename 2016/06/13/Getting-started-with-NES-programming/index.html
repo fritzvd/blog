@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#"><!--<![endif]-->
+
+    <head>
+                <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="author" content="">
+        <meta name="keywords" content="awesome, definitely">
+	
+        <meta property="og:site_name" content="fritzvd">
+        <meta property="og:title" content="fritzvd">
+        <meta property="og:url" content="http://blog.fritzvd.com/2016/06/13/Getting-started-with-NES-programming/">
+        <meta property="og:description" content="">
+    
+        <meta property="og:type" content="article" />
+        <meta property="og:article:author" content="" />
+        <meta property="og:article:published_time" content="2016-06-13T10:35:05&#43;02:00" />
+    
+        <meta name="generator" content="Hugo 0.15" />
+        <title>Getting started with NES programming &middot; fritzvd </title>
+        <link rel="canonical" href="http://blog.fritzvd.com/" />
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="">
+        <link rel="stylesheet" type='text/css' href="http://blog.fritzvd.com/css/main.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Montserrat:700' rel='stylesheet' type='text/css'>
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    </head>
+<body>
+<!--[if lt IE 7]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chrome/‎">install Google Chrome</a> to experience this site.</p><![endif]-->
+
+    <header id="site-header">
+        <div class="container">
+            <a href="http://blog.fritzvd.com/" alt="fritzvd"><h1 class="blog-title heading">fritzvd</h1></a>
+            <p class="blog-description"></p>
+        </div>
+    </header>
+
+<main class="content" role="main">
+	<div class="container">
+		<article class="post">
+    
+<header class="post-header">
+      <h3 class="p-post-title">Getting started with NES programming</h3>
+</header>
+
+<style>
+  header#site-header {
+    background-image: url(https://www.skip.org/img/mariogif.gif);
+    margin-bottom: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+    box-shadow: grey 10px 0px 5px 0px inset;
+    image-rendering: -moz-crisp-edges;          
+    image-rendering:   -o-crisp-edges;          
+    image-rendering: -webkit-optimize-contrast; 
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;   
+  }
+</style>
+
+
+    <section class="post-content">
+        
+
+<pre><code>Too Long; Didn't Read (TL;DR)
+
+The Nintendo Entertainment System (NES) is really old, so to make games for it you need to unlearn your Object-Oriented ways and do some swapping around of values. It's not impossible to learn and there are a ton of resources and tools to make it easier.
+
+Go to download sections to download compilers and graphics tools to get going on the NES.
+</code></pre>
+
+<h4 id="introduction:5bc1d6cfac1d241720d6d0007dba5fb8">Introduction</h4>
+
+<p>The past half year my mind has been wandering. And this time wandering into a
+very weird path. Developing homebrew games. Which I always thought of as a dumb
+hobby, but I really enjoy it. I&rsquo;ve been getting to know both the Nintendo
+Entertainment System (NES) and the Sega Master System (SMS), both 8-bit
+consoles. This post will focus on the NES.</p>
+
+<p>There are a lot of resources on getting started with programming on the NES. But
+I found it to be kind of challenging to get started with the programming
+environment. There&rsquo;s not a whole lot that people explain about that part of
+getting started.</p>
+
+<p>To start out with NES programming you need to have 4 things:</p>
+
+<ul>
+<li>a compiler</li>
+<li>and a way to work on graphics</li>
+<li>a way to make sounds</li>
+<li>an emulator to test your game</li>
+</ul>
+
+<h4 id="technical-info:5bc1d6cfac1d241720d6d0007dba5fb8">Technical info</h4>
+
+<p>I won&rsquo;t give you a complete rundown of the NES. Because other people have done
+this already. (see <a href="#resources:5bc1d6cfac1d241720d6d0007dba5fb8">Resources</a>)
+The NES will read the software you will write from a cartridge. The cartridge
+has a Character (CHR) and a Program Rom (PRG). The CHR rom is where the graphics
+are stored. And the PRG where the assembled code lives.</p>
+
+<p>The CHR consists of 8x8 tiles and allow you to store up to 256 tiles per CHR
+bank (the minimal /default setup is with 2 banks).</p>
+
+<p>The NES runs with a modified MOS 6502 processor (which
+were also found in Commodore 64, Apple ][ and Atari 2600 and 800) and a
+Pixel Processing Unit (PPU).</p>
+
+<h4 id="compilers:5bc1d6cfac1d241720d6d0007dba5fb8">Compilers</h4>
+
+<p>NES games are written in Assembly language, 6502 Assembly. Which is
+actually not the worst assembly language to learn, it&rsquo;s sort of readable and
+<a href="https://raw.githubusercontent.com/camsaul/nesasm/master/beagle_bros_6502_reference.png">doesn&rsquo;t have a lot of commands</a>
+. If you&rsquo;ve done Commodore 64 assembly you can actually reuse</p>
+
+<p>The most popular way to get started is to get started with the NESASM compiler.
+Which makes total sense because it&rsquo;s really easy to setup, and there are a ton
+of resources for it. For example <a href="http://nintendoage.com/pub/faq/NA/index.html?load=nerdy_nights_out.html">the excellent Nerdy Nights tutorial</a>.</p>
+
+<p>Another way to go is to program in a more high level language, like C or
+JavaScript. I like that because I&rsquo;m not really fast in ASM (yet), so it allows
+me to focus more on the logic of the program instead of focusing on remembering
+ASM.</p>
+
+<p>For learning programming in C for the NES, it&rsquo;s still <em>convenient</em> to
+understand what&rsquo;s going on.
+I highly recommend looking at <a href="https://shiru.untergrund.net/articles/programming_nes_games_in_c.htm">Shiru&rsquo;s examples</a>.</p>
+
+<p>At the moment I&rsquo;m trying to get something going in JavaScript based on
+<a href="https://github.com/emkay/nesly">emkay&rsquo;s nesly</a>. To make it easier for people
+to get started with NES programming. The output of <code>nesly</code> can be compiled with
+the <code>nesasm</code> compiler.</p>
+
+<p>What <code>cc65</code> does for C and <code>nesly</code> for JavaScript is first compile it
+to ASM and then the assembler compiles it to a NES PRG and CHR bank (or ROM).</p>
+
+<h5 id="downloads:5bc1d6cfac1d241720d6d0007dba5fb8">Downloads</h5>
+
+<p>NESASM:</p>
+
+<ul>
+<li><a href="http://www.nespowerpak.com/nesasm/NESASM3.zip">windows</a></li>
+<li><a href="/files/nesasm">ubuntu 16.04 64-bit binary build</a></li>
+<li><a href="https://github.com/camsaul/nesasm">source (compatible with linux and mac osx )</a></li>
+<li><a href="https://github.com/gutomaia/nesasm_py">nesasm_py</a></li>
+</ul>
+
+<p>CC65:</p>
+
+<ul>
+<li><a href="https://cc65.github.io/cc65/">main page</a></li>
+<li><a href="http://sourceforge.net/projects/cc65/files/cc65-snapshot-win32.zip">windows binary</a></li>
+<li><a href="http://spiro.trikaliotis.net/debian">Spiro&rsquo;s debian repository</a></li>
+</ul>
+
+<p>Nesly:</p>
+
+<ul>
+<li><a href="https://github.com/emkay/nesly">github repository</a></li>
+</ul>
+
+<h4 id="doing-graphics:5bc1d6cfac1d241720d6d0007dba5fb8">Doing Graphics</h4>
+
+<p>For the graphics again a lot can be said. But it&rsquo;s way more useful to read the
+great articles <a href="#graphics:5bc1d6cfac1d241720d6d0007dba5fb8">below</a>. Basically all your moving
+parts will be made up out of 8x8 images that can only use 3 colors at a time.</p>
+
+<p>The thing to keep in mind is that you&rsquo;re working with spritesheets and a very
+limited palette.
+What I found most useful is to just edit these in Gimp. Gimp can show a grid,
+which defaults to a grid of 10x10, but you can also set it to 8x8 pixels.</p>
+
+<p>Damian Yerrick, made this wonderful tool in Python to convert an indexed PNG or
+BMP to a CHR tileset. Perhaps one day I&rsquo;ll find the courage to
+rewrite that in JavaScript too.</p>
+
+<p>The tool can be found in his <a href="https://pineight.com/nes/#template">NES development template</a>. But I also stored in my repo just to be
+sure I don&rsquo;t lose it 😉. It comes with an indexed png, so it&rsquo;s easier to start
+editing.</p>
+
+<p>You can also use YY-CHR (windows only, also works with WINE) to edit the sprite
+banks immediately and save as a CHR.</p>
+
+<p>Backgrounds are a bit special in NES development because they use the same
+sprite sheets but setting the colors is a bit harder. The most convenient way
+to do this is to use Shiru&rsquo;s NES Screen Tool. Which exports to binary format,
+but it also output a C header file, if you&rsquo;re into that.
+If you&rsquo;ve used more than one palette in the background don&rsquo;t forget to export
+the attribute table too (that is where that information is being stored).</p>
+
+<p>Downloads:</p>
+
+<ul>
+<li><a href="gimp.org/">Gimp</a></li>
+<li><a href="https://github.com/fritzvd/emesh/blob/0e3cf835373a292f06a08f56c7cec63ffad37f25/tools/pilbmp2nes.py">Damian Yerrick&rsquo;s tool</a></li>
+<li><a href="http://www.romhacking.net/utilities/119/">YY-CHR</a></li>
+<li><a href="https://shiru.untergrund.net/files/nesst.zip">NES Screen Tool</a></li>
+</ul>
+
+<h4 id="sound:5bc1d6cfac1d241720d6d0007dba5fb8">Sound</h4>
+
+<p>For sound (almost) everybody agrees that Famitracker is the tool to use.
+However, Famitracker is windows only (NOOO!! But sure it works with WINE).
+But you can also use Deflemask. Or the excellent Android app 8Tones</p>
+
+<p>Including it in your project is usually done by exporting to NSF files or just
+plain ASM.</p>
+
+<p>Downloads:</p>
+
+<ul>
+<li><a href="http://www.deflemask.com/">deflemask</a></li>
+<li><a href="http://www.famitracker.com/">Famitracker</a></li>
+<li><a href="https://play.google.com/store/apps/details?id=com.guova.eighttones&amp;hl=en">8Tones</a></li>
+</ul>
+
+<h4 id="emulators:5bc1d6cfac1d241720d6d0007dba5fb8">Emulators</h4>
+
+<p>There are a number of great emulators. I don&rsquo;t think I have to tell you a whole
+bunch about emulators. They&rsquo;re just that: emulators. Just use a bunch of them to
+make sure your ROM is working properly.</p>
+
+<p>A small mention for FCEUX, the windows version (even under wine in linux) has
+great debugging tools even though it isn&rsquo;t the most accurate in emulating the
+ROM. You look at the nametables and the mirroring (nametables define the
+  background and the mirroring helps with scrolling games).</p>
+
+<p>Downloads:</p>
+
+<ul>
+<li><a href="https://fceux.com">FCEUX</a></li>
+<li><a href="0ldsk00l.ca/nestopia/">nestopia</a></li>
+</ul>
+
+<h4 id="resources:5bc1d6cfac1d241720d6d0007dba5fb8">Resources</h4>
+
+<h6 id="general-info:5bc1d6cfac1d241720d6d0007dba5fb8">General info</h6>
+
+<ul>
+<li><a href="http://wiki.nesdev.com/w/index.php/NES_reference_guide">NESDEV wiki reference page</a></li>
+<li><a href="http://wiki.nesdev.com/w/index.php/PPU_registers">PPU registers- nesdev wiki</a></li>
+<li><a href="http://forums.nesdev.com">nesdev forums</a></li>
+<li><a href="https://www.kickstarter.com/projects/1101008925/lizard/posts/1582636">Sprite Rendering</a></li>
+</ul>
+
+<h6 id="graphics:5bc1d6cfac1d241720d6d0007dba5fb8">Graphics</h6>
+
+<ul>
+<li><a href="http://noelberry.ca/#nes">Restrictions / General info - Noel Berry</a></li>
+<li><a href="http://jarrodparkes.com/2014/01/20/nes-attribute-tables/">Attribute tables - Jarrod Parkes</a></li>
+<li><a href="http://www.dustmop.io/blog/2015/04/28/nes-graphics-part-1/">Graphics Part 1- dustmop</a></li>
+<li><a href="http://www.dustmop.io/blog/2015/06/08/nes-graphics-part-2/">Graphics Part 2- dustmop</a></li>
+<li><a href="http://www.dustmop.io/blog/2015/12/18/nes-graphics-part-3/">Graphics Part 1- dustmop</a></li>
+<li><a href="http://gas13.ru/v3/tutorials/sywtbapa_almighty_grass_tile.php">Pixel Artistry - gas13</a></li>
+</ul>
+
+<h6 id="programming-in-6502-assembly:5bc1d6cfac1d241720d6d0007dba5fb8">Programming in 6502 Assembly</h6>
+
+<ul>
+<li><a href="http://nintendoage.com/pub/faq/NA/index.html?load=nerdy_nights_out.html">Complete Tutorial ASM - Nerdy Nights</a></li>
+<li><a href="http://nintendoage.com/forum/messageview.cfm?catid=22&amp;threadid=33378">Game Engine programming ASM</a></li>
+<li><a href="https://raw.githubusercontent.com/camsaul/nesasm/master/beagle_bros_6502_reference.png">Beagle Bros. ASM cheatsheet</a></li>
+</ul>
+
+<h6 id="programming-in-c:5bc1d6cfac1d241720d6d0007dba5fb8">Programming in C</h6>
+
+<ul>
+<li><a href="https://shiru.untergrund.net/articles/programming_nes_games_in_c.htm">Shiru&rsquo;s examples for C</a></li>
+<li><a href="https://nesdoug.com/">Complete Set of Tutorials - Doug Fraker</a></li>
+<li><a href="http://timcheeseman.com/nesdev/">Learn to make NES games - Tim Cheeseman</a></li>
+</ul>
+
+<h6 id="getting-setup-on-debian-like-linux-e-g-ubuntu:5bc1d6cfac1d241720d6d0007dba5fb8">Getting setup on Debian-like Linux (e.g. ubuntu)</h6>
+
+<pre><code class="language-bash"># nesasm
+wget http://blog.fritzvd.com/files/nesasm
+sudo mv nesasm /usr/local/bin/nesasm
+
+# cc65
+echo &quot;Add sources&quot;
+sudo echo &quot;deb     http://debian.trikaliotis.net/ stable contrib&quot; &gt;&gt; /etc/apt/sources.list
+sudo echo &quot;deb-src http://debian.trikaliotis.net/ stable contrib&quot; &gt;&gt; /etc/apt/sources.list
+
+echo &quot;Sign gpg key so you can download packages from this source&quot;
+gpg -a --export 2AF47E44 | sudo apt-key add -
+sudo gpg --recv-key 2AF47E44
+
+echo &quot;Update and install packages&quot;
+sudo apt-get update
+sudo apt-get install cc65 cc65-nes
+sudo apt-get install nestopia fceux
+</code></pre>
+
+    </section>
+
+    <hr>
+
+    <footer class="post-footer">
+        <section class="f-1">
+            
+            <section class="author">
+                <p>Words by fritzvd</p>
+            </section>
+            
+
+            <p class="f-post-time"><time datetime="2016-06-13T10:35:05&#43;02:00">June 13, 2016</time></p>
+        </section>
+
+        <section class="f-2">
+            <section class="share">
+                <span>Share:
+                <a class="icon-twitter" href="http://twitter.com/share?text=Getting%20started%20with%20NES%20programming&url=http%3a%2f%2fblog.fritzvd.com%2f2016%2f06%2f13%2fGetting-started-with-NES-programming%2f"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fblog.fritzvd.com%2f2016%2f06%2f13%2fGetting-started-with-NES-programming%2f"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http%3a%2f%2fblog.fritzvd.com%2f2016%2f06%2f13%2fGetting-started-with-NES-programming%2f"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+                </span>
+            </section>
+
+            
+        </section>
+                
+    </footer>
+</article>
+
+<style>
+  img {
+    float: left;
+    margin: 1em;
+  }
+</style>
+
+	</div>
+</main>
+    <footer id="site-footer">
+        <div class="container">
+            <a href="http://blog.fritzvd.com/index.xml" title="Get the RSS feed"><span class="tooltip"><i class="fa fa-rss"></i></span></a>
+            <section>&copy; <a href="http://blog.fritzvd.com/"></a> 2015 | All rights reserved</section>
+            <section>Theme by <a href="http://www.jrdnbwmn.com">Jordan Bowman</a>. Generated with <a href="http://gohugo.io/">Hugo</a>.</section>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="http://blog.fritzvd.com/js/fittext.js"></script>
+    <script type="text/javascript">
+      $(".heading").fitText();
+    </script>
+
+
+</body>
+</html>
