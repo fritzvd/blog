@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>gdal ecw libecw on fritzvd</title>
-    <link>http://blog.fritzvd.com/tags/gdal-ecw-libecw/</link>
+    <link>https://blog.fritzvd.com/tags/gdal-ecw-libecw/</link>
     <description>Recent content in gdal ecw libecw on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Nov 2012 12:34:30 +0000</lastBuildDate><atom:link href="http://blog.fritzvd.com/tags/gdal-ecw-libecw/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Nov 2012 12:34:30 +0000</lastBuildDate><atom:link href="https://blog.fritzvd.com/tags/gdal-ecw-libecw/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Making sure GDAL works with ECW libecw under linux</title>
-      <link>http://blog.fritzvd.com/2012/11/28/making-sure-gdal-works-with-ecw-libecw-under-linux/</link>
+      <link>https://blog.fritzvd.com/2012/11/28/making-sure-gdal-works-with-ecw-libecw-under-linux/</link>
       <pubDate>Wed, 28 Nov 2012 12:34:30 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2012/11/28/making-sure-gdal-works-with-ecw-libecw-under-linux/</guid>
+      <guid>https://blog.fritzvd.com/2012/11/28/making-sure-gdal-works-with-ecw-libecw-under-linux/</guid>
       <description>This took me a while to unravel, so before I forget or before other people run into the same issues, let’s make a note of this.
 Assuming you are using a debian-like linux distribution (ubuntu, debian, linux mint, etc. anything using: apt-get to install packages) there are a few things to note.
 First of all make sure you have the latest packages for: mapserver, gdal, etc.

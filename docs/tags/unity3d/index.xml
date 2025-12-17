@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>unity3d on fritzvd</title>
-    <link>http://blog.fritzvd.com/tags/unity3d/</link>
+    <link>https://blog.fritzvd.com/tags/unity3d/</link>
     <description>Recent content in unity3d on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Nov 2010 15:53:56 +0000</lastBuildDate><atom:link href="http://blog.fritzvd.com/tags/unity3d/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Nov 2010 15:53:56 +0000</lastBuildDate><atom:link href="https://blog.fritzvd.com/tags/unity3d/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Developments so far</title>
-      <link>http://blog.fritzvd.com/2010/11/18/developments-so-far/</link>
+      <link>https://blog.fritzvd.com/2010/11/18/developments-so-far/</link>
       <pubDate>Thu, 18 Nov 2010 15:53:56 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2010/11/18/developments-so-far/</guid>
+      <guid>https://blog.fritzvd.com/2010/11/18/developments-so-far/</guid>
       <description>Ok. 3 weeks down the road of my minor thesis and what do I have to show for? Well, a lot of paradigms and concepts for starters. Furthermore I have never been able to finish a document like research proposal so quickly and of such quality.
 But enough of that. I have more or less abandoned the idea of a mobile application for now. Because having a mobile application like Junaio scores high on the cool list, it doesn’t really in the sphere of performance and handling large data sets.</description>
     </item>

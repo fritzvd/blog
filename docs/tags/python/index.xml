@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>python on fritzvd</title>
-    <link>http://blog.fritzvd.com/tags/python/</link>
+    <link>https://blog.fritzvd.com/tags/python/</link>
     <description>Recent content in python on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Jan 2011 15:48:32 +0000</lastBuildDate><atom:link href="http://blog.fritzvd.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Jan 2011 15:48:32 +0000</lastBuildDate><atom:link href="https://blog.fritzvd.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating a little clipbox for your GIS projects in Python</title>
-      <link>http://blog.fritzvd.com/2011/01/11/creating-a-little-clipbox-for-your-projects-in-python/</link>
+      <link>https://blog.fritzvd.com/2011/01/11/creating-a-little-clipbox-for-your-projects-in-python/</link>
       <pubDate>Tue, 11 Jan 2011 15:48:32 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2011/01/11/creating-a-little-clipbox-for-your-projects-in-python/</guid>
+      <guid>https://blog.fritzvd.com/2011/01/11/creating-a-little-clipbox-for-your-projects-in-python/</guid>
       <description>When working on a GIS project, this always bums me out. You need to have a certain area in which you want to cut all your source data. But in ArcGIS I never figure out how to do it properly, except for using Python scripts and arcgisscripting/arcpy. But I figured, this should also be do-able from the terminal, and take less time and energy from your little workbox.
 But here’s a Python script that uses open-source libraries and writes</description>
     </item>
     
     <item>
       <title>Processing images with GDAL and Mayavi2</title>
-      <link>http://blog.fritzvd.com/2010/11/22/processing-images-with-gdal-and-mayavi2/</link>
+      <link>https://blog.fritzvd.com/2010/11/22/processing-images-with-gdal-and-mayavi2/</link>
       <pubDate>Mon, 22 Nov 2010 12:51:17 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2010/11/22/processing-images-with-gdal-and-mayavi2/</guid>
+      <guid>https://blog.fritzvd.com/2010/11/22/processing-images-with-gdal-and-mayavi2/</guid>
       <description>Ok, this took a while but the results are not bad. So I guess it’s worth it.
 First of all, a big thank you at [Ok, this took a while but the results are not bad. So I guess it’s worth it.
 First of all, a big thank you at](http://www.gis.usu.edu/~chrisg/) who is very possibly unaware of the fact that I have been using his classes on Python and Open Source GIS.</description>
@@ -30,10 +30,10 @@ First of all, a big thank you at](http://www.gis.usu.edu/~chrisg/) who is very p
     
     <item>
       <title>Developments so far</title>
-      <link>http://blog.fritzvd.com/2010/11/18/developments-so-far/</link>
+      <link>https://blog.fritzvd.com/2010/11/18/developments-so-far/</link>
       <pubDate>Thu, 18 Nov 2010 15:53:56 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2010/11/18/developments-so-far/</guid>
+      <guid>https://blog.fritzvd.com/2010/11/18/developments-so-far/</guid>
       <description>Ok. 3 weeks down the road of my minor thesis and what do I have to show for? Well, a lot of paradigms and concepts for starters. Furthermore I have never been able to finish a document like research proposal so quickly and of such quality.
 But enough of that. I have more or less abandoned the idea of a mobile application for now. Because having a mobile application like Junaio scores high on the cool list, it doesn’t really in the sphere of performance and handling large data sets.</description>
     </item>

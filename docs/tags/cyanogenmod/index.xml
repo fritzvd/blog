@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>cyanogenmod on fritzvd</title>
-    <link>http://blog.fritzvd.com/tags/cyanogenmod/</link>
+    <link>https://blog.fritzvd.com/tags/cyanogenmod/</link>
     <description>Recent content in cyanogenmod on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Jan 2014 20:37:13 +0000</lastBuildDate><atom:link href="http://blog.fritzvd.com/tags/cyanogenmod/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Jan 2014 20:37:13 +0000</lastBuildDate><atom:link href="https://blog.fritzvd.com/tags/cyanogenmod/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Unbricking my LG Optimus 2x with adb</title>
-      <link>http://blog.fritzvd.com/2014/01/05/good-golly-i-almost-bricked-my-phone/</link>
+      <link>https://blog.fritzvd.com/2014/01/05/good-golly-i-almost-bricked-my-phone/</link>
       <pubDate>Sun, 05 Jan 2014 20:37:13 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2014/01/05/good-golly-i-almost-bricked-my-phone/</guid>
+      <guid>https://blog.fritzvd.com/2014/01/05/good-golly-i-almost-bricked-my-phone/</guid>
       <description>So just before new year’s eve started, I started a (cyanogenmod) update for my phone (lg optimus 2x). Wiped data/cache/dalvik and did not get to flashing the new zip. But then the guests started to arrive and I left it, without having it hooked up to a power supply. Big mistake. There are a number of recovery images out there, (amongst the most well-known: Clockwork Mod and TeamWin Recovery Project). I was on TWRP but it just hung and could not get out of recovery mode.</description>
     </item>
     

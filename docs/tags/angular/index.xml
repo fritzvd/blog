@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>angular on fritzvd</title>
-    <link>http://blog.fritzvd.com/tags/angular/</link>
+    <link>https://blog.fritzvd.com/tags/angular/</link>
     <description>Recent content in angular on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Jun 2013 11:48:43 +0000</lastBuildDate><atom:link href="http://blog.fritzvd.com/tags/angular/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Jun 2013 11:48:43 +0000</lastBuildDate><atom:link href="https://blog.fritzvd.com/tags/angular/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Angular JS Favourites/Favorites &amp;#8211; Directives &amp;#8211;  jQuery UI Slider</title>
-      <link>http://blog.fritzvd.com/2013/06/18/angular-js-favorites-directives-jquery-ui-slider/</link>
+      <link>https://blog.fritzvd.com/2013/06/18/angular-js-favorites-directives-jquery-ui-slider/</link>
       <pubDate>Tue, 18 Jun 2013 11:48:43 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2013/06/18/angular-js-favorites-directives-jquery-ui-slider/</guid>
+      <guid>https://blog.fritzvd.com/2013/06/18/angular-js-favorites-directives-jquery-ui-slider/</guid>
       <description>Last time I wrote something about something very simple, but something I really enjoy. Conditional classes and inline event handlers. It’s not a very difficult or complex feature. But I did not find a lot of writing about it. And also it saved me loads of jQuery statements that you don’t want in a controller, but in the UI.
 Next up: Directives. Directives are pret-ty awesomevilles. For the “stop/play video player like”-thing we are building, we would like to have a timeline or time slider, to go back to a previous images.</description>
     </item>
     
     <item>
       <title>Angular JS Favourites/Favorites &amp;#8211; Conditional CSS classes</title>
-      <link>http://blog.fritzvd.com/2013/06/17/starting-angular-js-favourite-features-or-favorites-if-your-from-the-u-s/</link>
+      <link>https://blog.fritzvd.com/2013/06/17/starting-angular-js-favourite-features-or-favorites-if-your-from-the-u-s/</link>
       <pubDate>Mon, 17 Jun 2013 17:22:19 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2013/06/17/starting-angular-js-favourite-features-or-favorites-if-your-from-the-u-s/</guid>
+      <guid>https://blog.fritzvd.com/2013/06/17/starting-angular-js-favourite-features-or-favorites-if-your-from-the-u-s/</guid>
       <description>Last few weeks at work I have been trying out Angular JS. First of all, because it is fun and useful to try out new stuff. Secondly because after working with Backbone/Marionette for a few months some things felt that they could’ve been done better. So whilst working on a big Backbone/Marionette project I started looking at Angular a bit.
 I’ll just show you some of my favourite features. We are building an app that needs to play, stop, pause etc much like a video player.</description>
     </item>

@@ -2,56 +2,56 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>development on fritzvd</title>
-    <link>http://blog.fritzvd.com/categories/development/</link>
+    <link>https://blog.fritzvd.com/categories/development/</link>
     <description>Recent content in development on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Jul 2015 08:19:19 +0000</lastBuildDate><atom:link href="http://blog.fritzvd.com/categories/development/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Jul 2015 08:19:19 +0000</lastBuildDate><atom:link href="https://blog.fritzvd.com/categories/development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Writing Documentation @ nodeconf 2015</title>
-      <link>http://blog.fritzvd.com/2015/07/01/writing-documentation-nodeconf-2015/</link>
+      <link>https://blog.fritzvd.com/2015/07/01/writing-documentation-nodeconf-2015/</link>
       <pubDate>Wed, 01 Jul 2015 08:19:19 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2015/07/01/writing-documentation-nodeconf-2015/</guid>
+      <guid>https://blog.fritzvd.com/2015/07/01/writing-documentation-nodeconf-2015/</guid>
       <description>This topic of course ties in with the Building Communities session. Because building community happens with code that is being used. And if you want people to be able to join easily, one of their first entry points will probably be the README, which has for some projects become the only or the main documentation.
 At the moment the documentation of some projects is exemplary (think: anything @substack makes). Whereas the documentation of node itself is kind of a mess.</description>
     </item>
     
     <item>
       <title>Building Communities @ nodeconf 2015</title>
-      <link>http://blog.fritzvd.com/2015/07/01/building-communities-nodeconf-2015/</link>
+      <link>https://blog.fritzvd.com/2015/07/01/building-communities-nodeconf-2015/</link>
       <pubDate>Wed, 01 Jul 2015 07:45:51 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2015/07/01/building-communities-nodeconf-2015/</guid>
+      <guid>https://blog.fritzvd.com/2015/07/01/building-communities-nodeconf-2015/</guid>
       <description>A lot of the talks were not just about code or “hardcore” technical stuff, but also about social things like: building community, writing documentation, creating a safe environment. Which in the software meetups and talks scene has been growing as a topic. To dismay of some, and celebration of others.
 This session started out as a discussion about the node project, “the Fork”: io.js and what it says about the community and the culture of node.</description>
     </item>
     
     <item>
       <title>ES6 &#43; ES7, EcmaScript 2015 -- Harmony .. WHAT? @ nodeconf 2015</title>
-      <link>http://blog.fritzvd.com/2015/07/01/es6-es7-ecmascript-2015-harmony-what-nodeconf-2015/</link>
+      <link>https://blog.fritzvd.com/2015/07/01/es6-es7-ecmascript-2015-harmony-what-nodeconf-2015/</link>
       <pubDate>Wed, 01 Jul 2015 07:35:35 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2015/07/01/es6-es7-ecmascript-2015-harmony-what-nodeconf-2015/</guid>
+      <guid>https://blog.fritzvd.com/2015/07/01/es6-es7-ecmascript-2015-harmony-what-nodeconf-2015/</guid>
       <description>JavaScript gets a new version, what now Languages are never done. They evolve over time and are supplemented with new words every month, new phrases every year and acquires (minor) grammar changes every decade. This true for speaking languages as well as for programming languages.
 The past year there has been a lot of talk about EcmaScript 6 (a.k.a. ES Harmony, or lately ES2015, which is the silliest name of all).</description>
     </item>
     
     <item>
       <title>Containers (Docker, LXC) @ nodeconf 2015</title>
-      <link>http://blog.fritzvd.com/2015/06/23/containers-docker-lxc-nodeconf-2015/</link>
+      <link>https://blog.fritzvd.com/2015/06/23/containers-docker-lxc-nodeconf-2015/</link>
       <pubDate>Tue, 23 Jun 2015 18:45:44 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2015/06/23/containers-docker-lxc-nodeconf-2015/</guid>
+      <guid>https://blog.fritzvd.com/2015/06/23/containers-docker-lxc-nodeconf-2015/</guid>
       <description>Containers, like the ones you put sundries in? Linux Containers (LXC) have been a hot new topic over the last 2 years. The easiest way to understand a container is to compare it with a Virtual Machine (VM). You can run a VM on your machine and it will pretend to be a computer inside a computer. It will emulate hardware so it can run an Operating System (OS) within your computer.</description>
     </item>
     
     <item>
       <title>Universal (Isomorphic) JavaScript and Modular UI @ nodeconf 2015</title>
-      <link>http://blog.fritzvd.com/2015/06/22/isomorphic-javascript-and-modular-ui-nodeconf-2015/</link>
+      <link>https://blog.fritzvd.com/2015/06/22/isomorphic-javascript-and-modular-ui-nodeconf-2015/</link>
       <pubDate>Mon, 22 Jun 2015 14:20:37 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2015/06/22/isomorphic-javascript-and-modular-ui-nodeconf-2015/</guid>
+      <guid>https://blog.fritzvd.com/2015/06/22/isomorphic-javascript-and-modular-ui-nodeconf-2015/</guid>
       <description>N.B. This one of the first sessions held at nodeconf, everybody was still somewhat rusty.
 Isomorphic JavaScript is the practice of using the same JavaScript code on the server and in the browser. In the session we talked about how to best implement this, and what to avoid. The naming is ridiculous, so let’s just use Universal JavaScript.
 One of the first recommendations were to do static analysis. This goes through your code and finds dead dependencies or function that are never called.</description>
@@ -59,10 +59,10 @@ One of the first recommendations were to do static analysis. This goes through y
     
     <item>
       <title>FBX and 3d models in Monogame &amp;#8211; on Linux</title>
-      <link>http://blog.fritzvd.com/2015/05/19/fbx-and-3d-models-in-monogame-on-linux/</link>
+      <link>https://blog.fritzvd.com/2015/05/19/fbx-and-3d-models-in-monogame-on-linux/</link>
       <pubDate>Tue, 19 May 2015 15:35:39 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2015/05/19/fbx-and-3d-models-in-monogame-on-linux/</guid>
+      <guid>https://blog.fritzvd.com/2015/05/19/fbx-and-3d-models-in-monogame-on-linux/</guid>
       <description>TL;DR the monogame community is pretty great
 Lately my manic ambitious mode has turned on again for me. So I have about 100s of ideas again, which sadly of course will all come to nothing. But while I’m at it, I thought I’d make the best of it to do some tutorials here and there and learn some stuff I know nothing about.
 Starting with Monogame on Linux is kind of a hassle to start with, but if you push through it works.</description>
@@ -70,10 +70,10 @@ Starting with Monogame on Linux is kind of a hassle to start with, but if you pu
     
     <item>
       <title>OPEN Open Source</title>
-      <link>http://blog.fritzvd.com/2014/09/15/open-open-source/</link>
+      <link>https://blog.fritzvd.com/2014/09/15/open-open-source/</link>
       <pubDate>Mon, 15 Sep 2014 11:37:34 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2014/09/15/open-open-source/</guid>
+      <guid>https://blog.fritzvd.com/2014/09/15/open-open-source/</guid>
       <description>What?
 Individuals making significant and valuable contributions are given commit-access to the project to contribute as they see fit. This project is more like an open wiki than a standard guarded open source project.
 Rules
@@ -85,10 +85,10 @@ External API changes and significant modifications ought to be subject to an int
     
     <item>
       <title>Procedural Death Jam, 7 Day Rogue Like, Cyberpunk Game jamathon.</title>
-      <link>http://blog.fritzvd.com/2014/03/08/procedural-death-jam-7-day-rogue-like-cyberpunk-game-jamathon/</link>
+      <link>https://blog.fritzvd.com/2014/03/08/procedural-death-jam-7-day-rogue-like-cyberpunk-game-jamathon/</link>
       <pubDate>Sat, 08 Mar 2014 15:09:25 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2014/03/08/procedural-death-jam-7-day-rogue-like-cyberpunk-game-jamathon/</guid>
+      <guid>https://blog.fritzvd.com/2014/03/08/procedural-death-jam-7-day-rogue-like-cyberpunk-game-jamathon/</guid>
       <description>Ok. It’s official as of 16.04 (CET) I have entered in all of the above mentioned GameJams. This is where I will track my development.
 The project can be found at: https://github.com/fritzvd/abime
 It. Is. On!
@@ -99,10 +99,10 @@ Note to self: Neko target in Haxe does not handle placement of BitmapData well. 
     
     <item>
       <title>Particle Emitter in HaxePunk</title>
-      <link>http://blog.fritzvd.com/2014/03/04/particle-emitter-in-haxepunk/</link>
+      <link>https://blog.fritzvd.com/2014/03/04/particle-emitter-in-haxepunk/</link>
       <pubDate>Tue, 04 Mar 2014 14:34:54 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2014/03/04/particle-emitter-in-haxepunk/</guid>
+      <guid>https://blog.fritzvd.com/2014/03/04/particle-emitter-in-haxepunk/</guid>
       <description>For some this will be a trivial example. For me this took a bit longer than I suspected.
 This small example will produce this:
 If you’re planning on making an awesome game you probably want a particle emitter. because.. well look at it.
@@ -112,59 +112,59 @@ What I did is I started a haxepunk project:
     
     <item>
       <title>Communities and Licenses: Permissive licenses vs copyleft (BSD/MIT/Apache 2.0 vs GPL)</title>
-      <link>http://blog.fritzvd.com/2014/02/03/communities-and-licenses-permissive-licenses-vs-copyleft-bsdmitapache-2-0-vs-gpl/</link>
+      <link>https://blog.fritzvd.com/2014/02/03/communities-and-licenses-permissive-licenses-vs-copyleft-bsdmitapache-2-0-vs-gpl/</link>
       <pubDate>Mon, 03 Feb 2014 13:07:51 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2014/02/03/communities-and-licenses-permissive-licenses-vs-copyleft-bsdmitapache-2-0-vs-gpl/</guid>
+      <guid>https://blog.fritzvd.com/2014/02/03/communities-and-licenses-permissive-licenses-vs-copyleft-bsdmitapache-2-0-vs-gpl/</guid>
       <description>Over the weekend I was at FOSDEM, an open source developer conference in Brussels. We had a blast. I sat in on a talk at the Legal &amp;amp; Policy Issues room about community building by Eileen Evans. The talk was the one she gave at OSCON 2013 (attached below). The short version of the talk was that the license an open source project uses plays a role in the community it will create, perhaps such a strong role as governance or the technology itself, but a role nonetheless.</description>
     </item>
     
     <item>
       <title>Starting Game Development with HaxePunk instead of MonoGame/XNA</title>
-      <link>http://blog.fritzvd.com/2014/01/06/starting-game-development-with-haxepunk-instead-of-monogamexna/</link>
+      <link>https://blog.fritzvd.com/2014/01/06/starting-game-development-with-haxepunk-instead-of-monogamexna/</link>
       <pubDate>Mon, 06 Jan 2014 20:25:23 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2014/01/06/starting-game-development-with-haxepunk-instead-of-monogamexna/</guid>
+      <guid>https://blog.fritzvd.com/2014/01/06/starting-game-development-with-haxepunk-instead-of-monogamexna/</guid>
       <description>So I started venturing off in a direction in which I have no experience what so ever. Only on the consumer-side of things ;-). Game development. Of course I had no idea what I was doing. Still don’t.
 To start with I had no idea where to start. Lately I have been looking into Unity 3D and Unreal engine, but then I realized I suck at drawing and have no idea how to start with 3d.</description>
     </item>
     
     <item>
       <title>UI/UX course &amp;#8211; Highlights &amp;#8211; Storytelling</title>
-      <link>http://blog.fritzvd.com/2013/11/18/uiux-course-highlights-storytelling/</link>
+      <link>https://blog.fritzvd.com/2013/11/18/uiux-course-highlights-storytelling/</link>
       <pubDate>Mon, 18 Nov 2013 09:25:30 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2013/11/18/uiux-course-highlights-storytelling/</guid>
+      <guid>https://blog.fritzvd.com/2013/11/18/uiux-course-highlights-storytelling/</guid>
       <description>Nelen &amp;amp; Schuurmans, the company where I work, offered the Software Developers a User Interface Design course by Namahn. It was a great reminder of the seemingly obvious processes one can incorporate in a software project, but sadly also a warning for blatant ignorance we sometimes portray as Developers (of course not just at N&amp;amp;S).
 The workflow Namahn uses is similar to what other design oriented companies would use. Which can be described in three phases: Understand, Explore and Define.</description>
     </item>
     
     <item>
       <title>Angular JS Favourites/Favorites &amp;#8211; Directives &amp;#8211;  jQuery UI Slider</title>
-      <link>http://blog.fritzvd.com/2013/06/18/angular-js-favorites-directives-jquery-ui-slider/</link>
+      <link>https://blog.fritzvd.com/2013/06/18/angular-js-favorites-directives-jquery-ui-slider/</link>
       <pubDate>Tue, 18 Jun 2013 11:48:43 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2013/06/18/angular-js-favorites-directives-jquery-ui-slider/</guid>
+      <guid>https://blog.fritzvd.com/2013/06/18/angular-js-favorites-directives-jquery-ui-slider/</guid>
       <description>Last time I wrote something about something very simple, but something I really enjoy. Conditional classes and inline event handlers. It’s not a very difficult or complex feature. But I did not find a lot of writing about it. And also it saved me loads of jQuery statements that you don’t want in a controller, but in the UI.
 Next up: Directives. Directives are pret-ty awesomevilles. For the “stop/play video player like”-thing we are building, we would like to have a timeline or time slider, to go back to a previous images.</description>
     </item>
     
     <item>
       <title>Angular JS Favourites/Favorites &amp;#8211; Conditional CSS classes</title>
-      <link>http://blog.fritzvd.com/2013/06/17/starting-angular-js-favourite-features-or-favorites-if-your-from-the-u-s/</link>
+      <link>https://blog.fritzvd.com/2013/06/17/starting-angular-js-favourite-features-or-favorites-if-your-from-the-u-s/</link>
       <pubDate>Mon, 17 Jun 2013 17:22:19 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2013/06/17/starting-angular-js-favourite-features-or-favorites-if-your-from-the-u-s/</guid>
+      <guid>https://blog.fritzvd.com/2013/06/17/starting-angular-js-favourite-features-or-favorites-if-your-from-the-u-s/</guid>
       <description>Last few weeks at work I have been trying out Angular JS. First of all, because it is fun and useful to try out new stuff. Secondly because after working with Backbone/Marionette for a few months some things felt that they could’ve been done better. So whilst working on a big Backbone/Marionette project I started looking at Angular a bit.
 I’ll just show you some of my favourite features. We are building an app that needs to play, stop, pause etc much like a video player.</description>
     </item>
     
     <item>
       <title>vagrant</title>
-      <link>http://blog.fritzvd.com/2013/02/04/vagrant/</link>
+      <link>https://blog.fritzvd.com/2013/02/04/vagrant/</link>
       <pubDate>Mon, 04 Feb 2013 13:08:01 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2013/02/04/vagrant/</guid>
+      <guid>https://blog.fritzvd.com/2013/02/04/vagrant/</guid>
       <description>Vagrant is a great tool if you like to develop and test on the same server. Or at least emulate that you have the same server and at the same time keep your own system fairly clean.
 I’ve been using it for quite a while. After reinstalling my ubuntu machine to get rid of 12.10 and start 12.04 LTS a fresh I had to fix something in my install of vagrant.</description>
     </item>

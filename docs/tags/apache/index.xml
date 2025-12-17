@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>apache on fritzvd</title>
-    <link>http://blog.fritzvd.com/tags/apache/</link>
+    <link>https://blog.fritzvd.com/tags/apache/</link>
     <description>Recent content in apache on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Feb 2014 13:07:51 +0000</lastBuildDate><atom:link href="http://blog.fritzvd.com/tags/apache/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Feb 2014 13:07:51 +0000</lastBuildDate><atom:link href="https://blog.fritzvd.com/tags/apache/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Communities and Licenses: Permissive licenses vs copyleft (BSD/MIT/Apache 2.0 vs GPL)</title>
-      <link>http://blog.fritzvd.com/2014/02/03/communities-and-licenses-permissive-licenses-vs-copyleft-bsdmitapache-2-0-vs-gpl/</link>
+      <link>https://blog.fritzvd.com/2014/02/03/communities-and-licenses-permissive-licenses-vs-copyleft-bsdmitapache-2-0-vs-gpl/</link>
       <pubDate>Mon, 03 Feb 2014 13:07:51 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2014/02/03/communities-and-licenses-permissive-licenses-vs-copyleft-bsdmitapache-2-0-vs-gpl/</guid>
+      <guid>https://blog.fritzvd.com/2014/02/03/communities-and-licenses-permissive-licenses-vs-copyleft-bsdmitapache-2-0-vs-gpl/</guid>
       <description>Over the weekend I was at FOSDEM, an open source developer conference in Brussels. We had a blast. I sat in on a talk at the Legal &amp;amp; Policy Issues room about community building by Eileen Evans. The talk was the one she gave at OSCON 2013 (attached below). The short version of the talk was that the license an open source project uses plays a role in the community it will create, perhaps such a strong role as governance or the technology itself, but a role nonetheless.</description>
     </item>
     

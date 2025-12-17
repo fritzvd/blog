@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>python on fritzvd</title>
-    <link>http://blog.fritzvd.com/categories/python/</link>
+    <link>https://blog.fritzvd.com/categories/python/</link>
     <description>Recent content in python on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Nov 2012 13:48:56 +0000</lastBuildDate><atom:link href="http://blog.fritzvd.com/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Nov 2012 13:48:56 +0000</lastBuildDate><atom:link href="https://blog.fritzvd.com/categories/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kriging in R in Python</title>
-      <link>http://blog.fritzvd.com/2012/11/26/kriging-in-r-in-python/</link>
+      <link>https://blog.fritzvd.com/2012/11/26/kriging-in-r-in-python/</link>
       <pubDate>Mon, 26 Nov 2012 13:48:56 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2012/11/26/kriging-in-r-in-python/</guid>
+      <guid>https://blog.fritzvd.com/2012/11/26/kriging-in-r-in-python/</guid>
       <description>This might be a repost of some sort. However I found that it was kind of hard to find anything about this specific topic. So here it goes.
 Kriging is a geostatistical method to be able translate point data to a grid, to find out where you can predict stuff really well and where the variance is really high. As always GIGO (garbage in garbage out). But it is at least a large improvement from interpolation techniques such as Inversed Distance Weighting (IDW) which is often implemented in GIS software.</description>
     </item>

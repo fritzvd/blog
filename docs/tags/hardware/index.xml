@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hardware on fritzvd</title>
-    <link>http://blog.fritzvd.com/tags/hardware/</link>
+    <link>https://blog.fritzvd.com/tags/hardware/</link>
     <description>Recent content in hardware on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Sep 2014 09:14:33 +0000</lastBuildDate><atom:link href="http://blog.fritzvd.com/tags/hardware/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Sep 2014 09:14:33 +0000</lastBuildDate><atom:link href="https://blog.fritzvd.com/tags/hardware/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hardware Track nodeconf.eu</title>
-      <link>http://blog.fritzvd.com/2014/09/15/hardware-track-nodeconf-eu/</link>
+      <link>https://blog.fritzvd.com/2014/09/15/hardware-track-nodeconf-eu/</link>
       <pubDate>Mon, 15 Sep 2014 09:14:33 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2014/09/15/hardware-track-nodeconf-eu/</guid>
+      <guid>https://blog.fritzvd.com/2014/09/15/hardware-track-nodeconf-eu/</guid>
       <description>The hardware track featured talks on hardware that were not just about hardware, but also served as a metaphor. The most poignant of these was Colin Vernon’s on the cloudbit.
 Colin Vernon – Cloudbit
 As an engineer we really like building stuff and figuring out difficult problems. And for us working with the tools we make is easy. But we should see our tools as a material. A material with which we can build stuff, which we can use like lego-blocks.</description>

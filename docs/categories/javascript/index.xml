@@ -2,56 +2,56 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>javascript on fritzvd</title>
-    <link>http://blog.fritzvd.com/categories/javascript/</link>
+    <link>https://blog.fritzvd.com/categories/javascript/</link>
     <description>Recent content in javascript on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Aug 2015 07:05:28 +0000</lastBuildDate><atom:link href="http://blog.fritzvd.com/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Aug 2015 07:05:28 +0000</lastBuildDate><atom:link href="https://blog.fritzvd.com/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nodeconf Adventure</title>
-      <link>http://blog.fritzvd.com/2015/08/03/nodeconf-adventure/</link>
+      <link>https://blog.fritzvd.com/2015/08/03/nodeconf-adventure/</link>
       <pubDate>Mon, 03 Aug 2015 07:05:28 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2015/08/03/nodeconf-adventure/</guid>
+      <guid>https://blog.fritzvd.com/2015/08/03/nodeconf-adventure/</guid>
       <description>After looking at the program of Nodeconf 2014, I took the liberty to convince my boss that I should go there. Because of the structure and quality of the workshops. Little did I know that the conf part was going to be canceled, and the adventure had no prior scheduling. Except for what people handed in beforehand as topics they would want to speak about, or hear about. The conference “started” with the OaklandJS meetup.</description>
     </item>
     
     <item>
       <title>Writing Documentation @ nodeconf 2015</title>
-      <link>http://blog.fritzvd.com/2015/07/01/writing-documentation-nodeconf-2015/</link>
+      <link>https://blog.fritzvd.com/2015/07/01/writing-documentation-nodeconf-2015/</link>
       <pubDate>Wed, 01 Jul 2015 08:19:19 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2015/07/01/writing-documentation-nodeconf-2015/</guid>
+      <guid>https://blog.fritzvd.com/2015/07/01/writing-documentation-nodeconf-2015/</guid>
       <description>This topic of course ties in with the Building Communities session. Because building community happens with code that is being used. And if you want people to be able to join easily, one of their first entry points will probably be the README, which has for some projects become the only or the main documentation.
 At the moment the documentation of some projects is exemplary (think: anything @substack makes). Whereas the documentation of node itself is kind of a mess.</description>
     </item>
     
     <item>
       <title>Building Communities @ nodeconf 2015</title>
-      <link>http://blog.fritzvd.com/2015/07/01/building-communities-nodeconf-2015/</link>
+      <link>https://blog.fritzvd.com/2015/07/01/building-communities-nodeconf-2015/</link>
       <pubDate>Wed, 01 Jul 2015 07:45:51 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2015/07/01/building-communities-nodeconf-2015/</guid>
+      <guid>https://blog.fritzvd.com/2015/07/01/building-communities-nodeconf-2015/</guid>
       <description>A lot of the talks were not just about code or “hardcore” technical stuff, but also about social things like: building community, writing documentation, creating a safe environment. Which in the software meetups and talks scene has been growing as a topic. To dismay of some, and celebration of others.
 This session started out as a discussion about the node project, “the Fork”: io.js and what it says about the community and the culture of node.</description>
     </item>
     
     <item>
       <title>ES6 &#43; ES7, EcmaScript 2015 -- Harmony .. WHAT? @ nodeconf 2015</title>
-      <link>http://blog.fritzvd.com/2015/07/01/es6-es7-ecmascript-2015-harmony-what-nodeconf-2015/</link>
+      <link>https://blog.fritzvd.com/2015/07/01/es6-es7-ecmascript-2015-harmony-what-nodeconf-2015/</link>
       <pubDate>Wed, 01 Jul 2015 07:35:35 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2015/07/01/es6-es7-ecmascript-2015-harmony-what-nodeconf-2015/</guid>
+      <guid>https://blog.fritzvd.com/2015/07/01/es6-es7-ecmascript-2015-harmony-what-nodeconf-2015/</guid>
       <description>JavaScript gets a new version, what now Languages are never done. They evolve over time and are supplemented with new words every month, new phrases every year and acquires (minor) grammar changes every decade. This true for speaking languages as well as for programming languages.
 The past year there has been a lot of talk about EcmaScript 6 (a.k.a. ES Harmony, or lately ES2015, which is the silliest name of all).</description>
     </item>
     
     <item>
       <title>Universal (Isomorphic) JavaScript and Modular UI @ nodeconf 2015</title>
-      <link>http://blog.fritzvd.com/2015/06/22/isomorphic-javascript-and-modular-ui-nodeconf-2015/</link>
+      <link>https://blog.fritzvd.com/2015/06/22/isomorphic-javascript-and-modular-ui-nodeconf-2015/</link>
       <pubDate>Mon, 22 Jun 2015 14:20:37 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2015/06/22/isomorphic-javascript-and-modular-ui-nodeconf-2015/</guid>
+      <guid>https://blog.fritzvd.com/2015/06/22/isomorphic-javascript-and-modular-ui-nodeconf-2015/</guid>
       <description>N.B. This one of the first sessions held at nodeconf, everybody was still somewhat rusty.
 Isomorphic JavaScript is the practice of using the same JavaScript code on the server and in the browser. In the session we talked about how to best implement this, and what to avoid. The naming is ridiculous, so let’s just use Universal JavaScript.
 One of the first recommendations were to do static analysis. This goes through your code and finds dead dependencies or function that are never called.</description>
@@ -59,10 +59,10 @@ One of the first recommendations were to do static analysis. This goes through y
     
     <item>
       <title>Mad Science Act &amp;#8211; part 1@ nodeconf.eu</title>
-      <link>http://blog.fritzvd.com/2014/09/15/mad-science-act-part-1-nodeconf-eu/</link>
+      <link>https://blog.fritzvd.com/2014/09/15/mad-science-act-part-1-nodeconf-eu/</link>
       <pubDate>Mon, 15 Sep 2014 11:53:39 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2014/09/15/mad-science-act-part-1-nodeconf-eu/</guid>
+      <guid>https://blog.fritzvd.com/2014/09/15/mad-science-act-part-1-nodeconf-eu/</guid>
       <description>The Mad Science Act, was something completely different. It featured many topics and some of the most creative and prolific npmjs.org authors. It was a bit mad, so I’ll try to make it as coherent as I understood it. I have split up the post in 2 parts. It would be too much put into one.
 Professor Substack – Mad Science intro.
 When you start out creating (npm) modules you realize there is a great shortage of modules.</description>
@@ -70,10 +70,10 @@ When you start out creating (npm) modules you realize there is a great shortage 
     
     <item>
       <title>Hardware Track nodeconf.eu</title>
-      <link>http://blog.fritzvd.com/2014/09/15/hardware-track-nodeconf-eu/</link>
+      <link>https://blog.fritzvd.com/2014/09/15/hardware-track-nodeconf-eu/</link>
       <pubDate>Mon, 15 Sep 2014 09:14:33 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2014/09/15/hardware-track-nodeconf-eu/</guid>
+      <guid>https://blog.fritzvd.com/2014/09/15/hardware-track-nodeconf-eu/</guid>
       <description>The hardware track featured talks on hardware that were not just about hardware, but also served as a metaphor. The most poignant of these was Colin Vernon’s on the cloudbit.
 Colin Vernon – Cloudbit
 As an engineer we really like building stuff and figuring out difficult problems. And for us working with the tools we make is easy. But we should see our tools as a material. A material with which we can build stuff, which we can use like lego-blocks.</description>
@@ -81,10 +81,10 @@ As an engineer we really like building stuff and figuring out difficult problems
     
     <item>
       <title>Front end track at nodeconf.eu</title>
-      <link>http://blog.fritzvd.com/2014/09/13/front-end-track-at-nodeconf-eu/</link>
+      <link>https://blog.fritzvd.com/2014/09/13/front-end-track-at-nodeconf-eu/</link>
       <pubDate>Sat, 13 Sep 2014 11:11:52 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2014/09/13/front-end-track-at-nodeconf-eu/</guid>
+      <guid>https://blog.fritzvd.com/2014/09/13/front-end-track-at-nodeconf-eu/</guid>
       <description>The frontend track featured some very different talks , ranging from performance to a/b testing. In that sense it was a bit different from the microservices track, because it was less of a ‘one story’ thing.
 Scaling A/B testing at Netflix – Alex Liu
 Netflix takes a/b testing to the next level, where they break up the UI in little pieces and run a/b tests on all of them at once.</description>
@@ -92,30 +92,30 @@ Netflix takes a/b testing to the next level, where they break up the UI in littl
     
     <item>
       <title>Microservices Track summary #nodeconfeu</title>
-      <link>http://blog.fritzvd.com/2014/09/12/microservices-track-summary-nodeconfeu/</link>
+      <link>https://blog.fritzvd.com/2014/09/12/microservices-track-summary-nodeconfeu/</link>
       <pubDate>Fri, 12 Sep 2014 11:17:59 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2014/09/12/microservices-track-summary-nodeconfeu/</guid>
+      <guid>https://blog.fritzvd.com/2014/09/12/microservices-track-summary-nodeconfeu/</guid>
       <description>The microservices track came down to most speakers saying things more or less in similar vain, each talk having its own emphasis. Richard Rodger opened up and basically laid the groundwork for the microservices bit together with the Fred George talk.
 After hearing the talks I’d define microservices as small blocks that can run independently and do one thing, along the Unix philosophy. Making building blocks in stead of one big application that does everything.</description>
     </item>
     
     <item>
       <title>Angular JS Favourites/Favorites &amp;#8211; Directives &amp;#8211;  jQuery UI Slider</title>
-      <link>http://blog.fritzvd.com/2013/06/18/angular-js-favorites-directives-jquery-ui-slider/</link>
+      <link>https://blog.fritzvd.com/2013/06/18/angular-js-favorites-directives-jquery-ui-slider/</link>
       <pubDate>Tue, 18 Jun 2013 11:48:43 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2013/06/18/angular-js-favorites-directives-jquery-ui-slider/</guid>
+      <guid>https://blog.fritzvd.com/2013/06/18/angular-js-favorites-directives-jquery-ui-slider/</guid>
       <description>Last time I wrote something about something very simple, but something I really enjoy. Conditional classes and inline event handlers. It’s not a very difficult or complex feature. But I did not find a lot of writing about it. And also it saved me loads of jQuery statements that you don’t want in a controller, but in the UI.
 Next up: Directives. Directives are pret-ty awesomevilles. For the “stop/play video player like”-thing we are building, we would like to have a timeline or time slider, to go back to a previous images.</description>
     </item>
     
     <item>
       <title>Angular JS Favourites/Favorites &amp;#8211; Conditional CSS classes</title>
-      <link>http://blog.fritzvd.com/2013/06/17/starting-angular-js-favourite-features-or-favorites-if-your-from-the-u-s/</link>
+      <link>https://blog.fritzvd.com/2013/06/17/starting-angular-js-favourite-features-or-favorites-if-your-from-the-u-s/</link>
       <pubDate>Mon, 17 Jun 2013 17:22:19 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2013/06/17/starting-angular-js-favourite-features-or-favorites-if-your-from-the-u-s/</guid>
+      <guid>https://blog.fritzvd.com/2013/06/17/starting-angular-js-favourite-features-or-favorites-if-your-from-the-u-s/</guid>
       <description>Last few weeks at work I have been trying out Angular JS. First of all, because it is fun and useful to try out new stuff. Secondly because after working with Backbone/Marionette for a few months some things felt that they could’ve been done better. So whilst working on a big Backbone/Marionette project I started looking at Angular a bit.
 I’ll just show you some of my favourite features. We are building an app that needs to play, stop, pause etc much like a video player.</description>
     </item>

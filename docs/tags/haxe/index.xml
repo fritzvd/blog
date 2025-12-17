@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>haxe on fritzvd</title>
-    <link>http://blog.fritzvd.com/tags/haxe/</link>
+    <link>https://blog.fritzvd.com/tags/haxe/</link>
     <description>Recent content in haxe on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Mar 2014 15:09:25 +0000</lastBuildDate><atom:link href="http://blog.fritzvd.com/tags/haxe/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Mar 2014 15:09:25 +0000</lastBuildDate><atom:link href="https://blog.fritzvd.com/tags/haxe/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Procedural Death Jam, 7 Day Rogue Like, Cyberpunk Game jamathon.</title>
-      <link>http://blog.fritzvd.com/2014/03/08/procedural-death-jam-7-day-rogue-like-cyberpunk-game-jamathon/</link>
+      <link>https://blog.fritzvd.com/2014/03/08/procedural-death-jam-7-day-rogue-like-cyberpunk-game-jamathon/</link>
       <pubDate>Sat, 08 Mar 2014 15:09:25 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2014/03/08/procedural-death-jam-7-day-rogue-like-cyberpunk-game-jamathon/</guid>
+      <guid>https://blog.fritzvd.com/2014/03/08/procedural-death-jam-7-day-rogue-like-cyberpunk-game-jamathon/</guid>
       <description>Ok. It’s official as of 16.04 (CET) I have entered in all of the above mentioned GameJams. This is where I will track my development.
 The project can be found at: https://github.com/fritzvd/abime
 It. Is. On!
@@ -23,10 +23,10 @@ Note to self: Neko target in Haxe does not handle placement of BitmapData well. 
     
     <item>
       <title>Starting Game Development with HaxePunk instead of MonoGame/XNA</title>
-      <link>http://blog.fritzvd.com/2014/01/06/starting-game-development-with-haxepunk-instead-of-monogamexna/</link>
+      <link>https://blog.fritzvd.com/2014/01/06/starting-game-development-with-haxepunk-instead-of-monogamexna/</link>
       <pubDate>Mon, 06 Jan 2014 20:25:23 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2014/01/06/starting-game-development-with-haxepunk-instead-of-monogamexna/</guid>
+      <guid>https://blog.fritzvd.com/2014/01/06/starting-game-development-with-haxepunk-instead-of-monogamexna/</guid>
       <description>So I started venturing off in a direction in which I have no experience what so ever. Only on the consumer-side of things ;-). Game development. Of course I had no idea what I was doing. Still don’t.
 To start with I had no idea where to start. Lately I have been looking into Unity 3D and Unreal engine, but then I realized I suck at drawing and have no idea how to start with 3d.</description>
     </item>

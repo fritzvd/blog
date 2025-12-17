@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>lidar on fritzvd</title>
-    <link>http://blog.fritzvd.com/tags/lidar/</link>
+    <link>https://blog.fritzvd.com/tags/lidar/</link>
     <description>Recent content in lidar on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Dec 2010 15:02:26 +0000</lastBuildDate><atom:link href="http://blog.fritzvd.com/tags/lidar/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Dec 2010 15:02:26 +0000</lastBuildDate><atom:link href="https://blog.fritzvd.com/tags/lidar/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Thoughts on LiDAR</title>
-      <link>http://blog.fritzvd.com/2010/12/02/thoughts-on-lidar/</link>
+      <link>https://blog.fritzvd.com/2010/12/02/thoughts-on-lidar/</link>
       <pubDate>Thu, 02 Dec 2010 15:02:26 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2010/12/02/thoughts-on-lidar/</guid>
+      <guid>https://blog.fritzvd.com/2010/12/02/thoughts-on-lidar/</guid>
       <description>Yesterday I was fortunate enough to be able to visit the European LiDAR Mapping Forum (ELMF) in The Hague. For those who do not know what LiDAR is, it is a sensor that acquires high-quality (very dense) 3D data. If you would like to check out some of the data, what it looks like and play around with it a bit, here is a “get-started”. It is further explained on Wikipedia, to which you should give some money for using it on a daily basis, if you haven’t done so already.</description>
     </item>
     

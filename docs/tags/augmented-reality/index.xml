@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>augmented reality on fritzvd</title>
-    <link>http://blog.fritzvd.com/tags/augmented-reality/</link>
+    <link>https://blog.fritzvd.com/tags/augmented-reality/</link>
     <description>Recent content in augmented reality on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Dec 2010 15:31:37 +0000</lastBuildDate><atom:link href="http://blog.fritzvd.com/tags/augmented-reality/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Dec 2010 15:31:37 +0000</lastBuildDate><atom:link href="https://blog.fritzvd.com/tags/augmented-reality/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The three I&amp;#8217;s of progress.</title>
-      <link>http://blog.fritzvd.com/2010/12/17/interaction-interfacing-iteration/</link>
+      <link>https://blog.fritzvd.com/2010/12/17/interaction-interfacing-iteration/</link>
       <pubDate>Fri, 17 Dec 2010 15:31:37 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2010/12/17/interaction-interfacing-iteration/</guid>
+      <guid>https://blog.fritzvd.com/2010/12/17/interaction-interfacing-iteration/</guid>
       <description>In my little project I would like to add some _I_nteraction. A possibility to zoom in and out and rotate the 3D model without moving the marker but by using some form of hand gestures. This should be possible. Though, the road towards it still seems a bit unclear.
 For now I have investigated the possibility of loading the 3D model as a static object until other markers arrive on the scene and are able to manipulate position, rotation and zooming.</description>
     </item>
     
     <item>
       <title>Popular Demand</title>
-      <link>http://blog.fritzvd.com/2010/12/17/popular-demand/</link>
+      <link>https://blog.fritzvd.com/2010/12/17/popular-demand/</link>
       <pubDate>Fri, 17 Dec 2010 10:19:12 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2010/12/17/popular-demand/</guid>
+      <guid>https://blog.fritzvd.com/2010/12/17/popular-demand/</guid>
       <description>You can witness the magic happen on your very own desk, if you’d like. Print out the marker and allow Flash to access your webcam.
 Click here to watch the magic happen.
 If you do not know how to allow Flash to access your webcam Follow the instructions below
@@ -31,20 +31,20 @@ Right click in the black window that opens and select “Settings” Click on �
     
     <item>
       <title>Whoops I FLARted..</title>
-      <link>http://blog.fritzvd.com/2010/12/08/222/</link>
+      <link>https://blog.fritzvd.com/2010/12/08/222/</link>
       <pubDate>Wed, 08 Dec 2010 18:11:44 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2010/12/08/222/</guid>
+      <guid>https://blog.fritzvd.com/2010/12/08/222/</guid>
       <description>Today I fooled around a bit with the FLARManager (tutorials graciously provided by transmote). I tried to get some Papervision 3D objects going using all these different tutorials I have been following over the last few weeks (e.g. papervision2.com and rawkes.com). But it has not been as easy as I had expected. But then again, things never are.
 The difficulty is not so much in displaying 3D objects, because pv3d and flarmanager do all the thinking for you.</description>
     </item>
     
     <item>
       <title>Different Directions</title>
-      <link>http://blog.fritzvd.com/2010/10/02/different-directions/</link>
+      <link>https://blog.fritzvd.com/2010/10/02/different-directions/</link>
       <pubDate>Sat, 02 Oct 2010 17:24:42 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2010/10/02/different-directions/</guid>
+      <guid>https://blog.fritzvd.com/2010/10/02/different-directions/</guid>
       <description>It seems that my minor thesis will focus more on the user experience of augmented reality. The EIA’s have raster outputs that can be converted to 3D spaces. These spaces can then be given Locations. The Raster is already georeferenced which would make this easier (I think).
 The best method of viewing these things would seem Augmented Reality browsers such as Layar or Junaio. So I would have to brush up a bit on what is possible in which browser.</description>
     </item>

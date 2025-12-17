@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>data conversion on fritzvd</title>
-    <link>http://blog.fritzvd.com/tags/data-conversion/</link>
+    <link>https://blog.fritzvd.com/tags/data-conversion/</link>
     <description>Recent content in data conversion on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Jan 2011 14:21:54 +0000</lastBuildDate><atom:link href="http://blog.fritzvd.com/tags/data-conversion/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Jan 2011 14:21:54 +0000</lastBuildDate><atom:link href="https://blog.fritzvd.com/tags/data-conversion/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>From 2.5D to 3D</title>
-      <link>http://blog.fritzvd.com/2011/01/10/from-2-5d-to-3d/</link>
+      <link>https://blog.fritzvd.com/2011/01/10/from-2-5d-to-3d/</link>
       <pubDate>Mon, 10 Jan 2011 14:21:54 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2011/01/10/from-2-5d-to-3d/</guid>
+      <guid>https://blog.fritzvd.com/2011/01/10/from-2-5d-to-3d/</guid>
       <description>My last few posts have focused on somewhat other things than my thesis. This does not mean that no progress has been made or that I’ve done nothing. On the contrary; I’ve done quite a bit. But it is rather less exciting.
 I’ve been busy with data conversion and trying to get a working 3D representation that is meaningful. Which is hard and not so spectacular. Seriously. First of all getting to grips with the fact that the reason why ESRI is marketleader may be because they deliver a complete and good package.</description>
     </item>

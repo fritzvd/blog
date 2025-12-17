@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ubuntu on fritzvd</title>
-    <link>http://blog.fritzvd.com/tags/ubuntu/</link>
+    <link>https://blog.fritzvd.com/tags/ubuntu/</link>
     <description>Recent content in ubuntu on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Feb 2013 13:08:01 +0000</lastBuildDate><atom:link href="http://blog.fritzvd.com/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Feb 2013 13:08:01 +0000</lastBuildDate><atom:link href="https://blog.fritzvd.com/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>vagrant</title>
-      <link>http://blog.fritzvd.com/2013/02/04/vagrant/</link>
+      <link>https://blog.fritzvd.com/2013/02/04/vagrant/</link>
       <pubDate>Mon, 04 Feb 2013 13:08:01 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2013/02/04/vagrant/</guid>
+      <guid>https://blog.fritzvd.com/2013/02/04/vagrant/</guid>
       <description>Vagrant is a great tool if you like to develop and test on the same server. Or at least emulate that you have the same server and at the same time keep your own system fairly clean.
 I’ve been using it for quite a while. After reinstalling my ubuntu machine to get rid of 12.10 and start 12.04 LTS a fresh I had to fix something in my install of vagrant.</description>
     </item>

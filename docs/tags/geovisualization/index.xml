@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>geovisualization on fritzvd</title>
-    <link>http://blog.fritzvd.com/tags/geovisualization/</link>
+    <link>https://blog.fritzvd.com/tags/geovisualization/</link>
     <description>Recent content in geovisualization on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Sep 2010 15:46:53 +0000</lastBuildDate><atom:link href="http://blog.fritzvd.com/tags/geovisualization/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Sep 2010 15:46:53 +0000</lastBuildDate><atom:link href="https://blog.fritzvd.com/tags/geovisualization/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Considerations on which Gaming Engine to use</title>
-      <link>http://blog.fritzvd.com/2010/09/29/considerations-on-which-gaming-engine-to-use/</link>
+      <link>https://blog.fritzvd.com/2010/09/29/considerations-on-which-gaming-engine-to-use/</link>
       <pubDate>Wed, 29 Sep 2010 15:46:53 +0000</pubDate>
       
-      <guid>http://blog.fritzvd.com/2010/09/29/considerations-on-which-gaming-engine-to-use/</guid>
+      <guid>https://blog.fritzvd.com/2010/09/29/considerations-on-which-gaming-engine-to-use/</guid>
       <description>A quick update on my project of using a Gaming Engine to process GIS data. After some googling and reading other peoples blogs and workspaces it seems that some engines are more fit than others.
 Tim Germanchis et al. (2005) has done a brief overview of different game engines for this particular usage. Amongst which are the Quake III, Unreal Runtime 2, CryEngine and others. The CryEngine apparently suited the writer the most.</description>
     </item>
