@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>minorthesis on fritzvd</title>
-    <link>https://blog.fritzvd.com/tags/minorthesis/</link>
+    <link>https://fritzvd.com/blog/tags/minorthesis/</link>
     <description>Recent content in minorthesis on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Feb 2011 08:30:48 +0000</lastBuildDate><atom:link href="https://blog.fritzvd.com/tags/minorthesis/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Feb 2011 08:30:48 +0000</lastBuildDate><atom:link href="https://fritzvd.com/blog/tags/minorthesis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Connecting the Dots</title>
-      <link>https://blog.fritzvd.com/2011/02/28/connecting-the-dots/</link>
+      <link>https://fritzvd.com/blog/2011/02/28/connecting-the-dots/</link>
       <pubDate>Mon, 28 Feb 2011 08:30:48 +0000</pubDate>
       
-      <guid>https://blog.fritzvd.com/2011/02/28/connecting-the-dots/</guid>
+      <guid>https://fritzvd.com/blog/2011/02/28/connecting-the-dots/</guid>
       <description>Those who think they “know” everything from the beginning will never, in fact, come to know anything – Thomas Merton
 Over the last few weeks (months) I haven’t been posting too much. Sorry about that. For all the people who are interested in what I am doing a little update.
 At the moment I am trying to write up the document to present the thesis to my supervisors. The research part is almost brought to an end with this step.</description>
@@ -20,20 +20,20 @@ At the moment I am trying to write up the document to present the thesis to my s
     
     <item>
       <title>From 2.5D to 3D</title>
-      <link>https://blog.fritzvd.com/2011/01/10/from-2-5d-to-3d/</link>
+      <link>https://fritzvd.com/blog/2011/01/10/from-2-5d-to-3d/</link>
       <pubDate>Mon, 10 Jan 2011 14:21:54 +0000</pubDate>
       
-      <guid>https://blog.fritzvd.com/2011/01/10/from-2-5d-to-3d/</guid>
+      <guid>https://fritzvd.com/blog/2011/01/10/from-2-5d-to-3d/</guid>
       <description>My last few posts have focused on somewhat other things than my thesis. This does not mean that no progress has been made or that I’ve done nothing. On the contrary; I’ve done quite a bit. But it is rather less exciting.
 I’ve been busy with data conversion and trying to get a working 3D representation that is meaningful. Which is hard and not so spectacular. Seriously. First of all getting to grips with the fact that the reason why ESRI is marketleader may be because they deliver a complete and good package.</description>
     </item>
     
     <item>
       <title>Usability and 3D in Geovisualization</title>
-      <link>https://blog.fritzvd.com/2010/09/29/considerations-on-3d-visualization-for-gis/</link>
+      <link>https://fritzvd.com/blog/2010/09/29/considerations-on-3d-visualization-for-gis/</link>
       <pubDate>Wed, 29 Sep 2010 14:54:21 +0000</pubDate>
       
-      <guid>https://blog.fritzvd.com/2010/09/29/considerations-on-3d-visualization-for-gis/</guid>
+      <guid>https://fritzvd.com/blog/2010/09/29/considerations-on-3d-visualization-for-gis/</guid>
       <description>For my minor thesis I am thinking of a project for processing Environmental Impact Assessment in a way that is more easily comprehensible. For this project I intend to use Augmented Reality. Hopefully some form of 3d visualization. And I am looking at the possibilities of using gaming engines.
 First and foremost, this is a preliminary research. I am not in any way an expert. And only just learning about the amazing possibilities.</description>
     </item>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>nodeconfeu on fritzvd</title>
-    <link>https://blog.fritzvd.com/tags/nodeconfeu/</link>
+    <link>https://fritzvd.com/blog/tags/nodeconfeu/</link>
     <description>Recent content in nodeconfeu on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Sep 2014 11:53:39 +0000</lastBuildDate><atom:link href="https://blog.fritzvd.com/tags/nodeconfeu/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Sep 2014 11:53:39 +0000</lastBuildDate><atom:link href="https://fritzvd.com/blog/tags/nodeconfeu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mad Science Act &amp;#8211; part 1@ nodeconf.eu</title>
-      <link>https://blog.fritzvd.com/2014/09/15/mad-science-act-part-1-nodeconf-eu/</link>
+      <link>https://fritzvd.com/blog/2014/09/15/mad-science-act-part-1-nodeconf-eu/</link>
       <pubDate>Mon, 15 Sep 2014 11:53:39 +0000</pubDate>
       
-      <guid>https://blog.fritzvd.com/2014/09/15/mad-science-act-part-1-nodeconf-eu/</guid>
+      <guid>https://fritzvd.com/blog/2014/09/15/mad-science-act-part-1-nodeconf-eu/</guid>
       <description>The Mad Science Act, was something completely different. It featured many topics and some of the most creative and prolific npmjs.org authors. It was a bit mad, so I’ll try to make it as coherent as I understood it. I have split up the post in 2 parts. It would be too much put into one.
 Professor Substack – Mad Science intro.
 When you start out creating (npm) modules you realize there is a great shortage of modules.</description>
@@ -20,10 +20,10 @@ When you start out creating (npm) modules you realize there is a great shortage 
     
     <item>
       <title>Hardware Track nodeconf.eu</title>
-      <link>https://blog.fritzvd.com/2014/09/15/hardware-track-nodeconf-eu/</link>
+      <link>https://fritzvd.com/blog/2014/09/15/hardware-track-nodeconf-eu/</link>
       <pubDate>Mon, 15 Sep 2014 09:14:33 +0000</pubDate>
       
-      <guid>https://blog.fritzvd.com/2014/09/15/hardware-track-nodeconf-eu/</guid>
+      <guid>https://fritzvd.com/blog/2014/09/15/hardware-track-nodeconf-eu/</guid>
       <description>The hardware track featured talks on hardware that were not just about hardware, but also served as a metaphor. The most poignant of these was Colin Vernon’s on the cloudbit.
 Colin Vernon – Cloudbit
 As an engineer we really like building stuff and figuring out difficult problems. And for us working with the tools we make is easy. But we should see our tools as a material. A material with which we can build stuff, which we can use like lego-blocks.</description>
@@ -31,10 +31,10 @@ As an engineer we really like building stuff and figuring out difficult problems
     
     <item>
       <title>Front end track at nodeconf.eu</title>
-      <link>https://blog.fritzvd.com/2014/09/13/front-end-track-at-nodeconf-eu/</link>
+      <link>https://fritzvd.com/blog/2014/09/13/front-end-track-at-nodeconf-eu/</link>
       <pubDate>Sat, 13 Sep 2014 11:11:52 +0000</pubDate>
       
-      <guid>https://blog.fritzvd.com/2014/09/13/front-end-track-at-nodeconf-eu/</guid>
+      <guid>https://fritzvd.com/blog/2014/09/13/front-end-track-at-nodeconf-eu/</guid>
       <description>The frontend track featured some very different talks , ranging from performance to a/b testing. In that sense it was a bit different from the microservices track, because it was less of a ‘one story’ thing.
 Scaling A/B testing at Netflix – Alex Liu
 Netflix takes a/b testing to the next level, where they break up the UI in little pieces and run a/b tests on all of them at once.</description>
@@ -42,10 +42,10 @@ Netflix takes a/b testing to the next level, where they break up the UI in littl
     
     <item>
       <title>Microservices Track summary #nodeconfeu</title>
-      <link>https://blog.fritzvd.com/2014/09/12/microservices-track-summary-nodeconfeu/</link>
+      <link>https://fritzvd.com/blog/2014/09/12/microservices-track-summary-nodeconfeu/</link>
       <pubDate>Fri, 12 Sep 2014 11:17:59 +0000</pubDate>
       
-      <guid>https://blog.fritzvd.com/2014/09/12/microservices-track-summary-nodeconfeu/</guid>
+      <guid>https://fritzvd.com/blog/2014/09/12/microservices-track-summary-nodeconfeu/</guid>
       <description>The microservices track came down to most speakers saying things more or less in similar vain, each talk having its own emphasis. Richard Rodger opened up and basically laid the groundwork for the microservices bit together with the Fred George talk.
 After hearing the talks I’d define microservices as small blocks that can run independently and do one thing, along the Unix philosophy. Making building blocks in stead of one big application that does everything.</description>
     </item>

@@ -2,65 +2,65 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>nodeconf15 on fritzvd</title>
-    <link>https://blog.fritzvd.com/categories/nodeconf15/</link>
+    <link>https://fritzvd.com/blog/categories/nodeconf15/</link>
     <description>Recent content in nodeconf15 on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Aug 2015 07:05:28 +0000</lastBuildDate><atom:link href="https://blog.fritzvd.com/categories/nodeconf15/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Aug 2015 07:05:28 +0000</lastBuildDate><atom:link href="https://fritzvd.com/blog/categories/nodeconf15/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nodeconf Adventure</title>
-      <link>https://blog.fritzvd.com/2015/08/03/nodeconf-adventure/</link>
+      <link>https://fritzvd.com/blog/2015/08/03/nodeconf-adventure/</link>
       <pubDate>Mon, 03 Aug 2015 07:05:28 +0000</pubDate>
       
-      <guid>https://blog.fritzvd.com/2015/08/03/nodeconf-adventure/</guid>
+      <guid>https://fritzvd.com/blog/2015/08/03/nodeconf-adventure/</guid>
       <description>After looking at the program of Nodeconf 2014, I took the liberty to convince my boss that I should go there. Because of the structure and quality of the workshops. Little did I know that the conf part was going to be canceled, and the adventure had no prior scheduling. Except for what people handed in beforehand as topics they would want to speak about, or hear about. The conference “started” with the OaklandJS meetup.</description>
     </item>
     
     <item>
       <title>Writing Documentation @ nodeconf 2015</title>
-      <link>https://blog.fritzvd.com/2015/07/01/writing-documentation-nodeconf-2015/</link>
+      <link>https://fritzvd.com/blog/2015/07/01/writing-documentation-nodeconf-2015/</link>
       <pubDate>Wed, 01 Jul 2015 08:19:19 +0000</pubDate>
       
-      <guid>https://blog.fritzvd.com/2015/07/01/writing-documentation-nodeconf-2015/</guid>
+      <guid>https://fritzvd.com/blog/2015/07/01/writing-documentation-nodeconf-2015/</guid>
       <description>This topic of course ties in with the Building Communities session. Because building community happens with code that is being used. And if you want people to be able to join easily, one of their first entry points will probably be the README, which has for some projects become the only or the main documentation.
 At the moment the documentation of some projects is exemplary (think: anything @substack makes). Whereas the documentation of node itself is kind of a mess.</description>
     </item>
     
     <item>
       <title>Building Communities @ nodeconf 2015</title>
-      <link>https://blog.fritzvd.com/2015/07/01/building-communities-nodeconf-2015/</link>
+      <link>https://fritzvd.com/blog/2015/07/01/building-communities-nodeconf-2015/</link>
       <pubDate>Wed, 01 Jul 2015 07:45:51 +0000</pubDate>
       
-      <guid>https://blog.fritzvd.com/2015/07/01/building-communities-nodeconf-2015/</guid>
+      <guid>https://fritzvd.com/blog/2015/07/01/building-communities-nodeconf-2015/</guid>
       <description>A lot of the talks were not just about code or “hardcore” technical stuff, but also about social things like: building community, writing documentation, creating a safe environment. Which in the software meetups and talks scene has been growing as a topic. To dismay of some, and celebration of others.
 This session started out as a discussion about the node project, “the Fork”: io.js and what it says about the community and the culture of node.</description>
     </item>
     
     <item>
       <title>ES6 &#43; ES7, EcmaScript 2015 -- Harmony .. WHAT? @ nodeconf 2015</title>
-      <link>https://blog.fritzvd.com/2015/07/01/es6-es7-ecmascript-2015-harmony-what-nodeconf-2015/</link>
+      <link>https://fritzvd.com/blog/2015/07/01/es6-es7-ecmascript-2015-harmony-what-nodeconf-2015/</link>
       <pubDate>Wed, 01 Jul 2015 07:35:35 +0000</pubDate>
       
-      <guid>https://blog.fritzvd.com/2015/07/01/es6-es7-ecmascript-2015-harmony-what-nodeconf-2015/</guid>
+      <guid>https://fritzvd.com/blog/2015/07/01/es6-es7-ecmascript-2015-harmony-what-nodeconf-2015/</guid>
       <description>JavaScript gets a new version, what now Languages are never done. They evolve over time and are supplemented with new words every month, new phrases every year and acquires (minor) grammar changes every decade. This true for speaking languages as well as for programming languages.
 The past year there has been a lot of talk about EcmaScript 6 (a.k.a. ES Harmony, or lately ES2015, which is the silliest name of all).</description>
     </item>
     
     <item>
       <title>Containers (Docker, LXC) @ nodeconf 2015</title>
-      <link>https://blog.fritzvd.com/2015/06/23/containers-docker-lxc-nodeconf-2015/</link>
+      <link>https://fritzvd.com/blog/2015/06/23/containers-docker-lxc-nodeconf-2015/</link>
       <pubDate>Tue, 23 Jun 2015 18:45:44 +0000</pubDate>
       
-      <guid>https://blog.fritzvd.com/2015/06/23/containers-docker-lxc-nodeconf-2015/</guid>
+      <guid>https://fritzvd.com/blog/2015/06/23/containers-docker-lxc-nodeconf-2015/</guid>
       <description>Containers, like the ones you put sundries in? Linux Containers (LXC) have been a hot new topic over the last 2 years. The easiest way to understand a container is to compare it with a Virtual Machine (VM). You can run a VM on your machine and it will pretend to be a computer inside a computer. It will emulate hardware so it can run an Operating System (OS) within your computer.</description>
     </item>
     
     <item>
       <title>Universal (Isomorphic) JavaScript and Modular UI @ nodeconf 2015</title>
-      <link>https://blog.fritzvd.com/2015/06/22/isomorphic-javascript-and-modular-ui-nodeconf-2015/</link>
+      <link>https://fritzvd.com/blog/2015/06/22/isomorphic-javascript-and-modular-ui-nodeconf-2015/</link>
       <pubDate>Mon, 22 Jun 2015 14:20:37 +0000</pubDate>
       
-      <guid>https://blog.fritzvd.com/2015/06/22/isomorphic-javascript-and-modular-ui-nodeconf-2015/</guid>
+      <guid>https://fritzvd.com/blog/2015/06/22/isomorphic-javascript-and-modular-ui-nodeconf-2015/</guid>
       <description>N.B. This one of the first sessions held at nodeconf, everybody was still somewhat rusty.
 Isomorphic JavaScript is the practice of using the same JavaScript code on the server and in the browser. In the session we talked about how to best implement this, and what to avoid. The naming is ridiculous, so let’s just use Universal JavaScript.
 One of the first recommendations were to do static analysis. This goes through your code and finds dead dependencies or function that are never called.</description>

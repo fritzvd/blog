@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>3dengine on fritzvd</title>
-    <link>https://blog.fritzvd.com/tags/3dengine/</link>
+    <link>https://fritzvd.com/blog/tags/3dengine/</link>
     <description>Recent content in 3dengine on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 May 2015 15:35:39 +0000</lastBuildDate><atom:link href="https://blog.fritzvd.com/tags/3dengine/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 May 2015 15:35:39 +0000</lastBuildDate><atom:link href="https://fritzvd.com/blog/tags/3dengine/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FBX and 3d models in Monogame &amp;#8211; on Linux</title>
-      <link>https://blog.fritzvd.com/2015/05/19/fbx-and-3d-models-in-monogame-on-linux/</link>
+      <link>https://fritzvd.com/blog/2015/05/19/fbx-and-3d-models-in-monogame-on-linux/</link>
       <pubDate>Tue, 19 May 2015 15:35:39 +0000</pubDate>
       
-      <guid>https://blog.fritzvd.com/2015/05/19/fbx-and-3d-models-in-monogame-on-linux/</guid>
+      <guid>https://fritzvd.com/blog/2015/05/19/fbx-and-3d-models-in-monogame-on-linux/</guid>
       <description>TL;DR the monogame community is pretty great
 Lately my manic ambitious mode has turned on again for me. So I have about 100s of ideas again, which sadly of course will all come to nothing. But while I’m at it, I thought I’d make the best of it to do some tutorials here and there and learn some stuff I know nothing about.
 Starting with Monogame on Linux is kind of a hassle to start with, but if you push through it works.</description>
@@ -20,20 +20,20 @@ Starting with Monogame on Linux is kind of a hassle to start with, but if you pu
     
     <item>
       <title>Developments so far</title>
-      <link>https://blog.fritzvd.com/2010/11/18/developments-so-far/</link>
+      <link>https://fritzvd.com/blog/2010/11/18/developments-so-far/</link>
       <pubDate>Thu, 18 Nov 2010 15:53:56 +0000</pubDate>
       
-      <guid>https://blog.fritzvd.com/2010/11/18/developments-so-far/</guid>
+      <guid>https://fritzvd.com/blog/2010/11/18/developments-so-far/</guid>
       <description>Ok. 3 weeks down the road of my minor thesis and what do I have to show for? Well, a lot of paradigms and concepts for starters. Furthermore I have never been able to finish a document like research proposal so quickly and of such quality.
 But enough of that. I have more or less abandoned the idea of a mobile application for now. Because having a mobile application like Junaio scores high on the cool list, it doesn’t really in the sphere of performance and handling large data sets.</description>
     </item>
     
     <item>
       <title>Considerations on which Gaming Engine to use</title>
-      <link>https://blog.fritzvd.com/2010/09/29/considerations-on-which-gaming-engine-to-use/</link>
+      <link>https://fritzvd.com/blog/2010/09/29/considerations-on-which-gaming-engine-to-use/</link>
       <pubDate>Wed, 29 Sep 2010 15:46:53 +0000</pubDate>
       
-      <guid>https://blog.fritzvd.com/2010/09/29/considerations-on-which-gaming-engine-to-use/</guid>
+      <guid>https://fritzvd.com/blog/2010/09/29/considerations-on-which-gaming-engine-to-use/</guid>
       <description>A quick update on my project of using a Gaming Engine to process GIS data. After some googling and reading other peoples blogs and workspaces it seems that some engines are more fit than others.
 Tim Germanchis et al. (2005) has done a brief overview of different game engines for this particular usage. Amongst which are the Quake III, Unreal Runtime 2, CryEngine and others. The CryEngine apparently suited the writer the most.</description>
     </item>

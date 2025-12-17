@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>augmentedreality on fritzvd</title>
-    <link>https://blog.fritzvd.com/tags/augmentedreality/</link>
+    <link>https://fritzvd.com/blog/tags/augmentedreality/</link>
     <description>Recent content in augmentedreality on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Nov 2010 15:53:56 +0000</lastBuildDate><atom:link href="https://blog.fritzvd.com/tags/augmentedreality/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Nov 2010 15:53:56 +0000</lastBuildDate><atom:link href="https://fritzvd.com/blog/tags/augmentedreality/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Developments so far</title>
-      <link>https://blog.fritzvd.com/2010/11/18/developments-so-far/</link>
+      <link>https://fritzvd.com/blog/2010/11/18/developments-so-far/</link>
       <pubDate>Thu, 18 Nov 2010 15:53:56 +0000</pubDate>
       
-      <guid>https://blog.fritzvd.com/2010/11/18/developments-so-far/</guid>
+      <guid>https://fritzvd.com/blog/2010/11/18/developments-so-far/</guid>
       <description>Ok. 3 weeks down the road of my minor thesis and what do I have to show for? Well, a lot of paradigms and concepts for starters. Furthermore I have never been able to finish a document like research proposal so quickly and of such quality.
 But enough of that. I have more or less abandoned the idea of a mobile application for now. Because having a mobile application like Junaio scores high on the cool list, it doesn’t really in the sphere of performance and handling large data sets.</description>
     </item>
     
     <item>
       <title>Random thoughts Augmented Reality</title>
-      <link>https://blog.fritzvd.com/2010/09/30/augmented-reality/</link>
+      <link>https://fritzvd.com/blog/2010/09/30/augmented-reality/</link>
       <pubDate>Thu, 30 Sep 2010 10:48:50 +0000</pubDate>
       
-      <guid>https://blog.fritzvd.com/2010/09/30/augmented-reality/</guid>
+      <guid>https://fritzvd.com/blog/2010/09/30/augmented-reality/</guid>
       <description>Another consideration is if using Augmented Reality (AR) how to implement it and what method of going about it.
 ARToolkit has different spin-offs that look quite interesting. One of my favourites are FLARToolkit and possibly SLARToolkit. The flash toolkit. But then I am not very proficient in Flash and ActionScript. Also I tend to avoid Flash as much as possible as well as writing stuff in C#. But the office I work in makes it easier to use C# then any other binding.</description>
     </item>

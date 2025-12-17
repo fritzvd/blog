@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>interfacing on fritzvd</title>
-    <link>https://blog.fritzvd.com/tags/interfacing/</link>
+    <link>https://fritzvd.com/blog/tags/interfacing/</link>
     <description>Recent content in interfacing on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Dec 2010 15:31:37 +0000</lastBuildDate><atom:link href="https://blog.fritzvd.com/tags/interfacing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Dec 2010 15:31:37 +0000</lastBuildDate><atom:link href="https://fritzvd.com/blog/tags/interfacing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The three I&amp;#8217;s of progress.</title>
-      <link>https://blog.fritzvd.com/2010/12/17/interaction-interfacing-iteration/</link>
+      <link>https://fritzvd.com/blog/2010/12/17/interaction-interfacing-iteration/</link>
       <pubDate>Fri, 17 Dec 2010 15:31:37 +0000</pubDate>
       
-      <guid>https://blog.fritzvd.com/2010/12/17/interaction-interfacing-iteration/</guid>
+      <guid>https://fritzvd.com/blog/2010/12/17/interaction-interfacing-iteration/</guid>
       <description>In my little project I would like to add some _I_nteraction. A possibility to zoom in and out and rotate the 3D model without moving the marker but by using some form of hand gestures. This should be possible. Though, the road towards it still seems a bit unclear.
 For now I have investigated the possibility of loading the 3D model as a static object until other markers arrive on the scene and are able to manipulate position, rotation and zooming.</description>
     </item>

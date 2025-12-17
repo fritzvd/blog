@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>linux on fritzvd</title>
-    <link>https://blog.fritzvd.com/tags/linux/</link>
+    <link>https://fritzvd.com/blog/tags/linux/</link>
     <description>Recent content in linux on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Mar 2014 19:15:06 +0000</lastBuildDate><atom:link href="https://blog.fritzvd.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 Mar 2014 19:15:06 +0000</lastBuildDate><atom:link href="https://fritzvd.com/blog/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nyko Playpad Pro or * as Xbox 360 controller on linux</title>
-      <link>https://blog.fritzvd.com/2014/03/02/nyko-playpad-pro-as-xbox-360-controller/</link>
+      <link>https://fritzvd.com/blog/2014/03/02/nyko-playpad-pro-as-xbox-360-controller/</link>
       <pubDate>Sun, 02 Mar 2014 19:15:06 +0000</pubDate>
       
-      <guid>https://blog.fritzvd.com/2014/03/02/nyko-playpad-pro-as-xbox-360-controller/</guid>
+      <guid>https://fritzvd.com/blog/2014/03/02/nyko-playpad-pro-as-xbox-360-controller/</guid>
       <description>This is basically a fancy note to self. Last year in my pre vacation spending spree, I boughy myself (and my brother) a NYKO Playpad Pro. A pretty cool gamepad for Android. I had lots of fun playing GTA Vice CIty on my trip to Italy. Playing SNES games etc.
 However I tried to hook it up to my Linux pc and thought I would be able to use it with my new go to MetroidVania platformer: Guacamelee.</description>
     </item>

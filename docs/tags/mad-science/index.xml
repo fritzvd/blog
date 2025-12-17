@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mad science on fritzvd</title>
-    <link>https://blog.fritzvd.com/tags/mad-science/</link>
+    <link>https://fritzvd.com/blog/tags/mad-science/</link>
     <description>Recent content in mad science on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Sep 2014 11:53:39 +0000</lastBuildDate><atom:link href="https://blog.fritzvd.com/tags/mad-science/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Sep 2014 11:53:39 +0000</lastBuildDate><atom:link href="https://fritzvd.com/blog/tags/mad-science/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mad Science Act &amp;#8211; part 1@ nodeconf.eu</title>
-      <link>https://blog.fritzvd.com/2014/09/15/mad-science-act-part-1-nodeconf-eu/</link>
+      <link>https://fritzvd.com/blog/2014/09/15/mad-science-act-part-1-nodeconf-eu/</link>
       <pubDate>Mon, 15 Sep 2014 11:53:39 +0000</pubDate>
       
-      <guid>https://blog.fritzvd.com/2014/09/15/mad-science-act-part-1-nodeconf-eu/</guid>
+      <guid>https://fritzvd.com/blog/2014/09/15/mad-science-act-part-1-nodeconf-eu/</guid>
       <description>The Mad Science Act, was something completely different. It featured many topics and some of the most creative and prolific npmjs.org authors. It was a bit mad, so I’ll try to make it as coherent as I understood it. I have split up the post in 2 parts. It would be too much put into one.
 Professor Substack – Mad Science intro.
 When you start out creating (npm) modules you realize there is a great shortage of modules.</description>

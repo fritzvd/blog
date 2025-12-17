@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ux on fritzvd</title>
-    <link>https://blog.fritzvd.com/tags/ux/</link>
+    <link>https://fritzvd.com/blog/tags/ux/</link>
     <description>Recent content in ux on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Nov 2013 09:25:30 +0000</lastBuildDate><atom:link href="https://blog.fritzvd.com/tags/ux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Nov 2013 09:25:30 +0000</lastBuildDate><atom:link href="https://fritzvd.com/blog/tags/ux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>UI/UX course &amp;#8211; Highlights &amp;#8211; Storytelling</title>
-      <link>https://blog.fritzvd.com/2013/11/18/uiux-course-highlights-storytelling/</link>
+      <link>https://fritzvd.com/blog/2013/11/18/uiux-course-highlights-storytelling/</link>
       <pubDate>Mon, 18 Nov 2013 09:25:30 +0000</pubDate>
       
-      <guid>https://blog.fritzvd.com/2013/11/18/uiux-course-highlights-storytelling/</guid>
+      <guid>https://fritzvd.com/blog/2013/11/18/uiux-course-highlights-storytelling/</guid>
       <description>Nelen &amp;amp; Schuurmans, the company where I work, offered the Software Developers a User Interface Design course by Namahn. It was a great reminder of the seemingly obvious processes one can incorporate in a software project, but sadly also a warning for blatant ignorance we sometimes portray as Developers (of course not just at N&amp;amp;S).
 The workflow Namahn uses is similar to what other design oriented companies would use. Which can be described in three phases: Understand, Explore and Define.</description>
     </item>

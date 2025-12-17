@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>dem on fritzvd</title>
-    <link>https://blog.fritzvd.com/tags/dem/</link>
+    <link>https://fritzvd.com/blog/tags/dem/</link>
     <description>Recent content in dem on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 Nov 2010 12:51:17 +0000</lastBuildDate><atom:link href="https://blog.fritzvd.com/tags/dem/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Nov 2010 12:51:17 +0000</lastBuildDate><atom:link href="https://fritzvd.com/blog/tags/dem/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Processing images with GDAL and Mayavi2</title>
-      <link>https://blog.fritzvd.com/2010/11/22/processing-images-with-gdal-and-mayavi2/</link>
+      <link>https://fritzvd.com/blog/2010/11/22/processing-images-with-gdal-and-mayavi2/</link>
       <pubDate>Mon, 22 Nov 2010 12:51:17 +0000</pubDate>
       
-      <guid>https://blog.fritzvd.com/2010/11/22/processing-images-with-gdal-and-mayavi2/</guid>
+      <guid>https://fritzvd.com/blog/2010/11/22/processing-images-with-gdal-and-mayavi2/</guid>
       <description>Ok, this took a while but the results are not bad. So I guess it’s worth it.
 First of all, a big thank you at [Ok, this took a while but the results are not bad. So I guess it’s worth it.
 First of all, a big thank you at](http://www.gis.usu.edu/~chrisg/) who is very possibly unaware of the fact that I have been using his classes on Python and Open Source GIS.</description>

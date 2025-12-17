@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>clip on fritzvd</title>
-    <link>https://blog.fritzvd.com/tags/clip/</link>
+    <link>https://fritzvd.com/blog/tags/clip/</link>
     <description>Recent content in clip on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Jan 2011 15:48:32 +0000</lastBuildDate><atom:link href="https://blog.fritzvd.com/tags/clip/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Jan 2011 15:48:32 +0000</lastBuildDate><atom:link href="https://fritzvd.com/blog/tags/clip/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating a little clipbox for your GIS projects in Python</title>
-      <link>https://blog.fritzvd.com/2011/01/11/creating-a-little-clipbox-for-your-projects-in-python/</link>
+      <link>https://fritzvd.com/blog/2011/01/11/creating-a-little-clipbox-for-your-projects-in-python/</link>
       <pubDate>Tue, 11 Jan 2011 15:48:32 +0000</pubDate>
       
-      <guid>https://blog.fritzvd.com/2011/01/11/creating-a-little-clipbox-for-your-projects-in-python/</guid>
+      <guid>https://fritzvd.com/blog/2011/01/11/creating-a-little-clipbox-for-your-projects-in-python/</guid>
       <description>When working on a GIS project, this always bums me out. You need to have a certain area in which you want to cut all your source data. But in ArcGIS I never figure out how to do it properly, except for using Python scripts and arcgisscripting/arcpy. But I figured, this should also be do-able from the terminal, and take less time and energy from your little workbox.
 But here’s a Python script that uses open-source libraries and writes</description>
     </item>

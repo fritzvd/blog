@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>frontend on fritzvd</title>
-    <link>https://blog.fritzvd.com/tags/frontend/</link>
+    <link>https://fritzvd.com/blog/tags/frontend/</link>
     <description>Recent content in frontend on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 Sep 2014 11:11:52 +0000</lastBuildDate><atom:link href="https://blog.fritzvd.com/tags/frontend/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Sep 2014 11:11:52 +0000</lastBuildDate><atom:link href="https://fritzvd.com/blog/tags/frontend/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Front end track at nodeconf.eu</title>
-      <link>https://blog.fritzvd.com/2014/09/13/front-end-track-at-nodeconf-eu/</link>
+      <link>https://fritzvd.com/blog/2014/09/13/front-end-track-at-nodeconf-eu/</link>
       <pubDate>Sat, 13 Sep 2014 11:11:52 +0000</pubDate>
       
-      <guid>https://blog.fritzvd.com/2014/09/13/front-end-track-at-nodeconf-eu/</guid>
+      <guid>https://fritzvd.com/blog/2014/09/13/front-end-track-at-nodeconf-eu/</guid>
       <description>The frontend track featured some very different talks , ranging from performance to a/b testing. In that sense it was a bit different from the microservices track, because it was less of a ‘one story’ thing.
 Scaling A/B testing at Netflix – Alex Liu
 Netflix takes a/b testing to the next level, where they break up the UI in little pieces and run a/b tests on all of them at once.</description>

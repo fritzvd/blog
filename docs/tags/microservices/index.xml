@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>microservices on fritzvd</title>
-    <link>https://blog.fritzvd.com/tags/microservices/</link>
+    <link>https://fritzvd.com/blog/tags/microservices/</link>
     <description>Recent content in microservices on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Sep 2014 11:17:59 +0000</lastBuildDate><atom:link href="https://blog.fritzvd.com/tags/microservices/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Sep 2014 11:17:59 +0000</lastBuildDate><atom:link href="https://fritzvd.com/blog/tags/microservices/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Microservices Track summary #nodeconfeu</title>
-      <link>https://blog.fritzvd.com/2014/09/12/microservices-track-summary-nodeconfeu/</link>
+      <link>https://fritzvd.com/blog/2014/09/12/microservices-track-summary-nodeconfeu/</link>
       <pubDate>Fri, 12 Sep 2014 11:17:59 +0000</pubDate>
       
-      <guid>https://blog.fritzvd.com/2014/09/12/microservices-track-summary-nodeconfeu/</guid>
+      <guid>https://fritzvd.com/blog/2014/09/12/microservices-track-summary-nodeconfeu/</guid>
       <description>The microservices track came down to most speakers saying things more or less in similar vain, each talk having its own emphasis. Richard Rodger opened up and basically laid the groundwork for the microservices bit together with the Fred George talk.
 After hearing the talks I’d define microservices as small blocks that can run independently and do one thing, along the Unix philosophy. Making building blocks in stead of one big application that does everything.</description>
     </item>

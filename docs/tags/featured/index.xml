@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>featured on fritzvd</title>
-    <link>https://blog.fritzvd.com/tags/featured/</link>
+    <link>https://fritzvd.com/blog/tags/featured/</link>
     <description>Recent content in featured on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Jan 2011 09:49:22 +0000</lastBuildDate><atom:link href="https://blog.fritzvd.com/tags/featured/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Jan 2011 09:49:22 +0000</lastBuildDate><atom:link href="https://fritzvd.com/blog/tags/featured/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>De Meerval</title>
-      <link>https://blog.fritzvd.com/2011/01/03/de-meerval/</link>
+      <link>https://fritzvd.com/blog/2011/01/03/de-meerval/</link>
       <pubDate>Mon, 03 Jan 2011 09:49:22 +0000</pubDate>
       
-      <guid>https://blog.fritzvd.com/2011/01/03/de-meerval/</guid>
+      <guid>https://fritzvd.com/blog/2011/01/03/de-meerval/</guid>
       <description>Het pad glinsterend met bevroren genot,
 Bekijkt de banden,
 Waarmee ik vederlicht haar rug betreed
@@ -25,10 +25,10 @@ Meerval.</description>
     
     <item>
       <title>Whoops I FLARted..</title>
-      <link>https://blog.fritzvd.com/2010/12/08/222/</link>
+      <link>https://fritzvd.com/blog/2010/12/08/222/</link>
       <pubDate>Wed, 08 Dec 2010 18:11:44 +0000</pubDate>
       
-      <guid>https://blog.fritzvd.com/2010/12/08/222/</guid>
+      <guid>https://fritzvd.com/blog/2010/12/08/222/</guid>
       <description>Today I fooled around a bit with the FLARManager (tutorials graciously provided by transmote). I tried to get some Papervision 3D objects going using all these different tutorials I have been following over the last few weeks (e.g. papervision2.com and rawkes.com). But it has not been as easy as I had expected. But then again, things never are.
 The difficulty is not so much in displaying 3D objects, because pv3d and flarmanager do all the thinking for you.</description>
     </item>
