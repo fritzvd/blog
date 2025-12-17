@@ -1,0 +1,248 @@
+<!doctype html>
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg:#faf8f1"
+  lang="en-us"
+  dir="ltr"
+><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Developments so far - fritzvd</title>
+
+  
+  <meta name="theme-color" />
+
+  <meta name="description" content="Ok. 3 weeks down the road of my minor thesis and what do I have to show for? Well, a lot of paradigms and concepts for starters. Furthermore I have never been able to finish a document like research proposal so quickly and of such quality.
+But enough of that. I have more or less abandoned the idea of a mobile application for now. Because having a mobile application like Junaio scores high on the cool list, it doesn’t really in the sphere of performance and handling large data sets." />
+  <meta name="author" content="fritzvd" /><link rel="preload stylesheet" as="style" href="http://blog.fritzvd.com/main.min.css" />
+
+  
+  <link rel="preload" as="image" href="http://blog.fritzvd.com/theme.png" />
+
+  
+
+  
+
+  <script
+    defer
+    src="http://blog.fritzvd.com/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+
+  
+  <link
+    rel="icon"
+    href="http://blog.fritzvd.com/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="http://blog.fritzvd.com/apple-touch-icon.png"
+  />
+
+  <meta name="generator" content="Hugo 0.105.0"><meta itemprop="name" content="Developments so far">
+<meta itemprop="description" content="Ok. 3 weeks down the road of my minor thesis and what do I have to show for? Well, a lot of paradigms and concepts for starters. Furthermore I have never been able to finish a document like research proposal so quickly and of such quality.
+But enough of that. I have more or less abandoned the idea of a mobile application for now. Because having a mobile application like Junaio scores high on the cool list, it doesn’t really in the sphere of performance and handling large data sets."><meta itemprop="datePublished" content="2010-11-18T15:53:56+00:00" />
+<meta itemprop="dateModified" content="2010-11-18T15:53:56+00:00" />
+<meta itemprop="wordCount" content="345">
+<meta itemprop="keywords" content="3dengine,3dgis,ar,aster,augmentedreality,gdal,mayavi2,python,remotesensing,unity3d,vtk," /><meta property="og:title" content="Developments so far" />
+<meta property="og:description" content="Ok. 3 weeks down the road of my minor thesis and what do I have to show for? Well, a lot of paradigms and concepts for starters. Furthermore I have never been able to finish a document like research proposal so quickly and of such quality.
+But enough of that. I have more or less abandoned the idea of a mobile application for now. Because having a mobile application like Junaio scores high on the cool list, it doesn’t really in the sphere of performance and handling large data sets." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://blog.fritzvd.com/2010/11/18/developments-so-far/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2010-11-18T15:53:56+00:00" />
+<meta property="article:modified_time" content="2010-11-18T15:53:56+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Developments so far"/>
+<meta name="twitter:description" content="Ok. 3 weeks down the road of my minor thesis and what do I have to show for? Well, a lot of paradigms and concepts for starters. Furthermore I have never been able to finish a document like research proposal so quickly and of such quality.
+But enough of that. I have more or less abandoned the idea of a mobile application for now. Because having a mobile application like Junaio scores high on the cool list, it doesn’t really in the sphere of performance and handling large data sets."/>
+
+  <link rel="canonical" href="http://blog.fritzvd.com/2010/11/18/developments-so-far/" />
+</head>
+<body
+    class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
+  ><header
+  class="mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
+>
+  <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
+    <a
+      class="-translate-y-[1px] text-2xl font-medium"
+      href="http://blog.fritzvd.com/"
+      >fritzvd</a
+    >
+    <div
+      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden ltr:-mr-8 rtl:-ml-8"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center bg-(--bg) pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:bg-transparent! lg:pb-0 lg:transition-none"
+  >
+  </div>
+</header>
+<main
+      class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
+    ><article>
+  <header class="mb-14">
+    <h1 class="my-0! pb-2.5">Developments so far</h1><div class="text-xs antialiased opacity-60"><time>Nov 18, 2010</time><span class="mx-1">&middot;</span>
+      <span>fritzvd</span></div></header>
+
+  <section><p>Ok. 3 weeks down the road of my minor thesis and what do I have to show for? Well, a lot of paradigms and concepts for starters. Furthermore I have never been able to finish a document like research proposal so quickly and of such quality.</p>
+<p>But enough of that. I have more or less abandoned the idea of a mobile application for now. Because having a mobile application like Junaio scores high on the cool list, it doesn’t really in the sphere of performance and handling large data sets. The preference might go to having a standalone or online application that uses a webcam to model the information on screen.</p>
+<p>Most interesting technologies so far:</p>
+<ol>
+<li>The awesome <a href="http://unity3d.com">Unity 3D</a> game engine. Apparently possible to combine with <a href="http://technotecture.com/content/sstt-visualizer-augmented-reality-demo">SSTT</a> – AR tool</li>
+<li>The extensive Python libraries of <a href="http://www.vtk.org/">VTK</a> and <a href="http://code.enthought.com/projects/mayavi/">Mayavi2</a> (installing in Ubuntu costs only 10 min.) in combination with <a href="http://www.gdal.org/">GDAL</a></li>
+<li><a href="http://sourceforge.net/projects/opengamaray/files/">(Open)</a><a href="http://www.gamaray.com/">Gamaray</a> – An AR toolkit similar to UnifeyeSDK (Junaio) by Metaio. Possibility to add location and 3d objects. Very cool.</li>
+</ol>
+<p>Another harsh realization is that I have grown too fond of Ubuntu Linux and only now have to deal with an issue that other programmers have been dealing with for ages. Building from source. My goodness. In Mac this feels too dangerous as a mismanaged system can have a lot of missing dependencies and building takes quite a while. In Windows this absolute hell. Searching around for pre-compiled binaries is the way to go, as are packages like Pythonxy. But still, this sucks.</p>
+<p>What I have been able to do so far (except for spending days writing and compiling) is importing an Aster Satellite image into the Mayavi2 viewer. Which was remarkably painless and cool. The only thing is that I do not really understand yet what it is showing me. I guess the pixel values of one band have become the Z-axis. Still, cool as Sir Dangles.</p>
+<div id="attachment_192" style="width: 410px" class="wp-caption alignnone">
+  <a href="/wp-content/uploads/2010/11/aster1.png"><img src="/wp-content/uploads/2010/11/aster1.png" alt="Aster Image" title="aster1" width="400" height="290" class="size-full wp-image-192" srcset="http://blog.technokrat.nl/wp-content/uploads/2010/11/aster1-300x217.png 300w, http://blog.technokrat.nl/wp-content/uploads/2010/11/aster1.png 400w" sizes="(max-width: 400px) 100vw, 400px" /></a>
+  <p class="wp-caption-text">
+    View from the middle
+  </p>
+</div>
+<div id="attachment_193" style="width: 410px" class="wp-caption alignnone">
+  <a href="/wp-content/uploads/2010/11/aster2.png"><img src="/wp-content/uploads/2010/11/aster2.png" alt="Aster Image" title="aster2" width="400" height="290" class="size-full wp-image-193" srcset="http://blog.technokrat.nl/wp-content/uploads/2010/11/aster2-300x217.png 300w, http://blog.technokrat.nl/wp-content/uploads/2010/11/aster2.png 400w" sizes="(max-width: 400px) 100vw, 400px" /></a>
+  <p class="wp-caption-text">
+    View from above
+  </p>
+</div>
+<p>Also importing height maps in Unity3D should be not be too painfull, but this proved a bit harder than anticipated.</p>
+</section>
+
+  <footer class="mt-12 flex flex-wrap"><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://blog.fritzvd.com/tags/3dengine"
+      >3dengine</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://blog.fritzvd.com/tags/3dgis"
+      >3dgis</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://blog.fritzvd.com/tags/ar"
+      >ar</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://blog.fritzvd.com/tags/aster"
+      >aster</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://blog.fritzvd.com/tags/augmentedreality"
+      >augmentedreality</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://blog.fritzvd.com/tags/gdal"
+      >gdal</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://blog.fritzvd.com/tags/mayavi2"
+      >mayavi2</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://blog.fritzvd.com/tags/python"
+      >python</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://blog.fritzvd.com/tags/remotesensing"
+      >remotesensing</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://blog.fritzvd.com/tags/unity3d"
+      >unity3d</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://blog.fritzvd.com/tags/vtk"
+      >vtk</a
+    ></footer><nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  ><a class="ltr:pr-3 rtl:pl-3" href="http://blog.fritzvd.com/2010/11/22/processing-images-with-gdal-and-mayavi2/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Processing images with GDAL and Mayavi2</span></a
+    ><a
+      class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
+      href="http://blog.fritzvd.com/2010/10/02/different-directions/"
+      ><span>Different Directions</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    ></nav></article></main><footer
+  class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
+>
+  <div class="mr-auto">&copy;2025
+    <a class="link" href="http://blog.fritzvd.com/">fritzvd</a></div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+</body>
+</html>

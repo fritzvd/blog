@@ -1,0 +1,224 @@
+<!doctype html>
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg:#faf8f1"
+  lang="en-us"
+  dir="ltr"
+><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>OPEN Open Source - fritzvd</title>
+
+  
+  <meta name="theme-color" />
+
+  <meta name="description" content="What?
+Individuals making significant and valuable contributions are given commit-access to the project to contribute as they see fit. This project is more like an open wiki than a standard guarded open source project.
+Rules
+There are a few basic ground-rules for contributors:
+No –force pushes or modifying the Git history in any way.
+Non-master branches ought to be used for ongoing work.
+External API changes and significant modifications ought to be subject to an internal pull-request to solicit feedback from other contributors." />
+  <meta name="author" content="fritzvd" /><link rel="preload stylesheet" as="style" href="http://blog.fritzvd.com/main.min.css" />
+
+  
+  <link rel="preload" as="image" href="http://blog.fritzvd.com/theme.png" />
+
+  
+
+  
+
+  <script
+    defer
+    src="http://blog.fritzvd.com/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+
+  
+  <link
+    rel="icon"
+    href="http://blog.fritzvd.com/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="http://blog.fritzvd.com/apple-touch-icon.png"
+  />
+
+  <meta name="generator" content="Hugo 0.105.0"><meta itemprop="name" content="OPEN Open Source">
+<meta itemprop="description" content="What?
+Individuals making significant and valuable contributions are given commit-access to the project to contribute as they see fit. This project is more like an open wiki than a standard guarded open source project.
+Rules
+There are a few basic ground-rules for contributors:
+No –force pushes or modifying the Git history in any way.
+Non-master branches ought to be used for ongoing work.
+External API changes and significant modifications ought to be subject to an internal pull-request to solicit feedback from other contributors."><meta itemprop="datePublished" content="2014-09-15T11:37:34+00:00" />
+<meta itemprop="dateModified" content="2014-09-15T11:37:34+00:00" />
+<meta itemprop="wordCount" content="182">
+<meta itemprop="keywords" content="open open source,open source," /><meta property="og:title" content="OPEN Open Source" />
+<meta property="og:description" content="What?
+Individuals making significant and valuable contributions are given commit-access to the project to contribute as they see fit. This project is more like an open wiki than a standard guarded open source project.
+Rules
+There are a few basic ground-rules for contributors:
+No –force pushes or modifying the Git history in any way.
+Non-master branches ought to be used for ongoing work.
+External API changes and significant modifications ought to be subject to an internal pull-request to solicit feedback from other contributors." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://blog.fritzvd.com/2014/09/15/open-open-source/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2014-09-15T11:37:34+00:00" />
+<meta property="article:modified_time" content="2014-09-15T11:37:34+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="OPEN Open Source"/>
+<meta name="twitter:description" content="What?
+Individuals making significant and valuable contributions are given commit-access to the project to contribute as they see fit. This project is more like an open wiki than a standard guarded open source project.
+Rules
+There are a few basic ground-rules for contributors:
+No –force pushes or modifying the Git history in any way.
+Non-master branches ought to be used for ongoing work.
+External API changes and significant modifications ought to be subject to an internal pull-request to solicit feedback from other contributors."/>
+
+  <link rel="canonical" href="http://blog.fritzvd.com/2014/09/15/open-open-source/" />
+</head>
+<body
+    class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
+  ><header
+  class="mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
+>
+  <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
+    <a
+      class="-translate-y-[1px] text-2xl font-medium"
+      href="http://blog.fritzvd.com/"
+      >fritzvd</a
+    >
+    <div
+      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden ltr:-mr-8 rtl:-ml-8"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center bg-(--bg) pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:bg-transparent! lg:pb-0 lg:transition-none"
+  >
+  </div>
+</header>
+<main
+      class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
+    ><article>
+  <header class="mb-14">
+    <h1 class="my-0! pb-2.5">OPEN Open Source</h1><div class="text-xs antialiased opacity-60"><time>Sep 15, 2014</time><span class="mx-1">&middot;</span>
+      <span>fritzvd</span></div></header>
+
+  <section><p><strong>What?</strong></p>
+<p>Individuals making significant and valuable contributions are given commit-access to the project to contribute as they see fit. This project is more like an open wiki than a standard guarded open source project.</p>
+<p>Rules</p>
+<p><strong>There are a few basic ground-rules for contributors:</strong></p>
+<p>No –force pushes or modifying the Git history in any way.</p>
+<p>Non-master branches ought to be used for ongoing work.</p>
+<p>External API changes and significant modifications ought to be subject to an internal pull-request to solicit feedback from other contributors.</p>
+<p>Internal pull-requests to solicit feedback are encouraged for any other non-trivial contribution but left to the discretion of the contributor.</p>
+<p>Contributors should attempt to adhere to the prevailing code-style.</p>
+<p><strong>Releases</strong></p>
+<p>Declaring formal releases remains the prerogative of the project maintainer.</p>
+<p>Changes to this arrangement</p>
+<p>This is an experiment and feedback is welcome! This document may also be subject to pull requests or changes by contributors where you believe you have something valuable to add or change.</p>
+<p>Thanks to Rod Vagg and the LevelUP project for coming up with the idea of “OPEN Open Source”!</p>
+<p>(taken from <a href="https://github.com/rvagg/node-levelup/blob/master/CONTRIBUTING.md" title="webtorrent contributing" target="_blank">node-levelup</a>‘s contributing page)</p>
+</section>
+
+  <footer class="mt-12 flex flex-wrap"><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://blog.fritzvd.com/tags/open-open-source"
+      >open open source</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://blog.fritzvd.com/tags/open-source"
+      >open source</a
+    ></footer><nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  ><a class="ltr:pr-3 rtl:pl-3" href="http://blog.fritzvd.com/2014/09/15/mad-science-act-part-1-nodeconf-eu/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Mad Science Act &amp;#8211; part 1@ nodeconf.eu</span></a
+    ><a
+      class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
+      href="http://blog.fritzvd.com/2014/09/15/hardware-track-nodeconf-eu/"
+      ><span>Hardware Track nodeconf.eu</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    ></nav></article></main><footer
+  class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
+>
+  <div class="mr-auto">&copy;2025
+    <a class="link" href="http://blog.fritzvd.com/">fritzvd</a></div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+</body>
+</html>

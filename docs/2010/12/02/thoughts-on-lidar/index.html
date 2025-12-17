@@ -1,0 +1,226 @@
+<!doctype html>
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg:#faf8f1"
+  lang="en-us"
+  dir="ltr"
+><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Thoughts on LiDAR - fritzvd</title>
+
+  
+  <meta name="theme-color" />
+
+  <meta name="description" content="Yesterday I was fortunate enough to be able to visit the European LiDAR Mapping Forum (ELMF) in The Hague. For those who do not know what LiDAR is, it is a sensor that acquires high-quality (very dense) 3D data. If you would like to check out some of the data, what it looks like and play around with it a bit, here is a “get-started”. It is further explained on Wikipedia, to which you should give some money for using it on a daily basis, if you haven’t done so already." />
+  <meta name="author" content="fritzvd" /><link rel="preload stylesheet" as="style" href="http://blog.fritzvd.com/main.min.css" />
+
+  
+  <link rel="preload" as="image" href="http://blog.fritzvd.com/theme.png" />
+
+  
+
+  
+
+  <script
+    defer
+    src="http://blog.fritzvd.com/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+
+  
+  <link
+    rel="icon"
+    href="http://blog.fritzvd.com/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="http://blog.fritzvd.com/apple-touch-icon.png"
+  />
+
+  <meta name="generator" content="Hugo 0.105.0"><meta itemprop="name" content="Thoughts on LiDAR">
+<meta itemprop="description" content="Yesterday I was fortunate enough to be able to visit the European LiDAR Mapping Forum (ELMF) in The Hague. For those who do not know what LiDAR is, it is a sensor that acquires high-quality (very dense) 3D data. If you would like to check out some of the data, what it looks like and play around with it a bit, here is a “get-started”. It is further explained on Wikipedia, to which you should give some money for using it on a daily basis, if you haven’t done so already."><meta itemprop="datePublished" content="2010-12-02T15:02:26+00:00" />
+<meta itemprop="dateModified" content="2010-12-02T15:02:26+00:00" />
+<meta itemprop="wordCount" content="387">
+<meta itemprop="keywords" content="3dgis,data,density,lidar,lidarelevationmap,mobile mapper,mobilemapping," /><meta property="og:title" content="Thoughts on LiDAR" />
+<meta property="og:description" content="Yesterday I was fortunate enough to be able to visit the European LiDAR Mapping Forum (ELMF) in The Hague. For those who do not know what LiDAR is, it is a sensor that acquires high-quality (very dense) 3D data. If you would like to check out some of the data, what it looks like and play around with it a bit, here is a “get-started”. It is further explained on Wikipedia, to which you should give some money for using it on a daily basis, if you haven’t done so already." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://blog.fritzvd.com/2010/12/02/thoughts-on-lidar/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2010-12-02T15:02:26+00:00" />
+<meta property="article:modified_time" content="2010-12-02T15:02:26+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Thoughts on LiDAR"/>
+<meta name="twitter:description" content="Yesterday I was fortunate enough to be able to visit the European LiDAR Mapping Forum (ELMF) in The Hague. For those who do not know what LiDAR is, it is a sensor that acquires high-quality (very dense) 3D data. If you would like to check out some of the data, what it looks like and play around with it a bit, here is a “get-started”. It is further explained on Wikipedia, to which you should give some money for using it on a daily basis, if you haven’t done so already."/>
+
+  <link rel="canonical" href="http://blog.fritzvd.com/2010/12/02/thoughts-on-lidar/" />
+</head>
+<body
+    class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
+  ><header
+  class="mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
+>
+  <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
+    <a
+      class="-translate-y-[1px] text-2xl font-medium"
+      href="http://blog.fritzvd.com/"
+      >fritzvd</a
+    >
+    <div
+      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden ltr:-mr-8 rtl:-ml-8"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center bg-(--bg) pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:bg-transparent! lg:pb-0 lg:transition-none"
+  >
+  </div>
+</header>
+<main
+      class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
+    ><article>
+  <header class="mb-14">
+    <h1 class="my-0! pb-2.5">Thoughts on LiDAR</h1><div class="text-xs antialiased opacity-60"><time>Dec 2, 2010</time><span class="mx-1">&middot;</span>
+      <span>fritzvd</span></div></header>
+
+  <section><p>Yesterday I was fortunate enough to be able to visit the <a href="http://www.lidarmap.org/ELMF/">European LiDAR Mapping Forum (ELMF)</a> in The Hague. For those who do not know what LiDAR is, it is a sensor that acquires high-quality (very dense) 3D data. If you would like to check out some of the data, what it looks like and play around with it a bit, <a href="http://liblas.org/start.html">here is a <em>“get-started”</em></a>. It is further explained on <a href="http://en.wikipedia.org/wiki/LIDAR">Wikipedia</a>, to which you should give some money for using it on a daily basis, if you haven’t done so already. Back on-topic I believe it was quite a successful event, some 600 applicants joined in, which was above expectations I gathered from <a href="http://uk.linkedin.com/in/alastairrmacdonald">Alastair MacDonald</a>‘s closing remarks.</p>
+<p><strong>Some interesting applications (to me)</strong></p>
+<p><a href="http://mandli.com">Mandli’s</a> examples of Mobile Mapping and quick high-quality 3D model creation, with the help of Mobile Mappers. Mobile Mappers are another example of a cool technology. These cars with LiDAR sensors mounted on them can collect 3D data at highway-speed. Awesome.</p>
+<div id="attachment_273" style="width: 310px" class="wp-caption alignright">
+  <a href="http://blog.technokrat.nl/wp-content/uploads/2010/12/mobile-mapping-van-2.jpg"><img src="http://blog.technokrat.nl/wp-content/uploads/2010/12/mobile-mapping-van-2-300x225.jpg" alt="source: http://www.mobile-mapping.be/Languages/nl-BE/Downloads/mobile%20mapping%20van%202.jpg" title="Mobile Mapper" width="300" height="225" class="size-medium wp-image-273" srcset="http://blog.technokrat.nl/wp-content/uploads/2010/12/mobile-mapping-van-2-300x225.jpg 300w, http://blog.technokrat.nl/wp-content/uploads/2010/12/mobile-mapping-van-2-120x90.jpg 120w, http://blog.technokrat.nl/wp-content/uploads/2010/12/mobile-mapping-van-2.jpg 600w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <p class="wp-caption-text">
+    Mobile Mapper
+  </p>
+</div>
+<p><a href="http://www.topconpositioning.com">Topcon</a> is collaborating with the company creating the Moto GP 10/11 game. This game uses a model of the Silverstone track gathered and created in about 2 hours using a Mobile Mapper. The conference was premiering some of the stunning 3D imagery created for the game.</p>
+<p>Railtracks around Dover. To monitor land slides and land changes at the cliffs of Dover they showcased quarterly surveys of the area using Terrestial Laser Scanners.</p>
+<p><em>Beyond understanding</em></p>
+<p>Most of the rest of the talks were less practical of nature. This is not bad in any case. On the contrary I found these lectures very interesting. However for my studies and thesis it will probably not be of any importance. Although I now (claim to) understand why you should prefer Discrete Return over Full Waveform for most purposes.</p>
+<p>Other things I just didn’t understand were all over the place. But it was very educational and interesting nonetheless.</p>
+<p>One more example before I leave you. The Dutch branch of <a href="http://www.terraimaging.de/nl/">TerraImaging</a> also had a stand there. They deliver AHN2 images (the Actual Elevation of the Netherlands version 2) data. Awesome detail. With an accuracy of 5cm they deliver Elevation Maps of areas in the Netherlands. Just don’t think that data comes without cost. There is a free online viewer though at <a href="http://www.ahn.nl/viewer">the AHN website</a>.</p>
+<div id="attachment_272" style="width: 310px" class="wp-caption aligncenter">
+  <a href="http://blog.technokrat.nl/wp-content/uploads/2010/12/lidar1.jpg"><img src="http://blog.technokrat.nl/wp-content/uploads/2010/12/lidar1-300x208.jpg" alt="Lidar Processed DTM / source: http://www.saic.com/geospatial/images/lidar1.jpg" title="lidar1" width="300" height="208" class="size-medium wp-image-272" srcset="http://blog.technokrat.nl/wp-content/uploads/2010/12/lidar1-300x208.jpg 300w, http://blog.technokrat.nl/wp-content/uploads/2010/12/lidar1.jpg 778w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <p class="wp-caption-text">
+    LiDAR acquired dataset (post-processing)
+  </p>
+</div>
+</section>
+
+  <footer class="mt-12 flex flex-wrap"><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://blog.fritzvd.com/tags/3dgis"
+      >3dgis</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://blog.fritzvd.com/tags/data"
+      >data</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://blog.fritzvd.com/tags/density"
+      >density</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://blog.fritzvd.com/tags/lidar"
+      >lidar</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://blog.fritzvd.com/tags/lidarelevationmap"
+      >lidarelevationmap</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://blog.fritzvd.com/tags/mobile-mapper"
+      >mobile mapper</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://blog.fritzvd.com/tags/mobilemapping"
+      >mobilemapping</a
+    ></footer><nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  ><a class="ltr:pr-3 rtl:pl-3" href="http://blog.fritzvd.com/2010/12/08/222/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Whoops I FLARted..</span></a
+    ><a
+      class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
+      href="http://blog.fritzvd.com/2010/11/30/rendered-useless/"
+      ><span>Rendered Useless</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    ></nav></article></main><footer
+  class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
+>
+  <div class="mr-auto">&copy;2025
+    <a class="link" href="http://blog.fritzvd.com/">fritzvd</a></div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+</body>
+</html>

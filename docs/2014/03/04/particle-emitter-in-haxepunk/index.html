@@ -1,0 +1,364 @@
+<!doctype html>
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg:#faf8f1"
+  lang="en-us"
+  dir="ltr"
+><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Particle Emitter in HaxePunk - fritzvd</title>
+
+  
+  <meta name="theme-color" />
+
+  <meta name="description" content="For some this will be a trivial example. For me this took a bit longer than I suspected.
+This small example will produce this:
+If you’re planning on making an awesome game you probably want a particle emitter. because.. well look at it.
+What I did is I started a haxepunk project:
+`For some this will be a trivial example. For me this took a bit longer than I suspected." />
+  <meta name="author" content="fritzvd" /><link rel="preload stylesheet" as="style" href="http://blog.fritzvd.com/main.min.css" />
+
+  
+  <link rel="preload" as="image" href="http://blog.fritzvd.com/theme.png" />
+
+  
+
+  
+
+  <script
+    defer
+    src="http://blog.fritzvd.com/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+
+  
+  <link
+    rel="icon"
+    href="http://blog.fritzvd.com/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="http://blog.fritzvd.com/apple-touch-icon.png"
+  />
+
+  <meta name="generator" content="Hugo 0.105.0"><meta itemprop="name" content="Particle Emitter in HaxePunk">
+<meta itemprop="description" content="For some this will be a trivial example. For me this took a bit longer than I suspected.
+This small example will produce this:
+If you’re planning on making an awesome game you probably want a particle emitter. because.. well look at it.
+What I did is I started a haxepunk project:
+`For some this will be a trivial example. For me this took a bit longer than I suspected."><meta itemprop="datePublished" content="2014-03-04T14:34:54+00:00" />
+<meta itemprop="dateModified" content="2014-03-04T14:34:54+00:00" />
+<meta itemprop="wordCount" content="635">
+<meta itemprop="keywords" content="emitter,game development,haxepunk,particle," /><meta property="og:title" content="Particle Emitter in HaxePunk" />
+<meta property="og:description" content="For some this will be a trivial example. For me this took a bit longer than I suspected.
+This small example will produce this:
+If you’re planning on making an awesome game you probably want a particle emitter. because.. well look at it.
+What I did is I started a haxepunk project:
+`For some this will be a trivial example. For me this took a bit longer than I suspected." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://blog.fritzvd.com/2014/03/04/particle-emitter-in-haxepunk/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2014-03-04T14:34:54+00:00" />
+<meta property="article:modified_time" content="2014-03-04T14:34:54+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Particle Emitter in HaxePunk"/>
+<meta name="twitter:description" content="For some this will be a trivial example. For me this took a bit longer than I suspected.
+This small example will produce this:
+If you’re planning on making an awesome game you probably want a particle emitter. because.. well look at it.
+What I did is I started a haxepunk project:
+`For some this will be a trivial example. For me this took a bit longer than I suspected."/>
+
+  <link rel="canonical" href="http://blog.fritzvd.com/2014/03/04/particle-emitter-in-haxepunk/" />
+</head>
+<body
+    class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
+  ><header
+  class="mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
+>
+  <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
+    <a
+      class="-translate-y-[1px] text-2xl font-medium"
+      href="http://blog.fritzvd.com/"
+      >fritzvd</a
+    >
+    <div
+      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden ltr:-mr-8 rtl:-ml-8"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center bg-(--bg) pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:bg-transparent! lg:pb-0 lg:transition-none"
+  >
+  </div>
+</header>
+<main
+      class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
+    ><article>
+  <header class="mb-14">
+    <h1 class="my-0! pb-2.5">Particle Emitter in HaxePunk</h1><div class="text-xs antialiased opacity-60"><time>Mar 4, 2014</time><span class="mx-1">&middot;</span>
+      <span>fritzvd</span></div></header>
+
+  <section><p>For some this will be a trivial example. For me this took a bit longer than I suspected.</p>
+<p>This small example will produce this:</p>
+<p>If you’re planning on making an awesome game you probably want a particle emitter. because.. well look at it.</p>
+<p>What I did is I started a haxepunk project:</p>
+<p>`For some this will be a trivial example. For me this took a bit longer than I suspected.</p>
+<p>This small example will produce this:</p>
+<p>If you’re planning on making an awesome game you probably want a particle emitter. because.. well look at it.</p>
+<p>What I did is I started a haxepunk project:</p>
+<p>`</p>
+<p>And added a file: <a href="https://github.com/fritzvd/haxepunk-emitter-example/blob/master/src/Explosion.hx" title="Explosion.hx" target="_blank">Explosion.hx</a></p>
+<p>The Emitter is also a type of Entity, and also needs a graphic. It looks like this:</p>
+<pre><code class="syntax actionscript">import com.haxepunk.graphics.Emitter;
+import com.haxepunk.utils.Ease;
+import com.haxepunk.Entity;
+
+class Explosion extends Entity
+{
+	private var _emitter:Emitter;
+
+	public function new()
+	{
+		super(x, y);
+        _emitter = new Emitter("graphics/particle.png", 4, 4);
+        _emitter.newType("explode", [0]);
+        _emitter.setMotion("explode",  		// name
+		        	0, 				// angle
+		        	100, 			// distance
+		        	2, 				// duration
+		        	360, 			// ? angle range
+		        	-40, 			// ? distance range
+		        	1, 				// ? Duration range
+		        	Ease.quadOut	// ? Easing	
+		        	);
+        _emitter.setAlpha("explode", 20, 0.1);
+        _emitter.setGravity("explode", 5, 1);
+        graphic = _emitter;
+        layer = -1;
+	}
+
+	public function explode(x:Float, y:Float)
+	{
+		for (i in 0...20)
+		{
+			_emitter.emit("explode", x, y);
+		}
+	}
+
+
+}
+</code></pre>
+<p>Then you can add the Emitter to your current scene like in my <a href="https://github.com/fritzvd/haxepunk-emitter-example/blob/master/src/MainScene.hx" title="MainScene.hx" target="_blank">MainScene.hx</a></p>
+<p>It looks like this:</p>
+<pre><code class="syntax actionscript">import com.haxepunk.Scene;
+import Explosion;
+
+class MainScene extends Scene
+{
+	private var explosion:Explosion;
+
+	public override function begin()
+	{
+		explosion = new Explosion();
+		add(explosion);
+	}
+
+	public override function update()
+	{
+        super.update();
+        explosion.explode(230, 240);
+	}
+}
+</code></pre>
+<p>Now run</p>
+<p><code>lime test neko</code></p>
+<p>And you should see something similar to the emitter above.</p>
+<p>You can checkout my <a href="https://github.com/fritzvd/haxepunk-emitter-example" title="haxepunk-emitter-example" target="_blank">repo</a> and run it to play around with it.</p>
+<p>I ran into this error below. It meant my sprite was too small. It took me a long time to realize that.</p>
+<p>``For some this will be a trivial example. For me this took a bit longer than I suspected.</p>
+<p>This small example will produce this:</p>
+<p>If you’re planning on making an awesome game you probably want a particle emitter. because.. well look at it.</p>
+<p>What I did is I started a haxepunk project:</p>
+<p>`For some this will be a trivial example. For me this took a bit longer than I suspected.</p>
+<p>This small example will produce this:</p>
+<p>If you’re planning on making an awesome game you probably want a particle emitter. because.. well look at it.</p>
+<p>What I did is I started a haxepunk project:</p>
+<p>`</p>
+<p>And added a file: <a href="https://github.com/fritzvd/haxepunk-emitter-example/blob/master/src/Explosion.hx" title="Explosion.hx" target="_blank">Explosion.hx</a></p>
+<p>The Emitter is also a type of Entity, and also needs a graphic. It looks like this:</p>
+<pre><code class="syntax actionscript">import com.haxepunk.graphics.Emitter;
+import com.haxepunk.utils.Ease;
+import com.haxepunk.Entity;
+
+class Explosion extends Entity
+{
+	private var _emitter:Emitter;
+
+	public function new()
+	{
+		super(x, y);
+        _emitter = new Emitter("graphics/particle.png", 4, 4);
+        _emitter.newType("explode", [0]);
+        _emitter.setMotion("explode",  		// name
+		        	0, 				// angle
+		        	100, 			// distance
+		        	2, 				// duration
+		        	360, 			// ? angle range
+		        	-40, 			// ? distance range
+		        	1, 				// ? Duration range
+		        	Ease.quadOut	// ? Easing	
+		        	);
+        _emitter.setAlpha("explode", 20, 0.1);
+        _emitter.setGravity("explode", 5, 1);
+        graphic = _emitter;
+        layer = -1;
+	}
+
+	public function explode(x:Float, y:Float)
+	{
+		for (i in 0...20)
+		{
+			_emitter.emit("explode", x, y);
+		}
+	}
+
+
+}
+</code></pre>
+<p>Then you can add the Emitter to your current scene like in my <a href="https://github.com/fritzvd/haxepunk-emitter-example/blob/master/src/MainScene.hx" title="MainScene.hx" target="_blank">MainScene.hx</a></p>
+<p>It looks like this:</p>
+<pre><code class="syntax actionscript">import com.haxepunk.Scene;
+import Explosion;
+
+class MainScene extends Scene
+{
+	private var explosion:Explosion;
+
+	public override function begin()
+	{
+		explosion = new Explosion();
+		add(explosion);
+	}
+
+	public override function update()
+	{
+        super.update();
+        explosion.explode(230, 240);
+	}
+}
+</code></pre>
+<p>Now run</p>
+<p><code>lime test neko</code></p>
+<p>And you should see something similar to the emitter above.</p>
+<p>You can checkout my <a href="https://github.com/fritzvd/haxepunk-emitter-example" title="haxepunk-emitter-example" target="_blank">repo</a> and run it to play around with it.</p>
+<p>I ran into this error below. It meant my sprite was too small. It took me a long time to realize that.</p>
+<p>``</p>
+</section>
+
+  <footer class="mt-12 flex flex-wrap"><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://blog.fritzvd.com/tags/emitter"
+      >emitter</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://blog.fritzvd.com/tags/game-development"
+      >game development</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://blog.fritzvd.com/tags/haxepunk"
+      >haxepunk</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://blog.fritzvd.com/tags/particle"
+      >particle</a
+    ></footer><nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  ><a class="ltr:pr-3 rtl:pl-3" href="http://blog.fritzvd.com/2014/03/08/procedural-death-jam-7-day-rogue-like-cyberpunk-game-jamathon/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Procedural Death Jam, 7 Day Rogue Like, Cyberpunk Game jamathon.</span></a
+    ><a
+      class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
+      href="http://blog.fritzvd.com/2014/03/02/nyko-playpad-pro-as-xbox-360-controller/"
+      ><span>Nyko Playpad Pro or * as Xbox 360 controller on linux</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    ></nav></article></main><footer
+  class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
+>
+  <div class="mr-auto">&copy;2025
+    <a class="link" href="http://blog.fritzvd.com/">fritzvd</a></div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+</body>
+</html>

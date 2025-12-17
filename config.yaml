@@ -3,6 +3,7 @@ disablePathToLower: true
 languageCode: en-us
 title: fritzvd
 theme: paper
+publishDir: docs/
 permalinks:
   post: /:year/:month/:day/:title/
 markup:
