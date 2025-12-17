@@ -2,5 +2,10 @@ baseurl: http://blog.fritzvd.com/
 disablePathToLower: true
 languageCode: en-us
 title: fritzvd
+theme: paper
 permalinks:
   post: /:year/:month/:day/:title/
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

@@ -1,172 +1,201 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--><html class="no-js" prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#"><!--<![endif]-->
+<!doctype html>
 
-    <head>
-                <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
-        <meta name="mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <meta name="author" content="">
-        <meta name="keywords" content="awesome, definitely">
-	
-        <meta property="og:site_name" content="fritzvd">
-        <meta property="og:title" content="fritzvd">
-        <meta property="og:url" content="http://blog.fritzvd.com/categories/nodeconf15/">
-        <meta property="og:description" content="">
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg:#faf8f1"
+  lang="en-us"
+  dir="ltr"
+><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>nodeconf15 - fritzvd</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  <meta
+    name="description"
+    content="A personal blog"
+  />
+  <meta name="author" content="fritzvd" /><link rel="preload stylesheet" as="style" href="http://blog.fritzvd.com/main.min.css" />
+
+  
+  <link rel="preload" as="image" href="http://blog.fritzvd.com/theme.png" />
+
+  
+
+  
+
+  
+
+  
+  <link
+    rel="icon"
+    href="http://blog.fritzvd.com/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="http://blog.fritzvd.com/apple-touch-icon.png"
+  />
+
+  <meta name="generator" content="Hugo 0.105.0">
+</head>
+<body
+    class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
+  ><header
+  class="mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
+>
+  <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
+    <a
+      class="-translate-y-[1px] text-2xl font-medium"
+      href="http://blog.fritzvd.com/"
+      >fritzvd</a
+    >
+    <div
+      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden ltr:-mr-8 rtl:-ml-8"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  <script>
     
-        <meta property="og:type" content="website" />
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
     
-        <meta name="generator" content="Hugo 0.15" />
-        <title>Nodeconf15 &middot; fritzvd </title>
-        <link rel="canonical" href="http://blog.fritzvd.com/" />
-        <link rel="alternate" type="application/rss+xml" title="RSS" href="http://blog.fritzvd.com/categories/nodeconf15/index.xml">
-        <link rel="stylesheet" type='text/css' href="http://blog.fritzvd.com/css/main.css"/>
-        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Montserrat:700' rel='stylesheet' type='text/css'>
-        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-        <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-    </head>
-<body>
-<!--[if lt IE 7]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chrome/‎">install Google Chrome</a> to experience this site.</p><![endif]-->
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
 
-    <header id="site-header">
-        <div class="container">
-            <a href="http://blog.fritzvd.com/" alt="fritzvd"><h1 class="blog-title heading">fritzvd</h1></a>
-            <p class="blog-description"></p>
-        </div>
-    </header>
-
-<main class="content" role="main">
-	<div class="container">
-	
-		<article class="li post">
-    <header class="post-header">
-        <h3 class="post-title"><a href="http://blog.fritzvd.com/2015/08/03/nodeconf-adventure/">Nodeconf Adventure</a></h3>
-        <p class="post-time"><time datetime="2015-08-03T07:05:28Z">August 3, 2015</time></p>
-    </header>
     
-    <section class="post-excerpt">
-        <p>After looking at the program of Nodeconf 2014, I took the liberty to convince my boss that I should go there. Because of the structure and quality of the workshops. Little did I know that the conf part was going to be canceled, and the adventure had no prior scheduling. Except for what people handed in beforehand as topics they would want to speak about, or hear about. The conference &#8220;started&#8221; with the OaklandJS meetup.</p>
-    </section>
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
 
-    <footer class="post-footer">
-        <span>
-            
-            
-        </span>
-    </footer>
-</article>
-	
-		<article class="li post">
-    <header class="post-header">
-        <h3 class="post-title"><a href="http://blog.fritzvd.com/2015/07/01/writing-documentation-nodeconf-2015/">Writing Documentation @ nodeconf 2015</a></h3>
-        <p class="post-time"><time datetime="2015-07-01T08:19:19Z">July 1, 2015</time></p>
-    </header>
     
-    <section class="post-excerpt">
-        <p>This topic of course ties in with the Building Communities session. Because building community happens with code that is being used. And if you want people to be able to join easily, one of their first entry points will probably be the README, which has for some projects become the only or the main documentation. At the moment the documentation of some projects is exemplary (think: anything @substack makes). Whereas the documentation of node itself is kind of a mess.</p>
-    </section>
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
 
-    <footer class="post-footer">
-        <span>
-            
-            
-        </span>
-    </footer>
-</article>
-	
-		<article class="li post">
-    <header class="post-header">
-        <h3 class="post-title"><a href="http://blog.fritzvd.com/2015/07/01/building-communities-nodeconf-2015/">Building Communities @ nodeconf 2015</a></h3>
-        <p class="post-time"><time datetime="2015-07-01T07:45:51Z">July 1, 2015</time></p>
-    </header>
     
-    <section class="post-excerpt">
-        <p>A lot of the talks were not just about code or &#8220;hardcore&#8221; technical stuff, but also about social things like: building community, writing documentation, creating a safe environment. Which in the software meetups and talks scene has been growing as a topic. To dismay of some, and celebration of others. This session started out as a discussion about the node project, &#8220;the Fork&#8221;: io.js and what it says about the community and the culture of node.</p>
-    </section>
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
 
-    <footer class="post-footer">
-        <span>
-            
-            
-        </span>
-    </footer>
-</article>
-	
-		<article class="li post">
-    <header class="post-header">
-        <h3 class="post-title"><a href="http://blog.fritzvd.com/2015/07/01/es6-es7-ecmascript-2015-harmony-what-nodeconf-2015/">ES6 &#43; ES7, EcmaScript 2015 -- Harmony .. WHAT? @ nodeconf 2015</a></h3>
-        <p class="post-time"><time datetime="2015-07-01T07:35:35Z">July 1, 2015</time></p>
-    </header>
     
-    <section class="post-excerpt">
-        <p>JavaScript gets a new version, what now Languages are never done. They evolve over time and are supplemented with new words every month, new phrases every year and acquires (minor) grammar changes every decade. This true for speaking languages as well as for programming languages. The past year there has been a lot of talk about EcmaScript 6 (a.k.a. ES Harmony, or lately ES2015, which is the silliest name of all).</p>
-    </section>
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
 
-    <footer class="post-footer">
-        <span>
-            
-            
-        </span>
-    </footer>
-</article>
-	
-		<article class="li post">
-    <header class="post-header">
-        <h3 class="post-title"><a href="http://blog.fritzvd.com/2015/06/23/containers-docker-lxc-nodeconf-2015/">Containers (Docker, LXC) @ nodeconf 2015</a></h3>
-        <p class="post-time"><time datetime="2015-06-23T18:45:44Z">June 23, 2015</time></p>
-    </header>
-    
-    <section class="post-excerpt">
-        <p>Containers, like the ones you put sundries in? Linux Containers (LXC) have been a hot new topic over the last 2 years. The easiest way to understand a container is to compare it with a Virtual Machine (VM). You can run a VM on your machine and it will pretend to be a computer inside a computer. It will emulate hardware so it can run an Operating System (OS) within your computer.</p>
-    </section>
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center bg-(--bg) pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:bg-transparent! lg:pb-0 lg:transition-none"
+  >
+  </div>
+</header>
+<main
+      class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
+    >
 
-    <footer class="post-footer">
-        <span>
-            
-            
-        </span>
-    </footer>
-</article>
-	
-		<article class="li post">
-    <header class="post-header">
-        <h3 class="post-title"><a href="http://blog.fritzvd.com/2015/06/22/isomorphic-javascript-and-modular-ui-nodeconf-2015/">Universal (Isomorphic) JavaScript and Modular UI @ nodeconf 2015</a></h3>
-        <p class="post-time"><time datetime="2015-06-22T14:20:37Z">June 22, 2015</time></p>
-    </header>
-    
-    <section class="post-excerpt">
-        <p>N.B. This one of the first sessions held at nodeconf, everybody was still somewhat rusty. Isomorphic JavaScript is the practice of using the same JavaScript code on the server and in the browser. In the session we talked about how to best implement this, and what to avoid. The naming is ridiculous, so let&#8217;s just use Universal JavaScript. One of the first recommendations were to do static analysis. This goes through your code and finds dead dependencies or function that are never called.</p>
-    </section>
+<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0"><h2 class="my-0!">Nodeconf Adventure</h2>
+  <time class="text-xs antialiased opacity-60"
+    >Aug 3, 2015</time
+  >
+  <a class="absolute inset-0 text-[0px]" href="http://blog.fritzvd.com/2015/08/03/nodeconf-adventure/"
+    >Nodeconf Adventure</a
+  >
+</section>
 
-    <footer class="post-footer">
-        <span>
-            
-            
-        </span>
-    </footer>
-</article>
-	
-	
-	</div>
-</main>
-    <footer id="site-footer">
-        <div class="container">
-            <a href="http://blog.fritzvd.com/index.xml" title="Get the RSS feed"><span class="tooltip"><i class="fa fa-rss"></i></span></a>
-            <section>&copy; <a href="http://blog.fritzvd.com/"></a> 2015 | All rights reserved</section>
-            <section>Theme by <a href="http://www.jrdnbwmn.com">Jordan Bowman</a>. Generated with <a href="http://gohugo.io/">Hugo</a>.</section>
-        </div>
-    </footer>
+<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0"><h2 class="my-0!">Writing Documentation @ nodeconf 2015</h2>
+  <time class="text-xs antialiased opacity-60"
+    >Jul 1, 2015</time
+  >
+  <a class="absolute inset-0 text-[0px]" href="http://blog.fritzvd.com/2015/07/01/writing-documentation-nodeconf-2015/"
+    >Writing Documentation @ nodeconf 2015</a
+  >
+</section>
 
-    <script type="text/javascript" src="http://blog.fritzvd.com/js/fittext.js"></script>
-    <script type="text/javascript">
-      $(".heading").fitText();
-    </script>
+<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0"><h2 class="my-0!">Building Communities @ nodeconf 2015</h2>
+  <time class="text-xs antialiased opacity-60"
+    >Jul 1, 2015</time
+  >
+  <a class="absolute inset-0 text-[0px]" href="http://blog.fritzvd.com/2015/07/01/building-communities-nodeconf-2015/"
+    >Building Communities @ nodeconf 2015</a
+  >
+</section>
 
+<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0"><h2 class="my-0!">ES6 &#43; ES7, EcmaScript 2015 -- Harmony .. WHAT? @ nodeconf 2015</h2>
+  <time class="text-xs antialiased opacity-60"
+    >Jul 1, 2015</time
+  >
+  <a class="absolute inset-0 text-[0px]" href="http://blog.fritzvd.com/2015/07/01/es6-es7-ecmascript-2015-harmony-what-nodeconf-2015/"
+    >ES6 &#43; ES7, EcmaScript 2015 -- Harmony .. WHAT? @ nodeconf 2015</a
+  >
+</section>
+
+<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0"><h2 class="my-0!">Containers (Docker, LXC) @ nodeconf 2015</h2>
+  <time class="text-xs antialiased opacity-60"
+    >Jun 23, 2015</time
+  >
+  <a class="absolute inset-0 text-[0px]" href="http://blog.fritzvd.com/2015/06/23/containers-docker-lxc-nodeconf-2015/"
+    >Containers (Docker, LXC) @ nodeconf 2015</a
+  >
+</section>
+
+<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0"><h2 class="my-0!">Universal (Isomorphic) JavaScript and Modular UI @ nodeconf 2015</h2>
+  <time class="text-xs antialiased opacity-60"
+    >Jun 22, 2015</time
+  >
+  <a class="absolute inset-0 text-[0px]" href="http://blog.fritzvd.com/2015/06/22/isomorphic-javascript-and-modular-ui-nodeconf-2015/"
+    >Universal (Isomorphic) JavaScript and Modular UI @ nodeconf 2015</a
+  >
+</section></main><footer
+  class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
+>
+  <div class="mr-auto">&copy;2025
+    <a class="link" href="http://blog.fritzvd.com/">fritzvd</a></div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
 </body>
 </html>

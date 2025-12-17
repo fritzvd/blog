@@ -1,9 +1,9 @@
 ---
 author: fritzvd
 categories:
-- botswana
+  - botswana
 date: 2009-07-29T16:24:02Z
-guid: http://fritzvd.wordpress.com/2009/07/29/ga-gona-metsi/
+guid: http://blog.fritzvd.com/2009/07/29/ga-gona-metsi/
 id: 75
 title: Ga gona metsi
 url: /2009/07/29/ga-gona-metsi/

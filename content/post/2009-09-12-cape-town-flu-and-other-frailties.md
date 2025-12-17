@@ -1,14 +1,14 @@
 ---
 author: fritzvd
 categories:
-- Uncategorized
+  - Uncategorized
 date: 2009-09-12T16:46:36Z
-guid: http://fritzvd.wordpress.com/2009/09/12/cape-town-flu-and-other-frailties/
+guid: http://blog.fritzvd.com/2009/09/12/cape-town-flu-and-other-frailties/
 id: 96
 tags:
-- blabla
-- capetown
-- townships
+  - blabla
+  - capetown
+  - townships
 title: Cape Town, flu and other frailties
 url: /2009/09/12/cape-town-flu-and-other-frailties/
 ---

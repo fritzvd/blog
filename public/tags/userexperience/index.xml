@@ -1,26 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Userexperience on fritzvd</title>
+    <title>userexperience on fritzvd</title>
     <link>http://blog.fritzvd.com/tags/userexperience/</link>
-    <description>Recent content in Userexperience on fritzvd</description>
+    <description>Recent content in userexperience on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 Oct 2010 17:24:42 +0000</lastBuildDate>
-    <atom:link href="http://blog.fritzvd.com/tags/userexperience/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Sat, 02 Oct 2010 17:24:42 +0000</lastBuildDate><atom:link href="http://blog.fritzvd.com/tags/userexperience/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Different Directions</title>
       <link>http://blog.fritzvd.com/2010/10/02/different-directions/</link>
       <pubDate>Sat, 02 Oct 2010 17:24:42 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2010/10/02/different-directions/</guid>
-      <description>&lt;p&gt;It seems that my minor thesis will focus more on the user experience of augmented reality. The EIA&amp;#8217;s have raster outputs that can be converted to 3D spaces. These spaces can then be given Locations. The Raster is already georeferenced which would make this easier (I think).&lt;/p&gt;
-
-&lt;p&gt;The best method of viewing these things would seem Augmented Reality browsers such as Layar or Junaio. So I would have to brush up a bit on what is possible in which browser. Both are iPhone and Android compatible which is convenient.&lt;/p&gt;
-
-&lt;p&gt;In a later stadium it might be cool to add 3d models of ships going to the harbour. (wishful thinking).&lt;/p&gt;
-</description>
+      <description>It seems that my minor thesis will focus more on the user experience of augmented reality. The EIA’s have raster outputs that can be converted to 3D spaces. These spaces can then be given Locations. The Raster is already georeferenced which would make this easier (I think).
+The best method of viewing these things would seem Augmented Reality browsers such as Layar or Junaio. So I would have to brush up a bit on what is possible in which browser.</description>
     </item>
     
   </channel>

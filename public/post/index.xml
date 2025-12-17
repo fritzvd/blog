@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on fritzvd</title>
@@ -6,47 +6,15 @@
     <description>Recent content in Posts on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Oct 2015 06:49:23 +0000</lastBuildDate>
-    <atom:link href="http://blog.fritzvd.com/post/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Tue, 13 Oct 2015 06:49:23 +0000</lastBuildDate><atom:link href="http://blog.fritzvd.com/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Writing Tests for NativeScript apps</title>
       <link>http://blog.fritzvd.com/2015/10/13/writing-tests-for-nativescript-apps/</link>
       <pubDate>Tue, 13 Oct 2015 06:49:23 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2015/10/13/writing-tests-for-nativescript-apps/</guid>
-      <description>&lt;p&gt;This has been bugging me for a while. While working on my business logic and REST API connection in my NativeScript project, I couldn&amp;#8217;t write tests because requiring the tns-core-modules broke the test.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.nativescript.org/&#34; target=&#34;_blank&#34;&gt;NativeScript&lt;/a&gt; is a library with tooling to create iOS and Android apps in JavaScript. And it works smoothly. However at the moment the docs aren&amp;#8217;t always complete. Anyways, building and deploying an app on a mobile device (or emulator) takes somewhere in the range of a minute or so on a fast machine.&lt;/p&gt;
-
-&lt;p&gt;That doesn&amp;#8217;t really work if you&amp;#8217;re not sure if your logic makes sense.&lt;/p&gt;
-
-&lt;p&gt;In comes &lt;code&gt;&amp;lt;a href=&amp;quot;http://npmjs.com/package/proxyquire&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;proxyquire&amp;lt;/a&amp;gt;&lt;/code&gt;. Install proxyquire:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;syntax bash&#34;&gt;npm install --save-dev proxyquire
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then make sure you stub the package you want to be stubbed, with @noCallThru.&lt;/p&gt;
-
-&lt;p&gt;Example:&lt;/p&gt;
-
-&lt;p&gt;So now you can setup mocha for example to work with the app.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;syntax bash&#34;&gt;npm install --save-dev mocha
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Edit your package.json so your npm scripts reads:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;syntax javascript&#34;&gt;&#34;scripts&#34;: {
-    &#34;test&#34;: &#34;mocha tests/*&#34;,
-    &#34;start&#34;: &#34;node index.js&#34;
-  },
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And go ahead and run &lt;code&gt;npm test&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;small&gt;Cover image courtesy of Willie Hardin: &lt;a href=&#34;https://www.flickr.com/photos/14934865@N07/3134743730/&#34;&gt;https://www.flickr.com/photos/14934865@N07/3134743730/&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
-</description>
+      <description>This has been bugging me for a while. While working on my business logic and REST API connection in my NativeScript project, I couldn’t write tests because requiring the tns-core-modules broke the test.
+NativeScript is a library with tooling to create iOS and Android apps in JavaScript. And it works smoothly. However at the moment the docs aren’t always complete. Anyways, building and deploying an app on a mobile device (or emulator) takes somewhere in the range of a minute or so on a fast machine.</description>
     </item>
     
     <item>
@@ -55,49 +23,7 @@
       <pubDate>Mon, 03 Aug 2015 07:05:28 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2015/08/03/nodeconf-adventure/</guid>
-      <description>&lt;p&gt;After looking at the program of Nodeconf 2014, I took the liberty to convince my boss that I should go there. Because of the structure and quality of the workshops. Little did I know that the conf part was going to be canceled, and the adventure had no prior scheduling. Except for what people handed in beforehand as topics they would want to speak about, or hear about. The conference &amp;#8220;started&amp;#8221; with the &lt;a href=&#34;http://oaklandjs.com/&#34; target=&#34;_blank&#34;&gt;OaklandJS meetup&lt;/a&gt;. A laid-back gathering of programmers that meet in a local pub. Where people either work on projects, discuss * or just come to hang out.&lt;/p&gt;
-
-&lt;p&gt;The adventure part of the conference started out with some time to get to know one another, find your room and have dinner. And when I say conference, I mean un-conference, because that&amp;#8217;s what it was, and what &lt;a href=&#34;http://mikealrogers.com/&#34; target=&#34;_blank&#34;&gt;Mikeal Rogers&lt;/a&gt;, the organiser, insisted it should be called. In fact on the official opening Mikeal made the announcement (I paraphrase):&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;There will be no talks, because&amp;#8230; talks are boring.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;We were to gather in one of the rooms in the morning at 9.00 where we would discuss topics and make a schedule for the day. This is how every day started out.&lt;/p&gt;
-
-&lt;p&gt;However before we started with the program of the conference we started out with the only scheduled talk. It was: Behind the scenes of &lt;a href=&#34;http://realtimefood.net/&#34; target=&#34;_blank&#34;&gt;#realtimefood&lt;/a&gt; by &lt;a href=&#34;https://twitter.com/hueniverse&#34; target=&#34;_blank&#34;&gt;Eran Hammer&lt;/a&gt; (the maintainer and creator of &lt;a href=&#34;http://hapijs.com/&#34; target=&#34;_blank&#34;&gt;hapi.js&lt;/a&gt;). I had no idea what to expect, to be frank, I didn&amp;#8217;t even know who Eran Hammer was. Eran wanted to point out how inspiring Nodeconf can be. The idea for the #realtimefood talk started at Nodeconf 2013. But we were clearly in for a stunning behind the scenes of an even more stupefying talk at the supposedly the last ever &lt;a href=&#34;http://realtimeconf.com/&#34; target=&#34;_blank&#34;&gt;RealtimeConf&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.flickr.com/photos/andyet-photos/10369704456&#34; title=&#34;2013RealTimeConf-582 by &amp;amp;yet Photos, on Flickr&#34;&gt;&lt;img src=&#34;https://c1.staticflickr.com/3/2889/10369704456_8c8a48a7b9.jpg&#34; width=&#34;333&#34; height=&#34;500&#34; alt=&#34;2013RealTimeConf-582&#34; /&gt;&lt;/a&gt;&lt;a href=&#34;https://www.flickr.com/photos/andyet-photos/10369687204&#34; title=&#34;2013RealTimeConf-581 by &amp;amp;yet Photos, on Flickr&#34;&gt;&lt;img src=&#34;https://c1.staticflickr.com/3/2878/10369687204_462f94839b.jpg&#34; width=&#34;333&#34; height=&#34;500&#34; alt=&#34;2013RealTimeConf-581&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Photos by &lt;a href=&#34;http://www.beccablevins.com/&#34; target=&#34;_blank&#34;&gt;Becca Blevins&lt;/a&gt; taken from &lt;a href=&#34;https://www.flickr.com/photos/andyet-photos/with/10369704456/&#34; target=&#34;_blank&#34;&gt;&amp;amp;yet&amp;rsquo;s photostream on flickr&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Eran started out by saying he spent 4 months and $7000.- USD to realize the talk. The talk was basically a mesmerizing performance art that included a 3 course dinner, in the middle of a conference that was about how we can change the world in the age of real time systems. This is just a short summation of the stuff he got to pull off, by just asking questions and hoping people would help out (in no particular order):&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;A garden complete with wooden boarding and all kinds of vegetables growing&lt;/li&gt;
-&lt;li&gt;Transportation to the conference of this garden&lt;/li&gt;
-&lt;li&gt;A breaking bad kind of experience with &amp;#8220;blue sky&amp;#8221; candy&lt;/li&gt;
-&lt;li&gt;Have a large amount of people in the room perform a ritual before eating a piece of candy&lt;/li&gt;
-&lt;li&gt;Have a 2 Michelin star restaurant (Mugaritz, Rentería, Spain) send over their recipe and a whole art piece free of charge&lt;/li&gt;
-&lt;li&gt;Have a 3 Michelin star restaurant (Eleven Madison Park, New York, USA) lend out their plates and send them over free of charge&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Eran didn&amp;#8217;t say a lot about what the talk itself was about, so you should probably just watch the talk itself:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://vimeo.com/77799055&#34;&gt;#realtimefood&amp;mdash;Eran Hammer&lt;/a&gt; from &lt;a href=&#34;https://vimeo.com/andyet&#34;&gt;&amp;amp;yet&lt;/a&gt; on &lt;a href=&#34;https://vimeo.com&#34;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;For the rest of the Nodeconf Adventure I made some summaries. On this blog you&amp;#8217;ll find the summaries for the following topics:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.technokrat.nl/2015/06/22/isomorphic-javascript-and-modular-ui-nodeconf-2015/&#34;&gt;Isomorphic Javascript and Modular UI&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.technokrat.nl/2015/06/23/containers-docker-lxc-nodeconf-2015/&#34;&gt;Containers (Docker, LXC)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.technokrat.nl/2015/07/01/es6-es7-ecmascript-2015-harmony-what-nodeconf-2015/&#34; target=&#34;_blank&#34;&gt;ES6 EcmaScript 2015.. what now?&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.technokrat.nl/2015/07/01/building-communities-nodeconf-2015/&#34;&gt;Building community&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.technokrat.nl/2015/07/01/writing-documentation-nodeconf-2015/&#34;&gt;Writing documentation&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.flickr.com/photos/matthewbergman/18840475252/in/album-72157654202715069/&#34; target=&#34;_blank&#34;&gt;Cover photo by Matthew Bergman&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>After looking at the program of Nodeconf 2014, I took the liberty to convince my boss that I should go there. Because of the structure and quality of the workshops. Little did I know that the conf part was going to be canceled, and the adventure had no prior scheduling. Except for what people handed in beforehand as topics they would want to speak about, or hear about. The conference “started” with the OaklandJS meetup.</description>
     </item>
     
     <item>
@@ -106,26 +32,8 @@
       <pubDate>Wed, 01 Jul 2015 08:19:19 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2015/07/01/writing-documentation-nodeconf-2015/</guid>
-      <description>&lt;p&gt;This topic of course ties in with &lt;a href=&#34;http://blog.technokrat.nl/2015/07/01/building-communities-nodeconf-2015/&#34;&gt;the Building Communities session&lt;/a&gt;. Because building community happens with code that is being used. And if you want people to be able to join easily, one of their first entry points will probably be the README, which has for some projects become the only or the main documentation.&lt;/p&gt;
-
-&lt;p&gt;At the moment the documentation of some projects is exemplary (think: anything &lt;a href=&#34;https://twitter.com/substack&#34; target=&#34;_blank&#34;&gt;@substack&lt;/a&gt; makes). Whereas the documentation of node itself is kind of a mess. The API documentation is varying in quality in different topics, there is no proper way to navigate within the page and structure is &amp;#8220;organic&amp;#8221;.&lt;/p&gt;
-
-&lt;p&gt;The goals of documentation we concluded in the session should always be, to be:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Exhaustive&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Simple&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Helpful&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Connected/Linked (linking to back and forth to other pieces or other blogs).&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;This can be achieved by creating proper articles, for beginners but also for advanced topics. Or at link out to expert articles on other blogs. This should be a seperate set from the API documentation. The API documentation should be structured and be complete. In stead of missing some pieces here and there. An example I really like is the &lt;a href=&#34;https://docs.djangoproject.com/en/1.8/&#34; target=&#34;_blank&#34;&gt;Django documentation&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.flickr.com/photos/matthewbergman/18876975441/in/album-72157654202715069/&#34; target=&#34;_blank&#34;&gt;Cover photo by Matthew Bergman&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>This topic of course ties in with the Building Communities session. Because building community happens with code that is being used. And if you want people to be able to join easily, one of their first entry points will probably be the README, which has for some projects become the only or the main documentation.
+At the moment the documentation of some projects is exemplary (think: anything @substack makes). Whereas the documentation of node itself is kind of a mess.</description>
     </item>
     
     <item>
@@ -134,16 +42,8 @@
       <pubDate>Wed, 01 Jul 2015 07:45:51 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2015/07/01/building-communities-nodeconf-2015/</guid>
-      <description>&lt;p&gt;A lot of the talks were not just about code or &amp;#8220;hardcore&amp;#8221; technical stuff, but also about social things like: building community, writing documentation, creating a safe environment. Which in the software meetups and talks scene has been growing as a topic. To dismay of some, and celebration of others.&lt;/p&gt;
-
-&lt;p&gt;This session started out as a discussion about the node project, &amp;#8220;the Fork&amp;#8221;: io.js and what it says about the community and the culture of node. This meant 3 core contributors telling about where they see the project failed, and what it did right, but also how to progress in the future.&lt;/p&gt;
-
-&lt;p&gt;First of all the io.js/node.js community would like to do better. They would like to be the role model for other projects. Adding stuff like a Code of Conduct instead of just code to a project. Some projects are still outshining in core values like: diversity, inclusivity and lowering the barrier to entry. And some projects are just outright mean. As an example the Johnny-Five (robotics) project was mentioned as a community which is really thriving and is able to maintain those key values, as&lt;/p&gt;
-
-&lt;p&gt;opposed to &amp;#8220;that other robotics&amp;#8221;-project in node.&lt;/p&gt;
-
-&lt;p&gt;A reason for this was giving by one of their maintainers: &amp;#8220;Focus on the right stuff early on&amp;#8221;. And to be frank that is true of any kind of standard you want to have in a project. Do you want a clean code base? Focus on that early on? Do you want a lot of test coverage? Don&amp;#8217;t add it as an afterthought. Do you want anyone from any color, creed and orientation to feel welcome? Don&amp;#8217;t &amp;#8220;add&amp;#8221; that when your code is ready to ship.&lt;/p&gt;
-</description>
+      <description>A lot of the talks were not just about code or “hardcore” technical stuff, but also about social things like: building community, writing documentation, creating a safe environment. Which in the software meetups and talks scene has been growing as a topic. To dismay of some, and celebration of others.
+This session started out as a discussion about the node project, “the Fork”: io.js and what it says about the community and the culture of node.</description>
     </item>
     
     <item>
@@ -152,39 +52,8 @@
       <pubDate>Wed, 01 Jul 2015 07:35:35 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2015/07/01/es6-es7-ecmascript-2015-harmony-what-nodeconf-2015/</guid>
-      <description>
-
-&lt;h3 id=&#34;javascript-gets-a-new-version-what-now:3c3a1f5ebe0864f8b13a5155819bec5d&#34;&gt;JavaScript gets a new version, what now&lt;/h3&gt;
-
-&lt;p&gt;Languages are never done. They evolve over time and are supplemented with new words every month, new phrases every year and acquires (minor) grammar changes every decade. This true for speaking languages as well as for programming languages.&lt;/p&gt;
-
-&lt;p&gt;The past year there has been a lot of talk about EcmaScript 6 (a.k.a. ES Harmony, or lately ES2015, which is the silliest name of all). A set of features that is coming, or has already landed for JavaScript. ES6 is nothing more than a specification of features according to &lt;a href=&#34;https://twitter.com/mikeal&#34; target=&#34;_blank&#34;&gt;Mikeal Rogers&lt;/a&gt;. A specification of features that have been designed, but are not certain to land in the coming years. Some of them are just syntactic sugar (classes,9 , that don&amp;#8217;t add anything new. Some are hurting performance and some are just plain great.&lt;/p&gt;
-
-&lt;p&gt;In the node community there has been some commotion surrounding ES6 because most of the features were suddenly being implemented in a fork of node called &amp;#8220;io.js&amp;#8221;. The temporary fork and squabble that is/has been (depending on when you read this) &lt;a href=&#34;iojs.org&#34;&gt;&amp;#8220;io.js&lt;/a&gt;&amp;#8221; was mainly to move node forward and out of a corporate governance model to a more open model. But you should just &lt;a href=&#34;http://blog.izs.me/post/104685388058/io-js&#34; target=&#34;_blank&#34;&gt;read&lt;/a&gt; &lt;a href=&#34;http://www.wired.com/2014/12/io-js/&#34; target=&#34;_blank&#34;&gt;some&lt;/a&gt; &lt;a href=&#34;http://readwrite.com/2015/02/27/node-js-io-js-reconciliation-near&#34; target=&#34;_blank&#34;&gt;article&lt;/a&gt; &lt;a href=&#34;http://venturebeat.com/2015/05/13/node-project-spinoff-io-js-is-moving-to-the-node-js-foundation-with-a-merge-in-progress/&#34; target=&#34;_blank&#34;&gt;explaining&lt;/a&gt; &lt;a href=&#34;http://www.infoworld.com/article/2855057/application-development/why-iojs-decided-to-fork-nodejs.html&#34; target=&#34;_blank&#34;&gt;that&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;If you want to play around with these features, you either have to wait for some of the features to be implemented (in browsers and node.js alike), or you need a transpiler or polyfill framework, for backwards compatibility or even to run it because no one supports it yet&amp;#8230; Most people are using &lt;a href=&#34;https://babeljs.io/docs/learn-es2015/&#34; target=&#34;_blank&#34;&gt;Babel&lt;/a&gt; which has a very decent set of docs and examples and transpiles your code back to ES5.&lt;/p&gt;
-
-&lt;p&gt;The thing that excites me most is the native promise implementation and the generators.&lt;/p&gt;
-
-&lt;p&gt;Then some people were really enthusiastic about an ES7 proposal for asynchronous functions: &lt;code&gt;async&lt;/code&gt;. If a function is async, you just &amp;#8220;tell&amp;#8221; the VM by doing this (example taken from the &lt;a href=&#34;https://github.com/lukehoban/ecmascript-asyncawait&#34; target=&#34;_blank&#34;&gt;async proposal&lt;/a&gt;):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;syntax javascript&#34;&gt;async function getData() {
-  var items = await fetchAsync(&#39;http://example.com/users&#39;);
-  return await* items.map(async(item) =&amp;gt; {
-    return {
-      title: item.title,
-      img: (await fetchAsync(item.userDataUrl)).img
-    }
-  });
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Take note of the &lt;code&gt;async&lt;/code&gt; and the &lt;code&gt;await&lt;/code&gt; keywords.&lt;/p&gt;
-
-&lt;p&gt;One of the &lt;a href=&#34;https://github.com/DJCordhose/ecmascript-2015-iojs&#34; target=&#34;_blank&#34;&gt;workshops&lt;/a&gt; at nodeconf was also about ES2015. It gives an overview of most features and you can play with the examples.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.flickr.com/photos/matthewbergman/18686339600/in/album-72157654202715069/&#34; target=&#34;_blank&#34;&gt;Cover photo by Matthew Bergman&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>JavaScript gets a new version, what now Languages are never done. They evolve over time and are supplemented with new words every month, new phrases every year and acquires (minor) grammar changes every decade. This true for speaking languages as well as for programming languages.
+The past year there has been a lot of talk about EcmaScript 6 (a.k.a. ES Harmony, or lately ES2015, which is the silliest name of all).</description>
     </item>
     
     <item>
@@ -193,38 +62,7 @@
       <pubDate>Tue, 23 Jun 2015 18:45:44 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2015/06/23/containers-docker-lxc-nodeconf-2015/</guid>
-      <description>
-
-&lt;h3 id=&#34;containers-like-the-ones-you-put-sundries-in:c8d86957e871d24595032033427258dc&#34;&gt;Containers, like the ones you put sundries in?&lt;/h3&gt;
-
-&lt;p&gt;Linux Containers (LXC) have been a hot new topic over the last 2 years. The easiest way to understand a container is to compare it with a Virtual Machine (VM). You can run a VM on your machine and it will pretend to be a computer inside a computer. It will emulate hardware so it can run an Operating System (OS) within your computer. When you start a VM you have to choose how much of your memory and CPU it can take up, and once you start the machine that piece of memory and CPU are designated to the VM (the guest) and lost to your computer (the host).&lt;/p&gt;
-
-&lt;p&gt;When you start a LXC however, you can start a box without it having to emulate machinery, it will create a &amp;#8220;contained&amp;#8221; environment, sharing the stuff that is common (the Linux kernel), and fork out a platform to run your processes and OS (any Linux variant) on. Running that container then, doesn&amp;#8217;t take that much extra memory, because it doesn&amp;#8217;t need to run an entire machine, with hardware and OS. But just the part that is different from the host. This also means bootups of a new container are close to instantaneous.&lt;/p&gt;
-
-&lt;h3 id=&#34;docker:c8d86957e871d24595032033427258dc&#34;&gt;Docker&lt;/h3&gt;
-
-&lt;p&gt;One of the products that was born as a result of this kernel API is: Docker. Docker makes it possible to create a container that you can provision and deploy your app on, and commit those changes to the box. It&amp;#8217;s like git for machines. All the changes to your box can be committed. Once you think your container is ready for deployment you can take the whole image and deploy that on a server. Instead of deploying your code, you now deploy your container.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://blog.technokrat.nl/wp-content/uploads/2015/06/62260701.jpg&#34;&gt;&lt;img src=&#34;http://blog.technokrat.nl/wp-content/uploads/2015/06/62260701-300x200.jpg&#34; alt=&#34;yo dawg&#34; width=&#34;300&#34; height=&#34;200&#34; class=&#34;alignnone size-medium wp-image-641&#34; srcset=&#34;http://blog.technokrat.nl/wp-content/uploads/2015/06/62260701-300x200.jpg 300w, http://blog.technokrat.nl/wp-content/uploads/2015/06/62260701.jpg 500w&#34; sizes=&#34;(max-width: 300px) 100vw, 300px&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;why-would-you-do-that:c8d86957e871d24595032033427258dc&#34;&gt;Why would you do that?&lt;/h3&gt;
-
-&lt;p&gt;Instead of killing a process or restarting a server, you just swap out a container. Deployment can become instant. You test the container on your local box, integration server, staging and production, it will be a matter of switching to an image, instead of deploying the code on there. If it doesn&amp;#8217;t work, you can just go back a commit. Easy as pie.&lt;/p&gt;
-
-&lt;h3 id=&#34;using-vagrant:c8d86957e871d24595032033427258dc&#34;&gt;Using Vagrant?&lt;/h3&gt;
-
-&lt;p&gt;If you&amp;#8217;re using Vagrant you can actually try this already instead of using your VM&amp;#8217;s (read: slow VM&amp;#8217;s). Check this vagrant plugin out: &lt;a href=&#34;https://github.com/fgrehm/vagrant-lxc&#34; target=&#34;_blank&#34;&gt;vagrant lxc&lt;/a&gt;. You can just try it out here. Play around, install all kinds of conflicting versions of software, destroy the box, and enjoy how you didn&amp;#8217;t completely bork your dev environment.&lt;/p&gt;
-
-&lt;p&gt;The people from &lt;a href=&#34;http://modulus.io&#34; target=&#34;_blank&#34;&gt;Modulus&lt;/a&gt; were in the session too, telling how happy they&amp;#8217;ve been with Docker. They were really excited about &lt;a href=&#34;https://github.com/docker/swarm/&#34; target=&#34;_blank&#34;&gt;Docker Swarm&lt;/a&gt;. A proxy API with which you can use the same Docker API you&amp;#8217;re used to, but have it talk to multiple instances in one API call.&lt;/p&gt;
-
-&lt;h3 id=&#34;best-practices-for-docker-containers:c8d86957e871d24595032033427258dc&#34;&gt;Best practices for Docker containers&lt;/h3&gt;
-
-&lt;p&gt;First of all, most people agreed they&amp;#8217;re is not really a &amp;#8220;wrong&amp;#8221; way to do a Dockerfile. When your Docker container becomes more complex it will become bigger though. Just like a git repository, the more commits, the bigger the git tree will become. Because it tracks the changes. A common practice is to compile and build a docker container and copy the compiled version to an empty docker image, to keep it small.&lt;/p&gt;
-
-&lt;p&gt;Other people suggested running a startup script inside the Docker image, instead of having the Dockerfile do all the provisioning.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.flickr.com/photos/matthewbergman/18845642595/in/album-72157654202715069/&#34; target=&#34;_blank&#34;&gt;Cover photo by Matthew Bergman&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>Containers, like the ones you put sundries in? Linux Containers (LXC) have been a hot new topic over the last 2 years. The easiest way to understand a container is to compare it with a Virtual Machine (VM). You can run a VM on your machine and it will pretend to be a computer inside a computer. It will emulate hardware so it can run an Operating System (OS) within your computer.</description>
     </item>
     
     <item>
@@ -233,35 +71,9 @@
       <pubDate>Mon, 22 Jun 2015 14:20:37 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2015/06/22/isomorphic-javascript-and-modular-ui-nodeconf-2015/</guid>
-      <description>&lt;p&gt;N.B. This one of the first sessions held at nodeconf, everybody was still somewhat rusty.&lt;/p&gt;
-
-&lt;p&gt;Isomorphic JavaScript is the practice of using the same JavaScript code on the server and in the browser. In the session we talked about how to best implement this, and what to avoid. The naming is ridiculous, so let&amp;#8217;s just use &lt;a href=&#34;https://medium.com/@mjackson/universal-javascript-4761051b7ae9&#34; target=&#34;_blank&#34;&gt;Universal JavaScript&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;One of the first recommendations were to do static analysis. This goes through your code and finds dead dependencies or function that are never called. By using this you can eliminate redundancy in this way. Some modules that work great for this are &lt;a href=&#34;https://twitter.com/substack&#34; target=&#34;_blank&#34;&gt;@substack&amp;#8217;s&lt;/a&gt; &lt;a href=&#34;https://www.npmjs.com/package/detective&#34; target=&#34;_blank&#34;&gt;detective&lt;/a&gt; or the module tree analysis by &lt;a href=&#34;https://twitter.com/hughsk&#34; target=&#34;_blank&#34;&gt;@hughsk&lt;/a&gt; called &lt;a href=&#34;http://hughsk.io/disc/&#34; target=&#34;_blank&#34;&gt;disk&lt;/a&gt; (looks good too!).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;UPDATE:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Substack actually did a talk on Abstract Syntax Tree&amp;#8217;s (which can be used to do static analysis) at &lt;a href=&#34;https://jquerysf.com&#34; target=&#34;_blank&#34;&gt;jQuerySF&lt;/a&gt;, which goes a bit more into detail on what you can do with AST&amp;#8217;s and how Static Analysis works behind the scenes.&lt;/p&gt;
-
-&lt;p&gt;React got a lot of attention too. A small template rendering engine that let&amp;#8217;s you render the page on the server, and with the same set of libraries render the changes on the front-end. So the page is fully loaded when you first land on the page, in stead of the startup time that&amp;#8217;s required for full-fledged MVC(-likes) such as: AngularJS, Ember and Backbone. React&amp;#8217;s server side rendering here is the one thing that really stands out, together with the speed and the small size of the library. Most people really seem to be fond of this approach (after dealing with the ugliness which is JSX).&lt;/p&gt;
-
-&lt;p&gt;According to substack, we shouldn&amp;#8217;t use big shims, we shouldn&amp;#8217;t use frameworks. Because it will break stuff, or come back to haunt you. Especially if you&amp;#8217;re trying to run Universal JS. We should create small modules that uses CommonJS&amp;#8217; &lt;code&gt;module.exports&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;This kind of moved on to the discussion of Modular UI which was another topic. The gist of this session was to make modules that expose css and assets through inline css or conditional building. A well known implementation doing UI in this way is the &lt;a href=&#34;https://www.polymer-project.org/1.0/docs/devguide/feature-overview.html&#34; target=&#34;_blank&#34;&gt;Polymer Project&lt;/a&gt;. Every component is a module that doesn&amp;#8217;t have to be a part of the rest of the project. To include a small piece, you just: &lt;code&gt;npm install --save my-special-module&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;See &lt;a href=&#34;https://twitter.com/davidguttman&#34; target=&#34;_blank&#34;&gt;David Guttman&amp;#8217;s&lt;/a&gt; &lt;a href=&#34;https://github.com/davidguttman/cssify&#34; target=&#34;_blank&#34;&gt;cssify&lt;/a&gt; for a way to include the required css files with browserify.&lt;/p&gt;
-
-&lt;p&gt;The rest of my notes say:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Distribution.&lt;/li&gt;
-&lt;li&gt;UMD.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;So if anyone feels like filling me on on what this meant, that would be grand. &lt;img src=&#34;http://blog.technokrat.nl/wp-includes/images/smilies/simple-smile.png&#34; alt=&#34;:)&#34; class=&#34;wp-smiley&#34; style=&#34;height: 1em; max-height: 1em;&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.flickr.com/photos/matthewbergman/18687844349/in/album-72157654202715069/&#34; target=&#34;_blank&#34;&gt;Cover photo by Matthew Bergman&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>N.B. This one of the first sessions held at nodeconf, everybody was still somewhat rusty.
+Isomorphic JavaScript is the practice of using the same JavaScript code on the server and in the browser. In the session we talked about how to best implement this, and what to avoid. The naming is ridiculous, so let’s just use Universal JavaScript.
+One of the first recommendations were to do static analysis. This goes through your code and finds dead dependencies or function that are never called.</description>
     </item>
     
     <item>
@@ -270,18 +82,9 @@
       <pubDate>Tue, 19 May 2015 15:35:39 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2015/05/19/fbx-and-3d-models-in-monogame-on-linux/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;TL;DR the monogame community is pretty great&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Lately my manic ambitious mode has turned on again for me. So I have about 100s of ideas again, which sadly of course will all come to nothing. But while I&amp;#8217;m at it, I thought I&amp;#8217;d make the best of it to do some tutorials here and there and learn some stuff I know nothing about.&lt;/p&gt;
-
-&lt;p&gt;Starting with Monogame on Linux is kind of a hassle to start with, but if you push through it works. At the time of writing this I got Monogame 3.4 to work: &lt;a href=&#34;http://www.monogame.net/downloads/&#34; target=&#34;_blank&#34;&gt;Monogame Downloads Page&lt;/a&gt;. If you&amp;#8217;re not very comfortable with&lt;/p&gt;
-
-&lt;p&gt;The real problem was that a tutorial I tried to follow had an old style FBX file that the Monogame Content Pipeline was not willing to load. Everyone told me to use &lt;a href=&#34;http://www.blender.org/download/&#34; target=&#34;_blank&#34;&gt;Blender&lt;/a&gt; to convert it. But.. Blender wasn&amp;#8217;t loading my file, because it was ASCII based. So I had to find a converter. I found the Autodesk one for Linux somewhere in the attic of the internet. I&amp;#8217;ll host it &lt;a href=&#34;http://meuk.technokrat.nl/fbx_converter&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; so I know for sure it won&amp;#8217;t go missing. So install that thing, and convert it (if necessary import and export in Blender too, just to make sure). Your Content Pipeline will thank you.&lt;/p&gt;
-
-&lt;p&gt;P.S. you can find some great free models here: &lt;a href=&#34;http://tf3dm.com/&#34; target=&#34;_blank&#34;&gt;&lt;a href=&#34;http://tf3dm.com/&#34;&gt;http://tf3dm.com/&lt;/a&gt;&lt;/a&gt;. &lt;a href=&#34;http://tf3dm.com/3d-model/puo-67895.html&#34; target=&#34;_blank&#34;&gt;The featured image is a model made by 3dgenerator: &lt;a href=&#34;http://tf3dm.com/3d-model/puo-67895.html&#34;&gt;http://tf3dm.com/3d-model/puo-67895.html&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>TL;DR the monogame community is pretty great
+Lately my manic ambitious mode has turned on again for me. So I have about 100s of ideas again, which sadly of course will all come to nothing. But while I’m at it, I thought I’d make the best of it to do some tutorials here and there and learn some stuff I know nothing about.
+Starting with Monogame on Linux is kind of a hassle to start with, but if you push through it works.</description>
     </item>
     
     <item>
@@ -290,50 +93,9 @@
       <pubDate>Mon, 15 Sep 2014 11:53:39 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2014/09/15/mad-science-act-part-1-nodeconf-eu/</guid>
-      <description>&lt;p&gt;The Mad Science Act, was something completely different. It featured many topics and some of the most creative and prolific npmjs.org authors. It was a bit mad, so I&amp;#8217;ll try to make it as coherent as I understood it. I have split up the post in 2 parts. It would be too much put into one.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Professor &lt;a title=&#34;substack&#34; href=&#34;https://twitter.com/substack&#34; target=&#34;_blank&#34;&gt;Substack&lt;/a&gt; &amp;#8211; Mad Science intro.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;When you start out creating (npm) modules you realize there is a great shortage of modules. And you need to create much more. A lot of tools are already readily available and they one thing and try to do it right. The tools are small concise and are encapsulated, they seperate concern and are in that sense: &amp;#8216;orthogonal&amp;#8217;.&lt;/p&gt;
-
-&lt;div style=&#34;width: 1450px&#34; class=&#34;wp-caption alignnone&#34;&gt;
-  &lt;a href=&#34;https://github.com/substack/nodeconf.eu-2014&#34;&gt;&lt;img class=&#34;&#34; src=&#34;https://raw.githubusercontent.com/substack/nodeconf.eu-2014/master/images/060_orthogonal.png&#34; alt=&#34;&#34; width=&#34;1440&#34; height=&#34;1080&#34; /&gt;&lt;/a&gt;
-  
-  &lt;p class=&#34;wp-caption-text&#34;&gt;
-    orthogonal &amp;#8211; substack
-  &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Still with all the tools that are readily available, they don&amp;#8217;t cover all use cases. Besides focusing on test coverage, we should take into account solving more and more use cases. So go dumpster diving for stuff that can output other stuff by multiplexing data streams. For example with &lt;a title=&#34;dataplex&#34; href=&#34;https://github.com/substack/dataplex&#34; target=&#34;_blank&#34;&gt;dataplex&lt;/a&gt;. It helps you to capture and organize multiple streams over a single stream. Conveying it over e.g. tcp or web socket connections.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;this is where it all went fuzzy&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Then Substack did some live code demo&amp;#8217;s, to create a quick webserver, continuous integration server etc. with some readily available tools and piping the data to dataplex. There is a pretty good example on the &lt;a title=&#34;dataplex&#34; href=&#34;https://github.com/substack/dataplex&#34; target=&#34;_blank&#34;&gt;&amp;#8216;dataplex&amp;#8217; github page&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a title=&#34;feross&#34; href=&#34;https://twitter.com/feross&#34; target=&#34;_blank&#34;&gt;Feross&lt;/a&gt; &amp;#8211; webtorrent&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;This talk portrayed a powerful implementation of webrtc. Using WebRTC as an alternative skype, &lt;a title=&#34;hello chrome it&#39;s firefox calling&#34; href=&#34;https://hacks.mozilla.org/2013/02/hello-chrome-its-firefox-calling/&#34; target=&#34;_blank&#34;&gt;is something we&amp;#8217;ve seen before&lt;/a&gt;. And it&amp;#8217;s great, but there is also the &lt;a title=&#34;datachannels on html5rocks&#34; href=&#34;http://www.html5rocks.com/en/tutorials/webrtc/datachannels/&#34; target=&#34;_blank&#34;&gt;DataChannel&lt;/a&gt;. An api that delivers a peer-to-peer data connection &lt;a title=&#34;webrtc infrastructure&#34; href=&#34;http://www.html5rocks.com/en/tutorials/webrtc/infrastructure/&#34; target=&#34;_blank&#34;&gt;&amp;#8216;without a server&amp;#8217;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;A peer-to-peer data connection of course sounds but a step away from things like the beautiful BitTorrent protocol. In comes &lt;a title=&#34;webtorrent&#34; href=&#34;https://github.com/feross/webtorrent&#34; target=&#34;_blank&#34;&gt;webtorrent&lt;/a&gt;. A tool created to use the bittorrent protocol for decompartmentalizing files with a verification hash, and start sharing these small parts of a file, so once a person has that small bit, it can already share that part. Only the catch is that it can do this over the web. The webtorrent client runs in any webRTC (datachannel) compatible browser. For now that means Firefox and Chrome.&lt;/p&gt;
-
-&lt;p&gt;An example of this can be found on &lt;a title=&#34;instant.io&#34; href=&#34;http://instant.io/&#34; target=&#34;_blank&#34;&gt;instant.io&lt;/a&gt; (send me a message if you want to try it ☺ &lt;a title=&#34;@fritzvd&#34; href=&#34;https://twitter.com/fritzvd&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;Because bittorrent works over TCP/UDP webtorrent and bittorrent can&amp;#8217;t connect (yet) directly. But they need hybrid clients in between. So Feross is working on a command line webtorrent client, that functions as a &amp;#8216;hybrid&amp;#8217; client.&lt;/p&gt;
-
-&lt;p&gt;The awesomerestest was a live demo of a &lt;a title=&#34;webrtc-whiteboard&#34; href=&#34;https://github.com/feross/webrtc-whiteboard&#34; target=&#34;_blank&#34;&gt;webrtc-whiteboard&lt;/a&gt; which can also be &lt;a title=&#34;whiteboard&#34; href=&#34;http://instant.io:8080/&#34; target=&#34;_blank&#34;&gt;tested live&lt;/a&gt;. It&amp;#8217;s still very PoC-y though. But it was great to see it working these small bits and pieces that make up webtorrent and seeing it being used by people in the audience as well, for sharing cat video&amp;#8217;s and images:&lt;/p&gt;
-
-&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;
-  &lt;p&gt;
-    &lt;a href=&#34;https://twitter.com/feross&#34;&gt;@feross&lt;/a&gt; doing webrtc mad science &lt;a href=&#34;https://twitter.com/hashtag/nodeconfeu?src=hash&#34;&gt;#nodeconfeu&lt;/a&gt; &lt;a href=&#34;http://t.co/Kxf1BL4qd9&#34;&gt;pic.twitter.com/Kxf1BL4qd9&lt;/a&gt;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    — Magnus (@ralphtheninja) &lt;a href=&#34;https://twitter.com/ralphtheninja/status/509649443097169920&#34;&gt;September 10, 2014&lt;/a&gt;
-  &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Go over and help Feross. His project is now &lt;a title=&#34;OPEN Open Source&#34; href=&#34;http://blog.technokrat.nl/2014/09/15/open-open-source/&#34; target=&#34;_blank&#34;&gt;&amp;#8220;open open source&amp;#8221;.&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>The Mad Science Act, was something completely different. It featured many topics and some of the most creative and prolific npmjs.org authors. It was a bit mad, so I’ll try to make it as coherent as I understood it. I have split up the post in 2 parts. It would be too much put into one.
+Professor Substack – Mad Science intro.
+When you start out creating (npm) modules you realize there is a great shortage of modules.</description>
     </item>
     
     <item>
@@ -342,36 +104,13 @@
       <pubDate>Mon, 15 Sep 2014 11:37:34 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2014/09/15/open-open-source/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;What?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Individuals making significant and valuable contributions are given commit-access to the project to contribute as they see fit. This project is more like an open wiki than a standard guarded open source project.&lt;/p&gt;
-
-&lt;p&gt;Rules&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;There are a few basic ground-rules for contributors:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;No &amp;#8211;force pushes or modifying the Git history in any way.&lt;/p&gt;
-
-&lt;p&gt;Non-master branches ought to be used for ongoing work.&lt;/p&gt;
-
-&lt;p&gt;External API changes and significant modifications ought to be subject to an internal pull-request to solicit feedback from other contributors.&lt;/p&gt;
-
-&lt;p&gt;Internal pull-requests to solicit feedback are encouraged for any other non-trivial contribution but left to the discretion of the contributor.&lt;/p&gt;
-
-&lt;p&gt;Contributors should attempt to adhere to the prevailing code-style.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Releases&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Declaring formal releases remains the prerogative of the project maintainer.&lt;/p&gt;
-
-&lt;p&gt;Changes to this arrangement&lt;/p&gt;
-
-&lt;p&gt;This is an experiment and feedback is welcome! This document may also be subject to pull requests or changes by contributors where you believe you have something valuable to add or change.&lt;/p&gt;
-
-&lt;p&gt;Thanks to Rod Vagg and the LevelUP project for coming up with the idea of &amp;#8220;OPEN Open Source&amp;#8221;!&lt;/p&gt;
-
-&lt;p&gt;(taken from &lt;a href=&#34;https://github.com/rvagg/node-levelup/blob/master/CONTRIBUTING.md&#34; title=&#34;webtorrent contributing&#34; target=&#34;_blank&#34;&gt;node-levelup&lt;/a&gt;&amp;#8216;s contributing page)&lt;/p&gt;
-</description>
+      <description>What?
+Individuals making significant and valuable contributions are given commit-access to the project to contribute as they see fit. This project is more like an open wiki than a standard guarded open source project.
+Rules
+There are a few basic ground-rules for contributors:
+No –force pushes or modifying the Git history in any way.
+Non-master branches ought to be used for ongoing work.
+External API changes and significant modifications ought to be subject to an internal pull-request to solicit feedback from other contributors.</description>
     </item>
     
     <item>
@@ -380,34 +119,9 @@
       <pubDate>Mon, 15 Sep 2014 09:14:33 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2014/09/15/hardware-track-nodeconf-eu/</guid>
-      <description>&lt;p&gt;The hardware track featured talks on hardware that were not just about hardware, but also served as a metaphor. The most poignant of these was Colin Vernon&amp;#8217;s on the cloudbit.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Colin Vernon &amp;#8211; Cloudbit&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;As an engineer we really like building stuff and figuring out difficult problems. And for us working with the tools we make is easy. But we should see our tools as a material. A material with which we can build stuff, which we can use like lego-blocks.&lt;/p&gt;
-
-&lt;p&gt;In that vain &lt;a href=&#34;http://littlebits.cc/&#34; title=&#34;littlebits&#34; target=&#34;_blank&#34;&gt;littlebits&lt;/a&gt; have created hardware modules that click into eachother and are interchangeable. With the newest bit: the cloudbit you can run and build a quick node app. With this you can control your &amp;#8216;bits&amp;#8217; or read out its data.&lt;/p&gt;
-
-&lt;p&gt;Software in that sense can be like hardware. Where in stead of creating applications (monolithic or not) that don&amp;#8217;t connect to each other, let&amp;#8217;s make small building blocks. Littlebits is lowering the barrier to entry for hardware. With the cloudbit they are not lowering the bar again for connectivity. With a ready made app that can read out sensors on your iPhone. So why not lower the barrier to entry to connecting software bits. In a way this is what &lt;a href=&#34;https://ifttt.com/&#34; title=&#34;ifttt&#34; target=&#34;_blank&#34;&gt;IFTTT.com (If This Then That)&lt;/a&gt; did.&lt;/p&gt;
-
-&lt;p&gt;Let&amp;#8217;s stop solving the same problems over and over again, and let&amp;#8217;s start creating blocks that lock and in out of each other similar to the littlebits hardware.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Raquel Velez&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Nodebots are fairly simple and cheap to make, and are fun. Hardware can be hooked up and you can run node to get things working.&lt;/p&gt;
-
-&lt;p&gt;A few libraries that would be useful for this:&lt;/p&gt;
-
-&lt;p&gt;johnny-five.&lt;/p&gt;
-
-&lt;p&gt;Raquel demoed a little bot that could draw (either randomly or controlled by a small webinterface). Sadly it died a horrid death at demo time. Here&amp;#8217;s the video to prove it actually worked at one point:&lt;/p&gt;
-
-&lt;p&gt;Bots like this might seem insignificant, but Raquel ended saying that in the end the Mars Rovers are also basically bots which do similar stuff as the nodebot project makes possible.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Hardware workshop&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;In the afternoon we played around with the littlebits sets and &lt;a href=&#34;https://tessel.io/&#34; title=&#34;tessel.io&#34; target=&#34;_blank&#34;&gt;Tessels&lt;/a&gt; (microcontroller that runs javascript). Which basically meant everyone went hay-wire on the &lt;a href=&#34;http://littlebits.cc/kits/synth-kit&#34; title=&#34;synth-kit&#34; target=&#34;_blank&#34;&gt;Korg set of littlebits&lt;/a&gt;:&lt;/p&gt;
-</description>
+      <description>The hardware track featured talks on hardware that were not just about hardware, but also served as a metaphor. The most poignant of these was Colin Vernon’s on the cloudbit.
+Colin Vernon – Cloudbit
+As an engineer we really like building stuff and figuring out difficult problems. And for us working with the tools we make is easy. But we should see our tools as a material. A material with which we can build stuff, which we can use like lego-blocks.</description>
     </item>
     
     <item>
@@ -416,52 +130,9 @@
       <pubDate>Sat, 13 Sep 2014 11:11:52 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2014/09/13/front-end-track-at-nodeconf-eu/</guid>
-      <description>&lt;p&gt;The frontend track featured some very different talks , ranging from performance to a/b testing. In that sense it was a bit different from the &lt;a href=&#34;http://blog.technokrat.nl/2014/09/12/microservices-track-summary-nodeconfeu/&#34; title=&#34;Microservices Track summary #nodeconfeu&#34; target=&#34;_blank&#34;&gt;microservices track&lt;/a&gt;, because it was less of a &amp;#8216;one story&amp;#8217; thing.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Scaling A/B testing at Netflix &amp;#8211; &lt;a href=&#34;https://twitter.com/stinkydofu&#34; title=&#34;@stinkydofu&#34; target=&#34;_blank&#34;&gt;Alex Liu&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Netflix takes a/b testing to the next level, where they break up the UI in little pieces and run a/b tests on all of them at once. One user can be in several a/b tests at one point in time. They do hundreds of these tests a year, which means they have to deliver 2.5 million unique packages a week (!!!!!!!). This in itself is astounding.&lt;/p&gt;
-
-&lt;p&gt;The problem with these packages is conditional packages. So for example search is updated and needs some old dependencies and some old dependencies (see slide below).&lt;/p&gt;
-
-&lt;p&gt;To build this to scale you don&amp;#8217;t want to have someone picking the correct packages by hand. For that they wrote a node module that looks at the docstring of a function/file. Which can have a ruleset explaining when it should or should not be included. In the build process the packages are selected that should be part of it and which should not. With every request to the node server that runs the assets, the registry is consulted, the rules are applied and packaged and cached and served from a CDN for the next person in the same a/b test group.&lt;/p&gt;
-
-&lt;p&gt;Fail fast, move faster (to improve that is, your goal should not be to fail).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Fullstack through microservices &amp;#8211; &lt;a href=&#34;https://twitter.com/matteocollina&#34; title=&#34;@matteocollina&#34; target=&#34;_blank&#34;&gt;Matteo Collina&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Matteo talked about using data channels and RPC&amp;#8217;s (remote procedure calls) from the back end to the frontend. Using data streams in stead of request/response patterns. In stead of returning a delimited block of data you can return a channel. This makes it possible to receive and unpack or send and connect binary data directly to or from the frontend. Anything that is serializable to JSON, Node.js binary streams or even other channels can all be sent through this mechanism.&lt;/p&gt;
-
-&lt;p&gt;So to have a framework of these types of microservices they created Graft.&lt;/p&gt;
-
-&lt;p&gt;_Update: oh and he used this really cool cheap sensor to do his talk: &lt;a href=&#34;https://estore.ti.com/CC2541DK-SENSOR-CC2541-SensorTag-Development-Kit-P3192.aspx&#34; title=&#34;SensorTag&#34; target=&#34;_blank&#34;&gt;SensorTag&lt;/a&gt;_&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Building high quality services at Uber &amp;#8211; &lt;a href=&#34;https://twitter.com/raynos&#34; title=&#34;@raynos&#34; target=&#34;_blank&#34;&gt;Jake Verbaten&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Raynos started with a funny story where his first day was to build a proxy service. Oh and it will be deployed to about 50 machines. Oh and they can&amp;#8217;t go down ever.&lt;/p&gt;
-
-&lt;p&gt;Of course when you make something, you have to go over it again to &amp;#8220;productionize&amp;#8221; it. In order to do this, he showed some tools they use at Uber to get this going.&lt;/p&gt;
-
-&lt;p&gt;The one that stood out the most was &lt;em&gt;potter&lt;/em&gt; (which they&amp;#8217;re still &amp;#8220;open-sourcifying&amp;#8221;). It basically sets up a skeleton (or scaffolds) for your project, starts a github repo, and registers it at your CI server (i.e. travis, jenkins, wha-evah), starts logging to sentry and graphite.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Demystifying v8 and javascript performance &amp;#8211; &lt;a href=&#34;https://twitter.com/thlorenz&#34; title=&#34;@thlorenz&#34; target=&#34;_blank&#34;&gt;Thorsten Lorentz&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The engine which is used for node.js is the same one as is used for Chrome/Chromium project: V8. Therefore similar problems that arise with node will also occur in the browser. Which means that performancewise you can apply the same principles.&lt;/p&gt;
-
-&lt;p&gt;This is the talk that had me looking up lots of things in the end, so it at least was great food for thought.&lt;/p&gt;
-
-&lt;p&gt;One of the easiest performance gains you can easily apply is to be clear about your intentions to the browser/v8 engine. Meaning you don&amp;#8217;t start by declaring an empty list if you are then going to fill it up with a number of different types. Usually you should stay away from different types in one array altogether, but performance will severely drop if you are not being upfront to the interpreter.&lt;/p&gt;
-
-&lt;p&gt;Example:&lt;/p&gt;
-
-&lt;p&gt;He also went into great detail about how you don&amp;#8217;t want to keep on changing an Object structure after construction, because at one point v8 will give up and fall-back to the unoptimizable slow HashTable structure. But rather than I try to reproduce this look at this blog post: &lt;a href=&#34;http://jayconrod.com/posts/52/a-tour-of-v8-object-representation&#34; title=&#34;a-tour-of-v8-object-representation&#34; target=&#34;_blank&#34;&gt;A tour of v8 object representation&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://thlorenz.github.io/talks/demystifying-v8/talk.pdf&#34; title=&#34;slides&#34; target=&#34;_blank&#34;&gt;and the slides themselves&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Final thoughts&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/davidmarkclem&#34; title=&#34;@davidmarkclem&#34; target=&#34;_blank&#34;&gt;David Clements&lt;/a&gt; did a workshop on working with streams and data from front end to the backend (and vice versa) which covered lots of ground similar to what Matteo squeezed into 20 min. Check it out here: &lt;a href=&#34;https://www.dropbox.com/sh/9ra61cq9qgpxyx0/AACXumrkWesFs7jrhI4uUEula/slides.pdf?dl=0&#34; title=&#34;back to the frontend&#34; target=&#34;_blank&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>The frontend track featured some very different talks , ranging from performance to a/b testing. In that sense it was a bit different from the microservices track, because it was less of a ‘one story’ thing.
+Scaling A/B testing at Netflix – Alex Liu
+Netflix takes a/b testing to the next level, where they break up the UI in little pieces and run a/b tests on all of them at once.</description>
     </item>
     
     <item>
@@ -470,38 +141,8 @@
       <pubDate>Fri, 12 Sep 2014 11:17:59 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2014/09/12/microservices-track-summary-nodeconfeu/</guid>
-      <description>&lt;p&gt;The microservices track came down to most speakers saying things more or less in similar vain, each talk having its own emphasis. &lt;a href=&#34;https://twitter.com/rjrodger&#34; title=&#34;rjrodger&#34; target=&#34;_blank&#34;&gt;Richard Rodger&lt;/a&gt; opened up and basically laid the groundwork for the microservices bit together with the &lt;a href=&#34;https://twitter.com/fgeorge52&#34; title=&#34;fgeorge52&#34; target=&#34;_blank&#34;&gt;Fred George&lt;/a&gt; talk.&lt;/p&gt;
-
-&lt;p&gt;After hearing the talks I&amp;#8217;d define microservices as small blocks that can run independently and do one thing, along the Unix philosophy. Making building blocks in stead of one big application that does everything. Now instead of including this one small thing in the rest of your app, you run this as a single thing which returns results based on messaging.&lt;/p&gt;
-
-&lt;p&gt;Your services will be fairly stupid as in that they will not know about the other services. So in order to communicate with each other you have the services talk to a message bus.&lt;/p&gt;
-
-&lt;p&gt;What this enables is having:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;a naturally scalable application&lt;/li&gt;
-&lt;li&gt;naturally scalable teams (as you don&amp;#8217;t need to know about the whole system)&lt;/li&gt;
-&lt;li&gt;polyglot applications without it becoming a problem&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The nice thing about developing an application as a combination of microservices is it enables seperate small deployments. Versions of software can be bumped seperately and released seperately without the whole server having to suffer.&lt;/p&gt;
-
-&lt;p&gt;Now the implementation and how different microservices work together differs amongst the various speakers.&lt;/p&gt;
-
-&lt;p&gt;And of course different problems arise you now have lots of apps and servers to maintain, and you have to present this whole bunch of services as one application which feels like a wholistic thing to the user. According to &lt;a href=&#34;https://twitter.com/dglozic&#34; title=&#34;dglozic&#34; target=&#34;_blank&#34;&gt;Dejan Glozic&lt;/a&gt; this could be solved with what he called: local clustering. &lt;a href=&#34;https://twitter.com/clifcunn&#34; title=&#34;clifcunn&#34; target=&#34;_blank&#34;&gt;Clifton Cunningham&lt;/a&gt; put forward a few solutions for this: client side assembly, front end server, server side includes or edge side include. Or of course: build it yourself → &lt;a href=&#34;https://www.npmjs.org/package/compoxure&#34; title=&#34;compoxure&#34; target=&#34;_blank&#34;&gt;Compoxure&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;In this scenario every service hosts and returns it&amp;#8217;s own rendered html (or json if you request that format). If a service dies, the cache will run the last known good html or the html renders a default.&lt;/p&gt;
-
-&lt;p&gt;For the static files part it&amp;#8217;s similar. Every service knows which static files it needs and rakes them together with a tool called: &lt;a href=&#34;https://www.npmjs.org/package/bosco&#34; title=&#34;bosco&#34; target=&#34;_blank&#34;&gt;Bosco&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The company Richard Rodger co-founded nearForm built a solution for the local clustering problem in their microservices framework &lt;a href=&#34;https://www.npmjs.org/package/seneca&#34; title=&#34;seneca&#34; target=&#34;_blank&#34;&gt;Seneca&lt;/a&gt;, their objective is best explained in the project website.&lt;/p&gt;
-
-&lt;p&gt;Programming anarchist Fred George threw his own version in the mix, where he said all services receive all messages all the time. You can then categorize the message in his metaphor of Rapids, Rivers and Ponds. The rapids are the streams with all the messages. The rivers the themed events and the ponds things like state/history.&lt;/p&gt;
-
-&lt;p&gt;A service should be so seperate, you should even have all the microservices have their own persistence layer. If a service has 2 jobs, make 2 services out of it.&lt;/p&gt;
-
-&lt;p&gt;Microservices FTW.&lt;/p&gt;
-</description>
+      <description>The microservices track came down to most speakers saying things more or less in similar vain, each talk having its own emphasis. Richard Rodger opened up and basically laid the groundwork for the microservices bit together with the Fred George talk.
+After hearing the talks I’d define microservices as small blocks that can run independently and do one thing, along the Unix philosophy. Making building blocks in stead of one big application that does everything.</description>
     </item>
     
     <item>
@@ -510,31 +151,12 @@
       <pubDate>Sat, 08 Mar 2014 15:09:25 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2014/03/08/procedural-death-jam-7-day-rogue-like-cyberpunk-game-jamathon/</guid>
-      <description>&lt;p&gt;Ok. It&amp;#8217;s official as of 16.04 (CET) I have entered in all of the above mentioned GameJams. This is where I will track my development.&lt;/p&gt;
-
-&lt;p&gt;The project can be found at: &lt;a href=&#34;https://github.com/fritzvd/abime&#34; title=&#34;abime&#34;&gt;https://github.com/fritzvd/abime&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;It. Is. On!&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Note to self: Neko target in Haxe does not handle placement of BitmapData well. Been spending an hour to get it to work. Other target was instant.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong Update 2: &lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;This was a very bad week to be working on something like this. Next time I&amp;#8217;ll clear my schedule. This was doomed to fail from the beginning. Lessons learned include:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;got familiar with Löve2D&lt;/li&gt;
-&lt;li&gt;got more familiar with HaxePunk&lt;/li&gt;
-&lt;li&gt;learned about ray casting&lt;/li&gt;
-&lt;li&gt;made some math mistakes&lt;/li&gt;
-&lt;li&gt;learned to free my schedule&lt;/li&gt;
-&lt;li&gt;deal with failure&lt;/li&gt;
-&lt;li&gt;great communities that make awesome games&lt;/li&gt;
-&lt;li&gt;lower the bar&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>Ok. It’s official as of 16.04 (CET) I have entered in all of the above mentioned GameJams. This is where I will track my development.
+The project can be found at: https://github.com/fritzvd/abime
+It. Is. On!
+Update:
+Note to self: Neko target in Haxe does not handle placement of BitmapData well. Been spending an hour to get it to work. Other target was instant.
+&amp;lt;strong Update 2: This was a very bad week to be working on something like this.</description>
     </item>
     
     <item>
@@ -543,202 +165,576 @@
       <pubDate>Tue, 04 Mar 2014 14:34:54 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2014/03/04/particle-emitter-in-haxepunk/</guid>
-      <description>&lt;p&gt;For some this will be a trivial example. For me this took a bit longer than I suspected.&lt;/p&gt;
-
-&lt;p&gt;This small example will produce this:&lt;/p&gt;
-
-&lt;p&gt;If you&amp;#8217;re planning on making an awesome game you probably want a particle emitter. because.. well look at it.&lt;/p&gt;
-
-&lt;p&gt;What I did is I started a haxepunk project:&lt;/p&gt;
-
-&lt;p&gt;`For some this will be a trivial example. For me this took a bit longer than I suspected.&lt;/p&gt;
-
-&lt;p&gt;This small example will produce this:&lt;/p&gt;
-
-&lt;p&gt;If you&amp;#8217;re planning on making an awesome game you probably want a particle emitter. because.. well look at it.&lt;/p&gt;
-
-&lt;p&gt;What I did is I started a haxepunk project:&lt;/p&gt;
-
-&lt;p&gt;`&lt;/p&gt;
-
-&lt;p&gt;And added a file: &lt;a href=&#34;https://github.com/fritzvd/haxepunk-emitter-example/blob/master/src/Explosion.hx&#34; title=&#34;Explosion.hx&#34; target=&#34;_blank&#34;&gt;Explosion.hx&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The Emitter is also a type of Entity, and also needs a graphic. It looks like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;syntax actionscript&#34;&gt;import com.haxepunk.graphics.Emitter;
-import com.haxepunk.utils.Ease;
-import com.haxepunk.Entity;
-
-class Explosion extends Entity
-{
-    private var _emitter:Emitter;
-
-    public function new()
-    {
-        super(x, y);
-        _emitter = new Emitter(&#34;graphics/particle.png&#34;, 4, 4);
-        _emitter.newType(&#34;explode&#34;, [0]);
-        _emitter.setMotion(&#34;explode&#34;,       // name
-                    0,              // angle
-                    100,            // distance
-                    2,              // duration
-                    360,            // ? angle range
-                    -40,            // ? distance range
-                    1,              // ? Duration range
-                    Ease.quadOut    // ? Easing 
-                    );
-        _emitter.setAlpha(&#34;explode&#34;, 20, 0.1);
-        _emitter.setGravity(&#34;explode&#34;, 5, 1);
-        graphic = _emitter;
-        layer = -1;
-    }
-
-    public function explode(x:Float, y:Float)
-    {
-        for (i in 0...20)
-        {
-            _emitter.emit(&#34;explode&#34;, x, y);
-        }
-    }
-
-
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then you can add the Emitter to your current scene like in my &lt;a href=&#34;https://github.com/fritzvd/haxepunk-emitter-example/blob/master/src/MainScene.hx&#34; title=&#34;MainScene.hx&#34; target=&#34;_blank&#34;&gt;MainScene.hx&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;It looks like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;syntax actionscript&#34;&gt;import com.haxepunk.Scene;
-import Explosion;
-
-class MainScene extends Scene
-{
-    private var explosion:Explosion;
-
-    public override function begin()
-    {
-        explosion = new Explosion();
-        add(explosion);
-    }
-
-    public override function update()
-    {
-        super.update();
-        explosion.explode(230, 240);
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now run&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;lime test neko&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;And you should see something similar to the emitter above.&lt;/p&gt;
-
-&lt;p&gt;You can checkout my &lt;a href=&#34;https://github.com/fritzvd/haxepunk-emitter-example&#34; title=&#34;haxepunk-emitter-example&#34; target=&#34;_blank&#34;&gt;repo&lt;/a&gt; and run it to play around with it.&lt;/p&gt;
-
-&lt;p&gt;I ran into this error below. It meant my sprite was too small. It took me a long time to realize that.&lt;/p&gt;
-
-&lt;p&gt;``For some this will be a trivial example. For me this took a bit longer than I suspected.&lt;/p&gt;
-
-&lt;p&gt;This small example will produce this:&lt;/p&gt;
-
-&lt;p&gt;If you&amp;#8217;re planning on making an awesome game you probably want a particle emitter. because.. well look at it.&lt;/p&gt;
-
-&lt;p&gt;What I did is I started a haxepunk project:&lt;/p&gt;
-
-&lt;p&gt;`For some this will be a trivial example. For me this took a bit longer than I suspected.&lt;/p&gt;
-
-&lt;p&gt;This small example will produce this:&lt;/p&gt;
-
-&lt;p&gt;If you&amp;#8217;re planning on making an awesome game you probably want a particle emitter. because.. well look at it.&lt;/p&gt;
-
-&lt;p&gt;What I did is I started a haxepunk project:&lt;/p&gt;
-
-&lt;p&gt;`&lt;/p&gt;
-
-&lt;p&gt;And added a file: &lt;a href=&#34;https://github.com/fritzvd/haxepunk-emitter-example/blob/master/src/Explosion.hx&#34; title=&#34;Explosion.hx&#34; target=&#34;_blank&#34;&gt;Explosion.hx&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The Emitter is also a type of Entity, and also needs a graphic. It looks like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;syntax actionscript&#34;&gt;import com.haxepunk.graphics.Emitter;
-import com.haxepunk.utils.Ease;
-import com.haxepunk.Entity;
-
-class Explosion extends Entity
-{
-    private var _emitter:Emitter;
-
-    public function new()
-    {
-        super(x, y);
-        _emitter = new Emitter(&#34;graphics/particle.png&#34;, 4, 4);
-        _emitter.newType(&#34;explode&#34;, [0]);
-        _emitter.setMotion(&#34;explode&#34;,       // name
-                    0,              // angle
-                    100,            // distance
-                    2,              // duration
-                    360,            // ? angle range
-                    -40,            // ? distance range
-                    1,              // ? Duration range
-                    Ease.quadOut    // ? Easing 
-                    );
-        _emitter.setAlpha(&#34;explode&#34;, 20, 0.1);
-        _emitter.setGravity(&#34;explode&#34;, 5, 1);
-        graphic = _emitter;
-        layer = -1;
-    }
-
-    public function explode(x:Float, y:Float)
-    {
-        for (i in 0...20)
-        {
-            _emitter.emit(&#34;explode&#34;, x, y);
-        }
-    }
-
-
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then you can add the Emitter to your current scene like in my &lt;a href=&#34;https://github.com/fritzvd/haxepunk-emitter-example/blob/master/src/MainScene.hx&#34; title=&#34;MainScene.hx&#34; target=&#34;_blank&#34;&gt;MainScene.hx&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;It looks like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;syntax actionscript&#34;&gt;import com.haxepunk.Scene;
-import Explosion;
-
-class MainScene extends Scene
-{
-    private var explosion:Explosion;
-
-    public override function begin()
-    {
-        explosion = new Explosion();
-        add(explosion);
-    }
-
-    public override function update()
-    {
-        super.update();
-        explosion.explode(230, 240);
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now run&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;lime test neko&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;And you should see something similar to the emitter above.&lt;/p&gt;
-
-&lt;p&gt;You can checkout my &lt;a href=&#34;https://github.com/fritzvd/haxepunk-emitter-example&#34; title=&#34;haxepunk-emitter-example&#34; target=&#34;_blank&#34;&gt;repo&lt;/a&gt; and run it to play around with it.&lt;/p&gt;
-
-&lt;p&gt;I ran into this error below. It meant my sprite was too small. It took me a long time to realize that.&lt;/p&gt;
-
-&lt;p&gt;``&lt;/p&gt;
-</description>
+      <description>For some this will be a trivial example. For me this took a bit longer than I suspected.
+This small example will produce this:
+If you’re planning on making an awesome game you probably want a particle emitter. because.. well look at it.
+What I did is I started a haxepunk project:
+`For some this will be a trivial example. For me this took a bit longer than I suspected.</description>
+    </item>
+    
+    <item>
+      <title>Nyko Playpad Pro or * as Xbox 360 controller on linux</title>
+      <link>http://blog.fritzvd.com/2014/03/02/nyko-playpad-pro-as-xbox-360-controller/</link>
+      <pubDate>Sun, 02 Mar 2014 19:15:06 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2014/03/02/nyko-playpad-pro-as-xbox-360-controller/</guid>
+      <description>This is basically a fancy note to self. Last year in my pre vacation spending spree, I boughy myself (and my brother) a NYKO Playpad Pro. A pretty cool gamepad for Android. I had lots of fun playing GTA Vice CIty on my trip to Italy. Playing SNES games etc.
+However I tried to hook it up to my Linux pc and thought I would be able to use it with my new go to MetroidVania platformer: Guacamelee.</description>
+    </item>
+    
+    <item>
+      <title>Communities and Licenses: Permissive licenses vs copyleft (BSD/MIT/Apache 2.0 vs GPL)</title>
+      <link>http://blog.fritzvd.com/2014/02/03/communities-and-licenses-permissive-licenses-vs-copyleft-bsdmitapache-2-0-vs-gpl/</link>
+      <pubDate>Mon, 03 Feb 2014 13:07:51 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2014/02/03/communities-and-licenses-permissive-licenses-vs-copyleft-bsdmitapache-2-0-vs-gpl/</guid>
+      <description>Over the weekend I was at FOSDEM, an open source developer conference in Brussels. We had a blast. I sat in on a talk at the Legal &amp;amp; Policy Issues room about community building by Eileen Evans. The talk was the one she gave at OSCON 2013 (attached below). The short version of the talk was that the license an open source project uses plays a role in the community it will create, perhaps such a strong role as governance or the technology itself, but a role nonetheless.</description>
+    </item>
+    
+    <item>
+      <title>Starting Game Development with HaxePunk instead of MonoGame/XNA</title>
+      <link>http://blog.fritzvd.com/2014/01/06/starting-game-development-with-haxepunk-instead-of-monogamexna/</link>
+      <pubDate>Mon, 06 Jan 2014 20:25:23 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2014/01/06/starting-game-development-with-haxepunk-instead-of-monogamexna/</guid>
+      <description>So I started venturing off in a direction in which I have no experience what so ever. Only on the consumer-side of things ;-). Game development. Of course I had no idea what I was doing. Still don’t.
+To start with I had no idea where to start. Lately I have been looking into Unity 3D and Unreal engine, but then I realized I suck at drawing and have no idea how to start with 3d.</description>
+    </item>
+    
+    <item>
+      <title>Unbricking my LG Optimus 2x with adb</title>
+      <link>http://blog.fritzvd.com/2014/01/05/good-golly-i-almost-bricked-my-phone/</link>
+      <pubDate>Sun, 05 Jan 2014 20:37:13 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2014/01/05/good-golly-i-almost-bricked-my-phone/</guid>
+      <description>So just before new year’s eve started, I started a (cyanogenmod) update for my phone (lg optimus 2x). Wiped data/cache/dalvik and did not get to flashing the new zip. But then the guests started to arrive and I left it, without having it hooked up to a power supply. Big mistake. There are a number of recovery images out there, (amongst the most well-known: Clockwork Mod and TeamWin Recovery Project). I was on TWRP but it just hung and could not get out of recovery mode.</description>
+    </item>
+    
+    <item>
+      <title>UI/UX course &amp;#8211; Highlights &amp;#8211; Storytelling</title>
+      <link>http://blog.fritzvd.com/2013/11/18/uiux-course-highlights-storytelling/</link>
+      <pubDate>Mon, 18 Nov 2013 09:25:30 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2013/11/18/uiux-course-highlights-storytelling/</guid>
+      <description>Nelen &amp;amp; Schuurmans, the company where I work, offered the Software Developers a User Interface Design course by Namahn. It was a great reminder of the seemingly obvious processes one can incorporate in a software project, but sadly also a warning for blatant ignorance we sometimes portray as Developers (of course not just at N&amp;amp;S).
+The workflow Namahn uses is similar to what other design oriented companies would use. Which can be described in three phases: Understand, Explore and Define.</description>
+    </item>
+    
+    <item>
+      <title>Angular JS Favourites/Favorites &amp;#8211; Directives &amp;#8211;  jQuery UI Slider</title>
+      <link>http://blog.fritzvd.com/2013/06/18/angular-js-favorites-directives-jquery-ui-slider/</link>
+      <pubDate>Tue, 18 Jun 2013 11:48:43 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2013/06/18/angular-js-favorites-directives-jquery-ui-slider/</guid>
+      <description>Last time I wrote something about something very simple, but something I really enjoy. Conditional classes and inline event handlers. It’s not a very difficult or complex feature. But I did not find a lot of writing about it. And also it saved me loads of jQuery statements that you don’t want in a controller, but in the UI.
+Next up: Directives. Directives are pret-ty awesomevilles. For the “stop/play video player like”-thing we are building, we would like to have a timeline or time slider, to go back to a previous images.</description>
+    </item>
+    
+    <item>
+      <title>Angular JS Favourites/Favorites &amp;#8211; Conditional CSS classes</title>
+      <link>http://blog.fritzvd.com/2013/06/17/starting-angular-js-favourite-features-or-favorites-if-your-from-the-u-s/</link>
+      <pubDate>Mon, 17 Jun 2013 17:22:19 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2013/06/17/starting-angular-js-favourite-features-or-favorites-if-your-from-the-u-s/</guid>
+      <description>Last few weeks at work I have been trying out Angular JS. First of all, because it is fun and useful to try out new stuff. Secondly because after working with Backbone/Marionette for a few months some things felt that they could’ve been done better. So whilst working on a big Backbone/Marionette project I started looking at Angular a bit.
+I’ll just show you some of my favourite features. We are building an app that needs to play, stop, pause etc much like a video player.</description>
+    </item>
+    
+    <item>
+      <title>vagrant</title>
+      <link>http://blog.fritzvd.com/2013/02/04/vagrant/</link>
+      <pubDate>Mon, 04 Feb 2013 13:08:01 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2013/02/04/vagrant/</guid>
+      <description>Vagrant is a great tool if you like to develop and test on the same server. Or at least emulate that you have the same server and at the same time keep your own system fairly clean.
+I’ve been using it for quite a while. After reinstalling my ubuntu machine to get rid of 12.10 and start 12.04 LTS a fresh I had to fix something in my install of vagrant.</description>
+    </item>
+    
+    <item>
+      <title>Making sure GDAL works with ECW libecw under linux</title>
+      <link>http://blog.fritzvd.com/2012/11/28/making-sure-gdal-works-with-ecw-libecw-under-linux/</link>
+      <pubDate>Wed, 28 Nov 2012 12:34:30 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2012/11/28/making-sure-gdal-works-with-ecw-libecw-under-linux/</guid>
+      <description>This took me a while to unravel, so before I forget or before other people run into the same issues, let’s make a note of this.
+Assuming you are using a debian-like linux distribution (ubuntu, debian, linux mint, etc. anything using: apt-get to install packages) there are a few things to note.
+First of all make sure you have the latest packages for: mapserver, gdal, etc.
+(ubuntu-gis repository has newer versions than the standard repositories).</description>
+    </item>
+    
+    <item>
+      <title>Kriging in R in Python</title>
+      <link>http://blog.fritzvd.com/2012/11/26/kriging-in-r-in-python/</link>
+      <pubDate>Mon, 26 Nov 2012 13:48:56 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2012/11/26/kriging-in-r-in-python/</guid>
+      <description>This might be a repost of some sort. However I found that it was kind of hard to find anything about this specific topic. So here it goes.
+Kriging is a geostatistical method to be able translate point data to a grid, to find out where you can predict stuff really well and where the variance is really high. As always GIGO (garbage in garbage out). But it is at least a large improvement from interpolation techniques such as Inversed Distance Weighting (IDW) which is often implemented in GIS software.</description>
+    </item>
+    
+    <item>
+      <title>Snow</title>
+      <link>http://blog.fritzvd.com/2012/02/04/snow/</link>
+      <pubDate>Sat, 04 Feb 2012 10:19:36 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2012/02/04/snow/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Coloring Mapserver Floating Tiffs with Colorscales</title>
+      <link>http://blog.fritzvd.com/2011/10/14/coloring-mapserver-floating-tiffs-with-colorscales/</link>
+      <pubDate>Fri, 14 Oct 2011 07:25:27 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2011/10/14/coloring-mapserver-floating-tiffs-with-colorscales/</guid>
+      <description>This has been a little mystery for me waiting to be uncovered. However I solved it. Depending if you are using a SLD (styled layer descriptor) or the embedded Style commands this is what your Mapfile could look like:
+The Scale and Datarange command look very similar and I haven’t figured out quite how to set it properly, or how to have three-color scale. However it’s a start. And I haven’t found it documented anywhere else, here you go.</description>
+    </item>
+    
+    <item>
+      <title>Connecting the Dots</title>
+      <link>http://blog.fritzvd.com/2011/02/28/connecting-the-dots/</link>
+      <pubDate>Mon, 28 Feb 2011 08:30:48 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2011/02/28/connecting-the-dots/</guid>
+      <description>Those who think they “know” everything from the beginning will never, in fact, come to know anything – Thomas Merton
+Over the last few weeks (months) I haven’t been posting too much. Sorry about that. For all the people who are interested in what I am doing a little update.
+At the moment I am trying to write up the document to present the thesis to my supervisors. The research part is almost brought to an end with this step.</description>
+    </item>
+    
+    <item>
+      <title>Stille Combatant</title>
+      <link>http://blog.fritzvd.com/2011/01/17/stille-combatant/</link>
+      <pubDate>Mon, 17 Jan 2011 11:30:26 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2011/01/17/stille-combatant/</guid>
+      <description>Excuses
+Had het druk
+Met dingen
+Vuilmaken aan bezigheden
+Hier en daar
+Zaakjes lopen
+Radiostilte uit kamer 2
+Bezigheden houden hem druk
+Hooi op zijn vork
+Een vol bord, een lege maag
+Nee, niet nu
+Morgen
+Nee, ja, druk
+Met dingen</description>
+    </item>
+    
+    <item>
+      <title>Creating a little clipbox for your GIS projects in Python</title>
+      <link>http://blog.fritzvd.com/2011/01/11/creating-a-little-clipbox-for-your-projects-in-python/</link>
+      <pubDate>Tue, 11 Jan 2011 15:48:32 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2011/01/11/creating-a-little-clipbox-for-your-projects-in-python/</guid>
+      <description>When working on a GIS project, this always bums me out. You need to have a certain area in which you want to cut all your source data. But in ArcGIS I never figure out how to do it properly, except for using Python scripts and arcgisscripting/arcpy. But I figured, this should also be do-able from the terminal, and take less time and energy from your little workbox.
+But here’s a Python script that uses open-source libraries and writes</description>
+    </item>
+    
+    <item>
+      <title>From 2.5D to 3D</title>
+      <link>http://blog.fritzvd.com/2011/01/10/from-2-5d-to-3d/</link>
+      <pubDate>Mon, 10 Jan 2011 14:21:54 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2011/01/10/from-2-5d-to-3d/</guid>
+      <description>My last few posts have focused on somewhat other things than my thesis. This does not mean that no progress has been made or that I’ve done nothing. On the contrary; I’ve done quite a bit. But it is rather less exciting.
+I’ve been busy with data conversion and trying to get a working 3D representation that is meaningful. Which is hard and not so spectacular. Seriously. First of all getting to grips with the fact that the reason why ESRI is marketleader may be because they deliver a complete and good package.</description>
+    </item>
+    
+    <item>
+      <title>Skywalker</title>
+      <link>http://blog.fritzvd.com/2011/01/04/skywalker/</link>
+      <pubDate>Tue, 04 Jan 2011 09:24:34 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2011/01/04/skywalker/</guid>
+      <description>Lichtjes, zachtjes, soepel
+Snel ik aan een man voorbij
+In een land te gast
+In een auto niet van mij
+Meneer Laserpistool
+Doortast mijn ijdele haast
+Wenkt mij tot stoppen
+Kort een woord en wissel
+Boete doen, zak en as
+Het glinsterend eksteroog
+Aast naar mijn buidel
+Gouden handdruk
+Ik ga mijns weegs
+kijk ook op: http://www.ipaidabribe.com/</description>
+    </item>
+    
+    <item>
+      <title>De Meerval</title>
+      <link>http://blog.fritzvd.com/2011/01/03/de-meerval/</link>
+      <pubDate>Mon, 03 Jan 2011 09:49:22 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2011/01/03/de-meerval/</guid>
+      <description>Het pad glinsterend met bevroren genot,
+Bekijkt de banden,
+Waarmee ik vederlicht haar rug betreed
+Werpt mij van mijn rijdend ijzer
+Laat mij voelen hoe de koude stenen
+Mijn arm losjes het uiterst van de kom laat zien
+Hoop op morgen, dat ik niet
+Meerval.</description>
+    </item>
+    
+    <item>
+      <title>My 2010</title>
+      <link>http://blog.fritzvd.com/2011/01/01/my-2010/</link>
+      <pubDate>Sat, 01 Jan 2011 14:45:41 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2011/01/01/my-2010/</guid>
+      <description>
+All in all not a bad year, I would say. Just a quick overview of some highlights and the soundtrack of the last year.
+The Good
+Engaged to Nelleke Bachelor of Science Started a business Royal Haskoning Rock Climbing! / Spain Trip the Harry Potter Septology Spotify! Water Insight Android Vienna Pablo Picasso’s violin Mac Mini Beatles Discography Reading, reading reading. Met awesome people. Etc. The Soundtrack
+Jakob Dylan – Women + Country Everything Everything – Man Alive Mumford &amp;amp; Sons – Sigh No More Vampire Weekend – Contra Cyndi Lauper – Memphis Blues MGMT – Congratulations Ray LaMontagne And The Pariah Dogs – God Willin’ &amp;amp; The Creek Don’t Rise The Black Keys – Brothers Kings of Leon – Come Around Sundown Brown Feather Sparrow – How to Throw a Christmas Party </description>
+    </item>
+    
+    <item>
+      <title>In Search of God</title>
+      <link>http://blog.fritzvd.com/2010/12/24/in-search-of-god/</link>
+      <pubDate>Fri, 24 Dec 2010 14:08:37 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2010/12/24/in-search-of-god/</guid>
+      <description>Tuning into a TV program sporting The Face – Kings of Leon last week got me thinking. The program is called In Search of God and features 3 Dutch Celeb’s which are facilitated with a number of conversations and travels that should help them find God. Or at least give a nudge in that general direction or other.
+I found the program to be most intriguing and turns out to probably be my favorite show of the year (next to the Big C, which is also deserves a great mention here).</description>
+    </item>
+    
+    <item>
+      <title>The three I&amp;#8217;s of progress.</title>
+      <link>http://blog.fritzvd.com/2010/12/17/interaction-interfacing-iteration/</link>
+      <pubDate>Fri, 17 Dec 2010 15:31:37 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2010/12/17/interaction-interfacing-iteration/</guid>
+      <description>In my little project I would like to add some _I_nteraction. A possibility to zoom in and out and rotate the 3D model without moving the marker but by using some form of hand gestures. This should be possible. Though, the road towards it still seems a bit unclear.
+For now I have investigated the possibility of loading the 3D model as a static object until other markers arrive on the scene and are able to manipulate position, rotation and zooming.</description>
+    </item>
+    
+    <item>
+      <title>Popular Demand</title>
+      <link>http://blog.fritzvd.com/2010/12/17/popular-demand/</link>
+      <pubDate>Fri, 17 Dec 2010 10:19:12 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2010/12/17/popular-demand/</guid>
+      <description>You can witness the magic happen on your very own desk, if you’d like. Print out the marker and allow Flash to access your webcam.
+Click here to watch the magic happen.
+If you do not know how to allow Flash to access your webcam Follow the instructions below
+Right click in the black window that opens and select “Settings” Click on “allow” like displayed in the little image below Let the awesomeness overwhelm you like the wondrous fragrance of Lavender on a spring day P.</description>
+    </item>
+    
+    <item>
+      <title>Whoops I FLARted..</title>
+      <link>http://blog.fritzvd.com/2010/12/08/222/</link>
+      <pubDate>Wed, 08 Dec 2010 18:11:44 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2010/12/08/222/</guid>
+      <description>Today I fooled around a bit with the FLARManager (tutorials graciously provided by transmote). I tried to get some Papervision 3D objects going using all these different tutorials I have been following over the last few weeks (e.g. papervision2.com and rawkes.com). But it has not been as easy as I had expected. But then again, things never are.
+The difficulty is not so much in displaying 3D objects, because pv3d and flarmanager do all the thinking for you.</description>
+    </item>
+    
+    <item>
+      <title>Thoughts on LiDAR</title>
+      <link>http://blog.fritzvd.com/2010/12/02/thoughts-on-lidar/</link>
+      <pubDate>Thu, 02 Dec 2010 15:02:26 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2010/12/02/thoughts-on-lidar/</guid>
+      <description>Yesterday I was fortunate enough to be able to visit the European LiDAR Mapping Forum (ELMF) in The Hague. For those who do not know what LiDAR is, it is a sensor that acquires high-quality (very dense) 3D data. If you would like to check out some of the data, what it looks like and play around with it a bit, here is a “get-started”. It is further explained on Wikipedia, to which you should give some money for using it on a daily basis, if you haven’t done so already.</description>
+    </item>
+    
+    <item>
+      <title>Rendered Useless</title>
+      <link>http://blog.fritzvd.com/2010/11/30/rendered-useless/</link>
+      <pubDate>Tue, 30 Nov 2010 17:40:15 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2010/11/30/rendered-useless/</guid>
+      <description>A little update on what I am doing. Today is a pictureless day, too bad.
+Moving away from Mayavi2 I have been moving towards ActionScript and Flash. Why this switch? Well Mayavi2 is a real cool scientific visualization tool, but most of the focus is on on-the-fly visualization of data that is dense, but also a computer that is powerful. This does not really serve useful for the purposes I would want to move towards.</description>
+    </item>
+    
+    <item>
+      <title>Processing images with GDAL and Mayavi2</title>
+      <link>http://blog.fritzvd.com/2010/11/22/processing-images-with-gdal-and-mayavi2/</link>
+      <pubDate>Mon, 22 Nov 2010 12:51:17 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2010/11/22/processing-images-with-gdal-and-mayavi2/</guid>
+      <description>Ok, this took a while but the results are not bad. So I guess it’s worth it.
+First of all, a big thank you at [Ok, this took a while but the results are not bad. So I guess it’s worth it.
+First of all, a big thank you at](http://www.gis.usu.edu/~chrisg/) who is very possibly unaware of the fact that I have been using his classes on Python and Open Source GIS.</description>
+    </item>
+    
+    <item>
+      <title>Developments so far</title>
+      <link>http://blog.fritzvd.com/2010/11/18/developments-so-far/</link>
+      <pubDate>Thu, 18 Nov 2010 15:53:56 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2010/11/18/developments-so-far/</guid>
+      <description>Ok. 3 weeks down the road of my minor thesis and what do I have to show for? Well, a lot of paradigms and concepts for starters. Furthermore I have never been able to finish a document like research proposal so quickly and of such quality.
+But enough of that. I have more or less abandoned the idea of a mobile application for now. Because having a mobile application like Junaio scores high on the cool list, it doesn’t really in the sphere of performance and handling large data sets.</description>
+    </item>
+    
+    <item>
+      <title>Different Directions</title>
+      <link>http://blog.fritzvd.com/2010/10/02/different-directions/</link>
+      <pubDate>Sat, 02 Oct 2010 17:24:42 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2010/10/02/different-directions/</guid>
+      <description>It seems that my minor thesis will focus more on the user experience of augmented reality. The EIA’s have raster outputs that can be converted to 3D spaces. These spaces can then be given Locations. The Raster is already georeferenced which would make this easier (I think).
+The best method of viewing these things would seem Augmented Reality browsers such as Layar or Junaio. So I would have to brush up a bit on what is possible in which browser.</description>
+    </item>
+    
+    <item>
+      <title>Random thoughts Augmented Reality</title>
+      <link>http://blog.fritzvd.com/2010/09/30/augmented-reality/</link>
+      <pubDate>Thu, 30 Sep 2010 10:48:50 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2010/09/30/augmented-reality/</guid>
+      <description>Another consideration is if using Augmented Reality (AR) how to implement it and what method of going about it.
+ARToolkit has different spin-offs that look quite interesting. One of my favourites are FLARToolkit and possibly SLARToolkit. The flash toolkit. But then I am not very proficient in Flash and ActionScript. Also I tend to avoid Flash as much as possible as well as writing stuff in C#. But the office I work in makes it easier to use C# then any other binding.</description>
+    </item>
+    
+    <item>
+      <title>Considerations on which Gaming Engine to use</title>
+      <link>http://blog.fritzvd.com/2010/09/29/considerations-on-which-gaming-engine-to-use/</link>
+      <pubDate>Wed, 29 Sep 2010 15:46:53 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2010/09/29/considerations-on-which-gaming-engine-to-use/</guid>
+      <description>A quick update on my project of using a Gaming Engine to process GIS data. After some googling and reading other peoples blogs and workspaces it seems that some engines are more fit than others.
+Tim Germanchis et al. (2005) has done a brief overview of different game engines for this particular usage. Amongst which are the Quake III, Unreal Runtime 2, CryEngine and others. The CryEngine apparently suited the writer the most.</description>
+    </item>
+    
+    <item>
+      <title>Usability and 3D in Geovisualization</title>
+      <link>http://blog.fritzvd.com/2010/09/29/considerations-on-3d-visualization-for-gis/</link>
+      <pubDate>Wed, 29 Sep 2010 14:54:21 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2010/09/29/considerations-on-3d-visualization-for-gis/</guid>
+      <description>For my minor thesis I am thinking of a project for processing Environmental Impact Assessment in a way that is more easily comprehensible. For this project I intend to use Augmented Reality. Hopefully some form of 3d visualization. And I am looking at the possibilities of using gaming engines.
+First and foremost, this is a preliminary research. I am not in any way an expert. And only just learning about the amazing possibilities.</description>
+    </item>
+    
+    <item>
+      <title>Why I still refuse to cook electric and why we should finish natural resources</title>
+      <link>http://blog.fritzvd.com/2010/09/10/why-i-still-refuse-to-cook-electric-and-why-we-should-finish-natural-resources/</link>
+      <pubDate>Fri, 10 Sep 2010 12:14:43 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2010/09/10/why-i-still-refuse-to-cook-electric-and-why-we-should-finish-natural-resources/</guid>
+      <description>Today I had quite an epiphany while I was working the oven (a gas oven that is). I love gas. It is by far the best way to cook. Electric cooking has always seemed a bit gay to me. And I know usually gays are quite advanced and up to speed with fads and ins and outs. But I thoroughly believe that they are wrong on this account.
+Electric cooking always requires you to think ahead whilst you are cooking.</description>
+    </item>
+    
+    <item>
+      <title>Death or freedom of it&amp;#039;s sting</title>
+      <link>http://blog.fritzvd.com/2010/02/23/death-or-freedom-of-its-sting/</link>
+      <pubDate>Tue, 23 Feb 2010 23:04:36 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2010/02/23/death-or-freedom-of-its-sting/</guid>
+      <description>Today, after a long time of keyboard-silence, I return with a cheerful blog post on death. Why? Well, yesterday my grandfather passed away, which reminds us of our last foe. He was a (war)hero, at least to me he was.
+Strangely enough I stumbled upon Johnny Cash album: VI – Ain’t No Grave only an hour after hearing the sad news. This is a beautiful recording of someone who wasn’t afraid of death.</description>
+    </item>
+    
+    <item>
+      <title>overcoming the incomprehensible</title>
+      <link>http://blog.fritzvd.com/2009/12/24/overcoming-the-incomprehensible/</link>
+      <pubDate>Thu, 24 Dec 2009 12:03:18 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2009/12/24/overcoming-the-incomprehensible/</guid>
+      <description>Some things lie outside our command, some things outside our understanding. Or better yet, only some things lie in our command and understanding. Our eyes are limited, and our mind even more so. We see things that are not there, do not see things that might be there, speculate about how events take place in the (Super)Natural world. And all the while we think a real big deal of ourselves, whilst forgetting that we are very tiny.</description>
+    </item>
+    
+    <item>
+      <title>general frustrations on nobel-prize winning presidents</title>
+      <link>http://blog.fritzvd.com/2009/10/21/general-frustrations-on-nobel-prize-winning-presidents/</link>
+      <pubDate>Wed, 21 Oct 2009 11:14:14 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2009/10/21/general-frustrations-on-nobel-prize-winning-presidents/</guid>
+      <description>There is something which has been lingering in my mind for a while now. It has been brooding one US president ago, and has been set to full throttle frustration when a nobel prize was awarded a week-and-some ago.
+US presidents have always, in the good-spirited leadership they posses, urged other ‘fragile states’ that nuclear power is something that comes with great responsibility, just like spidey-senses. And of course fragile states cannot handle that kind of responsibility.</description>
+    </item>
+    
+    <item>
+      <title>Google 4th to appear on Google</title>
+      <link>http://blog.fritzvd.com/2009/10/08/google-4th-to-appear-on-google/</link>
+      <pubDate>Thu, 08 Oct 2009 14:05:13 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2009/10/08/google-4th-to-appear-on-google/</guid>
+      <description>When writing a thesis, it is imperative that you lose focus every now and then. So after reading some blogs, during the lunch-break, I decided to extend my lunch break. Little did I know I was destined to find out something extraordinary.
+When you try to find a search engine in Google, Google is the 5th result, (4th webpage) you’ll find.
+This of course is groundbreaking research in the field of Desertification and Development Sociology.</description>
+    </item>
+    
+    <item>
+      <title>unity in diversity</title>
+      <link>http://blog.fritzvd.com/2009/09/30/unity-in-diversity/</link>
+      <pubDate>Wed, 30 Sep 2009 17:34:50 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2009/09/30/unity-in-diversity/</guid>
+      <description>Tonight I will be leaving South Africa to fly to the Netherlands. It has been good, but it is also time to go back. But before I go and before I close this blog down (or start posting non-interesting thoughts on how to design your own vegetable garden), I want to leave you with an impression of the country of my forefathers. The beautiful, complex and diverse South Africa whom I have grown to love.</description>
+    </item>
+    
+    <item>
+      <title>Cape Town, flu and other frailties</title>
+      <link>http://blog.fritzvd.com/2009/09/12/cape-town-flu-and-other-frailties/</link>
+      <pubDate>Sat, 12 Sep 2009 16:46:36 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2009/09/12/cape-town-flu-and-other-frailties/</guid>
+      <description>Cape Town is freaking awesome. I realize this every time I wake up again. Last time I was here was in 2006 during DTS in Muizenberg. To be back here is nice. To hang out with Simon, Marieke and Noah is lovely.
+Over the last few days I have (with the help of anti-biotics) conquered flu, challenged Poseidon and battled the fierceness of the wrath of Simon and his axe. I have survived all, and still remain strong.</description>
+    </item>
+    
+    <item>
+      <title>jumping borders</title>
+      <link>http://blog.fritzvd.com/2009/09/02/jumping-borders/</link>
+      <pubDate>Wed, 02 Sep 2009 09:41:56 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2009/09/02/jumping-borders/</guid>
+      <description>Yesterday I arrived safely at Cape Town Int. Airport. Simon, Marieke and Noah came to pick me up. A bit surreal to see them, but very good nonetheless. Surreal because I have seen so many places in quite a short amount of time over the last few days.
+Last time I posted something on my blog, I did so from the town of Victoria Falls in the North-West of Zimbabwe. After posting we went to see the world famous Falls.</description>
+    </item>
+    
+    <item>
+      <title>Vic Falls</title>
+      <link>http://blog.fritzvd.com/2009/08/27/vic-falls/</link>
+      <pubDate>Thu, 27 Aug 2009 10:46:54 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2009/08/27/vic-falls/</guid>
+      <description>Right now I am testing the limits of the slowest connection in the world, as I speedtype this blogpost in existence.
+I am writing from Vic Falls in Zimbabwe. A very touristy but nice place. The last few days I have been staying with the aunt and uncle of Washington. Very nice christian people, who took us in the house and helped us on our way.
+Yesterday we have arrived safely in Vic Falls.</description>
+    </item>
+    
+    <item>
+      <title>go siame</title>
+      <link>http://blog.fritzvd.com/2009/08/21/go-siame/</link>
+      <pubDate>Fri, 21 Aug 2009 16:48:07 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2009/08/21/go-siame/</guid>
+      <description>After enjoying a lovely Windhoek Special (a nice beer), I felt like updating my blog. First of all, because I haven’t done so for a while. Secondly, because my time in Botswana draws to a close.
+The last few days have been busy. Writing, looking at data, finishing a philosophy paper which had a deadline which was a bit more urgent than my thesis.
+Today I decided that I could have a bit more of a chill-out-day.</description>
+    </item>
+    
+    <item>
+      <title>times of refreshing</title>
+      <link>http://blog.fritzvd.com/2009/08/12/times-of-refreshing/</link>
+      <pubDate>Wed, 12 Aug 2009 20:41:27 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2009/08/12/times-of-refreshing/</guid>
+      <description>You know how sometimes, life just feels too good to be true? Well, the last few days have been like that. Being finished with my field work made me happy. This meant that I would be in an urban area again. Don’t get me wrong, I love nature. Just being in an urban area means you can have proper coffee again.
+So the last few days, I have feasted on vegetables, fruits and other fresh produce withheld from me in Mopipi.</description>
+    </item>
+    
+    <item>
+      <title>Ga gona metsi</title>
+      <link>http://blog.fritzvd.com/2009/07/29/ga-gona-metsi/</link>
+      <pubDate>Wed, 29 Jul 2009 16:24:02 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2009/07/29/ga-gona-metsi/</guid>
+      <description>On a slightly more positive note than the last post, I am doing fine. Really. I actually forgot to write about one of the most significant events of last week.
+There was no water (Ga gona metsi). Seriously. This was big mathata (problems). We had to fetch water in barrels, drums, and empty trash bins. Luckily some of my friends here helped me with their skoro-koro (a car that is close to it’s end).</description>
+    </item>
+    
+    <item>
+      <title>almost done</title>
+      <link>http://blog.fritzvd.com/2009/07/27/almost-done/</link>
+      <pubDate>Mon, 27 Jul 2009 11:56:29 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2009/07/27/almost-done/</guid>
+      <description>So this is a bit of an overdue post. But a post nonetheless. I am busy with the final stages of my field work here. And not very mournful about it. My time here has been good, but I’m also up for something different and some people I know and relate with more easily.
+Last week I went around to measure the daily use of firewood in this place with a friend of mine.</description>
+    </item>
+    
+    <item>
+      <title>Okavango le dikwena, dithlare and more</title>
+      <link>http://blog.fritzvd.com/2009/07/15/okavango-le-dikwena-dithlare-and-more/</link>
+      <pubDate>Wed, 15 Jul 2009 08:38:05 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2009/07/15/okavango-le-dikwena-dithlare-and-more/</guid>
+      <description>Ok quick recap. I haven’t blogged for about a week and a bit, and a lot more has happened than all my weeks here I think.
+So here we go. I’ll try to compress it in small bits.
+Last week we had the profs and staff of the Desire project with us to help us, (or rather the other way around). All of us went and picked up cow dung to measure the weight, to get a ‘feel’ of how much an average kraal would produce.</description>
+    </item>
+    
+    <item>
+      <title>Mopipi</title>
+      <link>http://blog.fritzvd.com/2009/07/04/mopipi/</link>
+      <pubDate>Sat, 04 Jul 2009 11:12:22 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2009/07/04/mopipi/</guid>
+      <description>This is now the second week already that I have spent in this place. It is quite an interesting place as you can see from the pictures I’ve uploaded.
+Very salty, dry, windy, at times cold and desolate. People are friendly most of the time and I’ve made some friends.
+Next week I will be doing something else than household surveys, which is a relief. It is quite boring to go to 140 households and ask the same questions over and over again.</description>
+    </item>
+    
+    <item>
+      <title>Lekgoa, lekgoa</title>
+      <link>http://blog.fritzvd.com/2009/06/26/lekgoa-lekgoa/</link>
+      <pubDate>Fri, 26 Jun 2009 19:32:20 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2009/06/26/lekgoa-lekgoa/</guid>
+      <description>Last Monday I arrived in Mopipi after a 7 hour journey. This is the village I am doing my research in. The house I am staying in is really nice. Mercy, my assistant is renting a room there. The in situ room left a little corner for me. There is a bathroom with running (drinking) water. Even hot water! Mercy has a tv and a fridge (yes, there is electricity). So we have a bit more luxury to retreat to after doing the household surveys.</description>
+    </item>
+    
+    <item>
+      <title>Botlhale</title>
+      <link>http://blog.fritzvd.com/2009/06/13/botlhale/</link>
+      <pubDate>Sat, 13 Jun 2009 10:56:14 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2009/06/13/botlhale/</guid>
+      <description>After being here 3 weeks (today is the start of my fourth week in the South), I thought it’d be good to give another update. This week marks the start of my real ‘field’ research. The previous two weeks of staying in Gaborone were weeks of article reading and enhancing (read: writing anew) my proposal.
+Actually I was planning to leave for Mopipi on Monday. However, there are always unexpected changes in this world.</description>
+    </item>
+    
+    <item>
+      <title>Ga pula</title>
+      <link>http://blog.fritzvd.com/2009/06/03/ga-pula/</link>
+      <pubDate>Wed, 03 Jun 2009 11:27:03 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2009/06/03/ga-pula/</guid>
+      <description>Thursday last I arrived in Gaborone, Botswana after a 7 hour busride through an extraordinary landscape, with shrubs, small trees and yellowish grass as far as the eye can see. A bouquet of dryland vegetation and rock formations passed us by. Beauty is something that is embedded into our wonderful planet earth.
+Gaborone or Gabz is quite a new city. Don’t expect old architecture like you see in Windhoek or Cape Town.</description>
+    </item>
+    
+    <item>
+      <title>Motoro</title>
+      <link>http://blog.fritzvd.com/2009/05/27/motoro/</link>
+      <pubDate>Wed, 27 May 2009 19:22:51 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2009/05/27/motoro/</guid>
+      <description>Last Saturday I arrived in South Africa. The first thing I did after going through customs is renting a car. As lekker as it is to have my own mode of transportation, I struggled a bit with driving on the ‘wrong’ side of the road. The first few drives were a bit shaky. After a while I got the hang of it.
+The first day I went to Kempton Park to visit a friend of mine.</description>
+    </item>
+    
+    <item>
+      <title>Domela</title>
+      <link>http://blog.fritzvd.com/2009/05/07/domela/</link>
+      <pubDate>Thu, 07 May 2009 22:00:15 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2009/05/07/domela/</guid>
+      <description>For those interested, I will conduct a research concerning the use of fuelwood and the feasibility to switch to another, hopefully more renewable energy source. The use of fuelwood puts severe stress on the environment, and can cause further desertification (worsening and growing of a desert)</description>
+    </item>
+    
+    <item>
+      <title>Going</title>
+      <link>http://blog.fritzvd.com/2009/04/19/going/</link>
+      <pubDate>Sun, 19 Apr 2009 23:33:03 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/2009/04/19/going/</guid>
+      <description>I am actually going. And not long from now. This blog will keep you updated on my happy adventures in Southern Africa over the coming months.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://blog.fritzvd.com/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.fritzvd.com/1/01/01/</guid>
+      <description>Wild Ride Myrtl and Hog jumped down the chute, with Myrtl crying out in sheer revelry: &amp;ldquo;Whoo-hoo&amp;rdquo;. They had been going about this for months on end now and the thrill had not diminished as of yet. The hustle and bustle of the city combined with the rush of being chased, it was just too good to be true.
+After the garbage chute there would be one more challenge before losing in on their home: the bus station.</description>
     </item>
     
   </channel>

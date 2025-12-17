@@ -1,9 +1,9 @@
 ---
 author: fritzvd
 categories:
-- Uncategorized
+  - Uncategorized
 date: 2009-09-30T17:34:50Z
-guid: http://fritzvd.wordpress.com/?p=98
+guid: http://blog.fritzvd.com/?p=98
 id: 98
 title: unity in diversity
 url: /2009/09/30/unity-in-diversity/

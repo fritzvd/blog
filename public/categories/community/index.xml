@@ -1,40 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Community on fritzvd</title>
+    <title>community on fritzvd</title>
     <link>http://blog.fritzvd.com/categories/community/</link>
-    <description>Recent content in Community on fritzvd</description>
+    <description>Recent content in community on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Jul 2015 08:19:19 +0000</lastBuildDate>
-    <atom:link href="http://blog.fritzvd.com/categories/community/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Wed, 01 Jul 2015 08:19:19 +0000</lastBuildDate><atom:link href="http://blog.fritzvd.com/categories/community/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Writing Documentation @ nodeconf 2015</title>
       <link>http://blog.fritzvd.com/2015/07/01/writing-documentation-nodeconf-2015/</link>
       <pubDate>Wed, 01 Jul 2015 08:19:19 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2015/07/01/writing-documentation-nodeconf-2015/</guid>
-      <description>&lt;p&gt;This topic of course ties in with &lt;a href=&#34;http://blog.technokrat.nl/2015/07/01/building-communities-nodeconf-2015/&#34;&gt;the Building Communities session&lt;/a&gt;. Because building community happens with code that is being used. And if you want people to be able to join easily, one of their first entry points will probably be the README, which has for some projects become the only or the main documentation.&lt;/p&gt;
-
-&lt;p&gt;At the moment the documentation of some projects is exemplary (think: anything &lt;a href=&#34;https://twitter.com/substack&#34; target=&#34;_blank&#34;&gt;@substack&lt;/a&gt; makes). Whereas the documentation of node itself is kind of a mess. The API documentation is varying in quality in different topics, there is no proper way to navigate within the page and structure is &amp;#8220;organic&amp;#8221;.&lt;/p&gt;
-
-&lt;p&gt;The goals of documentation we concluded in the session should always be, to be:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Exhaustive&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Simple&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Helpful&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Connected/Linked (linking to back and forth to other pieces or other blogs).&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;This can be achieved by creating proper articles, for beginners but also for advanced topics. Or at link out to expert articles on other blogs. This should be a seperate set from the API documentation. The API documentation should be structured and be complete. In stead of missing some pieces here and there. An example I really like is the &lt;a href=&#34;https://docs.djangoproject.com/en/1.8/&#34; target=&#34;_blank&#34;&gt;Django documentation&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.flickr.com/photos/matthewbergman/18876975441/in/album-72157654202715069/&#34; target=&#34;_blank&#34;&gt;Cover photo by Matthew Bergman&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>This topic of course ties in with the Building Communities session. Because building community happens with code that is being used. And if you want people to be able to join easily, one of their first entry points will probably be the README, which has for some projects become the only or the main documentation.
+At the moment the documentation of some projects is exemplary (think: anything @substack makes). Whereas the documentation of node itself is kind of a mess.</description>
     </item>
     
     <item>
@@ -43,16 +23,8 @@
       <pubDate>Wed, 01 Jul 2015 07:45:51 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2015/07/01/building-communities-nodeconf-2015/</guid>
-      <description>&lt;p&gt;A lot of the talks were not just about code or &amp;#8220;hardcore&amp;#8221; technical stuff, but also about social things like: building community, writing documentation, creating a safe environment. Which in the software meetups and talks scene has been growing as a topic. To dismay of some, and celebration of others.&lt;/p&gt;
-
-&lt;p&gt;This session started out as a discussion about the node project, &amp;#8220;the Fork&amp;#8221;: io.js and what it says about the community and the culture of node. This meant 3 core contributors telling about where they see the project failed, and what it did right, but also how to progress in the future.&lt;/p&gt;
-
-&lt;p&gt;First of all the io.js/node.js community would like to do better. They would like to be the role model for other projects. Adding stuff like a Code of Conduct instead of just code to a project. Some projects are still outshining in core values like: diversity, inclusivity and lowering the barrier to entry. And some projects are just outright mean. As an example the Johnny-Five (robotics) project was mentioned as a community which is really thriving and is able to maintain those key values, as&lt;/p&gt;
-
-&lt;p&gt;opposed to &amp;#8220;that other robotics&amp;#8221;-project in node.&lt;/p&gt;
-
-&lt;p&gt;A reason for this was giving by one of their maintainers: &amp;#8220;Focus on the right stuff early on&amp;#8221;. And to be frank that is true of any kind of standard you want to have in a project. Do you want a clean code base? Focus on that early on? Do you want a lot of test coverage? Don&amp;#8217;t add it as an afterthought. Do you want anyone from any color, creed and orientation to feel welcome? Don&amp;#8217;t &amp;#8220;add&amp;#8221; that when your code is ready to ship.&lt;/p&gt;
-</description>
+      <description>A lot of the talks were not just about code or “hardcore” technical stuff, but also about social things like: building community, writing documentation, creating a safe environment. Which in the software meetups and talks scene has been growing as a topic. To dismay of some, and celebration of others.
+This session started out as a discussion about the node project, “the Fork”: io.js and what it says about the community and the culture of node.</description>
     </item>
     
   </channel>

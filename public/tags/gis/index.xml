@@ -1,69 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Gis on fritzvd</title>
+    <title>gis on fritzvd</title>
     <link>http://blog.fritzvd.com/tags/gis/</link>
-    <description>Recent content in Gis on fritzvd</description>
+    <description>Recent content in gis on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Oct 2011 07:25:27 +0000</lastBuildDate>
-    <atom:link href="http://blog.fritzvd.com/tags/gis/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Fri, 14 Oct 2011 07:25:27 +0000</lastBuildDate><atom:link href="http://blog.fritzvd.com/tags/gis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Coloring Mapserver Floating Tiffs with Colorscales</title>
       <link>http://blog.fritzvd.com/2011/10/14/coloring-mapserver-floating-tiffs-with-colorscales/</link>
       <pubDate>Fri, 14 Oct 2011 07:25:27 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2011/10/14/coloring-mapserver-floating-tiffs-with-colorscales/</guid>
-      <description>&lt;p&gt;This has been a little mystery for me waiting to be uncovered. However I solved it. Depending if you are using a SLD (styled layer descriptor) or the embedded Style commands this is what your Mapfile could look like:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;syntax apache&#34;&gt;MAP
-NAME &#34;Some Map&#34;
-DEBUG ON
-FONTSET &#34;/home/fritz/maps/fonts.txt&#34;
-
-WEB
-  IMAGEPATH &#34;/tmp/&#34;
-  IMAGEURL &#34;/tmp/&#34;
-  METADATA
-    &#34;wms_title&#34;     &#34;WMS Demo Server&#34;  ##required
-    &#34;wms_onlineresource&#34; &#34;http://localhost/cgi-bin/mapserv?map=map.map&#34;   ##required
-    &#34;wms_srs&#34;       &#34;EPSG:42304 EPSG:42101 EPSG:4269 EPSG:4326 EPSG:7030 EPSG:32736&#34;  ##recommended
-  END
-END
-
-PROJECTION
-  &#34;init=epsg:32736&#34;   ##required
-END
-
-#
-# Start of layer definitions
-#
-LAYER
-NAME &#39;test&#39;
-METADATA
-    &#34;wms_title&#34;   &#39;test&#39;
-END
-TYPE RASTER
-STATUS ON
-DATA  &#39;/home/fritz/maps/colorscale_test.tif&#39;
-PROJECTION
-  &#34;init=epsg:32736&#34;   ##required
-END
-CLASS
-  NAME &#34;test&#34;
-  STYLE
-    COLORRANGE 255 255 0 140 160 160
-    DATARANGE 0.02 0.6
-    RANGEITEM &#34;[pixel]&#34;
-  END
-END
-PROCESSING &#34;SCALE=0.2, 0.6&#34;
-END
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The Scale and Datarange command look very similar and I haven&amp;#8217;t figured out quite how to set it properly, or how to have three-color scale. However it&amp;#8217;s a start. And I haven&amp;#8217;t found it documented anywhere else, here you go.&lt;/p&gt;
-</description>
+      <description>This has been a little mystery for me waiting to be uncovered. However I solved it. Depending if you are using a SLD (styled layer descriptor) or the embedded Style commands this is what your Mapfile could look like:
+The Scale and Datarange command look very similar and I haven’t figured out quite how to set it properly, or how to have three-color scale. However it’s a start. And I haven’t found it documented anywhere else, here you go.</description>
     </item>
     
     <item>
@@ -72,24 +23,9 @@ END
       <pubDate>Mon, 28 Feb 2011 08:30:48 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2011/02/28/connecting-the-dots/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;Those who think they &amp;#8220;know&amp;#8221; everything from the beginning will never, in fact, come to know anything &amp;#8211; &lt;strong&gt;Thomas Merton&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Over the last few weeks (months) I haven&amp;#8217;t been posting too much. Sorry about that. For all the people who are interested in what I am doing a little update.&lt;/p&gt;
-
-&lt;p&gt;At the moment I am trying to write up the document to present the thesis to my supervisors. The research part is almost brought to an end with this step. Then the big question is, what are my findings?&lt;/p&gt;
-
-&lt;p&gt;I haven&amp;#8217;t quite distilled that to a complete concrete conclusion, but I can say this.&lt;/p&gt;
-
-&lt;p&gt;3D GIS is not an easy thing. Depending on the quality of the 3D visualization of course. But trying to get the coordinate systems of a Geographical System to work together with 3D software and their coordinate systems is not an easy feat.&lt;/p&gt;
-
-&lt;p&gt;An instance of Augmented Reality is only as good as the purposes it should serve and the requirements it should fit.&lt;/p&gt;
-
-&lt;p&gt;Lastly, LaTeX is an awesome markup tool for word processing. If someone is interested in the title page for a thesis at the WUR (Wageningen University and Research) just comment and I&amp;#8217;ll send you the .tex file.&lt;/p&gt;
-
-&lt;p&gt;Happy Monday!&lt;/p&gt;
-</description>
+      <description>Those who think they “know” everything from the beginning will never, in fact, come to know anything – Thomas Merton
+Over the last few weeks (months) I haven’t been posting too much. Sorry about that. For all the people who are interested in what I am doing a little update.
+At the moment I am trying to write up the document to present the thesis to my supervisors. The research part is almost brought to an end with this step.</description>
     </item>
     
     <item>
@@ -98,113 +34,8 @@ END
       <pubDate>Tue, 11 Jan 2011 15:48:32 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2011/01/11/creating-a-little-clipbox-for-your-projects-in-python/</guid>
-      <description>&lt;p&gt;When working on a GIS project, this always bums me out. You need to have a certain area in which you want to cut all your source data. But in ArcGIS I never figure out how to do it properly, except for using Python scripts and arcgisscripting/arcpy. But I figured, this should also be do-able from the terminal, and take less time and energy from your little workbox.&lt;/p&gt;
-
-&lt;p&gt;But here&amp;#8217;s a Python script that uses open-source libraries and writes&lt;/p&gt;
-
-&lt;p&gt;Be sure to have  &lt;a href=&#34;http://fwtools.maptools.org/&#34;&gt;FW_Tools&lt;/a&gt; installed (win/linux) or when you&amp;#8217;re on a Mac head over to &lt;a href=&#34;www.kyngchaos.com/&#34;&gt;KyngChaos&lt;/a&gt;. This dude has some binary versions of GDAL and PROJ. On Ubuntu life is even more dreamy:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;sudo apt-get install proj4 python-gdal&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;and some other stuff I can&amp;#8217;t think of right now.&lt;/p&gt;
-
-&lt;p&gt;This is the version of the script that will run with FWTools in Windows. (all neatly stolen and copied from &lt;a href=&#34;http://www.gis.usu.edu/~chrisg/python/2009/&#34;&gt;Chris Garrard&lt;/a&gt;)&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;syntax python&#34;&gt;import ogr, os, sys, osr
-os.chdir(&#39;C:/Directory&#39;)
-
-driver = ogr.GetDriverByName(&#39;ESRI Shapefile&#39;)
-
-fn = &#39;tmp.shp&#39;
-if os.path.exists(fn):
-    driver.DeleteDataSource(fn)
-ds = driver.CreateDataSource(fn)
-
-if ds is None:
-    print &#39;Could not create file&#39;
-    sys.exit(1)
-layer = ds.CreateLayer(&#39;layer_1&#39;, geom_type=ogr.wkbPolygon)
-
-fieldDefn = ogr.FieldDefn(&#39;name&#39;, ogr.OFTString)
-fieldDefn.SetWidth(30)
-layer.CreateField(fieldDefn)
-
-featureDefn = layer.GetLayerDefn()
-
-ring = ogr.Geometry(ogr.wkbLinearRing)
-ring.AddPoint(54280, 419385)
-ring.AddPoint(95285, 419385)
-ring.AddPoint(95285, 460390)
-ring.AddPoint(54280, 460390)
-
-poly = ogr.Geometry(ogr.wkbPolygon)
-poly.AddGeometry(ring)
-
-feature = ogr.Feature(featureDefn)
-feature.SetGeometry(poly)
-
-layer.CreateFeature(feature)
-
-ring.Destroy()
-poly.Destroy()
-feature.Destroy()
-
-ds.Destroy()
-
-inSpatialRef = osr.SpatialReference()
-inSpatialRef.ImportFromEPSG(4269)
-outSpatialRef = osr.SpatialReference()
-# changing from unprojected to &#39;RijksDriehoeksstelsel&#39; the Dutch National Grid
-outSpatialRef.ImportFromEPSG(28992)
-coordTrans = osr.CoordinateTransformation(inSpatialRef, outSpatialRef)
-
-inDS = driver.Open(&#39;tmp.shp&#39;, 0)
-if inDS is None:
-  print &#39;Could not open file&#39;
-  sys.exit(1)
-inLayer = inDS.GetLayer()
-
-# create a new data source and layer
-fn = &#39;clip.shp&#39;
-if os.path.exists(fn):
-  driver.DeleteDataSource(fn)
-outDS = driver.CreateDataSource(fn)
-if outDS is None:
-  print &#39;Could not create file&#39;
-  sys.exit(1)
-outLayer = outDS.CreateLayer(&#39;layer_2&#39;, geom_type=ogr.wkbPolygon)
-
-featureDefn = outLayer.GetLayerDefn()
-
-# loop through the input features
-inFeature = inLayer.GetNextFeature()
-while inFeature:
-
-  # get the input geometry
-  geom = inFeature.GetGeometryRef()
-
-  # reproject the geometry
-  geom.Transform(coordTrans)
-
-  # create a new feature
-  outFeature = ogr.Feature(featureDefn)
-
-  # set the geometry and attribute
-  outFeature.SetGeometry(geom)
-  outFeature.SetField(&#39;name&#39;, inFeature.GetField(&#39;name&#39;))
-
-  # add the feature to the shapefile
-  outLayer.CreateFeature(outFeature)
-
-  # destroy the features and get the next input feature
-  outFeature.Destroy
-  inFeature.Destroy
-  inFeature = inLayer.GetNextFeature()
-
-# close the shapefiles
-inDS.Destroy()
-outDS.Destroy()&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>When working on a GIS project, this always bums me out. You need to have a certain area in which you want to cut all your source data. But in ArcGIS I never figure out how to do it properly, except for using Python scripts and arcgisscripting/arcpy. But I figured, this should also be do-able from the terminal, and take less time and energy from your little workbox.
+But here’s a Python script that uses open-source libraries and writes</description>
     </item>
     
     <item>
@@ -213,16 +44,8 @@ outDS.Destroy()&lt;/code&gt;&lt;/pre&gt;
       <pubDate>Mon, 10 Jan 2011 14:21:54 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2011/01/10/from-2-5d-to-3d/</guid>
-      <description>&lt;p&gt;My last few posts have focused on somewhat other things than my thesis. This does not mean that no progress has been made or that I&amp;#8217;ve done nothing. On the contrary; I&amp;#8217;ve done quite a bit. But it is rather less exciting.&lt;/p&gt;
-
-&lt;p&gt;I&amp;#8217;ve been busy with data conversion and trying to get a working 3D representation that is meaningful. Which is hard and not so spectacular. Seriously. First of all getting to grips with the fact that the reason why ESRI is marketleader may be because they deliver a complete and good package. My stubborn, innovative-creative side however always pushes me to look beyond the big things, before trying them out. That does not always pay off. Also trying out hip and open-source packages in Windows is just plain brutal. It sucks the life out of me. Cygwin/MinGW is utter pain, and Python for Windows is hell. Give me OS X or  Debian-linux anyday (apt-get FTW).&lt;/p&gt;
-
-&lt;p&gt;So now I am trying to make a 3d representation of things with ArcGIS (ArcMap and ArcScene). But even then trying to deal with different formats remains a chore.&lt;/p&gt;
-
-&lt;p&gt;After this, and only after this I have to even more conversions to get it going in any Augmented Reality or 3D instance online or on a smartphone. The best to go for now is ArcScene -&amp;gt; export 3D (VRML) -&amp;gt; Open in Meshlab -&amp;gt; export to 3Ds or DAE. Which is a sucky workflow, but like, whatever.&lt;/p&gt;
-
-&lt;p&gt;So there&amp;#8217;s that.&lt;/p&gt;
-</description>
+      <description>My last few posts have focused on somewhat other things than my thesis. This does not mean that no progress has been made or that I’ve done nothing. On the contrary; I’ve done quite a bit. But it is rather less exciting.
+I’ve been busy with data conversion and trying to get a working 3D representation that is meaningful. Which is hard and not so spectacular. Seriously. First of all getting to grips with the fact that the reason why ESRI is marketleader may be because they deliver a complete and good package.</description>
     </item>
     
     <item>
@@ -231,36 +54,9 @@ outDS.Destroy()&lt;/code&gt;&lt;/pre&gt;
       <pubDate>Mon, 22 Nov 2010 12:51:17 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2010/11/22/processing-images-with-gdal-and-mayavi2/</guid>
-      <description>&lt;p&gt;Ok, this took a while but the results are not bad. So I guess it&amp;#8217;s worth it.&lt;/p&gt;
-
-&lt;p&gt;First of all, a big thank you at [Ok, this took a while but the results are not bad. So I guess it&amp;#8217;s worth it.&lt;/p&gt;
-
-&lt;p&gt;First of all, a big thank you at](&lt;a href=&#34;http://www.gis.usu.edu/~chrisg/&#34;&gt;http://www.gis.usu.edu/~chrisg/&lt;/a&gt;) who is very possibly unaware of the fact that I have been using his classes on Python and Open Source GIS. They give a good introduction into using GDAL with NumPy.&lt;/p&gt;
-
-&lt;p&gt;So after struggling a few consecutive days (frustration peaked!), I managed to load a Digital Elevation Model into the Mayavi 3D visualization tool. It&amp;#8217;s still a bit rough and the peaks are a bit pointy, thus buildings look a bit weird, but still it&amp;#8217;s another little step.&lt;/p&gt;
-
-&lt;p&gt;I first tried a &lt;a href=&#34;http://en.wikibooks.org/wiki/Blender_3D:_Noob_to_Pro/Making_Landscapes_with_heightmaps&#34;&gt;Blender Tutorial&lt;/a&gt; that helped me out making this image:&lt;/p&gt;
-
-&lt;div id=&#34;attachment_199&#34; style=&#34;width: 456px&#34; class=&#34;wp-caption alignnone&#34;&gt;
-  &lt;a href=&#34;http://fritzvd.files.wordpress.com/2010/11/blenderdem.png&#34;&gt;&lt;img src=&#34;http://fritzvd.files.wordpress.com/2010/11/blenderdem.png&#34; alt=&#34;Blender and Digital Elevation Model&#34; title=&#34;blenderdem&#34; width=&#34;446&#34; height=&#34;269&#34; class=&#34;size-full wp-image-199&#34; /&gt;&lt;/a&gt;
-  
-  &lt;p class=&#34;wp-caption-text&#34;&gt;
-    Blender output
-  &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Then after that I figured that is a bit much work for something that in my opinion can be done more efficiently. The steps are still a bit stupid, because I exported a PNG of the DEM visualized with grayscale and then imported that into gdal and displayed that. So it&amp;#8217;s still a bit dumb. And it isn&amp;#8217;t really representative of the data types that a DEM contain. But the DEM itself only gave very weird visualizations, possibly because of the detail of the file as well as large negative values for NoData values.&lt;/p&gt;
-
-&lt;p&gt;Anyway it is a start:&lt;/p&gt;
-
-&lt;div id=&#34;attachment_202&#34; style=&#34;width: 510px&#34; class=&#34;wp-caption alignnone&#34;&gt;
-  &lt;a href=&#34;http://fritzvd.files.wordpress.com/2010/11/mayavi-dem1.png&#34;&gt;&lt;img src=&#34;http://fritzvd.files.wordpress.com/2010/11/mayavi-dem1.png&#34; alt=&#34;Import with PNG and Mayavi2&#34; title=&#34;mayavi-dem&#34; width=&#34;500&#34; height=&#34;247&#34; class=&#34;size-full wp-image-202&#34; srcset=&#34;http://blog.technokrat.nl/wp-content/uploads/2010/11/mayavi-dem1-300x148.png 300w, http://blog.technokrat.nl/wp-content/uploads/2010/11/mayavi-dem1.png 1002w&#34; sizes=&#34;(max-width: 500px) 100vw, 500px&#34; /&gt;&lt;/a&gt;
-  
-  &lt;p class=&#34;wp-caption-text&#34;&gt;
-    Mayavi2 Output
-  &lt;/p&gt;
-&lt;/div&gt;
-</description>
+      <description>Ok, this took a while but the results are not bad. So I guess it’s worth it.
+First of all, a big thank you at [Ok, this took a while but the results are not bad. So I guess it’s worth it.
+First of all, a big thank you at](http://www.gis.usu.edu/~chrisg/) who is very possibly unaware of the fact that I have been using his classes on Python and Open Source GIS.</description>
     </item>
     
     <item>
@@ -269,16 +65,8 @@ outDS.Destroy()&lt;/code&gt;&lt;/pre&gt;
       <pubDate>Thu, 30 Sep 2010 10:48:50 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2010/09/30/augmented-reality/</guid>
-      <description>&lt;p&gt;Another consideration is if using Augmented Reality (AR) how to implement it and what method of going about it.&lt;/p&gt;
-
-&lt;p&gt;ARToolkit has different spin-offs that look quite interesting. One of my favourites are FLARToolkit and possibly SLARToolkit. The flash toolkit. But then I am not very proficient in Flash and ActionScript. Also I tend to avoid Flash as much as possible as well as writing stuff in C#. But the office I work in makes it easier to use C# then any other binding. Also there is a C# binding of OGRE which is quite well developed. OGRE is an opensource 3d gaming engine Which made me think: HTML5. Is there a solution for that?&lt;/p&gt;
-
-&lt;p&gt;Also OSGARToolkit looks interesting. It uses a well developed opensource C++ based 3d graphics toolkit OpenSceneGraph. Which itself has a GIS project going as well. (osggis and osgearth). A quite detailed and beautiful Flight Simulator &amp;#8211; FlightGear &amp;#8211; is also based on OSG. An interesting project based on the OSG library is Vizard. A library in Python (yey!) to create Virtual Environments. The only major drawback is that it costs a fortune.&lt;/p&gt;
-
-&lt;p&gt;For some cool examples of FLARToolkit: &lt;a href=&#34;http://rawkes.com&#34;&gt;rawkes.com&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The most viable of options seems to be the OSGARToolkit. It is free and above all it has quite good thorough documentation. To get started and to continue the work a bit. Just need to learn a bit of C++ (&lt;a href=&#34;http://lwn.net/Articles/249460/&#34;&gt;oh lord&lt;/a&gt;) and 3D modeling. This might be a long insomniac season.&lt;/p&gt;
-</description>
+      <description>Another consideration is if using Augmented Reality (AR) how to implement it and what method of going about it.
+ARToolkit has different spin-offs that look quite interesting. One of my favourites are FLARToolkit and possibly SLARToolkit. The flash toolkit. But then I am not very proficient in Flash and ActionScript. Also I tend to avoid Flash as much as possible as well as writing stuff in C#. But the office I work in makes it easier to use C# then any other binding.</description>
     </item>
     
     <item>
@@ -287,28 +75,8 @@ outDS.Destroy()&lt;/code&gt;&lt;/pre&gt;
       <pubDate>Wed, 29 Sep 2010 15:46:53 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2010/09/29/considerations-on-which-gaming-engine-to-use/</guid>
-      <description>&lt;p&gt;A quick update on my project of using a Gaming Engine to process GIS data. After some googling and reading other peoples blogs and workspaces it seems that some engines are more fit than others.&lt;/p&gt;
-
-&lt;p&gt;Tim Germanchis et al. (2005) has done a brief overview of different game engines for this particular usage. Amongst which are the Quake III, Unreal Runtime 2, CryEngine and others. The CryEngine apparently suited the writer the most. As it was easy to learn, stable and the most powerful.&lt;/p&gt;
-
-&lt;p&gt;However according to the [A quick update on my project of using a Gaming Engine to process GIS data. After some googling and reading other peoples blogs and workspaces it seems that some engines are more fit than others.&lt;/p&gt;
-
-&lt;p&gt;Tim Germanchis et al. (2005) has done a brief overview of different game engines for this particular usage. Amongst which are the Quake III, Unreal Runtime 2, CryEngine and others. The CryEngine apparently suited the writer the most. As it was easy to learn, stable and the most powerful.&lt;/p&gt;
-
-&lt;p&gt;However according to the](&lt;a href=&#34;http://gis-game.pbworks.com/&#34;&gt;http://gis-game.pbworks.com/&lt;/a&gt;) (coming up in almost all of my searches on Google) this Engine is not very favourable. By the way if anyone knows who these guys are, I would love to come into contact with them. But found it kind of difficult to contact them.&lt;/p&gt;
-
-&lt;p&gt;One major objection I personally have with CryTek is that it is a Windows only Software. As I will have to do most of my development behind a Windows I will probably would be in the temptation of cutting my lifeline short. But it does make it easier to user CryEngine as well.&lt;/p&gt;
-
-&lt;p&gt;I also saw that CryEngine 3 is coming out. Maybe my Prof would like to help me to get a Educational license to start working on that.&lt;/p&gt;
-
-&lt;p&gt;In relation to open-sourcing and stuff: ioquake3. The well-known quake3 engine has been released under the GPL license as ioquake3. So maybe that is worth giving a try. Although it is a bit older. But then again, science seems to lag in this field anyways.&lt;/p&gt;
-
-&lt;p&gt;One of my major concerns is the processing of GIS data in 3d. I hope that I can find a way with Python and bash maybe to automate the modeling of the 3d objects. Although that might be wishful thinking.&lt;/p&gt;
-
-&lt;p&gt;My other concern I will discuss tomorrow. As it is time for me to do some studying for my courses.&lt;/p&gt;
-
-&lt;p&gt;Edit: &lt;a href=&#34;http://uaraus.altervista.org/index.php?filename=en/content/categories/Blender/DEM_importer.html&#34;&gt;this looks interesting for DEM and Blender things&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>A quick update on my project of using a Gaming Engine to process GIS data. After some googling and reading other peoples blogs and workspaces it seems that some engines are more fit than others.
+Tim Germanchis et al. (2005) has done a brief overview of different game engines for this particular usage. Amongst which are the Quake III, Unreal Runtime 2, CryEngine and others. The CryEngine apparently suited the writer the most.</description>
     </item>
     
     <item>
@@ -317,40 +85,8 @@ outDS.Destroy()&lt;/code&gt;&lt;/pre&gt;
       <pubDate>Wed, 29 Sep 2010 14:54:21 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2010/09/29/considerations-on-3d-visualization-for-gis/</guid>
-      <description>&lt;p&gt;For my minor thesis I am thinking of a project for processing Environmental Impact Assessment in a way that is more easily comprehensible. For this project I intend to use Augmented Reality. Hopefully some form of 3d visualization. And I am looking at the possibilities of using gaming engines.&lt;/p&gt;
-
-&lt;p&gt;First and foremost, this is a preliminary research. I am not in any way an expert. And only just learning about the amazing possibilities.&lt;/p&gt;
-
-&lt;p&gt;Over the last few days I have been looking at different scholarly and not so scholarly papers in search of some good information on the use of game engines in 3d visualizations of GIS. The search has been quite fruitful but not conclusive. Aren&amp;#8217;t these searches always.&lt;/p&gt;
-
-&lt;p&gt;Anyway. This is more or less a note to self. To remind myself what I&amp;#8217;ve found and where. But if you&amp;#8217;re interested please follow this blog to see the outcome of this project.&lt;/p&gt;
-
-&lt;p&gt;Visualization using Game Engines is something that has over the last decade caught the attention and imagination of more people than just me. Not surprisingly because the gaming industry is leading the field in wonderful visualizations and magnificent displays of Artificial Worlds and the interaction of the user with it.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;1. Fritsch and Kada &amp;#8211; Visualization Using Game Engines&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Dieter Fritsch and Martind Kada of the Institute for Photogrammetry in Germany has written an introductory overview on different game engines and their applicability and capabilities for visualization in 3d. His conclusion clearly states the possibilities but also the complications. These mainly consist of data format. Common GIS data patterns are very different to most 3d data types. Polygons and points are usually a bit more complex more on this in number 3. A project called GISMO apparently is quite capable of rendering large data sets and are quite user friendly.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;2. Herwig and Paar &amp;#8211; Game Engines: Tools for Landscape Visualization and Planning?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Interesting conclusions and research on the increased involvement of stakeholders and planners. Not necessarily a very technical paper. But good for reference.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;3. Scianna and Ammoscato &amp;#8211; 3D GIS Data Model Using Open Source Software (2010)&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;An interesting article on using the Python bindings of Blender to process GIS data. They start of by stating why they chose to use Blender for the research and not other open source 3d software. There is quite a difference in data types as already mentioned between usual 3d rendering and design software and GIS data types. Unlike GIS types points and lines do not form the primitives of 3d software.&lt;/p&gt;
-
-&lt;p&gt;Blender and the GIS RDBMS PostGIS are then linked through a Python script. And data is sent back and forth. Python scripts are available online: &lt;a href=&#34;www.dirap.unipa.it/python_scripts&#34;&gt;Link does not seem to work&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4. Slocum et al. &amp;#8211; Cognitive and Usability Issues in Geovisualization&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;This is a more academic work on cognitions and user friendliness. Different methods of working with Geovisualization are proposed. Good for reference and Usability things.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;5. MacEachran (editor) &amp;#8211; Exploring Geovisualization&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Huge collection of articles on Geovisualization. From Usability and Cognition, to Data Handling and 3D interfaces. Chapter 28 was quite useful on Usability.&lt;/p&gt;
-
-&lt;p&gt;Of course much more literature has been leafed through, but these are some of the articles or books that I found worth mentioning in the introduction of my proposal. Next time some more literature overviews and then hopefully some conclusions.&lt;/p&gt;
-</description>
+      <description>For my minor thesis I am thinking of a project for processing Environmental Impact Assessment in a way that is more easily comprehensible. For this project I intend to use Augmented Reality. Hopefully some form of 3d visualization. And I am looking at the possibilities of using gaming engines.
+First and foremost, this is a preliminary research. I am not in any way an expert. And only just learning about the amazing possibilities.</description>
     </item>
     
   </channel>

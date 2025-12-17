@@ -1,30 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Artoolkit on fritzvd</title>
+    <title>artoolkit on fritzvd</title>
     <link>http://blog.fritzvd.com/tags/artoolkit/</link>
-    <description>Recent content in Artoolkit on fritzvd</description>
+    <description>Recent content in artoolkit on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Sep 2010 10:48:50 +0000</lastBuildDate>
-    <atom:link href="http://blog.fritzvd.com/tags/artoolkit/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Thu, 30 Sep 2010 10:48:50 +0000</lastBuildDate><atom:link href="http://blog.fritzvd.com/tags/artoolkit/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Random thoughts Augmented Reality</title>
       <link>http://blog.fritzvd.com/2010/09/30/augmented-reality/</link>
       <pubDate>Thu, 30 Sep 2010 10:48:50 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2010/09/30/augmented-reality/</guid>
-      <description>&lt;p&gt;Another consideration is if using Augmented Reality (AR) how to implement it and what method of going about it.&lt;/p&gt;
-
-&lt;p&gt;ARToolkit has different spin-offs that look quite interesting. One of my favourites are FLARToolkit and possibly SLARToolkit. The flash toolkit. But then I am not very proficient in Flash and ActionScript. Also I tend to avoid Flash as much as possible as well as writing stuff in C#. But the office I work in makes it easier to use C# then any other binding. Also there is a C# binding of OGRE which is quite well developed. OGRE is an opensource 3d gaming engine Which made me think: HTML5. Is there a solution for that?&lt;/p&gt;
-
-&lt;p&gt;Also OSGARToolkit looks interesting. It uses a well developed opensource C++ based 3d graphics toolkit OpenSceneGraph. Which itself has a GIS project going as well. (osggis and osgearth). A quite detailed and beautiful Flight Simulator &amp;#8211; FlightGear &amp;#8211; is also based on OSG. An interesting project based on the OSG library is Vizard. A library in Python (yey!) to create Virtual Environments. The only major drawback is that it costs a fortune.&lt;/p&gt;
-
-&lt;p&gt;For some cool examples of FLARToolkit: &lt;a href=&#34;http://rawkes.com&#34;&gt;rawkes.com&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The most viable of options seems to be the OSGARToolkit. It is free and above all it has quite good thorough documentation. To get started and to continue the work a bit. Just need to learn a bit of C++ (&lt;a href=&#34;http://lwn.net/Articles/249460/&#34;&gt;oh lord&lt;/a&gt;) and 3D modeling. This might be a long insomniac season.&lt;/p&gt;
-</description>
+      <description>Another consideration is if using Augmented Reality (AR) how to implement it and what method of going about it.
+ARToolkit has different spin-offs that look quite interesting. One of my favourites are FLARToolkit and possibly SLARToolkit. The flash toolkit. But then I am not very proficient in Flash and ActionScript. Also I tend to avoid Flash as much as possible as well as writing stuff in C#. But the office I work in makes it easier to use C# then any other binding.</description>
     </item>
     
   </channel>

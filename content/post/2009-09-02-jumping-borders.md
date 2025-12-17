@@ -1,15 +1,15 @@
 ---
 author: fritzvd
 categories:
-- Uncategorized
+  - Uncategorized
 date: 2009-09-02T09:41:56Z
-guid: http://fritzvd.wordpress.com/?p=92
+guid: http://blog.fritzvd.com/?p=92
 id: 92
 tags:
-- capetown
-- travels
-- vicfalls
-- zimbabwe
+  - capetown
+  - travels
+  - vicfalls
+  - zimbabwe
 title: jumping borders
 url: /2009/09/02/jumping-borders/
 ---
@@ -21,7 +21,7 @@ Last time I posted something on my blog, I did so from the town of Victoria Fall
 And they are astounding. What an awesome, tremendous display of power and majesty that is. Roaring like a lion does a herd of wild waters rush down the steep ridges. Rush down and come back up again, come back up again in victorious mist that shatters sunlight into a million pieces. A rainbow so bright that it does not seem to be real. A sight so violent that it seems unlikely to bring life wherever the water flows.
 
 After Vic Falls, we hitchhiked back to Bulawayo, this time a free ride in a nice Land Cruiser. In Bulawayo we spent another 2 days before I travelled back to Johannesburg. That was quite a crazy experience. Although I chose a well trusted company: Greyhound, the bus driver took more passengers than allowed.
-  
+
 The other special thing, the border post. You have never seen queues like you have seen them at the Zimbabwean-South African border post. We stood in a queue literally reaching up to at least 150 m. (I shot a little film clip that I will upload somewhere in the near future). Furthermore we spent 4 hours crossing the border before we could continue driving to Johannesburg.
 
 As for now, I am in Cape Town. Enjoying and loving the time I have with [Simon Marieke and Noah](http://www.simonandmarieke.com). Over the next three weeks I will just be hanging out with friends and wha-evs. For new phone number see contact page.

@@ -1,64 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Nodeconf on fritzvd</title>
+    <title>nodeconf on fritzvd</title>
     <link>http://blog.fritzvd.com/tags/nodeconf/</link>
-    <description>Recent content in Nodeconf on fritzvd</description>
+    <description>Recent content in nodeconf on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Sep 2014 11:53:39 +0000</lastBuildDate>
-    <atom:link href="http://blog.fritzvd.com/tags/nodeconf/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Mon, 15 Sep 2014 11:53:39 +0000</lastBuildDate><atom:link href="http://blog.fritzvd.com/tags/nodeconf/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mad Science Act &amp;#8211; part 1@ nodeconf.eu</title>
       <link>http://blog.fritzvd.com/2014/09/15/mad-science-act-part-1-nodeconf-eu/</link>
       <pubDate>Mon, 15 Sep 2014 11:53:39 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2014/09/15/mad-science-act-part-1-nodeconf-eu/</guid>
-      <description>&lt;p&gt;The Mad Science Act, was something completely different. It featured many topics and some of the most creative and prolific npmjs.org authors. It was a bit mad, so I&amp;#8217;ll try to make it as coherent as I understood it. I have split up the post in 2 parts. It would be too much put into one.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Professor &lt;a title=&#34;substack&#34; href=&#34;https://twitter.com/substack&#34; target=&#34;_blank&#34;&gt;Substack&lt;/a&gt; &amp;#8211; Mad Science intro.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;When you start out creating (npm) modules you realize there is a great shortage of modules. And you need to create much more. A lot of tools are already readily available and they one thing and try to do it right. The tools are small concise and are encapsulated, they seperate concern and are in that sense: &amp;#8216;orthogonal&amp;#8217;.&lt;/p&gt;
-
-&lt;div style=&#34;width: 1450px&#34; class=&#34;wp-caption alignnone&#34;&gt;
-  &lt;a href=&#34;https://github.com/substack/nodeconf.eu-2014&#34;&gt;&lt;img class=&#34;&#34; src=&#34;https://raw.githubusercontent.com/substack/nodeconf.eu-2014/master/images/060_orthogonal.png&#34; alt=&#34;&#34; width=&#34;1440&#34; height=&#34;1080&#34; /&gt;&lt;/a&gt;
-  
-  &lt;p class=&#34;wp-caption-text&#34;&gt;
-    orthogonal &amp;#8211; substack
-  &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Still with all the tools that are readily available, they don&amp;#8217;t cover all use cases. Besides focusing on test coverage, we should take into account solving more and more use cases. So go dumpster diving for stuff that can output other stuff by multiplexing data streams. For example with &lt;a title=&#34;dataplex&#34; href=&#34;https://github.com/substack/dataplex&#34; target=&#34;_blank&#34;&gt;dataplex&lt;/a&gt;. It helps you to capture and organize multiple streams over a single stream. Conveying it over e.g. tcp or web socket connections.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;this is where it all went fuzzy&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Then Substack did some live code demo&amp;#8217;s, to create a quick webserver, continuous integration server etc. with some readily available tools and piping the data to dataplex. There is a pretty good example on the &lt;a title=&#34;dataplex&#34; href=&#34;https://github.com/substack/dataplex&#34; target=&#34;_blank&#34;&gt;&amp;#8216;dataplex&amp;#8217; github page&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a title=&#34;feross&#34; href=&#34;https://twitter.com/feross&#34; target=&#34;_blank&#34;&gt;Feross&lt;/a&gt; &amp;#8211; webtorrent&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;This talk portrayed a powerful implementation of webrtc. Using WebRTC as an alternative skype, &lt;a title=&#34;hello chrome it&#39;s firefox calling&#34; href=&#34;https://hacks.mozilla.org/2013/02/hello-chrome-its-firefox-calling/&#34; target=&#34;_blank&#34;&gt;is something we&amp;#8217;ve seen before&lt;/a&gt;. And it&amp;#8217;s great, but there is also the &lt;a title=&#34;datachannels on html5rocks&#34; href=&#34;http://www.html5rocks.com/en/tutorials/webrtc/datachannels/&#34; target=&#34;_blank&#34;&gt;DataChannel&lt;/a&gt;. An api that delivers a peer-to-peer data connection &lt;a title=&#34;webrtc infrastructure&#34; href=&#34;http://www.html5rocks.com/en/tutorials/webrtc/infrastructure/&#34; target=&#34;_blank&#34;&gt;&amp;#8216;without a server&amp;#8217;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;A peer-to-peer data connection of course sounds but a step away from things like the beautiful BitTorrent protocol. In comes &lt;a title=&#34;webtorrent&#34; href=&#34;https://github.com/feross/webtorrent&#34; target=&#34;_blank&#34;&gt;webtorrent&lt;/a&gt;. A tool created to use the bittorrent protocol for decompartmentalizing files with a verification hash, and start sharing these small parts of a file, so once a person has that small bit, it can already share that part. Only the catch is that it can do this over the web. The webtorrent client runs in any webRTC (datachannel) compatible browser. For now that means Firefox and Chrome.&lt;/p&gt;
-
-&lt;p&gt;An example of this can be found on &lt;a title=&#34;instant.io&#34; href=&#34;http://instant.io/&#34; target=&#34;_blank&#34;&gt;instant.io&lt;/a&gt; (send me a message if you want to try it ☺ &lt;a title=&#34;@fritzvd&#34; href=&#34;https://twitter.com/fritzvd&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;Because bittorrent works over TCP/UDP webtorrent and bittorrent can&amp;#8217;t connect (yet) directly. But they need hybrid clients in between. So Feross is working on a command line webtorrent client, that functions as a &amp;#8216;hybrid&amp;#8217; client.&lt;/p&gt;
-
-&lt;p&gt;The awesomerestest was a live demo of a &lt;a title=&#34;webrtc-whiteboard&#34; href=&#34;https://github.com/feross/webrtc-whiteboard&#34; target=&#34;_blank&#34;&gt;webrtc-whiteboard&lt;/a&gt; which can also be &lt;a title=&#34;whiteboard&#34; href=&#34;http://instant.io:8080/&#34; target=&#34;_blank&#34;&gt;tested live&lt;/a&gt;. It&amp;#8217;s still very PoC-y though. But it was great to see it working these small bits and pieces that make up webtorrent and seeing it being used by people in the audience as well, for sharing cat video&amp;#8217;s and images:&lt;/p&gt;
-
-&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;
-  &lt;p&gt;
-    &lt;a href=&#34;https://twitter.com/feross&#34;&gt;@feross&lt;/a&gt; doing webrtc mad science &lt;a href=&#34;https://twitter.com/hashtag/nodeconfeu?src=hash&#34;&gt;#nodeconfeu&lt;/a&gt; &lt;a href=&#34;http://t.co/Kxf1BL4qd9&#34;&gt;pic.twitter.com/Kxf1BL4qd9&lt;/a&gt;
-  &lt;/p&gt;
-  
-  &lt;p&gt;
-    — Magnus (@ralphtheninja) &lt;a href=&#34;https://twitter.com/ralphtheninja/status/509649443097169920&#34;&gt;September 10, 2014&lt;/a&gt;
-  &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Go over and help Feross. His project is now &lt;a title=&#34;OPEN Open Source&#34; href=&#34;http://blog.technokrat.nl/2014/09/15/open-open-source/&#34; target=&#34;_blank&#34;&gt;&amp;#8220;open open source&amp;#8221;.&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>The Mad Science Act, was something completely different. It featured many topics and some of the most creative and prolific npmjs.org authors. It was a bit mad, so I’ll try to make it as coherent as I understood it. I have split up the post in 2 parts. It would be too much put into one.
+Professor Substack – Mad Science intro.
+When you start out creating (npm) modules you realize there is a great shortage of modules.</description>
     </item>
     
     <item>
@@ -67,34 +24,9 @@
       <pubDate>Mon, 15 Sep 2014 09:14:33 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2014/09/15/hardware-track-nodeconf-eu/</guid>
-      <description>&lt;p&gt;The hardware track featured talks on hardware that were not just about hardware, but also served as a metaphor. The most poignant of these was Colin Vernon&amp;#8217;s on the cloudbit.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Colin Vernon &amp;#8211; Cloudbit&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;As an engineer we really like building stuff and figuring out difficult problems. And for us working with the tools we make is easy. But we should see our tools as a material. A material with which we can build stuff, which we can use like lego-blocks.&lt;/p&gt;
-
-&lt;p&gt;In that vain &lt;a href=&#34;http://littlebits.cc/&#34; title=&#34;littlebits&#34; target=&#34;_blank&#34;&gt;littlebits&lt;/a&gt; have created hardware modules that click into eachother and are interchangeable. With the newest bit: the cloudbit you can run and build a quick node app. With this you can control your &amp;#8216;bits&amp;#8217; or read out its data.&lt;/p&gt;
-
-&lt;p&gt;Software in that sense can be like hardware. Where in stead of creating applications (monolithic or not) that don&amp;#8217;t connect to each other, let&amp;#8217;s make small building blocks. Littlebits is lowering the barrier to entry for hardware. With the cloudbit they are not lowering the bar again for connectivity. With a ready made app that can read out sensors on your iPhone. So why not lower the barrier to entry to connecting software bits. In a way this is what &lt;a href=&#34;https://ifttt.com/&#34; title=&#34;ifttt&#34; target=&#34;_blank&#34;&gt;IFTTT.com (If This Then That)&lt;/a&gt; did.&lt;/p&gt;
-
-&lt;p&gt;Let&amp;#8217;s stop solving the same problems over and over again, and let&amp;#8217;s start creating blocks that lock and in out of each other similar to the littlebits hardware.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Raquel Velez&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Nodebots are fairly simple and cheap to make, and are fun. Hardware can be hooked up and you can run node to get things working.&lt;/p&gt;
-
-&lt;p&gt;A few libraries that would be useful for this:&lt;/p&gt;
-
-&lt;p&gt;johnny-five.&lt;/p&gt;
-
-&lt;p&gt;Raquel demoed a little bot that could draw (either randomly or controlled by a small webinterface). Sadly it died a horrid death at demo time. Here&amp;#8217;s the video to prove it actually worked at one point:&lt;/p&gt;
-
-&lt;p&gt;Bots like this might seem insignificant, but Raquel ended saying that in the end the Mars Rovers are also basically bots which do similar stuff as the nodebot project makes possible.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Hardware workshop&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;In the afternoon we played around with the littlebits sets and &lt;a href=&#34;https://tessel.io/&#34; title=&#34;tessel.io&#34; target=&#34;_blank&#34;&gt;Tessels&lt;/a&gt; (microcontroller that runs javascript). Which basically meant everyone went hay-wire on the &lt;a href=&#34;http://littlebits.cc/kits/synth-kit&#34; title=&#34;synth-kit&#34; target=&#34;_blank&#34;&gt;Korg set of littlebits&lt;/a&gt;:&lt;/p&gt;
-</description>
+      <description>The hardware track featured talks on hardware that were not just about hardware, but also served as a metaphor. The most poignant of these was Colin Vernon’s on the cloudbit.
+Colin Vernon – Cloudbit
+As an engineer we really like building stuff and figuring out difficult problems. And for us working with the tools we make is easy. But we should see our tools as a material. A material with which we can build stuff, which we can use like lego-blocks.</description>
     </item>
     
     <item>
@@ -103,52 +35,9 @@
       <pubDate>Sat, 13 Sep 2014 11:11:52 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2014/09/13/front-end-track-at-nodeconf-eu/</guid>
-      <description>&lt;p&gt;The frontend track featured some very different talks , ranging from performance to a/b testing. In that sense it was a bit different from the &lt;a href=&#34;http://blog.technokrat.nl/2014/09/12/microservices-track-summary-nodeconfeu/&#34; title=&#34;Microservices Track summary #nodeconfeu&#34; target=&#34;_blank&#34;&gt;microservices track&lt;/a&gt;, because it was less of a &amp;#8216;one story&amp;#8217; thing.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Scaling A/B testing at Netflix &amp;#8211; &lt;a href=&#34;https://twitter.com/stinkydofu&#34; title=&#34;@stinkydofu&#34; target=&#34;_blank&#34;&gt;Alex Liu&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Netflix takes a/b testing to the next level, where they break up the UI in little pieces and run a/b tests on all of them at once. One user can be in several a/b tests at one point in time. They do hundreds of these tests a year, which means they have to deliver 2.5 million unique packages a week (!!!!!!!). This in itself is astounding.&lt;/p&gt;
-
-&lt;p&gt;The problem with these packages is conditional packages. So for example search is updated and needs some old dependencies and some old dependencies (see slide below).&lt;/p&gt;
-
-&lt;p&gt;To build this to scale you don&amp;#8217;t want to have someone picking the correct packages by hand. For that they wrote a node module that looks at the docstring of a function/file. Which can have a ruleset explaining when it should or should not be included. In the build process the packages are selected that should be part of it and which should not. With every request to the node server that runs the assets, the registry is consulted, the rules are applied and packaged and cached and served from a CDN for the next person in the same a/b test group.&lt;/p&gt;
-
-&lt;p&gt;Fail fast, move faster (to improve that is, your goal should not be to fail).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Fullstack through microservices &amp;#8211; &lt;a href=&#34;https://twitter.com/matteocollina&#34; title=&#34;@matteocollina&#34; target=&#34;_blank&#34;&gt;Matteo Collina&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Matteo talked about using data channels and RPC&amp;#8217;s (remote procedure calls) from the back end to the frontend. Using data streams in stead of request/response patterns. In stead of returning a delimited block of data you can return a channel. This makes it possible to receive and unpack or send and connect binary data directly to or from the frontend. Anything that is serializable to JSON, Node.js binary streams or even other channels can all be sent through this mechanism.&lt;/p&gt;
-
-&lt;p&gt;So to have a framework of these types of microservices they created Graft.&lt;/p&gt;
-
-&lt;p&gt;_Update: oh and he used this really cool cheap sensor to do his talk: &lt;a href=&#34;https://estore.ti.com/CC2541DK-SENSOR-CC2541-SensorTag-Development-Kit-P3192.aspx&#34; title=&#34;SensorTag&#34; target=&#34;_blank&#34;&gt;SensorTag&lt;/a&gt;_&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Building high quality services at Uber &amp;#8211; &lt;a href=&#34;https://twitter.com/raynos&#34; title=&#34;@raynos&#34; target=&#34;_blank&#34;&gt;Jake Verbaten&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Raynos started with a funny story where his first day was to build a proxy service. Oh and it will be deployed to about 50 machines. Oh and they can&amp;#8217;t go down ever.&lt;/p&gt;
-
-&lt;p&gt;Of course when you make something, you have to go over it again to &amp;#8220;productionize&amp;#8221; it. In order to do this, he showed some tools they use at Uber to get this going.&lt;/p&gt;
-
-&lt;p&gt;The one that stood out the most was &lt;em&gt;potter&lt;/em&gt; (which they&amp;#8217;re still &amp;#8220;open-sourcifying&amp;#8221;). It basically sets up a skeleton (or scaffolds) for your project, starts a github repo, and registers it at your CI server (i.e. travis, jenkins, wha-evah), starts logging to sentry and graphite.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Demystifying v8 and javascript performance &amp;#8211; &lt;a href=&#34;https://twitter.com/thlorenz&#34; title=&#34;@thlorenz&#34; target=&#34;_blank&#34;&gt;Thorsten Lorentz&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The engine which is used for node.js is the same one as is used for Chrome/Chromium project: V8. Therefore similar problems that arise with node will also occur in the browser. Which means that performancewise you can apply the same principles.&lt;/p&gt;
-
-&lt;p&gt;This is the talk that had me looking up lots of things in the end, so it at least was great food for thought.&lt;/p&gt;
-
-&lt;p&gt;One of the easiest performance gains you can easily apply is to be clear about your intentions to the browser/v8 engine. Meaning you don&amp;#8217;t start by declaring an empty list if you are then going to fill it up with a number of different types. Usually you should stay away from different types in one array altogether, but performance will severely drop if you are not being upfront to the interpreter.&lt;/p&gt;
-
-&lt;p&gt;Example:&lt;/p&gt;
-
-&lt;p&gt;He also went into great detail about how you don&amp;#8217;t want to keep on changing an Object structure after construction, because at one point v8 will give up and fall-back to the unoptimizable slow HashTable structure. But rather than I try to reproduce this look at this blog post: &lt;a href=&#34;http://jayconrod.com/posts/52/a-tour-of-v8-object-representation&#34; title=&#34;a-tour-of-v8-object-representation&#34; target=&#34;_blank&#34;&gt;A tour of v8 object representation&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://thlorenz.github.io/talks/demystifying-v8/talk.pdf&#34; title=&#34;slides&#34; target=&#34;_blank&#34;&gt;and the slides themselves&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Final thoughts&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/davidmarkclem&#34; title=&#34;@davidmarkclem&#34; target=&#34;_blank&#34;&gt;David Clements&lt;/a&gt; did a workshop on working with streams and data from front end to the backend (and vice versa) which covered lots of ground similar to what Matteo squeezed into 20 min. Check it out here: &lt;a href=&#34;https://www.dropbox.com/sh/9ra61cq9qgpxyx0/AACXumrkWesFs7jrhI4uUEula/slides.pdf?dl=0&#34; title=&#34;back to the frontend&#34; target=&#34;_blank&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>The frontend track featured some very different talks , ranging from performance to a/b testing. In that sense it was a bit different from the microservices track, because it was less of a ‘one story’ thing.
+Scaling A/B testing at Netflix – Alex Liu
+Netflix takes a/b testing to the next level, where they break up the UI in little pieces and run a/b tests on all of them at once.</description>
     </item>
     
     <item>
@@ -157,38 +46,8 @@
       <pubDate>Fri, 12 Sep 2014 11:17:59 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2014/09/12/microservices-track-summary-nodeconfeu/</guid>
-      <description>&lt;p&gt;The microservices track came down to most speakers saying things more or less in similar vain, each talk having its own emphasis. &lt;a href=&#34;https://twitter.com/rjrodger&#34; title=&#34;rjrodger&#34; target=&#34;_blank&#34;&gt;Richard Rodger&lt;/a&gt; opened up and basically laid the groundwork for the microservices bit together with the &lt;a href=&#34;https://twitter.com/fgeorge52&#34; title=&#34;fgeorge52&#34; target=&#34;_blank&#34;&gt;Fred George&lt;/a&gt; talk.&lt;/p&gt;
-
-&lt;p&gt;After hearing the talks I&amp;#8217;d define microservices as small blocks that can run independently and do one thing, along the Unix philosophy. Making building blocks in stead of one big application that does everything. Now instead of including this one small thing in the rest of your app, you run this as a single thing which returns results based on messaging.&lt;/p&gt;
-
-&lt;p&gt;Your services will be fairly stupid as in that they will not know about the other services. So in order to communicate with each other you have the services talk to a message bus.&lt;/p&gt;
-
-&lt;p&gt;What this enables is having:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;a naturally scalable application&lt;/li&gt;
-&lt;li&gt;naturally scalable teams (as you don&amp;#8217;t need to know about the whole system)&lt;/li&gt;
-&lt;li&gt;polyglot applications without it becoming a problem&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The nice thing about developing an application as a combination of microservices is it enables seperate small deployments. Versions of software can be bumped seperately and released seperately without the whole server having to suffer.&lt;/p&gt;
-
-&lt;p&gt;Now the implementation and how different microservices work together differs amongst the various speakers.&lt;/p&gt;
-
-&lt;p&gt;And of course different problems arise you now have lots of apps and servers to maintain, and you have to present this whole bunch of services as one application which feels like a wholistic thing to the user. According to &lt;a href=&#34;https://twitter.com/dglozic&#34; title=&#34;dglozic&#34; target=&#34;_blank&#34;&gt;Dejan Glozic&lt;/a&gt; this could be solved with what he called: local clustering. &lt;a href=&#34;https://twitter.com/clifcunn&#34; title=&#34;clifcunn&#34; target=&#34;_blank&#34;&gt;Clifton Cunningham&lt;/a&gt; put forward a few solutions for this: client side assembly, front end server, server side includes or edge side include. Or of course: build it yourself → &lt;a href=&#34;https://www.npmjs.org/package/compoxure&#34; title=&#34;compoxure&#34; target=&#34;_blank&#34;&gt;Compoxure&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;In this scenario every service hosts and returns it&amp;#8217;s own rendered html (or json if you request that format). If a service dies, the cache will run the last known good html or the html renders a default.&lt;/p&gt;
-
-&lt;p&gt;For the static files part it&amp;#8217;s similar. Every service knows which static files it needs and rakes them together with a tool called: &lt;a href=&#34;https://www.npmjs.org/package/bosco&#34; title=&#34;bosco&#34; target=&#34;_blank&#34;&gt;Bosco&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The company Richard Rodger co-founded nearForm built a solution for the local clustering problem in their microservices framework &lt;a href=&#34;https://www.npmjs.org/package/seneca&#34; title=&#34;seneca&#34; target=&#34;_blank&#34;&gt;Seneca&lt;/a&gt;, their objective is best explained in the project website.&lt;/p&gt;
-
-&lt;p&gt;Programming anarchist Fred George threw his own version in the mix, where he said all services receive all messages all the time. You can then categorize the message in his metaphor of Rapids, Rivers and Ponds. The rapids are the streams with all the messages. The rivers the themed events and the ponds things like state/history.&lt;/p&gt;
-
-&lt;p&gt;A service should be so seperate, you should even have all the microservices have their own persistence layer. If a service has 2 jobs, make 2 services out of it.&lt;/p&gt;
-
-&lt;p&gt;Microservices FTW.&lt;/p&gt;
-</description>
+      <description>The microservices track came down to most speakers saying things more or less in similar vain, each talk having its own emphasis. Richard Rodger opened up and basically laid the groundwork for the microservices bit together with the Fred George talk.
+After hearing the talks I’d define microservices as small blocks that can run independently and do one thing, along the Unix philosophy. Making building blocks in stead of one big application that does everything.</description>
     </item>
     
   </channel>

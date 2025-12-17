@@ -1,66 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Frontend on fritzvd</title>
+    <title>frontend on fritzvd</title>
     <link>http://blog.fritzvd.com/tags/frontend/</link>
-    <description>Recent content in Frontend on fritzvd</description>
+    <description>Recent content in frontend on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 Sep 2014 11:11:52 +0000</lastBuildDate>
-    <atom:link href="http://blog.fritzvd.com/tags/frontend/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Sat, 13 Sep 2014 11:11:52 +0000</lastBuildDate><atom:link href="http://blog.fritzvd.com/tags/frontend/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Front end track at nodeconf.eu</title>
       <link>http://blog.fritzvd.com/2014/09/13/front-end-track-at-nodeconf-eu/</link>
       <pubDate>Sat, 13 Sep 2014 11:11:52 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2014/09/13/front-end-track-at-nodeconf-eu/</guid>
-      <description>&lt;p&gt;The frontend track featured some very different talks , ranging from performance to a/b testing. In that sense it was a bit different from the &lt;a href=&#34;http://blog.technokrat.nl/2014/09/12/microservices-track-summary-nodeconfeu/&#34; title=&#34;Microservices Track summary #nodeconfeu&#34; target=&#34;_blank&#34;&gt;microservices track&lt;/a&gt;, because it was less of a &amp;#8216;one story&amp;#8217; thing.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Scaling A/B testing at Netflix &amp;#8211; &lt;a href=&#34;https://twitter.com/stinkydofu&#34; title=&#34;@stinkydofu&#34; target=&#34;_blank&#34;&gt;Alex Liu&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Netflix takes a/b testing to the next level, where they break up the UI in little pieces and run a/b tests on all of them at once. One user can be in several a/b tests at one point in time. They do hundreds of these tests a year, which means they have to deliver 2.5 million unique packages a week (!!!!!!!). This in itself is astounding.&lt;/p&gt;
-
-&lt;p&gt;The problem with these packages is conditional packages. So for example search is updated and needs some old dependencies and some old dependencies (see slide below).&lt;/p&gt;
-
-&lt;p&gt;To build this to scale you don&amp;#8217;t want to have someone picking the correct packages by hand. For that they wrote a node module that looks at the docstring of a function/file. Which can have a ruleset explaining when it should or should not be included. In the build process the packages are selected that should be part of it and which should not. With every request to the node server that runs the assets, the registry is consulted, the rules are applied and packaged and cached and served from a CDN for the next person in the same a/b test group.&lt;/p&gt;
-
-&lt;p&gt;Fail fast, move faster (to improve that is, your goal should not be to fail).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Fullstack through microservices &amp;#8211; &lt;a href=&#34;https://twitter.com/matteocollina&#34; title=&#34;@matteocollina&#34; target=&#34;_blank&#34;&gt;Matteo Collina&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Matteo talked about using data channels and RPC&amp;#8217;s (remote procedure calls) from the back end to the frontend. Using data streams in stead of request/response patterns. In stead of returning a delimited block of data you can return a channel. This makes it possible to receive and unpack or send and connect binary data directly to or from the frontend. Anything that is serializable to JSON, Node.js binary streams or even other channels can all be sent through this mechanism.&lt;/p&gt;
-
-&lt;p&gt;So to have a framework of these types of microservices they created Graft.&lt;/p&gt;
-
-&lt;p&gt;_Update: oh and he used this really cool cheap sensor to do his talk: &lt;a href=&#34;https://estore.ti.com/CC2541DK-SENSOR-CC2541-SensorTag-Development-Kit-P3192.aspx&#34; title=&#34;SensorTag&#34; target=&#34;_blank&#34;&gt;SensorTag&lt;/a&gt;_&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Building high quality services at Uber &amp;#8211; &lt;a href=&#34;https://twitter.com/raynos&#34; title=&#34;@raynos&#34; target=&#34;_blank&#34;&gt;Jake Verbaten&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Raynos started with a funny story where his first day was to build a proxy service. Oh and it will be deployed to about 50 machines. Oh and they can&amp;#8217;t go down ever.&lt;/p&gt;
-
-&lt;p&gt;Of course when you make something, you have to go over it again to &amp;#8220;productionize&amp;#8221; it. In order to do this, he showed some tools they use at Uber to get this going.&lt;/p&gt;
-
-&lt;p&gt;The one that stood out the most was &lt;em&gt;potter&lt;/em&gt; (which they&amp;#8217;re still &amp;#8220;open-sourcifying&amp;#8221;). It basically sets up a skeleton (or scaffolds) for your project, starts a github repo, and registers it at your CI server (i.e. travis, jenkins, wha-evah), starts logging to sentry and graphite.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Demystifying v8 and javascript performance &amp;#8211; &lt;a href=&#34;https://twitter.com/thlorenz&#34; title=&#34;@thlorenz&#34; target=&#34;_blank&#34;&gt;Thorsten Lorentz&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The engine which is used for node.js is the same one as is used for Chrome/Chromium project: V8. Therefore similar problems that arise with node will also occur in the browser. Which means that performancewise you can apply the same principles.&lt;/p&gt;
-
-&lt;p&gt;This is the talk that had me looking up lots of things in the end, so it at least was great food for thought.&lt;/p&gt;
-
-&lt;p&gt;One of the easiest performance gains you can easily apply is to be clear about your intentions to the browser/v8 engine. Meaning you don&amp;#8217;t start by declaring an empty list if you are then going to fill it up with a number of different types. Usually you should stay away from different types in one array altogether, but performance will severely drop if you are not being upfront to the interpreter.&lt;/p&gt;
-
-&lt;p&gt;Example:&lt;/p&gt;
-
-&lt;p&gt;He also went into great detail about how you don&amp;#8217;t want to keep on changing an Object structure after construction, because at one point v8 will give up and fall-back to the unoptimizable slow HashTable structure. But rather than I try to reproduce this look at this blog post: &lt;a href=&#34;http://jayconrod.com/posts/52/a-tour-of-v8-object-representation&#34; title=&#34;a-tour-of-v8-object-representation&#34; target=&#34;_blank&#34;&gt;A tour of v8 object representation&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://thlorenz.github.io/talks/demystifying-v8/talk.pdf&#34; title=&#34;slides&#34; target=&#34;_blank&#34;&gt;and the slides themselves&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Final thoughts&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/davidmarkclem&#34; title=&#34;@davidmarkclem&#34; target=&#34;_blank&#34;&gt;David Clements&lt;/a&gt; did a workshop on working with streams and data from front end to the backend (and vice versa) which covered lots of ground similar to what Matteo squeezed into 20 min. Check it out here: &lt;a href=&#34;https://www.dropbox.com/sh/9ra61cq9qgpxyx0/AACXumrkWesFs7jrhI4uUEula/slides.pdf?dl=0&#34; title=&#34;back to the frontend&#34; target=&#34;_blank&#34;&gt;Slides&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>The frontend track featured some very different talks , ranging from performance to a/b testing. In that sense it was a bit different from the microservices track, because it was less of a ‘one story’ thing.
+Scaling A/B testing at Netflix – Alex Liu
+Netflix takes a/b testing to the next level, where they break up the UI in little pieces and run a/b tests on all of them at once.</description>
     </item>
     
   </channel>

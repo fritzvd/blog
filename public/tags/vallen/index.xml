@@ -1,36 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Vallen on fritzvd</title>
+    <title>vallen on fritzvd</title>
     <link>http://blog.fritzvd.com/tags/vallen/</link>
-    <description>Recent content in Vallen on fritzvd</description>
+    <description>Recent content in vallen on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Jan 2011 09:49:22 +0000</lastBuildDate>
-    <atom:link href="http://blog.fritzvd.com/tags/vallen/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Mon, 03 Jan 2011 09:49:22 +0000</lastBuildDate><atom:link href="http://blog.fritzvd.com/tags/vallen/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>De Meerval</title>
       <link>http://blog.fritzvd.com/2011/01/03/de-meerval/</link>
       <pubDate>Mon, 03 Jan 2011 09:49:22 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2011/01/03/de-meerval/</guid>
-      <description>&lt;p&gt;Het pad glinsterend met bevroren genot,&lt;/p&gt;
-
-&lt;p&gt;Bekijkt de banden,&lt;/p&gt;
-
-&lt;p&gt;Waarmee ik vederlicht haar rug betreed&lt;/p&gt;
-
-&lt;p&gt;Werpt mij van mijn rijdend ijzer&lt;/p&gt;
-
-&lt;p&gt;Laat mij voelen hoe de koude stenen&lt;/p&gt;
-
-&lt;p&gt;Mijn arm losjes het uiterst van de kom laat zien&lt;/p&gt;
-
-&lt;p&gt;Hoop op morgen, dat ik niet&lt;/p&gt;
-
-&lt;p&gt;Meerval.&lt;/p&gt;
-</description>
+      <description>Het pad glinsterend met bevroren genot,
+Bekijkt de banden,
+Waarmee ik vederlicht haar rug betreed
+Werpt mij van mijn rijdend ijzer
+Laat mij voelen hoe de koude stenen
+Mijn arm losjes het uiterst van de kom laat zien
+Hoop op morgen, dat ik niet
+Meerval.</description>
     </item>
     
   </channel>

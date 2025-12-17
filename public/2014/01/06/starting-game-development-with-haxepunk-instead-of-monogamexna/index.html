@@ -1,191 +1,208 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--><html class="no-js" prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#"><!--<![endif]-->
+<!doctype html>
 
-    <head>
-                <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
-        <meta name="mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <meta name="author" content="">
-        <meta name="keywords" content="awesome, definitely">
-	
-        <meta property="og:site_name" content="fritzvd">
-        <meta property="og:title" content="fritzvd">
-        <meta property="og:url" content="http://blog.fritzvd.com/2014/01/06/starting-game-development-with-haxepunk-instead-of-monogamexna/">
-        <meta property="og:description" content="">
-    
-        <meta property="og:type" content="article" />
-        <meta property="og:article:author" content="" />
-        <meta property="og:article:published_time" content="2014-01-06T20:25:23Z" />
-    
-        <meta name="generator" content="Hugo 0.15" />
-        <title>Starting Game Development with HaxePunk instead of MonoGame/XNA &middot; fritzvd </title>
-        <link rel="canonical" href="http://blog.fritzvd.com/" />
-        <link rel="alternate" type="application/rss+xml" title="RSS" href="">
-        <link rel="stylesheet" type='text/css' href="http://blog.fritzvd.com/css/main.css"/>
-        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Montserrat:700' rel='stylesheet' type='text/css'>
-        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-        <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-    </head>
-<body>
-<!--[if lt IE 7]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chrome/‎">install Google Chrome</a> to experience this site.</p><![endif]-->
 
-    <header id="site-header">
-        <div class="container">
-            <a href="http://blog.fritzvd.com/" alt="fritzvd"><h1 class="blog-title heading">fritzvd</h1></a>
-            <p class="blog-description"></p>
-        </div>
-    </header>
 
-<main class="content" role="main">
-	<div class="container">
-		<article class="post">
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg:#faf8f1"
+  lang="en-us"
+  dir="ltr"
+><head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Starting Game Development with HaxePunk instead of MonoGame/XNA - fritzvd</title>
+
+  
+  <meta name="theme-color" />
+
+  <meta name="description" content="So I started venturing off in a direction in which I have no experience what so ever. Only on the consumer-side of things ;-). Game development. Of course I had no idea what I was doing. Still don’t.
+To start with I had no idea where to start. Lately I have been looking into Unity 3D and Unreal engine, but then I realized I suck at drawing and have no idea how to start with 3d." />
+  <meta name="author" content="fritzvd" /><link rel="preload stylesheet" as="style" href="http://blog.fritzvd.com/main.min.css" />
+
+  
+  <link rel="preload" as="image" href="http://blog.fritzvd.com/theme.png" />
+
+  
+
+  
+
+  <script
+    defer
+    src="http://blog.fritzvd.com/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+
+  
+  <link
+    rel="icon"
+    href="http://blog.fritzvd.com/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="http://blog.fritzvd.com/apple-touch-icon.png"
+  />
+
+  <meta name="generator" content="Hugo 0.105.0">
+</head>
+<body
+    class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
+  ><header
+  class="mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
+>
+  <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
+    <a
+      class="-translate-y-[1px] text-2xl font-medium"
+      href="http://blog.fritzvd.com/"
+      >fritzvd</a
+    >
+    <div
+      class="btn-dark text-[0px] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden ltr:-mr-8 rtl:-ml-8"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  <script>
     
-<header class="post-header">
-      <h3 class="p-post-title">Starting Game Development with HaxePunk instead of MonoGame/XNA</h3>
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center bg-(--bg) pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:bg-transparent! lg:pb-0 lg:transition-none"
+  >
+  </div>
 </header>
+<main
+      class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pt-14 pb-16"
+    ><article>
+  <header class="mb-14">
+    <h1 class="my-0! pb-2.5">Starting Game Development with HaxePunk instead of MonoGame/XNA</h1><div class="text-xs antialiased opacity-60"><time>Jan 6, 2014</time><span class="mx-1">&middot;</span>
+      <span>fritzvd</span></div></header>
 
-<style>
-  header#site-header {
-    background-image: url(%25!s%28%3cnil%3e%29);
-    margin-bottom: 50px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat
-    box-shadow: grey 10px 0px 5px 0px inset;
-    image-rendering: -moz-crisp-edges;          
-    image-rendering:   -o-crisp-edges;          
-    image-rendering: -webkit-optimize-contrast; 
-    image-rendering: pixelated;
-    -ms-interpolation-mode: nearest-neighbor;   
-  }
-</style>
-
-
-    <section class="post-content">
-        
-
-<p>So I started venturing off in a direction in which I have no experience what so ever. Only on the consumer-side of things ;-). Game development. Of course I had no idea what I was doing. Still don&#8217;t.</p>
-
-<p>To start with I had no idea where to start. Lately I have been looking into Unity 3D and Unreal engine, but then I realized I suck at drawing and have no idea how to start with 3d. So then I was searching around for 2d engines and started out with Cocos2D-x and some other C++ based engines (can&#8217;t remember which), but that was kind of a hassle to get started and my builds would not run on my phone. Also I did not really get there style of documentation.</p>
-
-<h3 id="monogame:bbecd484d96d2baba19ac01746a2dcc1">MonoGame</h3>
-
-<p>After looking through tutorials and stuff, I settled on the XNA framework, or at least the open source version &#8211;&gt; <a title="monogame" href="http://monogame.net/" target="_blank">MonoGame</a>. It is pretty awesome, some of the most legendary indie games: <a title="Supergiant games" href="http://supergiantgames.com/index.php/media/" target="_blank">Bastion</a>, <a title="Fez" href="http://fezgame.com/" target="_blank">FEZ</a> and <a title="smb" href="http://supermeatboy.com/" target="_blank">Super Meat Boy</a> are created with the closed source variant. Which for me was reason enough to find out more. Moreover the Bastion team (supergiant games) used MonoGame to port it to the iPad/iPhone.</p>
-
+  <section><p>So I started venturing off in a direction in which I have no experience what so ever. Only on the consumer-side of things ;-). Game development. Of course I had no idea what I was doing. Still don’t.</p>
+<p>To start with I had no idea where to start. Lately I have been looking into Unity 3D and Unreal engine, but then I realized I suck at drawing and have no idea how to start with 3d. So then I was searching around for 2d engines and started out with Cocos2D-x and some other C++ based engines (can’t remember which), but that was kind of a hassle to get started and my builds would not run on my phone. Also I did not really get there style of documentation.</p>
+<h3 id="monogame">MonoGame</h3>
+<p>After looking through tutorials and stuff, I settled on the XNA framework, or at least the open source version –&gt; <!-- raw HTML omitted -->MonoGame<!-- raw HTML omitted -->. It is pretty awesome, some of the most legendary indie games: <!-- raw HTML omitted -->Bastion<!-- raw HTML omitted -->, <!-- raw HTML omitted -->FEZ<!-- raw HTML omitted --> and <!-- raw HTML omitted -->Super Meat Boy<!-- raw HTML omitted --> are created with the closed source variant. Which for me was reason enough to find out more. Moreover the Bastion team (supergiant games) used MonoGame to port it to the iPad/iPhone.</p>
 <p>So starting out with some tutorials I was making quite some headway in a short amount of time. C# is a very approachable language and MonoDevelop a lightweight IDE. Especially after trying out the badly indented (illegible) examples I found of all these different C++ libraries.</p>
-
-<p>After having a first version that featured some smooth running sprites I thought it interesting to test the performance in an iPad simulator. The built worked well on Linux and on the Mac Desktop, but building it for iOS gave me some problems. BECAUSE YOU CAN&#8217;T. Not for free anyways. Xamarin charges you $299,- a year for you to be able to build for Android and iOS.</p>
-
-<h3 id="haxe-and-openfl:bbecd484d96d2baba19ac01746a2dcc1">Haxe and OpenFL</h3>
-
-<p>I was pretty disheartened, because I remembered all the hassle and strange examples I found with the plethora of frameworks I tried out before and did not really want to go back to that. On some website I found an article on <a href="http://openfl.org/" title="openfl" target="_blank">OpenFL</a> an open source flash framework that compiles to *. HTML5, windows, mac, linux, android, ios, blackberry, tizen. You name it. Also used to make this little gem: <a href="http://rymdkapsel.com/" title="rymdkapsel" target="_blank">rymdkapsel</a> A port of FlashPunk in Haxe <a href="http://haxepunk.com/" title="HaxePunk" target="_blank">HaxePunk</a> had some proper tutorials, it is maintained and was ported chiefly by<a href="http://matttuttle.com/" title="Matt Tuttle" target="_blank">Matt Tuttle</a>. (thanks for that).</p>
-
-<p>The setup of OpenFL and haxepunk is very easy and straightforward and I am easily building to all the promissed targets. I can test my ios builds in the simulator on my Mac and send *.swf links to friends and invite alpa-testers for my Android APK&#8217;s. It is awesome.</p>
-
+<p>After having a first version that featured some smooth running sprites I thought it interesting to test the performance in an iPad simulator. The built worked well on Linux and on the Mac Desktop, but building it for iOS gave me some problems. BECAUSE YOU CAN’T. Not for free anyways. Xamarin charges you $299,- a year for you to be able to build for Android and iOS.</p>
+<h3 id="haxe-and-openfl">Haxe and OpenFL</h3>
+<p>I was pretty disheartened, because I remembered all the hassle and strange examples I found with the plethora of frameworks I tried out before and did not really want to go back to that. On some website I found an article on <!-- raw HTML omitted -->OpenFL<!-- raw HTML omitted --> an open source flash framework that compiles to *. HTML5, windows, mac, linux, android, ios, blackberry, tizen. You name it. Also used to make this little gem: <!-- raw HTML omitted -->rymdkapsel<!-- raw HTML omitted --> A port of FlashPunk in Haxe <!-- raw HTML omitted -->HaxePunk<!-- raw HTML omitted --> had some proper tutorials, it is maintained and was ported chiefly by<!-- raw HTML omitted -->Matt Tuttle<!-- raw HTML omitted -->. (thanks for that).</p>
+<p>The setup of OpenFL and haxepunk is very easy and straightforward and I am easily building to all the promissed targets. I can test my ios builds in the simulator on my Mac and send *.swf links to friends and invite alpa-testers for my Android APK’s. It is awesome.</p>
 <p>For those to lazy to open the links and find out how easy it really is do this:</p>
-
-<p>`So I started venturing off in a direction in which I have no experience what so ever. Only on the consumer-side of things ;-). Game development. Of course I had no idea what I was doing. Still don&#8217;t.</p>
-
-<p>To start with I had no idea where to start. Lately I have been looking into Unity 3D and Unreal engine, but then I realized I suck at drawing and have no idea how to start with 3d. So then I was searching around for 2d engines and started out with Cocos2D-x and some other C++ based engines (can&#8217;t remember which), but that was kind of a hassle to get started and my builds would not run on my phone. Also I did not really get there style of documentation.</p>
-
-<h3 id="monogame-1:bbecd484d96d2baba19ac01746a2dcc1">MonoGame</h3>
-
-<p>After looking through tutorials and stuff, I settled on the XNA framework, or at least the open source version &#8211;&gt; <a title="monogame" href="http://monogame.net/" target="_blank">MonoGame</a>. It is pretty awesome, some of the most legendary indie games: <a title="Supergiant games" href="http://supergiantgames.com/index.php/media/" target="_blank">Bastion</a>, <a title="Fez" href="http://fezgame.com/" target="_blank">FEZ</a> and <a title="smb" href="http://supermeatboy.com/" target="_blank">Super Meat Boy</a> are created with the closed source variant. Which for me was reason enough to find out more. Moreover the Bastion team (supergiant games) used MonoGame to port it to the iPad/iPhone.</p>
-
+<p>`So I started venturing off in a direction in which I have no experience what so ever. Only on the consumer-side of things ;-). Game development. Of course I had no idea what I was doing. Still don’t.</p>
+<p>To start with I had no idea where to start. Lately I have been looking into Unity 3D and Unreal engine, but then I realized I suck at drawing and have no idea how to start with 3d. So then I was searching around for 2d engines and started out with Cocos2D-x and some other C++ based engines (can’t remember which), but that was kind of a hassle to get started and my builds would not run on my phone. Also I did not really get there style of documentation.</p>
+<h3 id="monogame-1">MonoGame</h3>
+<p>After looking through tutorials and stuff, I settled on the XNA framework, or at least the open source version –&gt; <!-- raw HTML omitted -->MonoGame<!-- raw HTML omitted -->. It is pretty awesome, some of the most legendary indie games: <!-- raw HTML omitted -->Bastion<!-- raw HTML omitted -->, <!-- raw HTML omitted -->FEZ<!-- raw HTML omitted --> and <!-- raw HTML omitted -->Super Meat Boy<!-- raw HTML omitted --> are created with the closed source variant. Which for me was reason enough to find out more. Moreover the Bastion team (supergiant games) used MonoGame to port it to the iPad/iPhone.</p>
 <p>So starting out with some tutorials I was making quite some headway in a short amount of time. C# is a very approachable language and MonoDevelop a lightweight IDE. Especially after trying out the badly indented (illegible) examples I found of all these different C++ libraries.</p>
-
-<p>After having a first version that featured some smooth running sprites I thought it interesting to test the performance in an iPad simulator. The built worked well on Linux and on the Mac Desktop, but building it for iOS gave me some problems. BECAUSE YOU CAN&#8217;T. Not for free anyways. Xamarin charges you $299,- a year for you to be able to build for Android and iOS.</p>
-
-<h3 id="haxe-and-openfl-1:bbecd484d96d2baba19ac01746a2dcc1">Haxe and OpenFL</h3>
-
-<p>I was pretty disheartened, because I remembered all the hassle and strange examples I found with the plethora of frameworks I tried out before and did not really want to go back to that. On some website I found an article on <a href="http://openfl.org/" title="openfl" target="_blank">OpenFL</a> an open source flash framework that compiles to *. HTML5, windows, mac, linux, android, ios, blackberry, tizen. You name it. Also used to make this little gem: <a href="http://rymdkapsel.com/" title="rymdkapsel" target="_blank">rymdkapsel</a> A port of FlashPunk in Haxe <a href="http://haxepunk.com/" title="HaxePunk" target="_blank">HaxePunk</a> had some proper tutorials, it is maintained and was ported chiefly by<a href="http://matttuttle.com/" title="Matt Tuttle" target="_blank">Matt Tuttle</a>. (thanks for that).</p>
-
-<p>The setup of OpenFL and haxepunk is very easy and straightforward and I am easily building to all the promissed targets. I can test my ios builds in the simulator on my Mac and send *.swf links to friends and invite alpa-testers for my Android APK&#8217;s. It is awesome.</p>
-
+<p>After having a first version that featured some smooth running sprites I thought it interesting to test the performance in an iPad simulator. The built worked well on Linux and on the Mac Desktop, but building it for iOS gave me some problems. BECAUSE YOU CAN’T. Not for free anyways. Xamarin charges you $299,- a year for you to be able to build for Android and iOS.</p>
+<h3 id="haxe-and-openfl-1">Haxe and OpenFL</h3>
+<p>I was pretty disheartened, because I remembered all the hassle and strange examples I found with the plethora of frameworks I tried out before and did not really want to go back to that. On some website I found an article on <!-- raw HTML omitted -->OpenFL<!-- raw HTML omitted --> an open source flash framework that compiles to *. HTML5, windows, mac, linux, android, ios, blackberry, tizen. You name it. Also used to make this little gem: <!-- raw HTML omitted -->rymdkapsel<!-- raw HTML omitted --> A port of FlashPunk in Haxe <!-- raw HTML omitted -->HaxePunk<!-- raw HTML omitted --> had some proper tutorials, it is maintained and was ported chiefly by<!-- raw HTML omitted -->Matt Tuttle<!-- raw HTML omitted -->. (thanks for that).</p>
+<p>The setup of OpenFL and haxepunk is very easy and straightforward and I am easily building to all the promissed targets. I can test my ios builds in the simulator on my Mac and send *.swf links to friends and invite alpa-testers for my Android APK’s. It is awesome.</p>
 <p>For those to lazy to open the links and find out how easy it really is do this:</p>
-
 <p>`</p>
-
 <p>Now you can start being aweswome and build your crazy ideas for android.</p>
-
-<p>(Next time I&#8217;ll give some code excerpts and a flash file to test out).</p>
-
+<p>(Next time I’ll give some code excerpts and a flash file to test out).</p>
 <p><strong>UPDATE:</strong></p>
+<p>I’ve written a follow up on <!-- raw HTML omitted -->particle emitters in haxepunk<!-- raw HTML omitted --></p>
+</section>
 
-<p>I&#8217;ve written a follow up on <a href="http://blog.technokrat.nl/?p=522" title="Particle Emitters" target="_blank">particle emitters in haxepunk</a></p>
-
-    </section>
-
-    <hr>
-
-    <footer class="post-footer">
-        <section class="f-1">
-            
-            <section class="author">
-                <p>Words by fritzvd</p>
-            </section>
-            
-
-            <p class="f-post-time"><time datetime="2014-01-06T20:25:23Z">January 6, 2014</time></p>
-        </section>
-
-        <section class="f-2">
-            <section class="share">
-                <span>Share:
-                <a class="icon-twitter" href="http://twitter.com/share?text=Starting%20Game%20Development%20with%20HaxePunk%20instead%20of%20MonoGame%2fXNA&url=http%3a%2f%2fblog.fritzvd.com%2f2014%2f01%2f06%2fstarting-game-development-with-haxepunk-instead-of-monogamexna%2f"
-                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-                    <i class="fa fa-twitter"></i>
-                </a>
-                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fblog.fritzvd.com%2f2014%2f01%2f06%2fstarting-game-development-with-haxepunk-instead-of-monogamexna%2f"
-                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-                    <i class="fa fa-facebook"></i>
-                </a>
-                <a class="icon-google-plus" href="https://plus.google.com/share?url=http%3a%2f%2fblog.fritzvd.com%2f2014%2f01%2f06%2fstarting-game-development-with-haxepunk-instead-of-monogamexna%2f"
-                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-                    <i class="fa fa-google-plus"></i>
-                </a>
-                </span>
-            </section>
-
-            
-            	<span class="f-post-tags"><i class="fa fa-tag"></i>
-            	c#, haxe, haxepunk, openfl, xna
-            	</span>
-            
-        </section>
-                
-    </footer>
-</article>
-
-<style>
-  img {
-    float: left;
-    margin: 1em;
-  }
-</style>
-
-	</div>
-</main>
-    <footer id="site-footer">
-        <div class="container">
-            <a href="http://blog.fritzvd.com/index.xml" title="Get the RSS feed"><span class="tooltip"><i class="fa fa-rss"></i></span></a>
-            <section>&copy; <a href="http://blog.fritzvd.com/"></a> 2015 | All rights reserved</section>
-            <section>Theme by <a href="http://www.jrdnbwmn.com">Jordan Bowman</a>. Generated with <a href="http://gohugo.io/">Hugo</a>.</section>
-        </div>
-    </footer>
-
-    <script type="text/javascript" src="http://blog.fritzvd.com/js/fittext.js"></script>
-    <script type="text/javascript">
-      $(".heading").fitText();
-    </script>
-
-
+  <footer class="mt-12 flex flex-wrap"><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://blog.fritzvd.com/tags/c"
+      >c#</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://blog.fritzvd.com/tags/haxe"
+      >haxe</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://blog.fritzvd.com/tags/haxepunk"
+      >haxepunk</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://blog.fritzvd.com/tags/openfl"
+      >openfl</a
+    ><a
+      class="mb-1.5 rounded-lg bg-black/[3%] px-5 py-1 no-underline hover:bg-black/[6%] ltr:mr-1.5 rtl:ml-1.5 dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+      href="http://blog.fritzvd.com/tags/xna"
+      >xna</a
+    ></footer><nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  ><a class="ltr:pr-3 rtl:pl-3" href="http://blog.fritzvd.com/2014/02/03/communities-and-licenses-permissive-licenses-vs-copyleft-bsdmitapache-2-0-vs-gpl/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Communities and Licenses: Permissive licenses vs copyleft (BSD/MIT/Apache 2.0 vs GPL)</span></a
+    ><a
+      class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
+      href="http://blog.fritzvd.com/2014/01/05/good-golly-i-almost-bricked-my-phone/"
+      ><span>Unbricking my LG Optimus 2x with adb</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    ></nav></article></main><footer
+  class="mx-auto flex h-[4.5rem] max-w-(--w) items-center px-8 text-xs tracking-wider uppercase opacity-60"
+>
+  <div class="mr-auto">&copy;2025
+    <a class="link" href="http://blog.fritzvd.com/">fritzvd</a></div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
 </body>
 </html>

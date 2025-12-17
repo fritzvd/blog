@@ -1,42 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ioquake3 on fritzvd</title>
+    <title>ioquake3 on fritzvd</title>
     <link>http://blog.fritzvd.com/tags/ioquake3/</link>
-    <description>Recent content in Ioquake3 on fritzvd</description>
+    <description>Recent content in ioquake3 on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Sep 2010 15:46:53 +0000</lastBuildDate>
-    <atom:link href="http://blog.fritzvd.com/tags/ioquake3/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Wed, 29 Sep 2010 15:46:53 +0000</lastBuildDate><atom:link href="http://blog.fritzvd.com/tags/ioquake3/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Considerations on which Gaming Engine to use</title>
       <link>http://blog.fritzvd.com/2010/09/29/considerations-on-which-gaming-engine-to-use/</link>
       <pubDate>Wed, 29 Sep 2010 15:46:53 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2010/09/29/considerations-on-which-gaming-engine-to-use/</guid>
-      <description>&lt;p&gt;A quick update on my project of using a Gaming Engine to process GIS data. After some googling and reading other peoples blogs and workspaces it seems that some engines are more fit than others.&lt;/p&gt;
-
-&lt;p&gt;Tim Germanchis et al. (2005) has done a brief overview of different game engines for this particular usage. Amongst which are the Quake III, Unreal Runtime 2, CryEngine and others. The CryEngine apparently suited the writer the most. As it was easy to learn, stable and the most powerful.&lt;/p&gt;
-
-&lt;p&gt;However according to the [A quick update on my project of using a Gaming Engine to process GIS data. After some googling and reading other peoples blogs and workspaces it seems that some engines are more fit than others.&lt;/p&gt;
-
-&lt;p&gt;Tim Germanchis et al. (2005) has done a brief overview of different game engines for this particular usage. Amongst which are the Quake III, Unreal Runtime 2, CryEngine and others. The CryEngine apparently suited the writer the most. As it was easy to learn, stable and the most powerful.&lt;/p&gt;
-
-&lt;p&gt;However according to the](&lt;a href=&#34;http://gis-game.pbworks.com/&#34;&gt;http://gis-game.pbworks.com/&lt;/a&gt;) (coming up in almost all of my searches on Google) this Engine is not very favourable. By the way if anyone knows who these guys are, I would love to come into contact with them. But found it kind of difficult to contact them.&lt;/p&gt;
-
-&lt;p&gt;One major objection I personally have with CryTek is that it is a Windows only Software. As I will have to do most of my development behind a Windows I will probably would be in the temptation of cutting my lifeline short. But it does make it easier to user CryEngine as well.&lt;/p&gt;
-
-&lt;p&gt;I also saw that CryEngine 3 is coming out. Maybe my Prof would like to help me to get a Educational license to start working on that.&lt;/p&gt;
-
-&lt;p&gt;In relation to open-sourcing and stuff: ioquake3. The well-known quake3 engine has been released under the GPL license as ioquake3. So maybe that is worth giving a try. Although it is a bit older. But then again, science seems to lag in this field anyways.&lt;/p&gt;
-
-&lt;p&gt;One of my major concerns is the processing of GIS data in 3d. I hope that I can find a way with Python and bash maybe to automate the modeling of the 3d objects. Although that might be wishful thinking.&lt;/p&gt;
-
-&lt;p&gt;My other concern I will discuss tomorrow. As it is time for me to do some studying for my courses.&lt;/p&gt;
-
-&lt;p&gt;Edit: &lt;a href=&#34;http://uaraus.altervista.org/index.php?filename=en/content/categories/Blender/DEM_importer.html&#34;&gt;this looks interesting for DEM and Blender things&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>A quick update on my project of using a Gaming Engine to process GIS data. After some googling and reading other peoples blogs and workspaces it seems that some engines are more fit than others.
+Tim Germanchis et al. (2005) has done a brief overview of different game engines for this particular usage. Amongst which are the Quake III, Unreal Runtime 2, CryEngine and others. The CryEngine apparently suited the writer the most.</description>
     </item>
     
   </channel>

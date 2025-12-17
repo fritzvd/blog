@@ -1,16 +1,16 @@
 ---
 author: fritzvd
 categories:
-- minor-thesis
+  - minor-thesis
 date: 2010-10-02T17:24:42Z
-guid: http://fritzvd.wordpress.com/?p=155
+guid: http://blog.fritzvd.com/?p=155
 id: 155
 jabber_published:
-- 1286033083
+  - 1286033083
 tags:
-- 3dgis
-- augmented reality
-- userexperience
+  - 3dgis
+  - augmented reality
+  - userexperience
 title: Different Directions
 url: /2010/10/02/different-directions/
 ---

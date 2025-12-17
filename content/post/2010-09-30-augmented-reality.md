@@ -1,21 +1,21 @@
 ---
 author: fritzvd
 categories:
-- minor-thesis
+  - minor-thesis
 date: 2010-09-30T10:48:50Z
-guid: http://fritzvd.wordpress.com/?p=159
+guid: http://blog.fritzvd.com/?p=159
 id: 159
 jabber_published:
-- 1285836532
+  - 1285836532
 tags:
-- ar
-- artoolkit
-- augmentedreality
-- flash
-- gis
-- ogre
-- osgart
-- realitataugmentada
+  - ar
+  - artoolkit
+  - augmentedreality
+  - flash
+  - gis
+  - ogre
+  - osgart
+  - realitataugmentada
 title: Random thoughts Augmented Reality
 url: /2010/09/30/augmented-reality/
 ---

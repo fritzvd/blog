@@ -1,9 +1,9 @@
 ---
 author: fritzvd
 categories:
-- Uncategorized
+  - Uncategorized
 date: 2010-02-23T23:04:36Z
-guid: http://fritzvd.wordpress.com/?p=118
+guid: http://blog.fritzvd.com/?p=118
 id: 118
 title: Death or freedom of it&#039;s sting
 url: /2010/02/23/death-or-freedom-of-its-sting/

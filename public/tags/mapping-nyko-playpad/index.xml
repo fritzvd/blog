@@ -1,32 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mapping Nyko Playpad on fritzvd</title>
+    <title>mapping nyko playpad on fritzvd</title>
     <link>http://blog.fritzvd.com/tags/mapping-nyko-playpad/</link>
-    <description>Recent content in Mapping Nyko Playpad on fritzvd</description>
+    <description>Recent content in mapping nyko playpad on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Mar 2014 19:15:06 +0000</lastBuildDate>
-    <atom:link href="http://blog.fritzvd.com/tags/mapping-nyko-playpad/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Sun, 02 Mar 2014 19:15:06 +0000</lastBuildDate><atom:link href="http://blog.fritzvd.com/tags/mapping-nyko-playpad/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nyko Playpad Pro or * as Xbox 360 controller on linux</title>
       <link>http://blog.fritzvd.com/2014/03/02/nyko-playpad-pro-as-xbox-360-controller/</link>
       <pubDate>Sun, 02 Mar 2014 19:15:06 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2014/03/02/nyko-playpad-pro-as-xbox-360-controller/</guid>
-      <description>&lt;p&gt;This is basically a fancy note to self. Last year in my pre vacation spending spree, I boughy myself (and my brother) a &lt;a href=&#34;http://www.nyko.com/products/product-detail/?name=PlayPad+Pro&#34; title=&#34;nyko&#34; target=&#34;_blank&#34;&gt;NYKO Playpad Pro.&lt;/a&gt; A pretty cool gamepad for Android. I had lots of fun playing GTA Vice CIty on my trip to Italy. Playing SNES games etc.&lt;/p&gt;
-
-&lt;p&gt;However I tried to hook it up to my Linux pc and thought I would be able to use it with my new go to MetroidVania platformer: &lt;a href=&#34;http://guacamelee.com/&#34; title=&#34;guacamelee&#34; target=&#34;_blank&#34;&gt;Guacamelee&lt;/a&gt;. Especially with Co-Op because I only have one Xbox 360 controller. In comes &lt;a href=&#34;http://pingus.seul.org/~grumbel/xboxdrv/&#34; title=&#34;xboxdrv&#34; target=&#34;_blank&#34;&gt;xboxdrv&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Basically I need to enter this into my terminal and it runs (be sure to install 0.8.5 version (and up I guess) of xboxdrv)&lt;/p&gt;
-
-&lt;p&gt;Of course depending on what input event devices it is mapped to.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;syntax bash&#34;&gt;sudo xboxdrv --evdev /dev/input/event13 --evdev-absmap ABS_X=x1,ABS_Y=y1,ABS_GAS=RT,ABS_BRAKE=LT,ABS_Z=X2,ABS_RZ=y2 --evdev-keymap BTN_A=A,BTN_B=b,BTN_X=x,BTN_Y=y,BTN_START=start,BTN_SELECT=back,BTN_THUMBL=tl,BTN_THUMBR=tr,BTN_TL=LB,BTN_TR=RB
-
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+      <description>This is basically a fancy note to self. Last year in my pre vacation spending spree, I boughy myself (and my brother) a NYKO Playpad Pro. A pretty cool gamepad for Android. I had lots of fun playing GTA Vice CIty on my trip to Italy. Playing SNES games etc.
+However I tried to hook it up to my Linux pc and thought I would be able to use it with my new go to MetroidVania platformer: Guacamelee.</description>
     </item>
     
   </channel>

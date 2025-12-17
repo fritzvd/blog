@@ -1,9 +1,9 @@
 ---
 author: fritzvd
 categories:
-- botswana
+  - botswana
 date: 2009-08-12T20:41:27Z
-guid: http://fritzvd.wordpress.com/?p=76
+guid: http://blog.fritzvd.com/?p=76
 id: 76
 title: times of refreshing
 url: /2009/08/12/times-of-refreshing/

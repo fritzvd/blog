@@ -1,62 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ui on fritzvd</title>
+    <title>ui on fritzvd</title>
     <link>http://blog.fritzvd.com/tags/ui/</link>
-    <description>Recent content in Ui on fritzvd</description>
+    <description>Recent content in ui on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Nov 2013 09:25:30 +0000</lastBuildDate>
-    <atom:link href="http://blog.fritzvd.com/tags/ui/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Mon, 18 Nov 2013 09:25:30 +0000</lastBuildDate><atom:link href="http://blog.fritzvd.com/tags/ui/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>UI/UX course &amp;#8211; Highlights &amp;#8211; Storytelling</title>
       <link>http://blog.fritzvd.com/2013/11/18/uiux-course-highlights-storytelling/</link>
       <pubDate>Mon, 18 Nov 2013 09:25:30 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2013/11/18/uiux-course-highlights-storytelling/</guid>
-      <description>
-
-&lt;p&gt;&lt;a title=&#34;Nelen &amp; Schuurmans&#34; href=&#34;http://nelen-schuurmans.nl&#34; target=&#34;_blank&#34;&gt;Nelen &amp;amp; Schuurmans&lt;/a&gt;, the company where I work, offered the Software Developers a User Interface Design course by &lt;a title=&#34;Namahn&#34; href=&#34;http://namahn.com/&#34; target=&#34;_blank&#34;&gt;Namahn&lt;/a&gt;. It was a great reminder of the seemingly obvious processes one can incorporate in a software project, but sadly also a warning for blatant ignorance we sometimes portray as Developers (of course not just at N&amp;amp;S).&lt;/p&gt;
-
-&lt;p&gt;The workflow Namahn uses is similar to what other design oriented companies would use. Which can be described in three phases: Understand, Explore and Define.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Understand: observing the user and understanding their problem.&lt;/li&gt;
-&lt;li&gt;Explore: trying to find a fitting (the best) solution.&lt;/li&gt;
-&lt;li&gt;Define: defining the scope and spec of the project.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Of course this is already quite hilarious, because as a Developer/Builder of things, it often works the other way around. You build something and show it to some users and hope they don&amp;#8217;t have too many problems with what you&amp;#8217;ve built. So you don&amp;#8217;t have to make too many adjustments. Because, let&amp;#8217;s face, it you likely you already blew your budget.&lt;/p&gt;
-
-&lt;p&gt;In the course the teacher was met with some skepticism after sharing his workflow at Namahn. One of the reasons for not being able to carry out the workflow is: It&amp;#8217;s difficult to do this when you have a deadline, so we rather start with the code.&lt;/p&gt;
-
-&lt;p&gt;Which of course is the exact opposite of what you should do. It&amp;#8217;s just a natural resort for Developers.&lt;/p&gt;
-
-&lt;h3 id=&#34;what-i-take-away:f01f088ff6a2a118dfae926c3762f19b&#34;&gt;What I take away&lt;/h3&gt;
-
-&lt;p&gt;What I really liked about the course was the use of paper prototypes and scenarios.&lt;/p&gt;
-
-&lt;h4 id=&#34;scenarios-of-use:f01f088ff6a2a118dfae926c3762f19b&#34;&gt;Scenarios of use&lt;/h4&gt;
-
-&lt;p&gt;What &lt;a title=&#34;Tom Stevens&#34; href=&#34;http://www.namahn.com/about/staff/tom-stevens&#34; target=&#34;_blank&#34;&gt;Tom Stevens&lt;/a&gt; mentioned about the exploring step was: &amp;#8220;words are very cheap at this stage&amp;#8221;. So why not take advantage of that fact? Write stories (not use cases which exhaustively explain the functionality) about what and how a user would use the product. Make it fit in with and be of help for their workflow, don&amp;#8217;t impose your product in their process. Focus on typical but also on atypical users (e.g. incidental and daily users). A scenario is a story describing a user which needs to get something done. Your product would help her in the process.&lt;/p&gt;
-
-&lt;h4 id=&#34;paper-prototypes:f01f088ff6a2a118dfae926c3762f19b&#34;&gt;Paper prototypes&lt;/h4&gt;
-
-&lt;p&gt;The second thing Tom mentioned to be very cheap was a paper prototype instead of creating a whole HTML mockup. With a paper prototype you already have to think about how a user would interact with the product and what it should look like. Which buttons go where? What text is useful, what elements of the user interface have no meaning for the user?. You can test it with your colleagues, users or whatever at very little cost. Paper is cheap, and anyone can write and draw.&lt;/p&gt;
-
-&lt;p&gt;Below is a summary video shot by one of my colleagues. The video speaks for itself, if you speak Dutch you&amp;#8217;ll pick up a little more of what we did.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://vimeo.com/79380054&#34;&gt;UI training Nelen Schuurmans&lt;/a&gt; from &lt;a href=&#34;http://vimeo.com/reinoutvanrees&#34;&gt;Reinout van Rees&lt;/a&gt; on &lt;a href=&#34;https://vimeo.com&#34;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;conclusion:f01f088ff6a2a118dfae926c3762f19b&#34;&gt;Conclusion&lt;/h3&gt;
-
-&lt;p&gt;Maybe we cannot use every little detail of the process that was proposed in the course. But it just shows that you don&amp;#8217;t have to have very elaborate and expensive methods to improve your workflow.&lt;/p&gt;
-
-&lt;p&gt;P.S. We got mentioned in FastCompany&amp;#8217;s article on Dutch Engineering: &lt;a href=&#34;http://www.fastcompany.com/3018621/against-the-tide&#34; title=&#34;Against the Tide&#34; target=&#34;_blank&#34;&gt;Against the Tide&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;P.P.S. This book helped me think differently about interfacing: Don&amp;#8217;t make me think by Steve Krug.&lt;/p&gt;
-</description>
+      <description>Nelen &amp;amp; Schuurmans, the company where I work, offered the Software Developers a User Interface Design course by Namahn. It was a great reminder of the seemingly obvious processes one can incorporate in a software project, but sadly also a warning for blatant ignorance we sometimes portray as Developers (of course not just at N&amp;amp;S).
+The workflow Namahn uses is similar to what other design oriented companies would use. Which can be described in three phases: Understand, Explore and Define.</description>
     </item>
     
   </channel>

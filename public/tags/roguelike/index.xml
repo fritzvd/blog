@@ -1,45 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Roguelike on fritzvd</title>
+    <title>roguelike on fritzvd</title>
     <link>http://blog.fritzvd.com/tags/roguelike/</link>
-    <description>Recent content in Roguelike on fritzvd</description>
+    <description>Recent content in roguelike on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Mar 2014 15:09:25 +0000</lastBuildDate>
-    <atom:link href="http://blog.fritzvd.com/tags/roguelike/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Sat, 08 Mar 2014 15:09:25 +0000</lastBuildDate><atom:link href="http://blog.fritzvd.com/tags/roguelike/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Procedural Death Jam, 7 Day Rogue Like, Cyberpunk Game jamathon.</title>
       <link>http://blog.fritzvd.com/2014/03/08/procedural-death-jam-7-day-rogue-like-cyberpunk-game-jamathon/</link>
       <pubDate>Sat, 08 Mar 2014 15:09:25 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2014/03/08/procedural-death-jam-7-day-rogue-like-cyberpunk-game-jamathon/</guid>
-      <description>&lt;p&gt;Ok. It&amp;#8217;s official as of 16.04 (CET) I have entered in all of the above mentioned GameJams. This is where I will track my development.&lt;/p&gt;
-
-&lt;p&gt;The project can be found at: &lt;a href=&#34;https://github.com/fritzvd/abime&#34; title=&#34;abime&#34;&gt;https://github.com/fritzvd/abime&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;It. Is. On!&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Note to self: Neko target in Haxe does not handle placement of BitmapData well. Been spending an hour to get it to work. Other target was instant.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong Update 2: &lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;This was a very bad week to be working on something like this. Next time I&amp;#8217;ll clear my schedule. This was doomed to fail from the beginning. Lessons learned include:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;got familiar with Löve2D&lt;/li&gt;
-&lt;li&gt;got more familiar with HaxePunk&lt;/li&gt;
-&lt;li&gt;learned about ray casting&lt;/li&gt;
-&lt;li&gt;made some math mistakes&lt;/li&gt;
-&lt;li&gt;learned to free my schedule&lt;/li&gt;
-&lt;li&gt;deal with failure&lt;/li&gt;
-&lt;li&gt;great communities that make awesome games&lt;/li&gt;
-&lt;li&gt;lower the bar&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>Ok. It’s official as of 16.04 (CET) I have entered in all of the above mentioned GameJams. This is where I will track my development.
+The project can be found at: https://github.com/fritzvd/abime
+It. Is. On!
+Update:
+Note to self: Neko target in Haxe does not handle placement of BitmapData well. Been spending an hour to get it to work. Other target was instant.
+&amp;lt;strong Update 2: This was a very bad week to be working on something like this.</description>
     </item>
     
   </channel>

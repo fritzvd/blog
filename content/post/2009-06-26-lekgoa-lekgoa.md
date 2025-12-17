@@ -1,9 +1,9 @@
 ---
 author: fritzvd
 categories:
-- botswana
+  - botswana
 date: 2009-06-26T19:32:20Z
-guid: http://fritzvd.wordpress.com/2009/06/26/lekgoa-lekgoa/
+guid: http://blog.fritzvd.com/2009/06/26/lekgoa-lekgoa/
 id: 65
 title: Lekgoa, lekgoa
 url: /2009/06/26/lekgoa-lekgoa/
@@ -16,7 +16,7 @@ Everyday we walk through the village to go to several households and ask some qu
 People are very friendly and are very willing to help us. Yet I do sense some resentment to another research. Looks like these people have had researchers come here for a few years now.
 
 On a less serious, but equally important note: I have tried some hip things. Deep fried Mophane worms are one of them. They are a type of caterpillars that walk the Mophane trees. As well as sorghum porridge with sour milk. And some local (sorghum) beer.
-  
+
 Also they have something called Magwinya. Very close to Afrikaans &#8216;vetkoek&#8217; and Dutch &#8216;oliebollen&#8217; (zonder krenten). Also I can now make phalitshe (pronounced as polidge), the name for the maize porridge. To try and fix your air-bed just as you do a flat on your bike is also a treat.
 
 Lastly you should know I have an awesome T-shirt tan by now :).

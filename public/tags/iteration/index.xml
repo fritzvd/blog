@@ -1,28 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Iteration on fritzvd</title>
+    <title>iteration on fritzvd</title>
     <link>http://blog.fritzvd.com/tags/iteration/</link>
-    <description>Recent content in Iteration on fritzvd</description>
+    <description>Recent content in iteration on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Dec 2010 15:31:37 +0000</lastBuildDate>
-    <atom:link href="http://blog.fritzvd.com/tags/iteration/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Fri, 17 Dec 2010 15:31:37 +0000</lastBuildDate><atom:link href="http://blog.fritzvd.com/tags/iteration/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The three I&amp;#8217;s of progress.</title>
       <link>http://blog.fritzvd.com/2010/12/17/interaction-interfacing-iteration/</link>
       <pubDate>Fri, 17 Dec 2010 15:31:37 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2010/12/17/interaction-interfacing-iteration/</guid>
-      <description>&lt;p&gt;In my little project I would like to add some &lt;strong&gt;_I_nteraction&lt;/strong&gt;. A possibility to zoom in and out and rotate the 3D model without moving the marker but by using some form of hand gestures. This should be possible. Though, the road towards it still seems a bit unclear.&lt;/p&gt;
-
-&lt;p&gt;For now I have investigated the possibility of loading the 3D model as a static object until other markers arrive on the scene and are able to manipulate position, rotation and zooming.&lt;/p&gt;
-
-&lt;p&gt;An interesting instance of this &amp;#8220;Minority Report&amp;#8221; kind of &lt;strong&gt;_I_nterface&lt;/strong&gt; is shown in &lt;a href=&#34;http://flashworks.wordpress.com/2009/08/19/minority-report-interface-using-flash-and-flar-toolkit/&#34;&gt;this post&lt;/a&gt; over at the &lt;a href=&#34;http://flashworks.wordpress.com/&#34;&gt;FlashWorks blog&lt;/a&gt;. I&amp;#8217;m still looking through the code as to understand what it does and where I should load my COLLADA 3D model.&lt;/p&gt;
-
-&lt;p&gt;This brings me to &lt;strong&gt;_I_teration&lt;/strong&gt;. Over the last few weeks the idea and realization of my project has changed over time. And it has changed numerous times. I like how working and brainstorming, dreaming forces to rethink my approach. To restart in my mind what I think to be a perfect system. Feasibility comes into play and the whole thing changes again.&lt;/p&gt;
-</description>
+      <description>In my little project I would like to add some _I_nteraction. A possibility to zoom in and out and rotate the 3D model without moving the marker but by using some form of hand gestures. This should be possible. Though, the road towards it still seems a bit unclear.
+For now I have investigated the possibility of loading the 3D model as a static object until other markers arrive on the scene and are able to manipulate position, rotation and zooming.</description>
     </item>
     
   </channel>

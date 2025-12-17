@@ -1,52 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Microservices on fritzvd</title>
+    <title>microservices on fritzvd</title>
     <link>http://blog.fritzvd.com/tags/microservices/</link>
-    <description>Recent content in Microservices on fritzvd</description>
+    <description>Recent content in microservices on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Sep 2014 11:17:59 +0000</lastBuildDate>
-    <atom:link href="http://blog.fritzvd.com/tags/microservices/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Fri, 12 Sep 2014 11:17:59 +0000</lastBuildDate><atom:link href="http://blog.fritzvd.com/tags/microservices/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Microservices Track summary #nodeconfeu</title>
       <link>http://blog.fritzvd.com/2014/09/12/microservices-track-summary-nodeconfeu/</link>
       <pubDate>Fri, 12 Sep 2014 11:17:59 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2014/09/12/microservices-track-summary-nodeconfeu/</guid>
-      <description>&lt;p&gt;The microservices track came down to most speakers saying things more or less in similar vain, each talk having its own emphasis. &lt;a href=&#34;https://twitter.com/rjrodger&#34; title=&#34;rjrodger&#34; target=&#34;_blank&#34;&gt;Richard Rodger&lt;/a&gt; opened up and basically laid the groundwork for the microservices bit together with the &lt;a href=&#34;https://twitter.com/fgeorge52&#34; title=&#34;fgeorge52&#34; target=&#34;_blank&#34;&gt;Fred George&lt;/a&gt; talk.&lt;/p&gt;
-
-&lt;p&gt;After hearing the talks I&amp;#8217;d define microservices as small blocks that can run independently and do one thing, along the Unix philosophy. Making building blocks in stead of one big application that does everything. Now instead of including this one small thing in the rest of your app, you run this as a single thing which returns results based on messaging.&lt;/p&gt;
-
-&lt;p&gt;Your services will be fairly stupid as in that they will not know about the other services. So in order to communicate with each other you have the services talk to a message bus.&lt;/p&gt;
-
-&lt;p&gt;What this enables is having:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;a naturally scalable application&lt;/li&gt;
-&lt;li&gt;naturally scalable teams (as you don&amp;#8217;t need to know about the whole system)&lt;/li&gt;
-&lt;li&gt;polyglot applications without it becoming a problem&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The nice thing about developing an application as a combination of microservices is it enables seperate small deployments. Versions of software can be bumped seperately and released seperately without the whole server having to suffer.&lt;/p&gt;
-
-&lt;p&gt;Now the implementation and how different microservices work together differs amongst the various speakers.&lt;/p&gt;
-
-&lt;p&gt;And of course different problems arise you now have lots of apps and servers to maintain, and you have to present this whole bunch of services as one application which feels like a wholistic thing to the user. According to &lt;a href=&#34;https://twitter.com/dglozic&#34; title=&#34;dglozic&#34; target=&#34;_blank&#34;&gt;Dejan Glozic&lt;/a&gt; this could be solved with what he called: local clustering. &lt;a href=&#34;https://twitter.com/clifcunn&#34; title=&#34;clifcunn&#34; target=&#34;_blank&#34;&gt;Clifton Cunningham&lt;/a&gt; put forward a few solutions for this: client side assembly, front end server, server side includes or edge side include. Or of course: build it yourself → &lt;a href=&#34;https://www.npmjs.org/package/compoxure&#34; title=&#34;compoxure&#34; target=&#34;_blank&#34;&gt;Compoxure&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;In this scenario every service hosts and returns it&amp;#8217;s own rendered html (or json if you request that format). If a service dies, the cache will run the last known good html or the html renders a default.&lt;/p&gt;
-
-&lt;p&gt;For the static files part it&amp;#8217;s similar. Every service knows which static files it needs and rakes them together with a tool called: &lt;a href=&#34;https://www.npmjs.org/package/bosco&#34; title=&#34;bosco&#34; target=&#34;_blank&#34;&gt;Bosco&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The company Richard Rodger co-founded nearForm built a solution for the local clustering problem in their microservices framework &lt;a href=&#34;https://www.npmjs.org/package/seneca&#34; title=&#34;seneca&#34; target=&#34;_blank&#34;&gt;Seneca&lt;/a&gt;, their objective is best explained in the project website.&lt;/p&gt;
-
-&lt;p&gt;Programming anarchist Fred George threw his own version in the mix, where he said all services receive all messages all the time. You can then categorize the message in his metaphor of Rapids, Rivers and Ponds. The rapids are the streams with all the messages. The rivers the themed events and the ponds things like state/history.&lt;/p&gt;
-
-&lt;p&gt;A service should be so seperate, you should even have all the microservices have their own persistence layer. If a service has 2 jobs, make 2 services out of it.&lt;/p&gt;
-
-&lt;p&gt;Microservices FTW.&lt;/p&gt;
-</description>
+      <description>The microservices track came down to most speakers saying things more or less in similar vain, each talk having its own emphasis. Richard Rodger opened up and basically laid the groundwork for the microservices bit together with the Fred George talk.
+After hearing the talks I’d define microservices as small blocks that can run independently and do one thing, along the Unix philosophy. Making building blocks in stead of one big application that does everything.</description>
     </item>
     
   </channel>

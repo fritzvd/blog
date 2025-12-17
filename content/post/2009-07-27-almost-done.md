@@ -1,9 +1,9 @@
 ---
 author: fritzvd
 categories:
-- botswana
+  - botswana
 date: 2009-07-27T11:56:29Z
-guid: http://fritzvd.wordpress.com/?p=73
+guid: http://blog.fritzvd.com/?p=73
 id: 73
 title: almost done
 url: /2009/07/27/almost-done/

@@ -1,54 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Vtk on fritzvd</title>
+    <title>vtk on fritzvd</title>
     <link>http://blog.fritzvd.com/tags/vtk/</link>
-    <description>Recent content in Vtk on fritzvd</description>
+    <description>Recent content in vtk on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Nov 2010 15:53:56 +0000</lastBuildDate>
-    <atom:link href="http://blog.fritzvd.com/tags/vtk/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Thu, 18 Nov 2010 15:53:56 +0000</lastBuildDate><atom:link href="http://blog.fritzvd.com/tags/vtk/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Developments so far</title>
       <link>http://blog.fritzvd.com/2010/11/18/developments-so-far/</link>
       <pubDate>Thu, 18 Nov 2010 15:53:56 +0000</pubDate>
       
       <guid>http://blog.fritzvd.com/2010/11/18/developments-so-far/</guid>
-      <description>&lt;p&gt;Ok. 3 weeks down the road of my minor thesis and what do I have to show for? Well, a lot of paradigms and concepts for starters. Furthermore I have never been able to finish a document like research proposal so quickly and of such quality.&lt;/p&gt;
-
-&lt;p&gt;But enough of that. I have more or less abandoned the idea of a mobile application for now. Because having a mobile application like Junaio scores high on the cool list, it doesn&amp;#8217;t really in the sphere of performance and handling large data sets. The preference might go to having a standalone or online application that uses a webcam to model the information on screen.&lt;/p&gt;
-
-&lt;p&gt;Most interesting technologies so far:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;The awesome &lt;a href=&#34;http://unity3d.com&#34;&gt;Unity 3D&lt;/a&gt; game engine. Apparently possible to combine with &lt;a href=&#34;http://technotecture.com/content/sstt-visualizer-augmented-reality-demo&#34;&gt;SSTT&lt;/a&gt; &amp;#8211; AR tool&lt;/li&gt;
-&lt;li&gt;The extensive Python libraries of &lt;a href=&#34;http://www.vtk.org/&#34;&gt;VTK&lt;/a&gt; and &lt;a href=&#34;http://code.enthought.com/projects/mayavi/&#34;&gt;Mayavi2&lt;/a&gt; (installing in Ubuntu costs only 10 min.) in combination with &lt;a href=&#34;http://www.gdal.org/&#34;&gt;GDAL&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://sourceforge.net/projects/opengamaray/files/&#34;&gt;(Open)&lt;/a&gt;&lt;a href=&#34;http://www.gamaray.com/&#34;&gt;Gamaray&lt;/a&gt; &amp;#8211; An AR toolkit similar to UnifeyeSDK (Junaio) by Metaio. Possibility to add location and 3d objects. Very cool.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Another harsh realization is that I have grown too fond of Ubuntu Linux and only now have to deal with an issue that other programmers have been dealing with for ages. Building from source. My goodness. In Mac this feels too dangerous as a mismanaged system can have a lot of missing dependencies and building takes quite a while. In Windows this absolute hell. Searching around for pre-compiled binaries is the way to go, as are packages like Pythonxy. But still, this sucks.&lt;/p&gt;
-
-&lt;p&gt;What I have been able to do so far (except for spending days writing and compiling) is importing an Aster Satellite image into the Mayavi2 viewer. Which was remarkably painless and cool. The only thing is that I do not really understand yet what it is showing me. I guess the pixel values of one band have become the Z-axis. Still, cool as Sir Dangles.&lt;/p&gt;
-
-&lt;div id=&#34;attachment_192&#34; style=&#34;width: 410px&#34; class=&#34;wp-caption alignnone&#34;&gt;
-  &lt;a href=&#34;http://fritzvd.files.wordpress.com/2010/11/aster1.png&#34;&gt;&lt;img src=&#34;http://fritzvd.files.wordpress.com/2010/11/aster1.png&#34; alt=&#34;Aster Image&#34; title=&#34;aster1&#34; width=&#34;400&#34; height=&#34;290&#34; class=&#34;size-full wp-image-192&#34; srcset=&#34;http://blog.technokrat.nl/wp-content/uploads/2010/11/aster1-300x217.png 300w, http://blog.technokrat.nl/wp-content/uploads/2010/11/aster1.png 400w&#34; sizes=&#34;(max-width: 400px) 100vw, 400px&#34; /&gt;&lt;/a&gt;
-  
-  &lt;p class=&#34;wp-caption-text&#34;&gt;
-    View from the middle
-  &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div id=&#34;attachment_193&#34; style=&#34;width: 410px&#34; class=&#34;wp-caption alignnone&#34;&gt;
-  &lt;a href=&#34;http://fritzvd.files.wordpress.com/2010/11/aster2.png&#34;&gt;&lt;img src=&#34;http://fritzvd.files.wordpress.com/2010/11/aster2.png&#34; alt=&#34;Aster Image&#34; title=&#34;aster2&#34; width=&#34;400&#34; height=&#34;290&#34; class=&#34;size-full wp-image-193&#34; srcset=&#34;http://blog.technokrat.nl/wp-content/uploads/2010/11/aster2-300x217.png 300w, http://blog.technokrat.nl/wp-content/uploads/2010/11/aster2.png 400w&#34; sizes=&#34;(max-width: 400px) 100vw, 400px&#34; /&gt;&lt;/a&gt;
-  
-  &lt;p class=&#34;wp-caption-text&#34;&gt;
-    View from above
-  &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Also importing height maps in Unity3D should be not be too painfull, but this proved a bit harder than anticipated.&lt;/p&gt;
-</description>
+      <description>Ok. 3 weeks down the road of my minor thesis and what do I have to show for? Well, a lot of paradigms and concepts for starters. Furthermore I have never been able to finish a document like research proposal so quickly and of such quality.
+But enough of that. I have more or less abandoned the idea of a mobile application for now. Because having a mobile application like Junaio scores high on the cool list, it doesn’t really in the sphere of performance and handling large data sets.</description>
     </item>
     
   </channel>
