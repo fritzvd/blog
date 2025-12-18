@@ -18,7 +18,13 @@ title: Learning Chess (again)
 <script>
 const ruyLopez = 'r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R'
 const board = Chessboard('myBoard', ruyLopez)
-Array.from(document.querySelectorAll('img')).forEach(i =>{
-  i.style['margin-top']='unset';
-})
+
+setTimeout(function () {
+
+  Array.from(document.querySelectorAll('img')).forEach(i =>{
+    i.style['margin-top']='unset';
+  })
+
+},
+400)
 </script>
