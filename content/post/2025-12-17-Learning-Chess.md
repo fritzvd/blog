@@ -1,9 +1,10 @@
 ---
 author: fritzvd
+draft: true
 tags:
   - chess
 date: 2025-12-17T06:49:23Z
-title: Learning Chess (again)
+title: Learning Chess (again) - Sicilian Defense
 ---
 
 <link rel="stylesheet" href="/blog/chessboard.css">
@@ -13,11 +14,23 @@ title: Learning Chess (again)
 
 <script src="/blog/chessboard.js"></script>
 
-<div id="myBoard" style="width: 400px"></div>
+As long as I can remember I have been trying to learn to play chess well. When I was six I learned to use the pieces and lost many a game since.
+
+I'm not good at it at all. I still lose most of my games. But I still enjoy it, the puzzles, playing the game.
+
+Over the last few weeks I've been getting back into it and trying out some openings.
+
+At the moment I've been trying to play Sicilian Defence with black.
+
+That would be opening with the c-pawn in response to the king's Pawn instead of the e or d-pawn, in order to get control of _the centre_:
+
+1. e4 - c6
+
+<div id="board-1" style="width: 400px"></div>
 
 <script>
-const ruyLopez = 'r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R'
-const board = Chessboard('myBoard', ruyLopez)
+const sic = 'rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 1'
+const board = Chessboard('board-1', sic)
 
 setTimeout(function () {
 
@@ -26,5 +39,5 @@ setTimeout(function () {
   })
 
 },
-400)
+200)
 </script>

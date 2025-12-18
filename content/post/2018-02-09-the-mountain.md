@@ -1,5 +1,6 @@
 ---
 id: 58
+author: Richard Littauer
 title: The mountain
 type: post
 date: 2018-02-09 14:05:41
@@ -18,7 +19,7 @@ Night had fallen. I sat down for a cigarette. The mountain of the other island w
 
 Cigarette ended, my oar lay beside me. I picked it up, and went to two palm trees on the beach, held it between them at waist-height, and pulled. It snapped like a bone. I took the two sides, tied them together with twine, and grabbed a sharpie from my bag. On the thin, sandy blade, I wrote some small lines.
 
-*That world doesn't exist,*she said. I had laughed, mirthless. Now, sitting before her cross, I smiled.
+_That world doesn't exist,_ she said. I had laughed, mirthless. Now, sitting before her cross, I smiled.
 
 _Here lies Suzie;
 Beloved wife, dutiful lover._
