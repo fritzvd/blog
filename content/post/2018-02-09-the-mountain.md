@@ -4,8 +4,8 @@ title: The mountain
 type: post
 date: 2018-02-09 14:05:41
 lastmod: 2018-02-14 11:49:34
-categories:
-- Story
+tags:
+  - story
 ---
 
 The mountain was on fire. The clouds above it, light, cumulous clouds drawn up by the daily winds, drawn from the montane forests covered in fog, drawn out of the green fields beneath the mountain, were bathed in a golden, red light from the setting sun. The sea in front of the mountain scintillated and shimmered, drew out the static sunset and cast it in a thousand gems on the surface of the water. The vision was as clear as God.
@@ -20,6 +20,6 @@ Cigarette ended, my oar lay beside me. I picked it up, and went to two palm tree
 
 *That world doesn't exist,*she said. I had laughed, mirthless. Now, sitting before her cross, I smiled.
 
-*Here lies Suzie;
-Beloved wife, dutiful lover.*
+_Here lies Suzie;
+Beloved wife, dutiful lover._
 And behind me, the tide ripped on, towards the mountain.

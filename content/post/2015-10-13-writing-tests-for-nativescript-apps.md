@@ -1,7 +1,9 @@
 ---
 author: fritzvd
-categories:
-- Uncategorized
+tags:
+  - nativescript
+  - tests
+  - code
 date: 2015-10-13T06:49:23Z
 guid: http://blog.technokrat.nl/?p=668
 id: 668
@@ -24,8 +26,6 @@ In comes `<a href="http://npmjs.com/package/proxyquire" target="_blank">proxyqui
 Then make sure you stub the package you want to be stubbed, with @noCallThru.
 
 Example:
-
-
 
 So now you can setup mocha for example to work with the app.
 

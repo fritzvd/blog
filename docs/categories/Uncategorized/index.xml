@@ -6,28 +6,7 @@
     <description>Recent content in Uncategorized on fritzvd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Aug 2019 21:12:49 +0000</lastBuildDate><atom:link href="https://fritzvd.com/blog/categories/Uncategorized/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Jakob’s ice cream</title>
-      <link>https://fritzvd.com/blog/2019/08/11/Jakobs-ice-cream/</link>
-      <pubDate>Sun, 11 Aug 2019 21:12:49 +0000</pubDate>
-      
-      <guid>https://fritzvd.com/blog/2019/08/11/Jakobs-ice-cream/</guid>
-      <description>“I’ll stab you square between your eyes, vile scorpion blooded motherfucker”, Jakob shouted at the olid man standing right in front of him. His undersized yellow stained tank top wasn’t very becoming, neither was the sweat that was dripping down his armpit hair. The stench was atrocious and hardly bearable.
-Of course Jakob was a coward and never really shouted. He just stood there thinking all these wonderful thoughts.
-The day had started so great in te suburban cement ridden shithole that was his hometown.</description>
-    </item>
-    
-    <item>
-      <title>Writing Tests for NativeScript apps</title>
-      <link>https://fritzvd.com/blog/2015/10/13/writing-tests-for-nativescript-apps/</link>
-      <pubDate>Tue, 13 Oct 2015 06:49:23 +0000</pubDate>
-      
-      <guid>https://fritzvd.com/blog/2015/10/13/writing-tests-for-nativescript-apps/</guid>
-      <description>This has been bugging me for a while. While working on my business logic and REST API connection in my NativeScript project, I couldn’t write tests because requiring the tns-core-modules broke the test.
-NativeScript is a library with tooling to create iOS and Android apps in JavaScript. And it works smoothly. However at the moment the docs aren’t always complete. Anyways, building and deploying an app on a mobile device (or emulator) takes somewhere in the range of a minute or so on a fast machine.</description>
-    </item>
-    
+    <lastBuildDate>Wed, 01 Jul 2015 08:19:19 +0000</lastBuildDate><atom:link href="https://fritzvd.com/blog/categories/Uncategorized/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Writing Documentation @ nodeconf 2015</title>
       <link>https://fritzvd.com/blog/2015/07/01/writing-documentation-nodeconf-2015/</link>

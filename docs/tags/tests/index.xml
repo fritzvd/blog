@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tests on fritzvd</title>
+    <link>https://fritzvd.com/blog/tags/tests/</link>
+    <description>Recent content in tests on fritzvd</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Oct 2015 06:49:23 +0000</lastBuildDate><atom:link href="https://fritzvd.com/blog/tags/tests/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Writing Tests for NativeScript apps</title>
+      <link>https://fritzvd.com/blog/2015/10/13/writing-tests-for-nativescript-apps/</link>
+      <pubDate>Tue, 13 Oct 2015 06:49:23 +0000</pubDate>
+      
+      <guid>https://fritzvd.com/blog/2015/10/13/writing-tests-for-nativescript-apps/</guid>
+      <description>This has been bugging me for a while. While working on my business logic and REST API connection in my NativeScript project, I couldn’t write tests because requiring the tns-core-modules broke the test.
+NativeScript is a library with tooling to create iOS and Android apps in JavaScript. And it works smoothly. However at the moment the docs aren’t always complete. Anyways, building and deploying an app on a mobile device (or emulator) takes somewhere in the range of a minute or so on a fast machine.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -378,7 +378,7 @@
     }
     :where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
       color: var(--tw-prose-headings);
-      font-weight: 800;
+      /* font-weight: 800; */
       font-size: 2.25em;
       margin-top: 0;
       margin-bottom: 0.8888889em;
@@ -397,7 +397,7 @@
       line-height: 1.3333333;
     }
     :where(h2 strong):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
-      font-weight: 800;
+      /* font-weight: 800; */
       color: inherit;
     }
     :where(h3):not(:where([class~="not-prose"],[class~="not-prose"] *)) {

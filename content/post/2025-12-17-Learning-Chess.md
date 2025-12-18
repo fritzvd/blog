@@ -1,6 +1,6 @@
 ---
 author: fritzvd
-categories:
+tags:
   - chess
 date: 2025-12-17T06:49:23Z
 title: Learning Chess (again)
@@ -14,7 +14,11 @@ title: Learning Chess (again)
 <script src="/blog/chessboard.js"></script>
 
 <div id="myBoard" style="width: 400px"></div>
+
 <script>
 const ruyLopez = 'r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R'
 const board = Chessboard('myBoard', ruyLopez)
+Array.from(document.querySelectorAll('img')).forEach(i =>{
+  i.style['margin-top']='unset';
+})
 </script>

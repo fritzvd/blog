@@ -2,10 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://fritzvd.com/blog/categories/</loc>
-    <lastmod>2025-12-17T06:49:23+00:00</lastmod>
-  </url><url>
-    <loc>https://fritzvd.com/blog/categories/chess/</loc>
+    <loc>https://fritzvd.com/blog/tags/chess/</loc>
     <lastmod>2025-12-17T06:49:23+00:00</lastmod>
   </url><url>
     <loc>https://fritzvd.com/blog/</loc>
@@ -17,7 +14,16 @@
     <loc>https://fritzvd.com/blog/post/</loc>
     <lastmod>2025-12-17T06:49:23+00:00</lastmod>
   </url><url>
-    <loc>https://fritzvd.com/blog/categories/Story/</loc>
+    <loc>https://fritzvd.com/blog/tags/</loc>
+    <lastmod>2025-12-17T06:49:23+00:00</lastmod>
+  </url><url>
+    <loc>https://fritzvd.com/blog/categories/</loc>
+    <lastmod>2020-03-10T06:49:23+00:00</lastmod>
+  </url><url>
+    <loc>https://fritzvd.com/blog/tags/story/</loc>
+    <lastmod>2020-03-10T06:49:23+00:00</lastmod>
+  </url><url>
+    <loc>https://fritzvd.com/blog/categories/story/</loc>
     <lastmod>2020-03-10T06:49:23+00:00</lastmod>
   </url><url>
     <loc>https://fritzvd.com/blog/2020/03/10/Wild-Ride/</loc>
@@ -26,13 +32,10 @@
     <loc>https://fritzvd.com/blog/2019/08/11/Jakobs-ice-cream/</loc>
     <lastmod>2019-08-11T23:52:26+00:00</lastmod>
   </url><url>
-    <loc>https://fritzvd.com/blog/categories/Uncategorized/</loc>
-    <lastmod>2019-08-11T23:52:26+00:00</lastmod>
-  </url><url>
-    <loc>https://fritzvd.com/blog/categories/serial/</loc>
+    <loc>https://fritzvd.com/blog/tags/serial/</loc>
     <lastmod>2019-10-18T11:51:10+00:00</lastmod>
   </url><url>
-    <loc>https://fritzvd.com/blog/categories/short/</loc>
+    <loc>https://fritzvd.com/blog/tags/short/</loc>
     <lastmod>2019-10-18T11:51:10+00:00</lastmod>
   </url><url>
     <loc>https://fritzvd.com/blog/2018/02/14/The-Chopping-Board/</loc>
@@ -44,7 +47,7 @@
     <loc>https://fritzvd.com/blog/2018/01/31/The-Second-Violin/</loc>
     <lastmod>2018-01-31T13:46:29+00:00</lastmod>
   </url><url>
-    <loc>https://fritzvd.com/blog/categories/thriller/</loc>
+    <loc>https://fritzvd.com/blog/tags/thriller/</loc>
     <lastmod>2018-01-31T13:46:29+00:00</lastmod>
   </url><url>
     <loc>https://fritzvd.com/blog/2018/01/08/Night-of-Grafting-Part-2/</loc>
@@ -52,6 +55,15 @@
   </url><url>
     <loc>https://fritzvd.com/blog/2017/12/22/Night-of-Grafting-Part-1/</loc>
     <lastmod>2019-10-18T11:51:10+00:00</lastmod>
+  </url><url>
+    <loc>https://fritzvd.com/blog/tags/code/</loc>
+    <lastmod>2015-10-13T06:49:23+00:00</lastmod>
+  </url><url>
+    <loc>https://fritzvd.com/blog/tags/nativescript/</loc>
+    <lastmod>2015-10-13T06:49:23+00:00</lastmod>
+  </url><url>
+    <loc>https://fritzvd.com/blog/tags/tests/</loc>
+    <lastmod>2015-10-13T06:49:23+00:00</lastmod>
   </url><url>
     <loc>https://fritzvd.com/blog/2015/10/13/writing-tests-for-nativescript-apps/</loc>
     <lastmod>2015-10-13T06:49:23+00:00</lastmod>
@@ -72,6 +84,9 @@
     <lastmod>2015-07-01T08:19:19+00:00</lastmod>
   </url><url>
     <loc>https://fritzvd.com/blog/categories/development/</loc>
+    <lastmod>2015-07-01T08:19:19+00:00</lastmod>
+  </url><url>
+    <loc>https://fritzvd.com/blog/categories/Uncategorized/</loc>
     <lastmod>2015-07-01T08:19:19+00:00</lastmod>
   </url><url>
     <loc>https://fritzvd.com/blog/2015/07/01/writing-documentation-nodeconf-2015/</loc>
@@ -105,9 +120,6 @@
     <lastmod>2015-05-19T15:35:39+00:00</lastmod>
   </url><url>
     <loc>https://fritzvd.com/blog/tags/monogame/</loc>
-    <lastmod>2015-05-19T15:35:39+00:00</lastmod>
-  </url><url>
-    <loc>https://fritzvd.com/blog/tags/</loc>
     <lastmod>2015-05-19T15:35:39+00:00</lastmod>
   </url><url>
     <loc>https://fritzvd.com/blog/tags/xna/</loc>
