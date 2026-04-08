@@ -1,5 +1,6 @@
 ---
 id: 61
+author: fritzvd
 title: "Jakob\u2019s ice cream"
 type: post
 date: 2019-08-11 21:12:49

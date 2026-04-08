@@ -33,11 +33,9 @@ const sic = 'rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 1'
 const board = Chessboard('board-1', sic)
 
 setTimeout(function () {
-
   Array.from(document.querySelectorAll('img')).forEach(i =>{
     i.style['margin-top']='unset';
   })
-
 },
 200)
 </script>
