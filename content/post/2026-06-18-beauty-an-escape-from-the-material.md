@@ -7,7 +7,7 @@ tags:
   - beauty
   - esthetic
   - transcendence
-date: 2026-06-217T16:34:23Z
+date: 2026-06-21T16:34:23Z
 title: 'Beauty: an escape from the material'
 ---
 
