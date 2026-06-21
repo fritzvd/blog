@@ -2,17 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://fritzvd.com/blog/tags/beauty/</loc>
+    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fritzvd.com/blog/2026/06/21/Beauty-an-escape-from-the-material/</loc>
+    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fritzvd.com/blog/tags/esthetic/</loc>
+    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://fritzvd.com/blog/</loc>
-    <lastmod>2026-05-07T17:04:23+00:00</lastmod>
+    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://fritzvd.com/blog/tags/philosophy/</loc>
-    <lastmod>2026-05-07T17:04:23+00:00</lastmod>
+    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://fritzvd.com/blog/post/</loc>
-    <lastmod>2026-05-07T17:04:23+00:00</lastmod>
+    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://fritzvd.com/blog/tags/</loc>
-    <lastmod>2026-05-07T17:04:23+00:00</lastmod>
+    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fritzvd.com/blog/tags/transcendence/</loc>
+    <lastmod>2026-06-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://fritzvd.com/blog/2026/05/07/What-is-freedom/</loc>
     <lastmod>2026-05-07T17:04:23+00:00</lastmod>
@@ -742,13 +754,5 @@
   </url><url>
     <loc>https://fritzvd.com/blog/2009/04/19/going/</loc>
     <lastmod>2009-04-19T23:33:03+00:00</lastmod>
-  </url><url>
-    <loc>https://fritzvd.com/blog/tags/beauty/</loc>
-  </url><url>
-    <loc>https://fritzvd.com/blog/1/01/01/Beauty-an-escape-from-the-material/</loc>
-  </url><url>
-    <loc>https://fritzvd.com/blog/tags/esthetic/</loc>
-  </url><url>
-    <loc>https://fritzvd.com/blog/tags/transcendence/</loc>
   </url>
 </urlset>
