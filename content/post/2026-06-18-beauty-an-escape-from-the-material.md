@@ -1,13 +1,13 @@
 ---
 author: fritzvd
+date: "2026-06-21"
 draft: false
-type: post
+# type: post
 tags:
   - philosophy
   - beauty
   - esthetic
   - transcendence
-date: 2026-06-21T16:34:23Z
 title: 'Beauty: an escape from the material'
 ---
 
